@@ -64,7 +64,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
   }
 }"
 
- ```
+```
 
 
  Response
@@ -83,7 +83,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
   "file": null
 }
 
- ```
+```
 
 
 
@@ -123,7 +123,7 @@ var viewOptions # new ViewOptions
  
 var response # apiInstance.CreateView(new CreateViewRequest(viewOptions));
 
- ```
+```
 
 
  Java
@@ -149,7 +149,7 @@ viewOptions.setRenderOptions(renderOptions);
  
 ViewResult response # apiInstance.createView(new CreateViewRequest(viewOptions));
 
- ```
+```
 
 
  PHP
@@ -182,7 +182,7 @@ $viewOptions->setRenderOptions($renderOptions);
 $request # new Requests\CreateViewRequest($viewOptions);
 $response # $apiInstance->createView($request);
 
- ```
+```
 
 
  Node
@@ -208,7 +208,7 @@ viewOptions.renderOptions.cadOptions.scaleFactor # 0.3;
 let request # new viewer_cloud.CreateViewRequest(viewOptions);      
 let response # await viewApi.createView(request);
 
- ```
+```
 
 
  Python
@@ -233,7 +233,7 @@ view_options.render_options.cad_options.scale_factor # 0.3
 request # groupdocs_viewer_cloud.CreateViewRequest(view_options)
 response # apiInstance.create_view(request)
 
- ```
+```
 
 
  Ruby
@@ -258,5 +258,5 @@ viewOptions.render_options.cad_options.scale_factor # 0.3
 request # GroupDocsViewerCloud::CreateViewRequest.new(viewOptions)    
 response # apiInstance.create_view(request)
 
- ```
+```
 

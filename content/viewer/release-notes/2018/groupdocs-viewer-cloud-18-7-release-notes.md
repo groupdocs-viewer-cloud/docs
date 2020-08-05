@@ -75,7 +75,7 @@ curl --request GET \
   --url https://api.groupdocs.cloud/v1/viewer/sample.msg/html/pages/1 \
   --header 'authorization: [Access Token]'
 
- ```
+```
   Viewer supports following field labels:
 
 |Field|Label
@@ -186,7 +186,7 @@ curl --request GET \
   --url https://api.groupdocs.cloud/v1/viewer/three-layouts.dwg/html/pages/1 \
   --header 'authorization: [Access Token]'
 
- ```
+```
 
 
 
@@ -214,7 +214,7 @@ curl --request POST \
 curl --request GET \
   --url http://api.groupdocs.cloud/v1/viewer/missing-font.pdf/html/pages/1 \
   --header 'authorization: [Access Token]'
- ```
+```
  
 
 
@@ -268,7 +268,7 @@ curl --request GET \
   --url http://api.groupdocs.cloud/v1/viewer/message.msg/image/pages/1 \
   --header 'authorization: [Access Token]'
 
- ```
+```
 
 ```html 
 ### Retrieve access token
@@ -288,4 +288,4 @@ curl --request POST \
 curl --request GET \
   --url http://api.groupdocs.cloud/v1/viewer/message.msg/image/pdf \
   --header 'authorization: [Access Token]'
- ```
+```

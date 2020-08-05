@@ -59,7 +59,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
       }
 }"
 
- ```
+```
 
 
  Response
@@ -90,7 +90,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
   "file": null
 }
 
- ```
+```
 
 
 
@@ -122,7 +122,7 @@ var viewOptions # new ViewOptions
 
 var response # apiInstance.CreateView(new CreateViewRequest(viewOptions));
 
- ```
+```
 
 
  Java
@@ -142,7 +142,7 @@ viewOptions.setFileInfo(fileInfo);
  
 ViewResult response # apiInstance.createView(new CreateViewRequest(viewOptions));
 
- ```
+```
 
 
  PHP
@@ -169,7 +169,7 @@ $viewOptions->setFileInfo($fileInfo);
 $request # new Requests\CreateViewRequest($viewOptions);
 $response # $apiInstance->createView($request);
 
- ```
+```
 
 
  Node
@@ -191,7 +191,7 @@ viewOptions.fileInfo # fileInfo;
 let request # new viewer_cloud.CreateViewRequest(viewOptions);      
 let response # await viewApi.createView(request);
 
- ```
+```
 
 
  Python
@@ -213,7 +213,7 @@ view_options.file_info.file_path # "SampleFiles/sample.docx"
 request # groupdocs_viewer_cloud.CreateViewRequest(view_options)
 response # apiInstance.create_view(request)
 
- ```
+```
 
 
  Ruby
@@ -234,5 +234,5 @@ viewOptions.file_info.file_path # "SampleFiles/sample.docx"
 request # GroupDocsViewerCloud::CreateViewRequest.new(viewOptions)    
 response # apiInstance.create_view(request)
 
- ```
+```
 

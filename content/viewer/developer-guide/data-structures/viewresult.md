@@ -48,7 +48,7 @@ ViewResult data structure returned by Document [View API]({{< ref "viewer/devel
   "file": null
 }
 
- ```
+```
 
 ##### ViewResult fields #####
 

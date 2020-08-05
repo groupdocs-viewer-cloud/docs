@@ -101,7 +101,7 @@ curl request GET \
  url https://api.groupdocs.cloud/v1/viewer/sample.msg/html/pages/1 \
  header 'authorization: [Access Token]'
 
- ```
+```
 
 
 
@@ -136,7 +136,7 @@ curl request GET \
     }
   ]
 }
- ```
+```
 
 
 
@@ -266,7 +266,7 @@ data '{"emailOptions": {"pageSize": "A0"}}' 
 # Retrieve created page  curl request GET \  
 url http://api.groupdocs.cloud/v1/viewer/message.msg/image/pages/1 \  
 header 'authorization: [Access Token]'
- ```
+```
 
 
 
@@ -301,7 +301,7 @@ header 'authorization: [Access Token]'
     }
   ]
 }
- ```
+```
 
 
 

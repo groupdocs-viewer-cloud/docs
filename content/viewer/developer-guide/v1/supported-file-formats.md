@@ -38,7 +38,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/formats" \
 -H "authorization: Bearer olzXlublkkhjir2lLJeQZa6JLmodllVmX7pU7jf5t7iZm8bbbsXtzrV1t_t5FGro0bq36vg5syRH0ZILdIjDQxSNM5EuuoJFDvLrUtL9YO3t4vMRP0o-JDejzco8Ut8qGClOqYu1EIj5bfvL51Zd2YliHFlHX-nInUzyDxWESrfR0kOiODJvW_k-OiIChGMAOQnGByi4NSlIaYtvHEeVXgkRd8yMbK2Gn5-vyDGEgTlx0q_g_9cXnGUHRFVRCozY6tklo-GqLeGe65VNSzo0Zd9X4Y5p-hBOZnHpkyMMc1DHT8WPAeZrpLunemAQo6EIjusN_mtP_v4G_LLcvFAgAf2-mkBoYuNdjl7i8mbh5mrQraU-gJu5BSMY-U-EcHhghKJybWMqD-Gft2mG4Ajv-k1gY4RxHNG85dc_pXOquvQFROaK"
 
 
- ```
+```
 
 
  Response
@@ -324,7 +324,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/formats" \
     }
   ]
 }
- ```
+```
 
 
 

@@ -45,7 +45,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/pages" \
 -H "Content-Type: application/json" \
 -d "{"projectOptions": {"pageSize": "A0","timeUnit": "unknown"}}" \
 -H "authorization: Bearer [Access Token]"
- ```
+```
 
 
 
@@ -64,7 +64,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/pages" \
     }
   ]
 }
- ```
+```
 
 
 
@@ -185,7 +185,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/image/pages" \
 -H "Content-Type: application/json" \
 -d "{"projectOptions": {"pageSize": "A0","timeUnit": "unknown"}}" \
 -H "authorization: Bearer [Access Token]"
- ```
+```
 
 
 
@@ -204,7 +204,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/image/pages" \
     }
   ]
 }
- ```
+```
 
 
 
@@ -327,7 +327,7 @@ curl --request POST \
   --header 'authorization: Bearer [Access Token]' \
   --header 'content-type: application/json' \
   --data '{"projectOptions": {"startDate": "07/01/2008","endDate": "07/31/2008"}}'
- ```
+```
 
 
 
@@ -374,7 +374,7 @@ curl --request POST \
     }
   ]
 }
- ```
+```
 
 
 

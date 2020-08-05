@@ -32,7 +32,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used in the [Sup
 ```html 
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/formats" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 
- ```
+```
 
 
 
@@ -378,7 +378,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/formats" -H  "accept: appli
 }
 
 
- ```
+```
 
 
 

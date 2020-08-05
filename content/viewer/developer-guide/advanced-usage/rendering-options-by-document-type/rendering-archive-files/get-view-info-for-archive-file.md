@@ -58,7 +58,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
   }
 }"
 
- ```
+```
 
 
  Response
@@ -148,7 +148,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
   "pdfViewInfo": null
 }
 
- ```
+```
 
 
 
@@ -182,7 +182,7 @@ var response # apiInstance.GetInfo(new GetInfoRequest(viewOptions));
 foreach (var folder in response.ArchiveViewInfo.Folders)
     Console.WriteLine(folder);
 
- ```
+```
 
 
  Java
@@ -205,7 +205,7 @@ List<String> folders # response.getArchiveViewInfo().getFolders();
 for(int i # 0; i < folders.size(); i++)
     System.out.println(folders.get(i));
 
- ```
+```
 
 
  PHP
@@ -235,7 +235,7 @@ foreach ($response->getArchiveViewInfo()->getFolders() as $folder) {
     echo $folder, "\n";
 }
 
- ```
+```
 
 
  Node
@@ -262,7 +262,7 @@ for (let i # 0; i < folders.length; i++) {
     console.log(folders[i]);
 }
 
- ```
+```
 
 
  Python
@@ -287,7 +287,7 @@ folders # response.archive_view_info.folders
 for folder in folders:
     print(folder)
 
- ```
+```
 
 
  Ruby
@@ -312,5 +312,5 @@ for folder in response.archive_view_info.folders do
     puts(" " + folder)
 end
 
- ```
+```
 

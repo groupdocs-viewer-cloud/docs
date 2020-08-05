@@ -39,7 +39,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/info" \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer [Access Token]"
  
- ```
+```
 
 
 
@@ -74,7 +74,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/info" \
   "endDate": "0001-01-01T00:00:00"
 }
  
- ```
+```
 
 
 
@@ -194,7 +194,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/info?extractT
 -H "authorization: Bearer [Access Token]"
 
 
- ```
+```
 
 
 
@@ -249,7 +249,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/info?extractT
   "startDate": "0001-01-01T00:00:00",
   "endDate": "0001-01-01T00:00:00"
 }
- ```
+```
 
 
 
@@ -370,7 +370,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?url#https%3a%2f%2fwww.d
 -H "Content-Type: application/json" \
 -H "authorization: Bearer [Access Token]"
  
- ```
+```
 
 
 
@@ -399,7 +399,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?url#https%3a%2f%2fwww.d
   "startDate": "0001-01-01T00:00:00",
   "endDate": "0001-01-01T00:00:00"
 } 
- ```
+```
 
 
 
@@ -521,7 +521,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?url#https%3a%2f%2fwww.
 -H "authorization: Bearer [Access Token]"
 
 
- ```
+```
 
 
 
@@ -577,7 +577,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?url#https%3a%2f%2fwww.
   "startDate": "0001-01-01T00:00:00",
   "endDate": "0001-01-01T00:00:00"
 }
- ```
+```
 
 
 
@@ -698,7 +698,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/excel.xlsx/html/info" \
 -d "{"cellsOptions":{"renderGridLines":true,"paginateSheets":true,"encoding": null,"internalHyperlinkPrefix":"prefix","countRowsPerPage":60,"textOverflowMode":"HideText","ignoreEmptyRows":false}}" \
 -H "authorization: Bearer [Access Token]"
  
- ```
+```
 
 
 
@@ -727,7 +727,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/excel.xlsx/html/info" \
   "startDate": "0001-01-01T00:00:00",
   "endDate": "0001-01-01T00:00:00"
 }
- ```
+```
 
 
 
@@ -849,7 +849,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/excel.xlsx/image/info" \
 -H "authorization: Bearer [Access Token]"
 
 
- ```
+```
 
 
 
@@ -878,7 +878,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/excel.xlsx/image/info" \
   "startDate": "0001-01-01T00:00:00",
   "endDate": "0001-01-01T00:00:00"
 }
- ```
+```
 
 
 
@@ -1001,7 +1001,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?fileName#one-page.docx"
 -d "{"cellsOptions":{"renderGridLines":true,"paginateSheets":true,"encoding": null,"internalHyperlinkPrefix":"prefix","countRowsPerPage":60,"textOverflowMode":"HideText","ignoreEmptyRows":false}}" \
 -H "authorization: Bearer [Access Token]"
  
- ```
+```
 
 
 
@@ -1031,7 +1031,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?fileName#one-page.docx"
   "startDate": "0001-01-01T00:00:00",
   "endDate": "0001-01-01T00:00:00"
 }
- ```
+```
 
 
 
@@ -1142,7 +1142,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?fileName#one-page.docx
 -H "authorization: Bearer [Access Token]"
 
 
- ```
+```
 
 
 
@@ -1171,7 +1171,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?fileName#one-page.docx
   "startDate": "0001-01-01T00:00:00",
   "endDate": "0001-01-01T00:00:00"
 }
- ```
+```
 
 
 
@@ -1282,7 +1282,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?url#https%3a%2f%2fwww.d
 -H "authorization: Bearer [Access Token]"
 
  
- ```
+```
 
 
 
@@ -1312,7 +1312,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?url#https%3a%2f%2fwww.d
     "startDate": "0001-01-01T00:00:00",
     "endDate": "0001-01-01T00:00:00"
 }
- ```
+```
 
 
 
@@ -1437,7 +1437,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?url#https%3a%2f%2fwww.
 -H "authorization: Bearer [Access Token]"
 
 
- ```
+```
 
 
 
@@ -1466,7 +1466,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?url#https%3a%2f%2fwww.
   "startDate": "0001-01-01T00:00:00",
   "endDate": "0001-01-01T00:00:00"
 }
- ```
+```
 
 
 

@@ -25,7 +25,7 @@ HtmlOptions data structure inherits [RenderOptions ]({{< ref "viewer/developer-
 	"IsResponsive": true
 }
 
- ```
+```
 
 ##### HtmlOptions fields #####
 

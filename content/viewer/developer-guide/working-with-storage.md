@@ -41,7 +41,7 @@ This API intended for checking the existence of cloud storage with a given name 
 ```html 
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/MyStorage/exist" -H  "accept: application/json" -H  "authorization: Bearer  [Access Token]"
     
- ```
+```
 
 
 
@@ -52,7 +52,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/MyStorage/exist" -H
 {
   "exists": true
 }
- ```
+```
 
 
 
@@ -181,7 +181,7 @@ Required. Can be passed as a query string parameter or as part of the URL
 
 ```html 
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/exist/viewerdocs?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
- ```
+```
 
 
 
@@ -193,7 +193,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/exist/viewerdocs?st
   "exists": true,
   "isFolder": true
 }
- ```
+```
 
 
 
@@ -318,7 +318,7 @@ This API intended for getting total and used space of the[ GroupDocs Cloud Stora
 
 ```html 
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/disc?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
- ```
+```
 
 
 
@@ -330,7 +330,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/disc?storageName#My
   "usedSize": 31032368,
   "totalSize": 3221225472
 }
- ```
+```
 
 
 
@@ -460,7 +460,7 @@ Required. Can be passed as a query string parameter or as part of the URL
 
 ```html 
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/version/one-page.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
- ```
+```
 
 
 
@@ -481,7 +481,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/version/one-page.do
     }
   ]
 }
- ```
+```
 
 
 

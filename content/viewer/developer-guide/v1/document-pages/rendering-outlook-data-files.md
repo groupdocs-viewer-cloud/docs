@@ -45,7 +45,7 @@ curl --request POST \
 curl --request GET \
   --url https://api.groupdocs.cloud/v1/viewer/data.pst/html/pages/1 \
   --header 'authorization: Bearer [Access Token]'
- ```
+```
 
 
 
@@ -63,7 +63,7 @@ curl --request GET \
     }
   ]
 }
- ```
+```
 
 
 

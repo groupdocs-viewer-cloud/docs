@@ -83,7 +83,7 @@ Example DocumentInfoOptions object
     "pageSize": "unknown"
   }
 }
- ```
+```
 
  Info Object Fields (Click here to expand)
 
@@ -187,13 +187,13 @@ Example ImageOptions object
     "pageSize": "unknown"
   }
 }
- ```
+```
 
  ImageOptions Object Fields (Click here to expand)
 
 |Name|Type|Description
 |---|---|---
-|Format|string|Allows to set image format ("png", "jpg", "bmp").
+|Format|string|Allows to set image format ("png" or "jpg").
 
 Default value is "png".
 |Quality| int|Allows to specify quality when format # "jpg". Valid values are between 1 and 100. 
@@ -309,7 +309,7 @@ Example HtmlOptions object
     "pageSize": "unknown"
   }
 }
- ```
+```
 
  HtmlOptions Fields (Click here to expand)
 
@@ -424,7 +424,7 @@ Example PdfFileOptions object
     "pageSize": "unknown"
   }
 }
- ```
+```
 
  PdfFileOptions Object Fields (Click here to expand)
 
@@ -472,7 +472,7 @@ Example RotateOptions object
   "angle": 90,
   "password": "document password"
 }
- ```
+```
 
  RotateOptions Object Fields (Click here to expand)
 
@@ -503,7 +503,7 @@ Example ReorderOptions object
   "password": "document password"
 }
 
- ```
+```
 
  
 
@@ -537,7 +537,7 @@ Example Watermark object.
   "position": "Diagonal",
   "size": 50
 }
- ```
+```
 
  Watermark Object Fields (Click here to expand)
 
@@ -579,7 +579,7 @@ Example CellOptions object.
   "renderHiddenColumns": false,
   "renderPrintAreaOnly": false
 }
- ```
+```
 
  CellsOptions Fields (Click here to expand)
 
@@ -649,7 +649,7 @@ Example CadOptions object.
   "layoutName": "Master",
   "layers": ["Layer1"]
 }
- ```
+```
 
  CadOptions Object Fields (Click here to expand)
 
@@ -681,7 +681,7 @@ Example EmailOptions object.
   "pageSize": "Unknown",
   "fieldLabels": [{"field":"From", "Label":"Sender"}]
 }
- ```
+```
 
  EmailOptions Fileds (Click here to expand)
 
@@ -766,7 +766,7 @@ Example WordsOptions object.
   "encoding": "utf-8",
   "renderTrackedChanges": false
 }
- ```
+```
 
  WordsOptions Object Fields (Click here to expand)
 
@@ -795,7 +795,7 @@ Example PdfOptions object.
   "renderLayersSeparately": false,
   "imageQuality": "Low"
 }
- ```
+```
 
  PdfOptions Fields (Click here to expand)
 
@@ -827,7 +827,7 @@ Example SlidesOptions object.
 "slidesOptions": {
   "renderNotes": false
 }
- ```
+```
 
  SlidesOptions Object Fields (Click here to expand)
 
@@ -859,7 +859,7 @@ Example ProjectOptions object.
   "startDate": "2018-10-24T00:00:00",
   "endDate": "2018-11-24T00:00:00"
 }
- ```
+```
 
  ProjectOptions Object Fields (Click here to expand)
 
@@ -916,7 +916,7 @@ Example of OutlookOptions
 "outlookOptions": {
   "maxItemsInFolder": "1000"
 }
- ```
+```
 
  OutlookOptions fields
 

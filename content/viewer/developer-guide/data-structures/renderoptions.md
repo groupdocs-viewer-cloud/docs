@@ -62,7 +62,7 @@ Not all options are supported by all document formats. Each option may correspon
     }
  }
 
- ```
+```
 
 ##### RenderOptions fields #####
 

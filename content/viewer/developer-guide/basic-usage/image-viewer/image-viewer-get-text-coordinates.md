@@ -64,7 +64,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
   }
 }"
 
- ```
+```
 
 
  Response
@@ -93,7 +93,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
                 },
 ...
 
- ```
+```
 
 
 
@@ -130,7 +130,7 @@ var viewOptions # new ViewOptions
  
 var response # apiInstance.GetInfo(new GetInfoRequest(viewOptions));
 
- ```
+```
 
 
  Java
@@ -154,7 +154,7 @@ viewOptions.setRenderOptions(renderOptions);
  
 InfoResult response # apiInstance.getInfo(new GetInfoRequest(viewOptions));
 
- ```
+```
 
 
  PHP
@@ -185,7 +185,7 @@ $viewOptions->setRenderOptions($renderOptions);
 $request # new Requests\GetInfoRequest($viewOptions);
 $response # $apiInstance->getInfo($request);
 
- ```
+```
 
 
  Node
@@ -210,7 +210,7 @@ viewOptions.renderOptions.extractText # true;
 let request # new viewer_cloud.GetInfoRequest(viewOptions);     
 let response # await infoApi.getInfo(request);
 
- ```
+```
 
 
  Python
@@ -233,7 +233,7 @@ view_options.render_options.extract_text # True
  
 request # groupdocs_viewer_cloud.GetInfoRequest(view_options)
 
- ```
+```
 
 
  Ruby
@@ -256,5 +256,5 @@ viewOptions.render_options.extract_text # true
  
 request # GroupDocsViewerCloud::GetInfoRequest.new(viewOptions)
 
- ```
+```
 

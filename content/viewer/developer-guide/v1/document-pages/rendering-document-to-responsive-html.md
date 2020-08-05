@@ -70,7 +70,7 @@ curl -v "http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1?embedRe
 -H "Content-Type: application/json" \
 -H "authorization: Bearer xxxxxxxxxxx"
 
- ```
+```
 
 
 
@@ -114,7 +114,7 @@ ndex:1; >}}
 </body>
 
 </html>
- ```
+```
 
 
 

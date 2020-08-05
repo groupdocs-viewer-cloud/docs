@@ -58,7 +58,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
   }
 }"
 
- ```
+```
 
 
  Response
@@ -93,7 +93,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
   }
 }
 
- ```
+```
 
 
 
@@ -126,7 +126,7 @@ var viewOptions # new ViewOptions
 var response # apiInstance.GetInfo(new GetInfoRequest(viewOptions));
 Console.WriteLine(" PrintingAllowed: " + response.PdfViewInfo.PrintingAllowed);
 
- ```
+```
 
 
  Java
@@ -150,7 +150,7 @@ PdfViewInfo pdfViewInfo # response.getPdfViewInfo();
  
 System.out.println(" PrintingAllowed: " + pdfViewInfo.getPrintingAllowed());
 
- ```
+```
 
 
  PHP
@@ -180,7 +180,7 @@ $response # $apiInstance->getInfo($request);
  
 echo " PrintingAllowed: ", $response->getPdfViewInfo()->getPrintingAllowed(), "\n";
 
- ```
+```
 
 
  Node
@@ -203,7 +203,7 @@ let request # new viewer_cloud.GetInfoRequest(viewOptions);
 let response # await infoApi.getInfo(request);
 console.log(" PrintingAllowed: " + response.pdfViewInfo.printingAllowed);
 
- ```
+```
 
 
  Python
@@ -226,7 +226,7 @@ request # groupdocs_viewer_cloud.GetInfoRequest(view_options)
 response # apiInstance.get_info(request)
 print(" PrintingAllowed: " + str(response.pdf_view_info.printing_allowed))
 
- ```
+```
 
 
  Ruby
@@ -249,5 +249,5 @@ request # GroupDocsViewerCloud::GetInfoRequest.new(viewOptions)
 response # infoApi.get_info(request)
 puts(" PrintingAllowed: " + response.pdf_view_info.printing_allowed.to_s)
 
- ```
+```
 

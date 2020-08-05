@@ -45,7 +45,7 @@ This API allows you to download a file from [GroupDocs Cloud Storage](https://da
 ```html 
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/file/one-page.docx?storageName#MyStorage" -H  "accept: multipart/form-data" -H  "authorization: Bearer [Access Token]"
     
- ```
+```
 
 
 
@@ -57,7 +57,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/file/one-page.docx?
   "Code": 200,
   "Status": "OK"
 }
- ```
+```
 
 
 
@@ -188,7 +188,7 @@ This API allows you to upload files to the [GroupDocs Cloud Storage](https://
 ```html 
 curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/storage/file/viewerdocs%2Fone-page2.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 
- ```
+```
 
 
 
@@ -215,7 +215,7 @@ Http status code: 200 (Returns OK and list of errors, which is empty if success.
 }
 
 
- ```
+```
 
 
 
@@ -346,7 +346,7 @@ This API allows you to delete specific file from [GroupDocs Cloud Storage](htt
 ```html 
 curl -X DELETE "https://api.groupdocs.cloud/v2.0/viewer/storage/file/viewerdocs1%2Fone-page1.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 
- ```
+```
 
 
 
@@ -358,7 +358,7 @@ curl -X DELETE "https://api.groupdocs.cloud/v2.0/viewer/storage/file/viewerdocs1
   "Code": 200,
   "Status": "OK"
 }
- ```
+```
 
 
 
@@ -490,7 +490,7 @@ Required. Can be passed as query string parameter or as part of the URL
 ```html 
 curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/file/copy/viewerdocs%2Fone-page1.docx?destPath#viewerdocs1%2Fone-page1.docx'&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
     
- ```
+```
 
 
 
@@ -502,7 +502,7 @@ curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/file/copy/viewerdoc
   "Code": 200,
   "Status": "OK"
 }
- ```
+```
 
 
 
@@ -634,7 +634,7 @@ Required. Can be passed as query string parameter or as part of the URL
 ```html 
 curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/file/move/viewerdocs%2Fone-page1.docx?destPath#viewerdocs1%2Fone-page1.docx'&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
     
- ```
+```
 
 
 
@@ -646,7 +646,7 @@ curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/file/move/viewerdoc
   "Code": 200,
   "Status": "OK"
 }
- ```
+```
 
 
 

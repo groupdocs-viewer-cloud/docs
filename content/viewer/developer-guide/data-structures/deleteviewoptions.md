@@ -26,7 +26,7 @@ DeleteViewOptions data structure used as input parameters for [Delete View]({{<
   }
 }
 
- ```
+```
 
 ##### DeleteViewOptions fields #####
 

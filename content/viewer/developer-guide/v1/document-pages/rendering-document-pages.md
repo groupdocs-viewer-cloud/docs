@@ -45,7 +45,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer [Access Token]"
 
- ```
+```
 
 
 
@@ -113,7 +113,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
     }
   ]
 }
- ```
+```
 
 
 
@@ -232,7 +232,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer [Access Token]"
  
- ```
+```
 
 
 
@@ -259,7 +259,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
   ],
   "url": null
 }
- ```
+```
 
 
 
@@ -378,7 +378,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/zip" \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer [Access Token]"
  
- ```
+```
 
 
 
@@ -387,7 +387,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/zip" \
 
 ```html 
 ZIP archive with document pages as HTML
- ```
+```
 
 
 
@@ -502,7 +502,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages/zip" \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer [Access Token]"
  
- ```
+```
 
 
 
@@ -511,7 +511,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages/zip" \
 
 ```html 
 ZIP archive with document pages as Image
- ```
+```
 
 
 
@@ -630,7 +630,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/pages?url#https%3a%2f%2fwww.
 -H "Content-Type: application/json" \
 -H "authorization: Bearer [Access Token]"
 
- ```
+```
 
 
 
@@ -649,7 +649,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/pages?url#https%3a%2f%2fwww.
      }
   ]
 }
- ```
+```
 
 
 
@@ -764,7 +764,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/pages?url#https%3a%2f%2fwww
 -H "Content-Type: application/json" \
 -H "authorization: Bearer [Access Token]"
  
- ```
+```
 
 
 
@@ -782,7 +782,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/pages?url#https%3a%2f%2fwww
     }
   ]
 }
- ```
+```
 
 
 
@@ -899,7 +899,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [downlo
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample-one-page.docx/html/pages/1?ignoreResourcePathInResources#true&#x26;embedResources#true&#x26;renderComments#false&#x26;renderHiddenPages#true&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
 -H "Content-Type: application/json" 
 -X GET -d "{}"
- ```
+```
 
 
 
@@ -908,7 +908,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample-one-page.docx/html/page
 
 ```html 
 Contents of page as HTML
- ```
+```
 
 
 
@@ -1025,7 +1025,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [downlo
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample-one-page.docx/image/pages/1?extractText#true&#x26;renderComments#false&#x26;renderHiddenPages#true&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
 -H "Content-Type: application/json" 
 -X GET -d "{}"
- ```
+```
 
 
 
@@ -1034,7 +1034,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample-one-page.docx/image/pag
 
 ```html 
 Contents of page as Image
- ```
+```
 
 
 
@@ -1151,7 +1151,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/html/pages?storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
 -H "Content-Type: application/json" 
 -X POST -d "{'resourcePath': 'page/1/resource/style.css','embedResources': true,'startPageNumber': 1,'countPages': 3,'renderComments': false}"
- ```
+```
 
 
 
@@ -1180,7 +1180,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/html/pages?storage
     }
   ]
 }
- ```
+```
 
 
 
@@ -1297,7 +1297,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/image/pages?storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
 -H "Content-Type: application/json" 
 -X POST -d "{'resourcePath': 'page/1/resource/style.css','embedResources': true,'startPageNumber': 1,'countPages': 3,'renderComments': false}"
- ```
+```
 
 
 
@@ -1445,7 +1445,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/pages" \
 -H "Content-Type: application/json" \
 -d "{"projectOptions": {"pageSize": "A0","timeUnit": "unknown"}}" \
 -H "authorization: Bearer [Access Token]"
- ```
+```
 
 
 
@@ -1464,7 +1464,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/pages" \
     }
   ]
 }
- ```
+```
 
 
 
@@ -1585,7 +1585,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/image/pages" \
 -H "Content-Type: application/json" \
 -d "{"projectOptions": {"pageSize": "A0","timeUnit": "unknown"}}" \
 -H "authorization: Bearer [Access Token]"
- ```
+```
 
 
 
@@ -1604,7 +1604,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/image/pages" \
     }
   ]
 }
- ```
+```
 
 
 
@@ -1723,7 +1723,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pages?fileName#one-page.d
 -X POST 
 -H "Accept: application/json" 
 -d "{'resourcePath':'page/{page-number}/resource/{resource-name}"
- ```
+```
 
 
 
@@ -1757,7 +1757,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pages?fileName#one-page.d
 
 
  
- ```
+```
 
 
 
@@ -1878,7 +1878,7 @@ curl -v "https://api.groupdocs.cloud/v1.0/viewer/image/pages?fileName#one-page.d
 -X POST 
 -H "Accept: application/json" 
 -d "{'format':'jpg','quality':90,'width':600,'height':800,'startPageNumber':1,'countPages':1,'extractText':true,'renderComments':true}"
- ```
+```
 
 
 
@@ -1896,7 +1896,7 @@ curl -v "https://api.groupdocs.cloud/v1.0/viewer/image/pages?fileName#one-page.d
     }
   ]
 }
- ```
+```
 
 
 
@@ -2036,7 +2036,7 @@ curl -v "https://api.groupdocs.cloud/v1.0/viewer/html/pages?url#https%3A%2F%2Fww
     }
   ]
 }
- ```
+```
 
 
 
@@ -2174,7 +2174,7 @@ curl -v  "XX-XX"
   ],
   "url": null
 }
- ```
+```
 
 
 
@@ -2295,7 +2295,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
 -d "{"pageNumber":1,"angle":90}" \
 -H "authorization: Bearer [Access Token]"
  
- ```
+```
 
 
 
@@ -2334,7 +2334,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
     }
   ]
 }
- ```
+```
 
 
 
@@ -2455,7 +2455,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
 -d "{"pageNumber":1,"angle":90}" \
 -H "authorization: Bearer [Access Token]"
  
- ```
+```
 
 
 
@@ -2494,7 +2494,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
     }
   ]
 }
- ```
+```
 
 
 
@@ -2615,7 +2615,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
 -d "{"pageNumber":1,"newPosition":3}" \
 -H "authorization: Bearer [Access Token]"
  
- ```
+```
 
 
 
@@ -2654,7 +2654,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
     }
   ]
 }
- ```
+```
 
 
 
@@ -2775,7 +2775,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
 -d "{"pageNumber":1,"newPosition":3}" \
 -H "authorization: Bearer [Access Token]"
  
- ```
+```
 
 
 
@@ -2814,7 +2814,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
     }
   ]
 }
- ```
+```
 
 
 
@@ -2940,7 +2940,7 @@ curl -v  "XX-XX"
 
 ```html 
 Empty response with '204 No Content' status.
- ```
+```
 
 
 
@@ -3068,7 +3068,7 @@ curl -v  "XX-XX"
 
 ```html 
 Empty response with '204 No Content' status.
- ```
+```
 
 
 
@@ -3239,7 +3239,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Specif
     }
   ]
 }
- ```
+```
 
 
 
@@ -3386,7 +3386,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Preven
     }
   ]
 }
- ```
+```
 
 
 
@@ -3534,7 +3534,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Auto F
     }
   ]
 }
- ```
+```
 
 
 
@@ -3682,7 +3682,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Render
     }
   ]
 }
- ```
+```
 
 
 
@@ -3827,7 +3827,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [includ
     }
   ]
 }
- ```
+```
 
 
 
@@ -4028,7 +4028,7 @@ curl request GET \
   ]
 }
 }
- ```
+```
 
 
 

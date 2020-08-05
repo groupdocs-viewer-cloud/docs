@@ -82,7 +82,7 @@ curl --request GET \
   --header 'authorization: Bearer [Access Token]' \
  
 
- ```
+```
 
 ```html 
 {
@@ -107,7 +107,7 @@ curl --request GET \
     "startDate": "2008-06-01T00:00:00",
     "endDate": "2008-09-03T00:00:00"
 }
- ```
+```
 
 
 
@@ -144,7 +144,7 @@ curl --request POST \
 curl --request GET \
   --url https://api.groupdocs.cloud/v1/viewer/sample.pptx/html/pages/1 \
   --header 'authorization: Bearer [Access Token]'
- ```
+```
  
 
 
@@ -189,7 +189,7 @@ curl --request POST \
 curl --request GET \
   --url https://api.groupdocs.cloud/v1/viewer/data.pst/html/pages/1 \
   --header 'authorization: Bearer [Access Token]'
- ```
+```
 
 
 
@@ -227,7 +227,7 @@ curl --request POST \
 curl --request GET \
   --url https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/pages/1 \
   --header 'authorization: Bearer [Access Token]'
- ```
+```
 
 
 

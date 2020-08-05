@@ -56,7 +56,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
       'ViewFormat': 'JPG'
 }"
 
- ```
+```
 
 
  Response
@@ -96,7 +96,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
   "pdfViewInfo": null
 }
 
- ```
+```
 
 
 
@@ -127,7 +127,7 @@ var viewOptions # new ViewOptions
 };
 var response # apiInstance.GetInfo(new GetInfoRequest(viewOptions));
 
- ```
+```
 
 
  Java
@@ -146,7 +146,7 @@ ViewOptions viewOptions # new ViewOptions();
 viewOptions.setFileInfo(fileInfo);
 InfoResult response # apiInstance.getInfo(new GetInfoRequest(viewOptions));
 
- ```
+```
 
 
  PHP
@@ -172,7 +172,7 @@ $viewOptions->setFileInfo($fileInfo);
 $request # new Requests\GetInfoRequest($viewOptions);
 $response # $apiInstance->getInfo($request);
 
- ```
+```
 
 
  Node
@@ -193,7 +193,7 @@ viewOptions.fileInfo # fileInfo;
 let request # new viewer_cloud.GetInfoRequest(viewOptions);     
 let response # await infoApi.getInfo(request);
 
- ```
+```
 
 
  Python
@@ -213,7 +213,7 @@ view_options.file_info.file_path # "SampleFiles/sample.docx"
 request # groupdocs_viewer_cloud.GetInfoRequest(view_options)
 result # infoApi.get_info(request)
 
- ```
+```
 
 
  Ruby
@@ -233,5 +233,5 @@ viewOptions.file_info.file_path # "SampleFiles/sample.docx"
 request # GroupDocsViewerCloud::GetInfoRequest.new(viewOptions)    
 response # infoApi.get_info(request)
 
- ```
+```
 

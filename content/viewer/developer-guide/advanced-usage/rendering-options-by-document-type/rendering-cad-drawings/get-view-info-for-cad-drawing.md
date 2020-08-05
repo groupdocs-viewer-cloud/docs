@@ -58,7 +58,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
   }
 }"
 
- ```
+```
 
 
  Response
@@ -110,7 +110,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
   "pdfViewInfo": null
 }
 
- ```
+```
 
 
 
@@ -144,7 +144,7 @@ var response # apiInstance.GetInfo(new GetInfoRequest(viewOptions));
 Console.WriteLine(" Layers count: " + response.CadViewInfo.Layers.Count);
 Console.WriteLine(" Layouts count: " + response.CadViewInfo.Layouts.Count);
 
- ```
+```
 
 
  Java
@@ -169,7 +169,7 @@ CadViewInfo cadViewInfo # response.getCadViewInfo();
 System.out.println(" Layers count: " + cadViewInfo.getLayers().size());
 System.out.println(" Layouts count: " + cadViewInfo.getLayouts().size());
 
- ```
+```
 
 
  PHP
@@ -199,7 +199,7 @@ $response # $apiInstance->getInfo($request);
 echo " Layers count: ", count($response->getCadViewInfo()->getLayers()), "\n";
 echo " Layouts count: ", count($response->getCadViewInfo()->getLayouts()), "\n";
 
- ```
+```
 
 
  Node
@@ -223,7 +223,7 @@ let response # await infoApi.getInfo(request);
 console.log(" Layers count: " + response.cadViewInfo.layers.length);
 console.log(" Layouts count: " + response.cadViewInfo.layouts.length);
 
- ```
+```
 
 
  Python
@@ -248,7 +248,7 @@ view_options.render_options.cad_options.scale_factor # 0.3
 request # groupdocs_viewer_cloud.CreateViewRequest(view_options)
 response # apiInstance.create_view(request)
 
- ```
+```
 
 
  Ruby
@@ -272,5 +272,5 @@ response # infoApi.get_info(request)
 puts(" Layers count: " + response.cad_view_info.layers.length.to_s)
 puts(" Layouts count: " + response.cad_view_info.layouts.length.to_s)
 
- ```
+```
 

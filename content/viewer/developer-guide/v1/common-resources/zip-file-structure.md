@@ -30,7 +30,7 @@ All ZIP files returned by the API follows same naming convention. File name cons
 
 viewer-download-yyyyMMddTHHmmssZ.zip
 
- ```
+```
 
 ### Example ZIP file name ###
 
@@ -38,19 +38,19 @@ viewer-download-yyyyMMddTHHmmssZ.zip
 
 viewer-download-20170728T235959Z.zip
 
- ```
+```
 
 ## [ZIP File With Images]("ZipWithImages") ##
 
-ZIP archive contains document pages where each file is image. Image file name consists of three parts where first is string "p", second is page number and third is one of listed extensions ".jpg", ".png" or ".bmp".
+ZIP archive contains document pages where each file is image. Image file name consists of three parts where first is string "p", second is page number and third is one of listed extensions ".jpg" or ".png".
 
 ### Example image file name template ###
 
 ```html 
 
-p{page-number}.[jpg|png|bmp]
+p{page-number}.[jpg|png]
 
- ```
+```
 
 ### Example image file name  ###
 
@@ -58,7 +58,7 @@ p{page-number}.[jpg|png|bmp]
 
 p1.png
 
- ```
+```
 
 ### Example ZIP file with images ###
 
@@ -70,7 +70,7 @@ ROOT
  ├── p3.png
  ├── ...
 
- ```
+```
 
 ## [ZIP File With HTML]("ZipWithHtml") ##
 
@@ -82,7 +82,7 @@ ZIP archive contains document pages in HTML format and HTML resources (styles, f
 
 p{page-number}.html
 
- ```
+```
 
 ### Example HTML file name  ###
 
@@ -90,7 +90,7 @@ p{page-number}.html
 
 p1.html
 
- ```
+```
 
 ### Example ZIP file with HTML pages ###
 
@@ -123,4 +123,4 @@ ROOT
  │   │   ├── image.png
  ├── ...
 
- ```
+```

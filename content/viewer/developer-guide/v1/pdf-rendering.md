@@ -37,14 +37,14 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pdf" \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer pTPAHbcNbrMcerjvtBpYgfkSh44oB9uWBEhoLNLiJ3KYWTZ-LjDK1OhIiSkiFnpwEDvAENURIo6NndadzqbW7Di4ZKIKC6DOlEGoFI2hfiNBaXEAGDE00knZePkCNsupU48qe1N_eGluq4urBAX3VBFiIdwz1yEPlPrqWG1DOAWYglUo5Nc9TdwZroBiDJ00A0oKjWoEJ_mRsI_VYK-NnZlNqrUiPGd6918ivV-vTtN2VvqGGUAosz26F7NZe0uEDf5GZszp-bxQ4_-JimHUgOD3z2M4gldo58oYp-6NBGCEjA312kqpxYZs22MJ_Ma-fSgT8yMDqgixItd0JxciHUCmSR8XVG803g1UgUF3-rfoWOn0FJAYLkZ3SFrjqMwjcJAsxcpWc-vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
  
- ```
+```
 
 
  Response
 
 ```html 
 Contents of PDF document
- ```
+```
 
 
 
@@ -143,14 +143,14 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [downlo
 curl -v "https://api.groupdocs.cloud/v1.0/viewer/html/pdf?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&#x26;fileName#one-page.docx&#x26;renderComments#false&#x26;renderHiddenPages#true&#x26;folder#viewerdocs&#x26;storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
 -H "Content-Type: application/json" 
 -X GET -d "{}" 
- ```
+```
 
 
  Response
 
 ```html 
 Contents of PDF document
- ```
+```
 
 
 
@@ -251,14 +251,14 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pdf" \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer pTPAHbcNbrMcerjvtBpYgfkSh44oB9uWBEhoLNLiJ3KYWTZ-LjDK1OhIiSkiFnpwEDvAENURIo6NndadzqbW7Di4ZKIKC6DOlEGoFI2hfiNBaXEAGDE00knZePkCNsupU48qe1N_eGluq4urBAX3VBFiIdwz1yEPlPrqWG1DOAWYglUo5Nc9TdwZroBiDJ00A0oKjWoEJ_mRsI_VYK-NnZlNqrUiPGd6918ivV-vTtN2VvqGGUAosz26F7NZe0uEDf5GZszp-bxQ4_-JimHUgOD3z2M4gldo58oYp-6NBGCEjA312kqpxYZs22MJ_Ma-fSgT8yMDqgixItd0JxciHUCmSR8XVG803g1UgUF3-rfoWOn0FJAYLkZ3SFrjqMwjcJAsxcpWc-vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
  
- ```
+```
 
 
  Response
 
 ```html 
 Contents of PDF document
- ```
+```
 
 
 
@@ -357,14 +357,14 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [downlo
 curl -v "https://api.groupdocs.cloud/v1.0/viewer/image/pdf?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&#x26;fileName#one-page.docx&#x26;renderComments#false&#x26;renderHiddenPages#true&#x26;folder#viewerdocs&#x26;storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
 -H "Content-Type: application/json" 
 -X GET -d "{}"
- ```
+```
 
 
  Response
 
 ```html 
 Contents of PDF document
- ```
+```
 
 
 
@@ -469,7 +469,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pdf" \
 -d "{"watermark":{"text":"My Company"}}" \
 -H "authorization: Bearer pTPAHbcNbrMcerjvtBpYgfkSh44oB9uWBEhoLNLiJ3KYWTZ-LjDK1OhIiSkiFnpwEDvAENURIo6NndadzqbW7Di4ZKIKC6DOlEGoFI2hfiNBaXEAGDE00knZePkCNsupU48qe1N_eGluq4urBAX3VBFiIdwz1yEPlPrqWG1DOAWYglUo5Nc9TdwZroBiDJ00A0oKjWoEJ_mRsI_VYK-NnZlNqrUiPGd6918ivV-vTtN2VvqGGUAosz26F7NZe0uEDf5GZszp-bxQ4_-JimHUgOD3z2M4gldo58oYp-6NBGCEjA312kqpxYZs22MJ_Ma-fSgT8yMDqgixItd0JxciHUCmSR8XVG803g1UgUF3-rfoWOn0FJAYLkZ3SFrjqMwjcJAsxcpWc-vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
  
- ```
+```
 
 
  Response
@@ -481,7 +481,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pdf" \
   "pdfFileName": "one-page.pdf",
   "url": "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pdf"
 }
- ```
+```
 
 
 
@@ -586,7 +586,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pdf" \
 -d "{"watermark":{"text":"My Company","color":"Magenta","position":"Diagonal","size":50}}" \
 -H "authorization: Bearer pTPAHbcNbrMcerjvtBpYgfkSh44oB9uWBEhoLNLiJ3KYWTZ-LjDK1OhIiSkiFnpwEDvAENURIo6NndadzqbW7Di4ZKIKC6DOlEGoFI2hfiNBaXEAGDE00knZePkCNsupU48qe1N_eGluq4urBAX3VBFiIdwz1yEPlPrqWG1DOAWYglUo5Nc9TdwZroBiDJ00A0oKjWoEJ_mRsI_VYK-NnZlNqrUiPGd6918ivV-vTtN2VvqGGUAosz26F7NZe0uEDf5GZszp-bxQ4_-JimHUgOD3z2M4gldo58oYp-6NBGCEjA312kqpxYZs22MJ_Ma-fSgT8yMDqgixItd0JxciHUCmSR8XVG803g1UgUF3-rfoWOn0FJAYLkZ3SFrjqMwjcJAsxcpWc-vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
  
- ```
+```
 
 
  Response
@@ -598,7 +598,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pdf" \
   "pdfFileName": "one-page.pdf",
   "url": "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pdf"
 }
- ```
+```
 
 
 
@@ -699,7 +699,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pdf?fileName#one-page.doc
 -X POST 
 -H "Accept: application/json" 
 -d "{'watermark':{'text':'My Company'}}"
- ```
+```
 
 
  Response
@@ -711,7 +711,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pdf?fileName#one-page.doc
   "pdfFileName": "one-page.pdf",
   "url": "http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pdf"
 }
- ```
+```
 
 
 
@@ -812,7 +812,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/image/pdf?fileName#one-page.do
 -X POST 
 -H "Accept: application/json" 
 -d "{'watermark':{'text':'My Company'}}"
- ```
+```
 
 
  Response
@@ -824,7 +824,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/image/pdf?fileName#one-page.do
   "pdfFileName": "one-page.pdf",
   "url": "http://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pdf"
 }
- ```
+```
 
 
 
@@ -923,7 +923,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pdf?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&#x26;fileName#one-page.docx&#x26;folder#viewerdocs&#x26;storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
 -H "Content-Type: application/json" 
 -X PUT -d "{'watermark': {'text': 'My Company','color': 'Magenta','position': 'Diagonal','size': 50}}"
- ```
+```
 
 
  Response
@@ -935,7 +935,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pdf?url#https%3A%2F%2Fwww
   "pdfFileName": "one-page4.pdf",
   "url": "http://api.groupdocs.cloud/v1.0/viewer/one-page4.docx/html/pdf?folder#viewerdocs"
 }
- ```
+```
 
 
 
@@ -1034,7 +1034,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/image/pdf?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&#x26;fileName#one-page.docx&#x26;folder#viewerdocs&#x26;storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
 -H "Content-Type: application/json" 
 -X PUT -d "{'watermark': {'text': 'My Company','color': 'Magenta','position': 'Diagonal','size': 50}}"
- ```
+```
 
 
  Response
@@ -1046,7 +1046,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/image/pdf?url#https%3A%2F%2Fww
   "pdfFileName": "one-page6.pdf",
   "url": "http://api.groupdocs.cloud/v1.0/viewer/one-page6.docx/image/pdf?folder#viewerdocs"
 }
- ```
+```
 
 
 

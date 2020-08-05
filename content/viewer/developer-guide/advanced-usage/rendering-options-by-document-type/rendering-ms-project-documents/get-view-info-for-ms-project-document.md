@@ -58,7 +58,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
   }
 }"
 
- ```
+```
 
 
  Response
@@ -87,7 +87,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
   "pdfViewInfo": null
 }
 
- ```
+```
 
 
 
@@ -121,7 +121,7 @@ var response # apiInstance.GetInfo(new GetInfoRequest(viewOptions));
 Console.WriteLine(" Start date: " + response.ProjectManagementViewInfo.StartDate);
 Console.WriteLine(" End date: " + response.ProjectManagementViewInfo.EndDate);
 
- ```
+```
 
 
  Java
@@ -146,7 +146,7 @@ ProjectManagementViewInfo projectManagementViewInfo # response.getProjectManagem
 System.out.println(" Start date: " + projectManagementViewInfo.getStartDate());
 System.out.println(" End date: " + projectManagementViewInfo.getEndDate());
 
- ```
+```
 
 
  PHP
@@ -177,7 +177,7 @@ $response # $apiInstance->getInfo($request);
 echo " Start date: ", $response->getProjectManagementViewInfo()->getStartDate()->format('Y-m-d'), "\n";
 echo " End date: ", $response->getProjectManagementViewInfo()->getEndDate()->format('Y-m-d'), "\n";
 
- ```
+```
 
 
  Node
@@ -201,7 +201,7 @@ let response # await infoApi.getInfo(request);
 console.log(" Start date: " + response.projectManagementViewInfo.startDate);
 console.log(" End date: " + response.projectManagementViewInfo.endDate);
 
- ```
+```
 
 
  Python
@@ -225,7 +225,7 @@ response # apiInstance.get_info(request)
 print(" Start date: " + str(response.project_management_view_info.start_date))
 print(" End date: " + str(response.project_management_view_info.end_date))
 
- ```
+```
 
 
  Ruby
@@ -249,5 +249,5 @@ response # infoApi.get_info(request)
 puts(" Start date: " + response.project_management_view_info.start_date.to_s)
 puts(" End date: " + response.project_management_view_info.end_date.to_s)
 
- ```
+```
 

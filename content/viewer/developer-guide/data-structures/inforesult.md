@@ -94,7 +94,7 @@ InfoResult data structure returned by [Document Info API]({{< ref "viewer/devel
   }
 }
 
- ```
+```
 
 ##### InfoResult fields #####
 

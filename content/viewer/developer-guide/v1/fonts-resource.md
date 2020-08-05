@@ -43,7 +43,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/fonts?appsid#XXXX&#x26;signatu
 -X GET -d "{}"
 
 
- ```
+```
 
 
 
@@ -555,7 +555,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/fonts?appsid#XXXX&#x26;signatu
       "name": "Wingdings"
     }
   ]
- ```
+```
 
 
 
@@ -674,7 +674,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/fonts/cache?appsid#XXXX&#x26;s
 -X DELETE -d "{}"
 
 
- ```
+```
 
 
 
@@ -683,7 +683,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/fonts/cache?appsid#XXXX&#x26;s
 
 ```html 
 Empty response with '204 No Content' status.
- ```
+```
 
 
 

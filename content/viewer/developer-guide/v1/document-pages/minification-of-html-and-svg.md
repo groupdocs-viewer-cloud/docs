@@ -42,7 +42,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
 -d "{{enableMinification: true}}" \
 -H "authorization: Bearer xxxxxxxxxxx"
 
- ```
+```
 
 
 
@@ -77,7 +77,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
     }
   ]
 }
- ```
+```
 
 
 

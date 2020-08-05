@@ -58,7 +58,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
   }
 }"
 
- ```
+```
 
 
  Response
@@ -103,7 +103,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
   "pdfViewInfo": null
 }
 
- ```
+```
 
 
 
@@ -136,7 +136,7 @@ var viewOptions # new ViewOptions
 var response # apiInstance.GetInfo(new GetInfoRequest(viewOptions));
 Console.WriteLine(" Folders count: " + response.OutlookViewInfo.Folders.Count);
 
- ```
+```
 
 
  Java
@@ -160,7 +160,7 @@ OutlookViewInfo outlookViewInfo # response.getOutlookViewInfo();
  
 System.out.println(" Folders count: " + outlookViewInfo.getFolders().size());
 
- ```
+```
 
 
  PHP
@@ -190,7 +190,7 @@ $response # $apiInstance->getInfo($request);
  
 echo " Folders count: ", count($response->getOutlookViewInfo()->getFolders()), "\n";
 
- ```
+```
 
 
  Node
@@ -213,7 +213,7 @@ let request # new viewer_cloud.GetInfoRequest(viewOptions);
 let response # await infoApi.getInfo(request);
 console.log(" Folders count: " + response.outlookViewInfo.folders.length);
 
- ```
+```
 
 
  Python
@@ -236,7 +236,7 @@ request # groupdocs_viewer_cloud.GetInfoRequest(view_options)
 response # apiInstance.get_info(request)
 print(" Folders count: " + str(len(response.outlook_view_info.folders 
 
- ```
+```
 
 
  Ruby
@@ -257,5 +257,5 @@ request # GroupDocsViewerCloud::GetInfoRequest.new(viewOptions)
 response # infoApi.get_info(request)
 puts(" Folders count: " + response.outlook_view_info.folders.length.to_s)
 
- ```
+```
 

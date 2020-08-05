@@ -43,7 +43,7 @@ Required. Can be passed as query string parameter or as part of the URL
 ```html 
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 
- ```
+```
 
 
 
@@ -113,7 +113,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs?s
 }
 
 
- ```
+```
 
 
 
@@ -242,7 +242,7 @@ Required. Can be passed as query string parameter or as part of the URL
 ```html 
 curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 
- ```
+```
 
 
 
@@ -254,7 +254,7 @@ curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3
   "code": 200,
   "status": "OK"
 }
- ```
+```
 
 
 
@@ -383,7 +383,7 @@ Required. Can be passed as query string parameter or as part of the URL
 ```html 
 curl -X DELETE "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3?storageName#MyStorage&#x26;recursive#true" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 
- ```
+```
 
 
 
@@ -395,7 +395,7 @@ curl -X DELETE "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdoc
   "code": 200,
   "status": "OK"
 }
- ```
+```
 
 
 
@@ -525,7 +525,7 @@ Required. Can be passed as query string parameter or as part of the URL
 ```html 
 curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/copy/viewerdocs?destPath#viewerdocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 
- ```
+```
 
 
 
@@ -537,7 +537,7 @@ curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/copy/viewerd
   "code": 200,
   "status": "OK"
 }
- ```
+```
 
 
 
@@ -666,7 +666,7 @@ Required. Can be passed as query string parameter or as part of the URL
 
 ```html 
 curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/move/viewerdocs?destPath#viewerdocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"  
- ```
+```
 
 
 
@@ -678,7 +678,7 @@ curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/move/viewerd
   "code": 200,
   "status": "OK"
 }
- ```
+```
 
 
 

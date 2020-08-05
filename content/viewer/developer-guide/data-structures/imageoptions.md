@@ -24,7 +24,7 @@ ImageOptions data structure inherits [RenderOptions ]({{< ref "viewer/developer-
 	"JpegQuality": 0,
 }
 
- ```
+```
 
 ##### ImageOptions fields #####
 

@@ -45,13 +45,13 @@ Not all options are supported by all document formats. Each option may correspon
   }
 }
 
- ```
+```
 
 ##### ViewOptions fields #####
 
 |Name|Description|API Version
 |---|---|---
-|ViewFormat|Allows to set rendering format, available values are: HTML, JPG, PNG, BMP, PDF.
+|ViewFormat|Allows to set rendering format, available values are: HTML, JPG, PNG, PDF.
 
 Default value is "HTML".| 
 |---
@@ -75,6 +75,6 @@ Default value is 100. |
  [HtmlOptions ]({{< ref "viewer/developer-guide/data-structures/htmloptions.md" >}}))in case of ViewFormat # HTML,
 |---|---
 
- [ImageOptions ]({{< ref "viewer/developer-guide/data-structures/imageoptions.md" >}}))in case of ViewFormat # PNG, BMP, or JPG| 
+ [ImageOptions ]({{< ref "viewer/developer-guide/data-structures/imageoptions.md" >}}))in case of ViewFormat # PNG or JPG| 
 |---|---|---
 
