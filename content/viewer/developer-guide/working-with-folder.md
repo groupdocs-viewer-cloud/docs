@@ -3,26 +3,20 @@ id: "working-with-folder"
 url: "viewer/working-with-folder"
 title: "Working With Folder"
 productName: "GroupDocs.Viewer Cloud"
-weight: 6
-description: ""
-keywords: ""
+weight: 5
+description: "GroupDocs.Viewer Cloud Working With Folder"
+keywords: "GroupDocs.Viewer Cloud, Working With Folder"
 ---
 
+## List Files
 
+This API allows you to get a list of all files of a specific folder from the specified Cloud Storage. If you do not pass storage name API will find folder in GroupDocs Cloud Storage.
 
-
-
-
-# Get the File Listing of a Specific Folder #
-
-This API allows you to get a list of all files of a specific folder from the specified Cloud Storage. If you do not pass storage name API will find folder in GroupDocs Cloud Storage. 
-
-## API Explorer ##
+### List Files with API Explorer
 
 [GroupDocs.Viewer Cloud API Reference](https://apireference.groupdocs.cloud/viewer/) lets you to try out [List Files in a Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder/GetFilesList) right away in your browser. It allows you to effortlessly interact and try out every single operation that our APIs exposes.
-|---|---|---|---
 
-### Request parameters ###
+### List Files Request Parameters
 
 |Parameter|Description
 |---|---
@@ -31,26 +25,17 @@ This API allows you to get a list of all files of a specific folder from the 
 Required. Can be passed as query string parameter or as part of the URL
 |storageName|Name of the storage. If not set, then default storage used
 
+### List Files with cURL
 
-## cURL Example ##
+Request
 
-
-
-
-
- Request
-
-```html 
+```bash
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```json
 {
   "value": [
     {
@@ -60,168 +45,48 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs?s
       "size": 8651,
       "path": "/viewerdocs/four-pages.docx"
     },
-    {
-      "name": "one-page.docx",
-      "isFolder": false,
-      "modifiedDate": "2019-03-20T12:17:34+00:00",
-      "size": 351348,
-      "path": "/viewerdocs/one-page.docx"
-    },
-    {
-      "name": "password-protected.docx",
-      "isFolder": false,
-      "modifiedDate": "2019-03-20T12:35:40+00:00",
-      "size": 10240,
-      "path": "/viewerdocs/password-protected.docx"
-    },
-    {
-      "name": "sample.mpp",
-      "isFolder": false,
-      "modifiedDate": "2019-03-20T12:29:10+00:00",
-      "size": 289792,
-      "path": "/viewerdocs/sample.mpp"
-    },
-    {
-      "name": "three-layouts.dwf",
-      "isFolder": false,
-      "modifiedDate": "2019-03-20T12:26:42+00:00",
-      "size": 15433,
-      "path": "/viewerdocs/three-layouts.dwf"
-    },
-    {
-      "name": "two-hidden-pages.vsd",
-      "isFolder": false,
-      "modifiedDate": "2019-03-20T12:17:36+00:00",
-      "size": 457728,
-      "path": "/viewerdocs/two-hidden-pages.vsd"
-    },
-    {
-      "name": "uses-custom-font.pptx",
-      "isFolder": false,
-      "modifiedDate": "2019-03-20T12:32:30+00:00",
-      "size": 39823,
-      "path": "/viewerdocs/uses-custom-font.pptx"
-    },
-    {
-      "name": "with-hidden-rows-and-columns.xlsx",
-      "isFolder": false,
-      "modifiedDate": "2019-03-20T12:17:37+00:00",
-      "size": 15986,
-      "path": "/viewerdocs/with-hidden-rows-and-columns.xlsx"
-    }
+    ...
   ]
 }
-
-
 ```
 
-
-
-
-
-
-## SDKs ##
+### List Files with SDK
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-storage-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
-|---|---|---|---|---|---
 
-### SDK Examples ###
-
-
-
-
-
- C#
-
-
-
+#### List Files with C# SDK
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Files_List.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+#### List Files with PHP SDK
 
 {{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Get_Files_List.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+#### List Files with Java SDK
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Get_Files_List.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+#### List Files with Ruby SDK
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Get_Files_List.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+#### List Files with Node.js SDK
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Files_List.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+#### List Files with Python SDK
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Get_Files_List.py >}}
 
-
-
-
-
-
-
-
-
-# Create a New Folder #
+## Create New Folder
 
 This API allows you to create a new Folder in the specified Cloud Storage. If you do not pass storage name API will create new Folder in default Cloud Storage.
 
-## API Explorer ##
+### Create New Folder with API Explorer
 
 [GroupDocs.Viewer Cloud API Reference](https://apireference.groupdocs.cloud/viewer/) lets you to try out [Create Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder/CreateFolder) right away in your browser. It allows you to effortlessly interact and try out every single operation that our APIs exposes.
-|---|---|---|---
 
-
-### Request parameters ###
+### Create New Folder Request Parameters
 
 |Parameter|Description
 |---|---
@@ -230,139 +95,60 @@ This API allows you to create a new Folder in the specified Cloud Storage. If yo
 Required. Can be passed as query string parameter or as part of the URL
 |storageName|Name of the storage. If not set, then default storage used
 
+### Create New Folder with cURL
 
-## cURL Example ##
+Request
 
-
-
-
-
- Request
-
-```html 
+```bash
 curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```json
 {  
   "code": 200,
   "status": "OK"
 }
 ```
 
-
-
-
-
-
-## SDKs ##
+### Create New Folder with SDK
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-storage-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder/) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
-|---|---|---|---|---|---
 
-### SDK Examples ###
-
-
-
-
-
- C#
-
-
-
+#### Create New Folder with C# SDK
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Folder.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+#### Create New Folder with PHP SDK
 
 {{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Create_Folder.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+#### Create New Folder with Java SDK
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Create_Folder.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+#### Create New Folder with Ruby SDK
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Create_Folder.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+#### Create New Folder with Node.js SDK
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Create_Folder.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+#### Create New Folder with Python SDK
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Create_Folder.py >}}
 
-
-
-
-
-
-
-
-
-# Delete a Particular Folder #
+## Delete Folder
 
 This API allows you to delete a particular Folder in the specified Cloud Storage. If you do not pass storage name API will create new Folder in default Cloud Storage. To remove recursively inner folder/files you need to pass true value to recursive parameter in Request. If it is set to false and folder contains data then API throws the exception.
 
-## API Explorer ##
+### Delete Folder with API Explorer
 
-[GroupDocs.Viewer Cloud API Reference](https://apireference.groupdocs.cloud/viewer/#/) lets you to try out [Delete a Particular Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder/DeleteFolder) right away in your browser. It allows you to effortlessly interact and try out every single operation that our APIs exposes. 
-|---|---|---|---
+[GroupDocs.Viewer Cloud API Reference](https://apireference.groupdocs.cloud/viewer/#/) lets you to try out [Delete a Particular Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder/DeleteFolder) right away in your browser. It allows you to effortlessly interact and try out every single operation that our APIs exposes.
 
-
-### Request parameters ###
+### Delete Folder Request Parameters
 
 |Parameter|Description
 |---|---
@@ -371,138 +157,60 @@ This API allows you to delete a particular Folder in the specified Cloud Storage
 Required. Can be passed as query string parameter or as part of the URL
 |storageName|Name of the storage. If not set, then default storage used
 
+### Delete Folder with cURL
 
-## cURL Example ##
+Request
 
-
-
-
-
- Request
-
-```html 
+```bash
 curl -X DELETE "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3?storageName#MyStorage&#x26;recursive#true" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```json
 {  
   "code": 200,
   "status": "OK"
 }
 ```
 
-
-
-
-
-
-## SDKs ##
+### Delete Folder with SDK
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Delete Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder/DeleteFolder) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
-|---|---|---|---|---|---
 
-### SDK Examples ###
-
-
-
-
-
- C#
-
-
-
+#### Delete Folder with C# SDK
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Delete_Folder.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+#### Delete Folder with PHP SDK
 
 {{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Delete_Folder.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+#### Delete Folder with Java SDK
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Delete_Folder.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+#### Delete Folder with Ruby SDK
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Delete_Folder.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+#### Delete Folder with Node.js SDK
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Delete_Folder.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+#### Delete Folder with Python SDK
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Delete_Folder.py >}}
 
-
-
-
-
-
-
-
-
-# Copy  Specific Folder #
+## Copy Folder
 
 This API allows you to copy a Folder to another location in the GroupDocs Cloud Storage. If you do not pass source and destination storage names API will copy Folder within default Cloud Storage.
 
-## API Explorer ##
+### Copy Folder with API Explorer
 
 [GroupDocs.Viewer Cloud API Reference](https://apireference.groupdocs.cloud/viewer/#/) lets you to try out [Copy Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder/CopyFolder) right away in your browser. It allows you to effortlessly interact and try out every single operation that our APIs exposes.
-|---|---|---|---
 
-### Request parameters ###
+### Request parameters
 
 |Parameter|Description
 |---|---
@@ -513,138 +221,60 @@ Required. Can be passed as query string parameter or as part of the URL
 |srcStorageName|Name of the storage of source folder. If not set, then default storage used
 |destStorageName|Name of the storage of destination folder. If not set, then default storage used
 
+### Copy Folder with cURL
 
-## cURL Example ##
+Request
 
-
-
-
-
- Request
-
-```html 
+```bash
 curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/copy/viewerdocs?destPath#viewerdocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```json
 {  
   "code": 200,
   "status": "OK"
 }
 ```
 
-
-
-
-
-
-## SDKs ##
+### Copy Folder with SDK
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Copy Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder/CopyFolder) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
-|---|---|---|---|---|---
 
-### SDK Examples ###
-
-
-
-
-
- C#
-
-
-
+#### Copy Folder with C# SDK
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Copy_Folder.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+#### Copy Folder with PHP SDK
 
 {{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Copy_Folder.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+#### Copy Folder with Java SDK
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Copy_Folder.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+#### Copy Folder with Ruby SDK
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Copy_Folder.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+#### Copy Folder with Node.js SDK
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Copy_Folder.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+#### Copy Folder with Python SDK
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Copy_Folder.py >}}
 
-
-
-
-
-
-
-
-
-# Move a Specific Folder #
+## Move Folder
 
 This API allows you to move a Folder to another location in the GroupDocs Cloud Storage. If you do not pass source and destination storage names API will move Folder within default Cloud Storage.
 
-## API Explorer ##
+### Move Folder with API Explorer
 
 [GroupDocs.Viewer Cloud API Reference](https://apireference.groupdocs.cloud/viewer/#/) lets you to try out [Move a Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder/MoveFolder) right away in your browser. It allows you to effortlessly interact and try out every single operation that our APIs exposes.
-|---|---|---|---
 
-### Request parameters ###
+### Move Folder Request Parameters
 
 |Parameter|Description
 |---|---
@@ -655,122 +285,47 @@ Required. Can be passed as query string parameter or as part of the URL
 |srcStorageName|Name of the storage of source folder. If not set, then default storage used
 |destStorageName|Name of the storage of destination folder. If not set, then default storage used
 
+### Move Folder with cURL
 
-## cURL Example ##
+Request
 
-
-
-
-
- Request
-
-```html 
+```bash
 curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/move/viewerdocs?destPath#viewerdocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"  
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```json
 {  
   "code": 200,
   "status": "OK"
 }
 ```
 
-
-
-
-
-
-## SDKs ##
+### Move Folder with SDK
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Move Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder/MoveFolder) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
-|---|---|---|---|---|---
 
-### SDK Examples ###
-
-
-
-
-
- C#
-
-
-
+#### Move Folder with C# SDK
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Move_Folder.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+#### Move Folder with PHP SDK
 
 {{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Move_Folder.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+#### Move Folder with Java SDK
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Move_Folder.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+#### Move Folder with Ruby SDK
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Move_Folder.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+#### Move Folder with Node.js SDK
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Move_Folder.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+#### Move Folder with Python SDK
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Move_Folder.py >}}
-
-
-
-
-
-
-

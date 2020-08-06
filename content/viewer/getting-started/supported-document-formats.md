@@ -8,7 +8,7 @@ description: "All document and image formats supported by GroupDocs.Viewer Cloud
 keywords: "GroupDocs.Viewer Cloud, Supported file-formats"
 ---
 
-This page is a reference for all document and image formats supported by GroupDocs.Viewer Cloud V2.
+This page is a reference for all document and file formats supported by GroupDocs.Viewer Cloud V2.
 
 ## CAD Formats
 
@@ -38,7 +38,6 @@ This page is a reference for all document and image formats supported by GroupDo
 | [VSTM](https://wiki.fileformat.com/specification/image/vstm/) | Microsoft Visio Macro-Enabled Template | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |   |
 | [VSTX](https://wiki.fileformat.com/specification/image/vstx/) | Microsoft Visio Template | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |   |
 | [VSX](https://wiki.fileformat.com/specification/image/vsx/) | Microsoft Visio 2003-2010 XML Stencil | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
-| [VTX](https://wiki.fileformat.com/specification/image/vtx/) | Microsoft Visio 2003-2010 XML Template | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |   |
 | [VTX](https://wiki.fileformat.com/specification/image/vtx/) | Microsoft Visio 2003-2010 XML Template | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |   |
 
 ## Ebook Formats
@@ -46,7 +45,6 @@ This page is a reference for all document and image formats supported by GroupDo
 | Format        | Description    | Render as HTML | Render as PNG / JPG | Render as PDF | Remarks |
 | ------------- | --------------:| --------------:| -------------------:| -------------:| -------:|
 | [EPUB](https://wiki.fileformat.com/specification/ebook/epub/) | Digital E-Book File Format | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
-| [MOBI](https://wiki.fileformat.com/specification/ebook/mobi/) | Mobipocket e-book format | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
 | [MOBI](https://wiki.fileformat.com/specification/ebook/mobi/) | Mobipocket e-book format | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
 
 ## Email Formats
@@ -89,7 +87,6 @@ This page is a reference for all document and image formats supported by GroupDo
 | Format        | Description    | Render as HTML | Render as PNG / JPG | Render as PDF | Remarks |
 | ------------- | --------------:| --------------:| -------------------:| -------------:| -------:|
 | [HTML](https://wiki.fileformat.com/specification/web/html/) | HyperText Markup Language (HTML) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
-| [MHT](https://wiki.fileformat.com/specification/web/mhtml/), [MHTML](https://wiki.fileformat.com/specification/web/mhtml/) | Mime HTML (MHTML) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
 | [MHT](https://wiki.fileformat.com/specification/web/mhtml/), [MHTML](https://wiki.fileformat.com/specification/web/mhtml/) | Mime HTML (MHTML) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
 
 ## Note Formats
@@ -135,7 +132,7 @@ This page is a reference for all document and image formats supported by GroupDo
 | ------------- | --------------:| --------------:| -------------------:| -------------:| -------:|
 | [CSV](https://wiki.fileformat.com/specification/spreadsheet/csv/) | Comma Separated Values File | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
 | [ODS](https://wiki.fileformat.com/specification/spreadsheet/ods/) | OpenDocument Spreadsheet | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
-| OTS | ![(tick)](viewer/images/check.png) Template | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
+| OTS | OpenDocument Spreadsheet Template | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
 | [TSV](https://wiki.fileformat.com/specification/spreadsheet/tsv/) | Tab Separated Values File | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
 | [XLS](https://wiki.fileformat.com/specification/spreadsheet/xls/) | Microsoft Excel 95-2003 Workbook Worksheet | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
 | [XLS](https://wiki.fileformat.com/specification/spreadsheet/xls/) | Microsoft Excel 95-2003 Workbook Worksheet | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
@@ -155,6 +152,5 @@ This page is a reference for all document and image formats supported by GroupDo
 | [DOTX](https://wiki.fileformat.com/specification/word-processing/dotx/) | Microsoft Word Template | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
 | [ODT](https://wiki.fileformat.com/specification/word-processing/odt/) | OpenDocument Text | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
 | [OTT](https://wiki.fileformat.com/specification/word-processing/ott/) | OpenDocument Text Template | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
-| [RTF](https://wiki.fileformat.com/specification/word-processing/rtf/) | Rich Text Document | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
 | [RTF](https://wiki.fileformat.com/specification/word-processing/rtf/) | Rich Text Document | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |
 | [TXT](https://wiki.fileformat.com/specification/word-processing/txt/) | Plain Text Document | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) | ![(tick)](viewer/images/check.png) |    |

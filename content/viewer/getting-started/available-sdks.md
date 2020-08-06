@@ -3,7 +3,7 @@ id: "available-sdks"
 url: "viewer/available-sdks"
 title: "Available SDKs"
 productName: "GroupDocs.Viewer Cloud"
-weight: 4
+weight: 5
 description: "Available SDKs for GroupDocs.Viewer Cloud"
 keywords: "groupdocs.viewer cloud, sdk"
 ---
@@ -27,7 +27,7 @@ Install-Package GroupDocs.Viewer-Cloud
 Complete source code of GroupDocs.Viewer Cloud SDK for .Net is freely available on the [GitHub](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet).
 {{< /alert >}}
 
-{{< alert style="info" >}}Please see the GroupDocs.Viewer Cloud SDK for .NET [Examples here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet/tree/master/GroupDocs.Viewer.Cloud.Sdk.Test).{{< /alert >}}
+{{< alert style="info" >}}Please see the GroupDocs.Viewer Cloud SDK for .NET Examples [here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet/tree/master/GroupDocs.Viewer.Cloud.Sdk.Test).{{< /alert >}}
 
 ## SDK for PHP
 
@@ -49,7 +49,7 @@ require_once('vendor/autoload.php');
 Complete source code of GroupDocs.Viewer Cloud SDK for PHP is freely available on [GitHub](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-php).
 {{< /alert >}}
 
-{{< alert style="info" >}}Please see the GroupDocs.Viewer Cloud SDK for PHP [Examples here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-php/tree/master/tests/GroupDocs/Viewer/ApiTests).{{< /alert >}}
+{{< alert style="info" >}}Please see the GroupDocs.Viewer Cloud SDK for PHP Examples [here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-php/tree/master/tests/GroupDocs/Viewer/ApiTests).{{< /alert >}}
 
 ## SDK for Java
 
@@ -115,13 +115,13 @@ mvn eclipse:eclipse -DdownloadSources#true -DdownloadJavadocs#false
 Complete source code of GroupDocs.Viewer Cloud SDK for Java is freely available on the [GitHub](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java).
 {{< /alert >}}
 
-{{< alert style="info" >}}Please see the GroupDocs.Viewer Cloud SDK for Java [Examples here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java/tree/master/src/test/java/com/groupdocs/cloud/viewer/api).{{< /alert >}}
+{{< alert style="info" >}}Please see the GroupDocs.Viewer Cloud SDK for Java Examples [here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java/tree/master/src/test/java/com/groupdocs/cloud/viewer/api).{{< /alert >}}
 
 ## SDK for Ruby
 
 Allows you to incorporate GroupDocs.Viewer Cloud services in your Ruby applications quickly and easily.
 
-The [RubyGem distribution](https://rubygems.org/gems/groupdocs_viewer_cloud) gem is available at RubyGem. Run the following command to install the gem:
+The [groupdocs_viewer_cloud](https://rubygems.org/gems/groupdocs_viewer_cloud) gem is available at RubyGem. Run the following command to install the gem:
 
 ```bash
 gem install groupdocs_cloud_viewer
@@ -131,13 +131,13 @@ gem install groupdocs_cloud_viewer
 Complete source code of GroupDocs.Viewer Cloud SDK for Ruby is freely available on the [GitHub](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-ruby).
 {{< /alert >}}
 
-{{< alert style="info" >}}Please see the GroupDocs.Viewer Cloud SDK for Ruby [Examples here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-ruby/tree/master/test/api).{{< /alert >}}
+{{< alert style="info" >}}Please see the GroupDocs.Viewer Cloud SDK for Ruby Examples [here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-ruby/tree/master/test/api).{{< /alert >}}
 
 ## SDK for Node.js
 
 Allows you to incorporate GroupDocs.Viewer Cloud services in your Node.js applications quickly and easily.
 
-The [viewer-sdk-nodejs](https://www.npmjs.com/package/groupdocs-viewer-cloud) package is available at <https://www.npmjs.com/> **. To install the package run the following:
+The [viewer-sdk-nodejs](https://www.npmjs.com/package/groupdocs-viewer-cloud) package is available at <https://www.npmjs.com/>. To install the package type the following:
 
 ```bash
 npm install groupdocs-viewer-cloud
@@ -147,7 +147,7 @@ npm install groupdocs-viewer-cloud
 Complete source code of GroupDocs.Viewer Cloud SDK for Node.js is freely available on the [GitHub](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node).
 {{< /alert >}}
 
-{{< alert style="info" >}}Please see the GroupDocs.Viewer Cloud SDK for Node.js [Examples here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node/tree/master/test/api).{{< /alert >}}
+{{< alert style="info" >}}Please see the GroupDocs.Viewer Cloud SDK for Node.js Examples [here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node/tree/master/test/api).{{< /alert >}}
 
 ## SDK for Python
 
@@ -163,4 +163,4 @@ pip install groupdocs-viewer-cloud
 Complete source code of GroupDocs.Viewer Cloud SDK for Python is freely available on the [GitHub](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-python)
 {{< /alert >}}
 
-{{< alert style="info" >}}Please see the GroupDocs.Viewer Cloud SDK for Python [Examples here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-python/tree/master/test/apis).{{< /alert >}}
+{{< alert style="info" >}}Please see the GroupDocs.Viewer Cloud SDK for Python Examples [here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-python/tree/master/test/apis).{{< /alert >}}

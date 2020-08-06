@@ -4,8 +4,8 @@ url: "viewer/developer-guide"
 title: "Developer Guide"
 productName: "GroupDocs.Viewer Cloud"
 weight: 2
-description: ""
-keywords: ""
+description: "GroupDocs.Viewer Cloud Developer Guide"
+keywords: "GroupDocs.Viewer, Cloud Developer Guide"
 ---
 
-### Developer Guide ###
+This section contains usage scenarios of GroupDocs.Viewer Cloud.

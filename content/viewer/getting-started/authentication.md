@@ -1,14 +1,14 @@
 ---
-id: "json-web-token-authentication"
-url: "viewer/json-web-token-authentication"
-title: "JSON Web Token Authentication"
+id: "authentication"
+url: "viewer/authentication"
+title: "Authentication"
 productName: "GroupDocs.Viewer Cloud"
-weight: 8
-description: "GroupDocs.Viewer Cloud JSON Web Token Authentication"
+weight: 4
+description: "GroupDocs.Viewer Cloud JSON Web Token (JWT) Authentication"
 keywords: "GroupDocs.Viewer Cloud, JWT, Authentication"
 ---
 
-A JSON Web Token is used to send information that can be verified and trusted by means of a digital signature. It comprises a compact and URL-safe JSON object, which is cryptographically signed to verify its authenticity, and which can also be encrypted if the payload contains sensitive information.
+GroupDocs.Viewer Cloud uses JSON Web Token (JWT) Authentication. A JSON Web Token is used to send information that can be verified and trusted by means of a digital signature. It comprises a compact and URL-safe JSON object, which is cryptographically signed to verify its authenticity, and which can also be encrypted if the payload contains sensitive information.
 
 Because of its compact structure, JWT is usually used in HTTP *Authorization* headers or URL query parameters.
 
@@ -36,7 +36,7 @@ A browser or mobile client makes a request to the authentication server containi
 
 ## Applications
 
-To access Aspose REST APIs, you need to [create an application]({{< ref "viewer/getting-started/create-new-app-and-get-app-key-and-sid.md" >}})). To register new applications, login into the [Dashboard Developer](https://dashboard.groupdocs.cloud/#/) site using your Aspose Account, and go to the [My Apps](https://dashboard.groupdocs.cloud/#/apps) view. Once you create a new application, we will issue a **client_id** (App SID) and **client_secret** (App Key) that you can use to authenticate your REST API calls using the JWT authentication.
+To access GroupDocs REST APIs, you need to [create an application]({{< ref "viewer/getting-started/create-new-app-and-get-app-key-and-sid.md" >}})). To register new applications, login into the [Dashboard Developer](https://dashboard.groupdocs.cloud/#/) site using your GroupDocs Account, and go to the [My Apps](https://dashboard.groupdocs.cloud/#/apps) view. Once you create a new application, we will issue a **client_id** (App SID) and **client_secret** (App Key) that you can use to authenticate your REST API calls using the JWT authentication.
 
 ## Get Access Token
 

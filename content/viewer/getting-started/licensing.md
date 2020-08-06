@@ -3,10 +3,11 @@ id: "licensing"
 url: "viewer/licensing"
 title: "Licensing"
 productName: "GroupDocs.Viewer Cloud"
-weight: 7
+weight: 8
 description: "GroupDocs.Viewer Cloud Licensing"
-keywords: "GroupDocs.Viewer Cloud, Licensing, Trial,"
+keywords: "GroupDocs.Viewer Cloud, Licensing, Free Plan, Paid Plan"
 ---
+When you're [Signing Up](https://id.containerize.com/signup) the Free Plan is automatically assigned to your account.
 
 ## Free Plan
 
@@ -16,7 +17,7 @@ Our free plan allows you to use Cloud APIs as you would normally. It only applie
 
 The free plan simply becomes [paid plan](https://purchase.groupdocs.cloud/pricing) when you upgrade your plan for any paid account. Please follow below steps to upgrade your free plan to paid plan.
 
-1. Login to [https://dashboard.groupdocs.cloud/#/](https://dashboard.groupdocs.cloud/#/)
+1. Login to [https://dashboard.groupdocs.cloud](https://dashboard.groupdocs.cloud/#/)
 
 2. Click on [Upgrade Plan](https://dashboard.groupdocs.cloud/#/plan)
 

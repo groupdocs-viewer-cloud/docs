@@ -16,22 +16,17 @@ This section introduces GroupDocs.Viewer Cloud specific Resources & Operations.
 https://api.groupdocs.cloud/v2.0/viewer/
 ```
 
-In the rest of the documentation base, URI presented as '~~' character.
+In the rest of the documentation base URI presented as '~' character.
 
-## Input & Output Format
+## Request & Response Format
 
-GroupDocs.Viewer cloud supports request body data and response data formatted as JSON.
+GroupDocs.Viewer Cloud supports request body data and response data formatted as JSON.
 
-## Errors
+### Response Status Codes
 
-GroupDocs.Viewer Cloud API performs communication errors by using HTTP Status Codes with details passed in JSON or XML objects.
-
-The main patterns are:
-2xx - The request was received and accepted.
-4xx - Error occurred while processing the request. An invalid parameter or the missing file can cause this error.
-5xx - The request was received and accepted, but an error occurred in the GroupDocs.Viewer Cloud service while processing it.
-
-## HTTP Status Codes
+* 2xx - The request was received and accepted.
+* 4xx - Error occurred while processing the request. An invalid parameter or the missing file can cause this error.
+* 5xx - The request was received and accepted, but an error occurred in the GroupDocs.Viewer Cloud service while processing it.
 
 |Code|Description
 |---|---
@@ -44,13 +39,17 @@ The main patterns are:
 |405|The Requested method is not allowed.
 |500|Internal server error occurred while processing the request.
 
-## Example Error Response
+## Errors
+
+GroupDocs.Viewer Cloud API returns errors by using HTTP Status Codes with details passed in response body.
+
+### Example Error Response
 
 ```html
 Status: 404 Not Found
 ```
 
-```html
+```json
 {
   "error": {
     "code": "FileNotFound",
@@ -59,7 +58,7 @@ Status: 404 Not Found
 }
 ```
 
-## Error Codes
+### Error Codes
 
 |Error Code|Status Code|Description
 |---|---|---

@@ -3,7 +3,7 @@ id: "evaluate-groupdocs-viewer"
 url: "viewer/evaluate-groupdocs-viewer"
 title: "Evaluate GroupDocs.Viewer"
 productName: "GroupDocs.Viewer Cloud"
-weight: 5
+weight: 6
 description: "How to create trial account for GroupDocs.Viewer Cloud"
 keywords: "groupdocs.viewer cloud, evaluation"
 ---

@@ -10,17 +10,17 @@ keywords: "GroupDocs.Viewer Cloud, Quick Start"
 
 ## Create an account
 
-Creating an account is very simple. Go to [Sign Up](https://id.containerize.com/signup) to create a free account.
+Sign up at <https://id.containerize.com/signup> to create a free account.
 
 ## Create an API client app
 
-Before you can make any requests to GroupDocs for Cloud API you need to get APP SID and APP key (secret key). This will be used to invoke the GroupDocs Cloud API.
+Before you can make any requests to GroupDocs for Cloud API you need to get APP SID and APP key (secret key). That will be used to invoke the GroupDocs Cloud API.
 
 You can get it from default Application or create new Application from [My Apps tab of GroupDocs for Cloud Dashboard]({{< ref "total/getting-started/ui-topics/create-new-app-and-get-app-key-and-sid.md" >}}).
 
 ## Install the SDK of your choice
 
-GroupDocs Cloud SDK is written in different languages, all you need to get started is adding our [SDK]({{< ref "viewer/getting-started/available-sdks.md" >}}) to your existing project.
+GroupDocs.Viewer Cloud SDK is written in different languages, all you need to get started is adding our [SDK]({{< ref "viewer/getting-started/available-sdks.md" >}}) to your project.
 
 ## Make an API request
 

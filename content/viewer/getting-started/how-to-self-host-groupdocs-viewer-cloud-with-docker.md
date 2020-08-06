@@ -1,13 +1,13 @@
 ---
-id: "how-to-self-host-groupdocs-viewer-cloud-with-docker"
-url: "viewer/how-to-self-host-groupdocs-viewer-cloud-with-docker"
-title: "How to self-host GroupDocs.Viewer Cloud with Docker"
+id: "self-host-groupdocs-viewer-cloud-with-docker"
+url: "viewer/self-host-groupdocs-viewer-cloud-with-docker"
+title: "Self-host GroupDocs.Viewer Cloud with Docker"
 productName: "GroupDocs.Viewer Cloud"
-description: "How to self-host GroupDocs.Viewer Cloud with Docker"
+description: "Self-host GroupDocs.Viewer Cloud with Docker"
 keywords: "groupdocs.viewer cloud, docker"
 ---
 
-[Docker](https://docs.docker.com/get-started/overview/) is an open platform that effectively solves three main tasks development, deployment, and running the applications. With Docker, you can isolate your applications from the infrastructure that simplifies software development and delivery. The main building blocs are images and containers. The image includes everything you need to run the application: code or binaries, runtimes dependencies, file system. The container is an isolated process with additional features that you can interact with. The use of containers to deploy applications is called *containerization*.
+[Docker](https://docs.docker.com/get-started/overview/) is an open platform that effectively solves three main tasks development, deployment, and running the applications. With Docker, you can isolate your applications from the infrastructure that simplifies software development and delivery. The main building blocs are images and containers. The image includes everything you need to run the application: code or binaries, runtime dependencies, file system. The container is an isolated process with additional features that you can interact with. The use of containers to deploy applications is called *containerization*.
 
 [Docker Hub](https://hub.docker.com/) is a repository or library of the container images where you can share and find images.
 
