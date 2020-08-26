@@ -20,9 +20,7 @@ This API allows you to get a list of all files of a specific folder from the 
 
 |Parameter|Description
 |---|---
-|**path**|Path of the file including file name and extension e.g. /Folder1/file.ext
-
-Required. Can be passed as query string parameter or as part of the URL
+|**path**|Path of the file including file name and extension e.g. /Folder1/file.ext Required. Can be passed as query string parameter or as part of the URL
 |storageName|Name of the storage. If not set, then default storage used
 
 ### List Files with cURL
@@ -90,9 +88,7 @@ This API allows you to create a new Folder in the specified Cloud Storage. If yo
 
 |Parameter|Description
 |---|---
-|**path**|Target folder’s path e.g. Folder1/Folder2/. The folders will be created recursively
-
-Required. Can be passed as query string parameter or as part of the URL
+|**path**|Target folder’s path e.g. Folder1/Folder2/. The folders will be created recursively Required. Can be passed as query string parameter or as part of the URL
 |storageName|Name of the storage. If not set, then default storage used
 
 ### Create New Folder with cURL
@@ -106,7 +102,7 @@ curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3
 Response
 
 ```json
-{  
+{
   "code": 200,
   "status": "OK"
 }
@@ -152,9 +148,7 @@ This API allows you to delete a particular Folder in the specified Cloud Storage
 
 |Parameter|Description
 |---|---
-|**path**|Folder path e.g. /Folder1
-
-Required. Can be passed as query string parameter or as part of the URL
+|**path**|Folder path e.g. /Folder1 Required. Can be passed as query string parameter or as part of the URL
 |storageName|Name of the storage. If not set, then default storage used
 
 ### Delete Folder with cURL
@@ -168,7 +162,7 @@ curl -X DELETE "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdoc
 Response
 
 ```json
-{  
+{
   "code": 200,
   "status": "OK"
 }
@@ -214,9 +208,7 @@ This API allows you to copy a Folder to another location in the GroupDocs Cloud 
 
 |Parameter|Description
 |---|---
-|**srcPath**|Source folder path e.g. /Folder1
-
-Required. Can be passed as query string parameter or as part of the URL
+|**srcPath**|Source folder path e.g. /Folder1 Required. Can be passed as query string parameter or as part of the URL
 |**destPath**|Destination folder path. Required
 |srcStorageName|Name of the storage of source folder. If not set, then default storage used
 |destStorageName|Name of the storage of destination folder. If not set, then default storage used
@@ -232,7 +224,7 @@ curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/copy/viewerd
 Response
 
 ```json
-{  
+{
   "code": 200,
   "status": "OK"
 }
@@ -278,9 +270,7 @@ This API allows you to move a Folder to another location in the GroupDocs Cloud 
 
 |Parameter|Description
 |---|---
-|**srcPath**|Source folder path e.g. /Folder1
-
-Required. Can be passed as query string parameter or as part of the URL
+|**srcPath**|Source folder path e.g. /Folder1 Required. Can be passed as query string parameter or as part of the URL
 |**destPath**|Destination folder path. Required
 |srcStorageName|Name of the storage of source folder. If not set, then default storage used
 |destStorageName|Name of the storage of destination folder. If not set, then default storage used
@@ -290,13 +280,13 @@ Required. Can be passed as query string parameter or as part of the URL
 Request
 
 ```bash
-curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/move/viewerdocs?destPath#viewerdocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"  
+curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/move/viewerdocs?destPath#viewerdocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
 Response
 
 ```json
-{  
+{
   "code": 200,
   "status": "OK"
 }

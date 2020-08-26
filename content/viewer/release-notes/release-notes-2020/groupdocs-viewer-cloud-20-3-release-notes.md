@@ -7,12 +7,7 @@ description: ""
 keywords: ""
 ---
 
- 
-
-
-
 This page contains release notes for GroupDocs.Viewer Cloud 20.3
-
 
 ## Major Features ##
 

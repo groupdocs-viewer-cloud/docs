@@ -16,10 +16,6 @@ Note:  The features listed in this Page are supported only in GroupDocs.Viewer 
 
 Page contains description for option objects and object fields.
 
-
-
-
-
 ## [DocumentInfoOptions Object]("DocumentInfoOptions") ##
 |---|---
 
@@ -27,7 +23,7 @@ Provides options for retrieving attachment information.
 
 Example DocumentInfoOptions object
 
-```html 
+```html
 {
   "password": "document password",
   "attachmentPassword": "attachment password",
@@ -113,19 +109,13 @@ AddPrintAction - For rendering document as PDF only. An JavaScript action will b
 |SlidesOptions|SlidesOptions Object|The Presentation documents rendering options.
 |ProjectOptions|ProjectOptions Object|The Microsoft Project documents rendering options.
 
-
-
-
-
-
-
 ##  ##
 
 Provides options for rendering document as image.
 
 Example ImageOptions object
 
-```html 
+```html
 {
   "format": "png",
   "quality": 90,
@@ -133,7 +123,7 @@ Example ImageOptions object
   "height": 0,
   "startPageNumber": 0,
   "countPages": 0,
-  "password": "string", 
+  "password": "string",
   "attachmentPassword": "string",
   "extractText": false,
   "renderComments": false,
@@ -196,13 +186,13 @@ Example ImageOptions object
 |Format|string|Allows to set image format ("png" or "jpg").
 
 Default value is "png".
-|Quality| int|Allows to specify quality when format # "jpg". Valid values are between 1 and 100. 
+|Quality| int|Allows to specify quality when format # "jpg". Valid values are between 1 and 100.
 
 Default value is 90.
-|Width|int|Allows to specify output image width. 
+|Width|int|Allows to specify output image width.
 Specify image width in case when you want to change output image dimensions.
 When Width has value and Height value is 0 then Height value will be calculated to save image proportions.
-|Height|int|Allows to specify output image height. 
+|Height|int|Allows to specify output image height.
 Specify image height in case when you want to change output image dimensions.
 When Height has value and Width value is 0 then Width value will be calculated to save image proportions.
 |Password|string|Allows to specify document password in case when document is password-protected.
@@ -228,12 +218,6 @@ AddPrintAction - For rendering document as PDF only. An JavaScript action will b
 |SlidesOptions|SlidesOptions Object|The Presentation documents rendering options.
 |ProjectOptions|ProjectOptions Object|The Microsoft Project documents rendering options.
 
-
-
-
-
-
-
 ## [HtmlOptions Object]("Html") ##
 |---|---
 
@@ -241,7 +225,7 @@ Provides options for rendering document pages as HTML.
 
 Example HtmlOptions object
 
-```html 
+```html
 {
   "resourcePath": "string",
   "ignoreResourcePathInResources": false
@@ -356,12 +340,6 @@ AddPrintAction - For rendering document as PDF only. An JavaScript action will b
 |SlidesOptions|SlidesOptions|The Presentation documents rendering options.
 |ProjectOptions|ProjectOptions|The Microsoft Project documents rendering options.
 
-
-
-
-
-
-
 ## [PdfFileOptions Object]("Pdf") ##
 |---|---
 
@@ -369,7 +347,7 @@ Provides options for rendering document as PDF.
 
 Example PdfFileOptions object
 
-```html 
+```html
 {
   "password": "document password",
   "extractText": false,
@@ -453,12 +431,6 @@ AddPrintAction - For rendering document as PDF only. An JavaScript action will b
 |SlidesOptions|SlidesOptions Object|The Presentation documents rendering options.
 |ProjectOptions|ProjectOptions Object|The Microsoft Project documents rendering options.
 
-
-
-
-
-
-
 ## [RotateOptions Object]("RotateOptionsObject") ##
 |---|---
 
@@ -466,7 +438,7 @@ Provides options for rotating document pages.
 
 Example RotateOptions object
 
-```html 
+```html
 {
   "pageNumber": 1,
   "angle": 90,
@@ -482,12 +454,6 @@ Example RotateOptions object
 |Angle| int|The angle in degrees to which the page should be rotated.
 |Password|string|Allows to specify document password in case when document is password-protected.
 
-
-
-
-
-
-
 ## [ReorderOptions Object]("ReorderOptions Object")  ##
 |---|---
 
@@ -495,7 +461,7 @@ Provides options for reordering document pages.
 
 Example ReorderOptions object
 
-```html 
+```html
 
 {
   "pageNumber": 1,
@@ -505,10 +471,6 @@ Example ReorderOptions object
 
 ```
 
- 
-
-
-
  ReorderOptions Object Fields (Click here to expand)
 
 |Name|Type|Description
@@ -517,12 +479,6 @@ Example ReorderOptions object
 |NewPosition|int|The position where page should be placed.
 |Password|string|Allows to specify document password in case when document is password-protected.
 
-
-
-
-
-
-
 ## [Watermark Object]("WatermarkObject") ##
 |---|---
 
@@ -530,7 +486,7 @@ Provides options for watermarking.
 
 Example Watermark object.
 
-```html 
+```html
 "watermark": {
   "text": "watermark text",
   "color": "Magenta",
@@ -551,13 +507,7 @@ Default value is "Red".
 Supported positions "Diagonal", "TopLeft", "TopCenter", "TopRight", "BottomLeft", "BottomCenter" and "BottomRight".
 Default value is "Diagonal".
 |Size|int|Watermark size in percents.
-Default value is 100. 
-
-
-
-
-
-
+Default value is 100.
 
 ## [CellsOptions Object]("CellsOptionsObject") ##
 |---|---
@@ -566,7 +516,7 @@ Provides options for rendering spreadsheet documents.
 
 Example CellOptions object.
 
-```html 
+```html
 "cellsOptions": {
   "renderGridLines": false,
   "paginateSheets": true,
@@ -596,27 +546,15 @@ Default value is 50.
 |TextOverflowMode|string|
 Text overflow mode applied when the text is too big to fit into the cell.
 
-
-
 Supported modes "Overlay", "OverlayIfNextIsEmpty", "HideText" and "AutoFitColumn".
-
-
 
 **Overlay** - Overlay next cells even they are not empty.
 
-
-
 **OverlayIfNextIsEmpty** - Overlay next cells only if they are not empty
-
-
 
 **HideText** - Hide overflow text
 
-
-
 **AutoFitColumn** (added in 18.5) - Expand cell width to fit overflowed text
-
-
 
 Default value is OverlayIfNextIsEmpty.
 
@@ -627,12 +565,6 @@ Default value is OverlayIfNextIsEmpty.
 
 Renders each print area in a worksheet as a separate page.
 
-
-
-
-
-
-
 ## [CadOptions Object]("CellsOptionsObject") ##
 |---|---
 
@@ -640,7 +572,7 @@ Provides options for rendering CAD documents.
 
 Example CadOptions object.
 
-```html 
+```html
 "cadOptions": {
   "scaleFactor": 50,
   "width": 600,
@@ -659,14 +591,8 @@ Example CadOptions object.
 |Width|int|The width of the render result in pixels.
 |Height|int|The height of the render result in pixels.
 |RenderLayouts|bool|Indicates whether layouts from CAD document should be rendered.
-|LayoutName|string|The name of the specific layout to render. 
+|LayoutName|string|The name of the specific layout to render.
 |Layers|string[]|The list of document layers to render. By default all layers will be rendered. Layer names are case sensitive. (since 18.2)
-
-
-
-
-
-
 
 ## [EmailOptions Object]("EmailOptionsObject") ##
 |---|---
@@ -675,7 +601,7 @@ Provides options for rendering Email documents.
 
 Example EmailOptions object.
 
-```html 
+```html
 "emailOptions": {
   "encoding": "utf-8",
   "pageSize": "Unknown",
@@ -748,12 +674,6 @@ Supported values {Unknown|Letter|Ledger|A0|A1|A2|A3}:
 47. Field: "UserField3" - default value is "User Field 3".
 48. Field: "UserField4" - default value is "User Field 4".
 
-
-
-
-
-
-
 ## [WordsOptions Object]("WordsOptionsObject") ##
 |---|---
 
@@ -761,7 +681,7 @@ Provides options for rendering Text documents.
 
 Example WordsOptions object.
 
-```html 
+```html
 "wordsOptions": {
   "encoding": "utf-8",
   "renderTrackedChanges": false
@@ -775,12 +695,6 @@ Example WordsOptions object.
 |Encoding|string|The document encoding e.g. "utf-8".
 |RenderTrackedChanges|bool|Indicates whether Tracked Changes (Revisions) should be rendered or not.
 
-
-
-
-
-
-
 ## [PdfOptions Object]("PdOptionsObject") ##
 |---|---
 
@@ -788,7 +702,7 @@ Provides options for rendering PDF documents.
 
 Example PdfOptions object.
 
-```html 
+```html
 "pdfOptions": {
   "enablePreciseRendering": false,
   "enableInitialContentOrdering": false,
@@ -810,12 +724,6 @@ Example PdfOptions object.
 - Medium - better image quality and larger image size.
 - High - best image quality with largest image size.
 
-
-
-
-
-
-
 ## [SlidesOptions Object]("SlidesOptionsObject") ##
 |---|---
 
@@ -823,7 +731,7 @@ Provides options for rendering Presentation documents.
 
 Example SlidesOptions object.
 
-```html 
+```html
 "slidesOptions": {
   "renderNotes": false
 }
@@ -834,12 +742,6 @@ Example SlidesOptions object.
 |Name|Type|Description
 |---|---|---
 |RenderNotes|bool|Indicates whether slide notes should be rendered.
-
-
-
-
-
-
 
 ## [ProjectOptions Object]("ProjectOptionsObject") ##
 |---|---
@@ -852,7 +754,7 @@ Provides options for rendering Microsoft Project documents.
 
 Example ProjectOptions object.
 
-```html 
+```html
 "projectOptions": {
   "pageSize": "unknown",
   "timeUnit": "unknown",
@@ -881,24 +783,17 @@ Supported values {Unknown|Days|ThirdsOfMonths|Months}:
 2. Days - one day interval.
 3. ThirdsOfMonths - one third of the month.
 4. Months - one month interval.
-|StartDate 
+|StartDate
 
- |DateTime|The start date of a Gantt Chart View to render. 
+ |DateTime|The start date of a Gantt Chart View to render.
 |---|---
 
 Supported starting from v18.11
 
- 
 |EndDate|DateTime|The end date of a Gantt Chart View to render.
 |---|---|---
 
-Supported starting from v18.11 
-
-
-
-
-
-
+Supported starting from v18.11
 
 ## [OutlookOptions Object]("OutlookOptions")  ##
 |---|---
@@ -912,7 +807,7 @@ Provides options for rendering Microsoft Outlook data files (.pst|.ost).
 
 Example of OutlookOptions
 
-```html 
+```html
 "outlookOptions": {
   "maxItemsInFolder": "1000"
 }
@@ -923,8 +818,4 @@ Example of OutlookOptions
 |Name|Type|Description
 |---|---|---
 |MaxItemsInFolder|int|The limit of items to render in mailbox folders
-
-
-
-
 

@@ -93,15 +93,15 @@ Now that you have the Bearer Token (access_token) generated using the applicatio
 #### Request
 
 ```bash
-curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/view" 
--H  "accept: application/json" -H  "authorization: Bearer [Access Token]" 
--H  "Content-Type: application/json" 
+curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/view"
+-H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+-H  "Content-Type: application/json"
 -d "{  \"FileInfo\": {    \"FilePath\": \"viewerdocs/one-page.docx\",    \"StorageName\": \"MyStorage\",    \"Password\": \"\"  }  }"
 ```
 
 #### Response
 
-```json 
+```json
 {
   "pages": [
     {

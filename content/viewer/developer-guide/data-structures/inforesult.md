@@ -8,14 +8,11 @@ description: ""
 keywords: ""
 ---
 
-# InfoResult #
-
 InfoResult data structure returned by [Document Info API]({{< ref "viewer/developer-guide/basic-usage/get-document-information.md" >}}) as output result
-
 
 ##### InfoResult example #####
 
-```html 
+```html
 
 {
   "FormatExtension": "string",
@@ -98,7 +95,8 @@ InfoResult data structure returned by [Document Info API]({{< ref "viewer/devel
 
 ##### InfoResult fields #####
 
-|#Name|#Description
+|Name|Description
+|---|---
 |FormatExtension|File format extension
 |Format|File format
 |Pages|List of document pages

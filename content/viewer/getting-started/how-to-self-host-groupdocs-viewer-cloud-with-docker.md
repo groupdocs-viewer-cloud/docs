@@ -15,7 +15,7 @@ keywords: "groupdocs.viewer cloud, docker"
 
 The GroupDocs.Viewer Cloud Container Image available at [https://hub.docker.com/r/groupdocs/viewer-cloud](https://hub.docker.com/r/groupdocs/viewer-cloud) and enables users to self-host GroupDocs.Viewer Cloud.
 
-To run the GroupDocs.Viewer Cloud in Docker the Docker itself should be installed on your machine. 
+To run the GroupDocs.Viewer Cloud in Docker the Docker itself should be installed on your machine.
 
 ### Install Docker
 
@@ -52,7 +52,7 @@ docker run `
 
 **Linux (bash)**
 
-```bash 
+```bash
 
 docker run \
     -p 8080:80 \
@@ -77,7 +77,7 @@ After the container is started you'll see the following messages that indicate t
 
 ![Docker container started](viewer/images/container_started.png)
 
-Now you can work with GroupDocs.Viewer Cloud which is hosted on your machine. 
+Now you can work with GroupDocs.Viewer Cloud which is hosted on your machine.
 
 ### Health-check
 

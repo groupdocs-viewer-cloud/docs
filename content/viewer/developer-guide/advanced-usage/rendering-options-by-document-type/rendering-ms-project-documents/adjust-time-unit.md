@@ -7,26 +7,16 @@ description: ""
 keywords: ""
 ---
 
- 
-
-
-
-
-
-
 # Introduction #
 
 When rendering MS Project documents GroupDocs.Viewer Cloud tries to find optimal output size and time unit depending on the project's overall length. In case you need to set your own page size or time unit, you can set ProjectManagementOptions class properties class as shown in code samples below. Time unit refers to smallest unit (days, third of a month or month) used in timescale bar. When the *TimeUnit.Days* is selected, you will get the most detailed view of your tasks. Whereas, when *TimeUnit.Month* is selected, you will get the more general representation of tasks.
 
-
 The TimeUnit enumeration contains the following members:
-
 
 * *Unknown* - The unknown, unspecified time scale
 * *Days* - The one day interval
 * *ThirdsOfMonths* - The one third of the month
 * *Months* - The one month interval
-
 
 The following code samples show how to render MS Project document by time intervals.
 
@@ -40,13 +30,13 @@ There are steps that usage of GroupDocs.Viewer Cloud consists of:
 
 Steps 1 and 3 are storage operations, please refer to this [File API documentation]({{< ref "viewer/developer-guide/working-with-files.md" >}}) for usage details.
 
-[Swagger UI](https://apireference.groupdocs.cloud/viewer/) lets you call this REST API directly from the browser. 
+[Swagger UI](https://apireference.groupdocs.cloud/viewer/) lets you call this REST API directly from the browser.
 
 ## cURL REST Example ##
 
+Request
 
- Request
-```html 
+```html
 
 * First get JSON Web Token
 * Please get your App Key and App SID from https://dashboard.groupdocs.cloud/#/apps. Kindly place App Key in "client_secret" and App SID in "client_id" argument.
@@ -55,7 +45,7 @@ curl -v "https://api.groupdocs.cloud/connect/token" \
 -d "grant_type#client_credentials&client_id#xxxx&client_secret#xxxx" \
 -H "Content-Type: application/x-www-form-urlencoded" \
 -H "Accept: application/json"
-  
+
 * cURL example to get document information
 curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
 -X POST \
@@ -65,7 +55,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
 -d "{
   'FileInfo': {
     'FilePath': 'SampleFiles/sample.mpp'
-  },  
+  },
   'ViewFormat': 'HTML',
   'RenderOptions': {
     'ProjectManagementOptions': {
@@ -76,9 +66,9 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
 
 ```
 
+Response
 
- Response
-```html 
+```html
 
 {
   "pages": [
@@ -95,26 +85,23 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
 
 ```
 
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### SDK Examples ###
 
+C#
 
- C#
-```csharp 
+```csharp
 
 * For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
 string MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 string MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
-var configuration # new Configuration(MyAppSid, MyAppKey); 
+
+var configuration # new Configuration(MyAppSid, MyAppKey);
 var apiInstance # new ViewApi(configuration);
- 
+
 var viewOptions # new ViewOptions
 {
     FileInfo # new FileInfo
@@ -130,57 +117,57 @@ var viewOptions # new ViewOptions
         }
     }
 };
- 
+
 var response # apiInstance.CreateView(new CreateViewRequest(viewOptions));
 
 ```
 
+Java
 
- Java
-```java 
+```java
 
 * For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
 String MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 String MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
-Configuration configuration # new Configuration(MyAppSid, MyAppKey); 
-ViewApi apiInstance # new ViewApi(configuration); 
- 
+
+Configuration configuration # new Configuration(MyAppSid, MyAppKey);
+ViewApi apiInstance # new ViewApi(configuration);
+
 FileInfo fileInfo # new FileInfo();
 fileInfo.setFilePath("SampleFiles/sample.mpp");
 ViewOptions viewOptions # new ViewOptions();
 viewOptions.setFileInfo(fileInfo);
 viewOptions.setViewFormat(ViewFormatEnum.HTML);
-HtmlOptions renderOptions # new HtmlOptions();            
+HtmlOptions renderOptions # new HtmlOptions();
 ProjectManagementOptions projectManagementOptions # new ProjectManagementOptions();
 projectManagementOptions.setTimeUnit(TimeUnitEnum.DAYS);
 renderOptions.setProjectManagementOptions(projectManagementOptions);
 viewOptions.setRenderOptions(renderOptions);
- 
+
 ViewResult response # apiInstance.createView(new CreateViewRequest(viewOptions));
 
 ```
 
+PHP
 
- PHP
-```php 
+```php
 
 * For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-php-samples
 use GroupDocs\Viewer\Model;
 use GroupDocs\Viewer\Model\Requests;
- 
+
 $AppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 $AppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 $configuration # new GroupDocs\Viewer\Configuration();
 $configuration->setAppSid($AppSid);
 $configuration->setAppKey($AppKey);
- 
+
 $apiInstance# new GroupDocs\Viewer\ViewApi($configuration);
- 
+
 $viewOptions # new Model\ViewOptions();
 $fileInfo # new Model\FileInfo();
-$fileInfo->setFilePath("SampleFiles/sample.mpp");               
+$fileInfo->setFilePath("SampleFiles/sample.mpp");
 $viewOptions->setFileInfo($fileInfo);
 $viewOptions->setViewFormat(Model\ViewOptions::VIEW_FORMAT_HTML);
 $renderOptions # new Model\HtmlOptions();
@@ -188,75 +175,75 @@ $projectManagementOptions # new Model\ProjectManagementOptions();
 $projectManagementOptions->setTimeUnit(Model\ProjectManagementOptions::TIME_UNIT_DAYS);
 $renderOptions->setProjectManagementOptions($projectManagementOptions);
 $viewOptions->setRenderOptions($renderOptions);
- 
+
 $request # new Requests\CreateViewRequest($viewOptions);
 $response # $apiInstance->createView($request);
 
 ```
 
-
  Node
-```html 
+
+```javascript
 
 * For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node-samples
 global.viewer# require("groupdocs-viewer-cloud");
- 
+
 global.appSid # "XXXX-XXXX-XXXX-XXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 global.appKey # "XXXXXXXXXXXXXXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 global.viewApi # viewer_cloud.ViewApi.fromKeys(appSid, appKey);
- 
+
 let fileInfo # new viewer_cloud.FileInfo();
 fileInfo.filePath # "SampleFiles/sample.mpp";
 let viewOptions # new viewer_cloud.ViewOptions();
 viewOptions.fileInfo # fileInfo;
 viewOptions.viewFormat # viewer_cloud.ViewOptions.ViewFormatEnum.HTML;
 viewOptions.renderOptions # new viewer_cloud.HtmlOptions();
-viewOptions.renderOptions.projectManagementOptions # new viewer_cloud.ProjectManagementOptions();     
+viewOptions.renderOptions.projectManagementOptions # new viewer_cloud.ProjectManagementOptions();
 viewOptions.renderOptions.projectManagementOptions.timeUnit # viewer_cloud.ProjectManagementOptions.TimeUnitEnum.Days;
- 
-let request # new viewer_cloud.CreateViewRequest(viewOptions);      
+
+let request # new viewer_cloud.CreateViewRequest(viewOptions);
 let response # await viewApi.createView(request);
 
 ```
 
+Python
 
- Python
-```python 
+```python
 
 # For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-python-samples
 import groupdocs_viewer_cloud
- 
+
 app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 apiInstance# groupdocs_viewer_cloud.ViewApi.from_keys(app_sid, app_key)
- 
+
 view_options # groupdocs_viewer_cloud.ViewOptions()
 view_options.file_info # groupdocs_viewer_cloud.FileInfo()
 view_options.file_info.file_path # "SampleFiles/sample.mpp"
 view_options.view_format # "HTML"
 view_options.render_options # groupdocs_viewer_cloud.HtmlOptions()
-view_options.render_options.project_management_options # groupdocs_viewer_cloud.ProjectManagementOptions()    
+view_options.render_options.project_management_options # groupdocs_viewer_cloud.ProjectManagementOptions()
 view_options.render_options.project_management_options.time_unit # "Days"
- 
+
 request # groupdocs_viewer_cloud.CreateViewRequest(view_options)
 response # apiInstance.create_view(request)
 
 ```
 
+Ruby
 
- Ruby
-```ruby 
+```ruby
 
 # For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-ruby-samples
 require 'groupdocs_viewer_cloud'
- 
+
 $app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 $app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 apiInstance # GroupDocsViewerCloud::ViewApi.from_keys($app_sid, $app_key)
- 
+
 viewOptions # GroupDocsViewerCloud::ViewOptions.new
 viewOptions.file_info # GroupDocsViewerCloud::FileInfo.new
 viewOptions.file_info.file_path # "SampleFiles/sample.mpp"
@@ -264,8 +251,8 @@ viewOptions.view_format # "HTML"
 viewOptions.render_options # GroupDocsViewerCloud::HtmlOptions.new
 viewOptions.render_options.project_management_options # GroupDocsViewerCloud::ProjectManagementOptions.new
 viewOptions.render_options.project_management_options.time_unit # "Days"
- 
-request # GroupDocsViewerCloud::CreateViewRequest.new(viewOptions)    
+
+request # GroupDocsViewerCloud::CreateViewRequest.new(viewOptions)
 response # apiInstance.create_view(request)
 
 ```

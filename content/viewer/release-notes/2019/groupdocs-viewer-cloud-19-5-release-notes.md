@@ -23,7 +23,6 @@ This page contains release notes for GroupDocs.Viewer Cloud 19.5
 |VIEWERCLOUD-330|Improve Cloud products API Reference grouping |Improvement
 |VIEWERCLOUD-331|View method fails when FontsPath option is set|Bug
 
-
 ## Public API and Backward Incompatible Changes  ##
 
 * [Public API Changes in v19.5]({{< ref "viewer/developer-guide/_index.md" >}})working-with-viewer-api/)

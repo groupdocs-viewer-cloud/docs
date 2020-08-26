@@ -8,13 +8,6 @@ description: ""
 keywords: ""
 ---
 
-
-
-
-
-
-# Get Supported File Formats #
-
 GroupDocs.Viewer Cloud REST APIs support to render over 50 file formats to HTML5 or Image formats for the whole document, page by page or custom range of pages. To get list of supported formats, You can use the below API.
 
 ## Resource ##
@@ -23,23 +16,16 @@ The following GroupDocs.Viewer Cloud REST API resource has been used in the [Sup
 
 ## cURL Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/formats" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "formats": [
     {
@@ -377,13 +363,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/formats" -H  "accept: appli
   ]
 }
 
-
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -391,85 +371,26 @@ The API is completely independent of your operating system, database system or d
 
 ### Get List of Supported File Formats ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Supported_Formats.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_All_File_Formats.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_All_Supported_Formats.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Get_All_Supported_Formats.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_All_Supported_Formats.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Get_All_Supported_Formats.py >}}
-
-
-
-
-
-
-

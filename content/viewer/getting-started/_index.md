@@ -62,11 +62,11 @@ Status: 404 Not Found
 
 |Error Code|Status Code|Description
 |---|---|---
-|FileNotFound|Not Found (404) |Indicates that the file was not found. 
-|AttachmentNotFound |Not Found (404) |Indicates that the attachment was not found. 
+|FileNotFound|Not Found (404) |Indicates that the file was not found.
+|AttachmentNotFound |Not Found (404) |Indicates that the attachment was not found.
 |FontsPathNotFound|Not Found (404) |It Indicates that the specified fonts path can not be found.
-|MissingPassword |Forbidden (403)|Indicates that the password was not provided to open the document. 
-|IncorrectPassword|Forbidden (403) |It indicates that the provided password is incorrect. 
+|MissingPassword |Forbidden (403)|Indicates that the password was not provided to open the document.
+|IncorrectPassword|Forbidden (403) |It indicates that the provided password is incorrect.
 |FailedToReadFile |Bad Request (400) |It Indicates that the Viewer could not read the file. The File can be corrupted or damaged.
 |UnsupportedFileType |Bad Request (400) |This indicates that the provided file has a format that is not supported.
 |MissingFileInfo|Bad Request (400) |This indicates that the parameter 'FileInfo' was not specified.

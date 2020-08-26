@@ -12,11 +12,6 @@ keywords: ""
 Note:  The features listed in this page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-
-
-
-
-
 # Download Document as PDF for HTML Representation #
 
 You can render a document to PDF for HTML representation and download it. The API returns actual file data of document in PDF format.
@@ -27,11 +22,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [downlo
 
 ## cURL REST Example ##
 
+Request
 
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pdf" \
 -X GET \
 -H "Content-Type: application/json" \
@@ -39,15 +32,11 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pdf" \
  
 ```
 
+Response
 
- Response
-
-```html 
+```html
 Contents of PDF document
 ```
-
-
-
 
 ## SDKs ##
 
@@ -55,75 +44,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Download Document as PDF for HTML Representation ###
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pdf_File_HTML.cs >}}
 
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pdf_File_HTML.php >}}
 
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pdf_File_HTML.java >}}
 
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pdf_File_HTML.rb >}}
 
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pdf_File_HTML.js >}}
 
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pdf_File_HTML.py >}}
-
-
-
-
-
-
 
 # Download Document as PDF from Document URL for HTML Representation #
 
@@ -135,25 +78,19 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [downlo
 
 ## cURL REST Example ##
 
+Request
 
-
- Request
-
-```html 
-curl -v "https://api.groupdocs.cloud/v1.0/viewer/html/pdf?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&#x26;fileName#one-page.docx&#x26;renderComments#false&#x26;renderHiddenPages#true&#x26;folder#viewerdocs&#x26;storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
--H "Content-Type: application/json" 
+```html
+curl -v "https://api.groupdocs.cloud/v1.0/viewer/html/pdf?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&#x26;fileName#one-page.docx&#x26;renderComments#false&#x26;renderHiddenPages#true&#x26;folder#viewerdocs&#x26;storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX"
+-H "Content-Type: application/json"
 -X GET -d "{}" 
 ```
 
+Response
 
- Response
-
-```html 
+```html
 Contents of PDF document
 ```
-
-
-
 
 ## SDKs ##
 
@@ -161,75 +98,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Download Document as PDF from Document URL for HTML Representation ###
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pdf_File_from_Url_HTML.cs >}}
 
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pdf_File_from_Url_HTML.php >}}
 
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pdf_File_from_Url_HTML.java >}}
 
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pdf_File_from_Url_HTML.rb >}}
 
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pdf_File_from_Url_HTML.js >}}
 
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pdf_File_from_Url_HTML.py >}}
-
-
-
-
-
-
 
 # Download Document as PDF for Image Representation #
 
@@ -241,11 +132,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [downlo
 
 ## cURL REST Example ##
 
+Request
 
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pdf" \
 -X GET \
 -H "Content-Type: application/json" \
@@ -253,15 +142,11 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pdf" \
  
 ```
 
+Response
 
- Response
-
-```html 
+```html
 Contents of PDF document
 ```
-
-
-
 
 ## SDKs ##
 
@@ -269,75 +154,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Downlaod Document as PDF for Image Representation ###
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pdf_File_Image.cs >}}
 
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pdf_File_Image.php >}}
 
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pdf_File_Image.java >}}
 
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pdf_File_Image.rb >}}
 
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pdf_File_Image.js >}}
 
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pdf_File_Image.py >}}
-
-
-
-
-
-
 
 # Download Document as PDF from Document URL for Image Representation #
 
@@ -349,25 +188,19 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [downlo
 
 ## cURL REST Example ##
 
+Request
 
-
- Request
-
-```html 
-curl -v "https://api.groupdocs.cloud/v1.0/viewer/image/pdf?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&#x26;fileName#one-page.docx&#x26;renderComments#false&#x26;renderHiddenPages#true&#x26;folder#viewerdocs&#x26;storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
--H "Content-Type: application/json" 
+```html
+curl -v "https://api.groupdocs.cloud/v1.0/viewer/image/pdf?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&#x26;fileName#one-page.docx&#x26;renderComments#false&#x26;renderHiddenPages#true&#x26;folder#viewerdocs&#x26;storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX"
+-H "Content-Type: application/json"
 -X GET -d "{}"
 ```
 
+Response
 
- Response
-
-```html 
+```html
 Contents of PDF document
 ```
-
-
-
 
 ## SDKs ##
 
@@ -375,75 +208,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Download Document as PDF from Document URL for Image Representation ###
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pdf_File_from_Url_Image.cs >}}
 
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pdf_File_from_Url_Image.php >}}
 
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pdf_File_from_Url_Image.java >}}
 
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pdf_File_from_Url_Image.rb >}}
 
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pdf_File_from_Url_Image.js >}}
 
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pdf_File_from_Url_Image.py >}}
-
-
-
-
-
-
 
 # Watermark Document for HTML Representation #
 
@@ -457,11 +244,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [waterm
 
 ## cURL REST Example ##
 
+Request
 
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pdf" \
 -X POST \
 -H "Content-Type: application/json" \
@@ -471,10 +256,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pdf" \
  
 ```
 
+Response
 
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "folder": null,
@@ -483,84 +267,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pdf" \
 }
 ```
 
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Watermark document and download as PDF for HTML Representation ###
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Watermark_Pdf_File_HTML.cs >}}
 
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Watermark_Pdf_File_HTML.php >}}
 
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Watermark_Pdf_File_HTML.java >}}
 
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Watermark_Pdf_File_HTML.rb >}}
 
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Watermark_Pdf_File_HTML.js >}}
 
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Watermark_Pdf_File_HTML.py >}}
-
-
-
-
-
-
 
 # Watermark Document for Image Representation #
 
@@ -574,11 +309,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [waterm
 
 ## cURL REST Example ##
 
+Request
 
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pdf" \
 -X POST \
 -H "Content-Type: application/json" \
@@ -588,10 +321,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pdf" \
  
 ```
 
+Response
 
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "folder": null,
@@ -600,84 +332,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pdf" \
 }
 ```
 
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Watermark document and download as PDF for Image Representation ###
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Watermark_PdfFile_Image.cs >}}
 
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Watermark_Pdf_File_Image.php >}}
 
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Watermark_Pdf_File_Image.java >}}
 
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Watermark_Pdf_File_Image.rb >}}
 
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Watermark_Pdf_File_Image.js >}}
 
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Watermark_Pdf_File_Image.py >}}
-
-
-
-
-
-
 
 # Create PDF Document as HTML Representation from Document in Request Body #
 
@@ -689,22 +372,19 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
+Request
 
-
- Request
-
-```html 
-curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pdf?fileName#one-page.docx&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
--H "Content-Type: application/json" 
--X POST 
--H "Accept: application/json" 
+```html
+curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pdf?fileName#one-page.docx&#x26;appsid#XXXX&#x26;signature#XXX-XX"
+-H "Content-Type: application/json"
+-X POST
+-H "Accept: application/json"
 -d "{'watermark':{'text':'My Company'}}"
 ```
 
+Response
 
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "folder": null,
@@ -713,84 +393,35 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pdf?fileName#one-page.doc
 }
 ```
 
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Create PDF Document as HTML Representation from Document in Request Body ###
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Pdf_File_Request_HTML.cs >}}
 
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Pdf_File_Request_HTML.php >}}
 
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Pdf_File_Request_HTML.java >}}
 
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Pdf_File_Request_HTML.rb >}}
 
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pdf_File_Request_HTML.js >}}
 
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Pdf_File_Request_HTML.py >}}
-
-
-
-
-
-
 
 # Create PDF Document as Image Representation from Document in Request Body #
 
@@ -802,22 +433,19 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
+Request
 
-
- Request
-
-```html 
-curl -v  "https://api.groupdocs.cloud/v1.0/viewer/image/pdf?fileName#one-page.docx&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
--H "Content-Type: application/json" 
--X POST 
--H "Accept: application/json" 
+```html
+curl -v  "https://api.groupdocs.cloud/v1.0/viewer/image/pdf?fileName#one-page.docx&#x26;appsid#XXXX&#x26;signature#XXX-XX"
+-H "Content-Type: application/json"
+-X POST
+-H "Accept: application/json"
 -d "{'watermark':{'text':'My Company'}}"
 ```
 
+Response
 
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "folder": null,
@@ -826,84 +454,35 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/image/pdf?fileName#one-page.do
 }
 ```
 
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Create PDF Document as Image Representation from Document in Request Body ###
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Pdf_File_Request_Image.cs >}}
 
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Pdf_File_Request_Image.php >}}
 
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Pdf_File_Request_Image.java >}}
 
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Pdf_File_Request_Image.rb >}}
 
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pdf_File_Request_Image.js >}}
 
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Pdf_File_Request_Image.py >}}
-
-
-
-
-
-
 
 # Create PDF Document from Document URL for HTML Representation #
 
@@ -915,20 +494,17 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
+Request
 
-
- Request
-
-```html 
-curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pdf?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&#x26;fileName#one-page.docx&#x26;folder#viewerdocs&#x26;storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
--H "Content-Type: application/json" 
+```html
+curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pdf?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&#x26;fileName#one-page.docx&#x26;folder#viewerdocs&#x26;storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX"
+-H "Content-Type: application/json"
 -X PUT -d "{'watermark': {'text': 'My Company','color': 'Magenta','position': 'Diagonal','size': 50}}"
 ```
 
+Response
 
- Response
-
-```html 
+```html
 {
   "fileName": "one-page4.docx",
   "folder": "viewerdocs",
@@ -937,84 +513,35 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pdf?url#https%3A%2F%2Fwww
 }
 ```
 
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Create PDF Document from Document URL for HTML Representation ###
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Pdf_File_from_Url_HTML.cs >}}
 
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Pdf_File_from_Url_HTML.php >}}
 
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_java_Create_Pdf_File_from_Url_HTML.java >}}
 
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Pdf_File_from_Url_HTML.rb >}}
 
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pdf_File_from_Url_HTML.js >}}
 
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Pdf_File_from_Url_HTML.py >}}
-
-
-
-
-
-
 
 # Create PDF Document from Document URL for Image Representation #
 
@@ -1026,20 +553,17 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
+Request
 
-
- Request
-
-```html 
-curl -v  "https://api.groupdocs.cloud/v1.0/viewer/image/pdf?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&#x26;fileName#one-page.docx&#x26;folder#viewerdocs&#x26;storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
--H "Content-Type: application/json" 
+```html
+curl -v  "https://api.groupdocs.cloud/v1.0/viewer/image/pdf?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&#x26;fileName#one-page.docx&#x26;folder#viewerdocs&#x26;storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX"
+-H "Content-Type: application/json"
 -X PUT -d "{'watermark': {'text': 'My Company','color': 'Magenta','position': 'Diagonal','size': 50}}"
 ```
 
+Response
 
- Response
-
-```html 
+```html
 {
   "fileName": "one-page6.docx",
   "folder": "viewerdocs",
@@ -1048,79 +572,33 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/image/pdf?url#https%3A%2F%2Fww
 }
 ```
 
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Create PDF Document from Document URL for Image Representation ###
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Pdf_File_from_Url_Image.cs >}}
 
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Pdf_File_from_Url_Image.php >}}
 
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Pdf_File_from_Url_Image.java >}}
 
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Pdf_File_from_Url_Image.rb >}}
 
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pdf_File_from_Url_Image.js >}}
 
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Pdf_File_from_Url_Image.py >}}
-
-
-
 

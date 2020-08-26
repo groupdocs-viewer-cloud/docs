@@ -12,15 +12,6 @@ keywords: ""
 Note:  The features listed in this page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-
-
-
-
-
-
-
-
-
 # Get Email Attachment Pages List for HTML Rrepresentation #
 
 Sometimes, it is required to get email attachments as pages. You can retrieve list of attachment pages for HTML representation using following API. It returns object with list of attachment pages or ZIP archive with actual pages as HTML when "application/zip" accept header specified.
@@ -31,27 +22,19 @@ The following GroupDocs.Viewer Cloud REST API resource has been used in [retrie
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/attachments/Test.pdf/pages" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer pTPAHbcNbrMcerjvtBpYgfkSh44oB9uWBEhoLNLiJ3KYWTZ-LjDK1OhIiSkiFnpwEDvAENURIo6NndadzqbW7Di4ZKIKC6DOlEGoFI2hfiNBaXEAGDE00knZePkCNsupU48qe1N_eGluq4urBAX3VBFiIdwz1yEPlPrqWG1DOAWYglUo5Nc9TdwZroBiDJ00A0oKjWoEJ_mRsI_VYK-NnZlNqrUiPGd6918ivV-vTtN2VvqGGUAosz26F7NZe0uEDf5GZszp-bxQ4_-JimHUgOD3z2M4gldo58oYp-6NBGCEjA312kqpxYZs22MJ_Ma-fSgT8yMDqgixItd0JxciHUCmSR8XVG803g1UgUF3-rfoWOn0FJAYLkZ3SFrjqMwjcJAsxcpWc-vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "Test.msg",
   "folder": null,
@@ -113,100 +96,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/attachments/Test.pd
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Get Pages List of Attachments for HTML Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Attachment_Pages_Html.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Attachment_Pages_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Attachment_Pages_Html.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Attachment_Pages_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Attachment_Pages_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Attachment_Pages_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Get Email Attachment Pages List for Image Representation #
 
@@ -218,27 +136,19 @@ The following GroupDocs.Viewer Cloud REST API resource has been used in the [re
 
 ## cURL Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/image/attachments/Test.pdf/pages" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer pTPAHbcNbrMcerjvtBpYgfkSh44oB9uWBEhoLNLiJ3KYWTZ-LjDK1OhIiSkiFnpwEDvAENURIo6NndadzqbW7Di4ZKIKC6DOlEGoFI2hfiNBaXEAGDE00knZePkCNsupU48qe1N_eGluq4urBAX3VBFiIdwz1yEPlPrqWG1DOAWYglUo5Nc9TdwZroBiDJ00A0oKjWoEJ_mRsI_VYK-NnZlNqrUiPGd6918ivV-vTtN2VvqGGUAosz26F7NZe0uEDf5GZszp-bxQ4_-JimHUgOD3z2M4gldo58oYp-6NBGCEjA312kqpxYZs22MJ_Ma-fSgT8yMDqgixItd0JxciHUCmSR8XVG803g1UgUF3-rfoWOn0FJAYLkZ3SFrjqMwjcJAsxcpWc-vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "Test.msg",
   "folder": null,
@@ -256,100 +166,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/image/attachments/Test.p
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Get Pages List of Attachments for Image Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Attachment_Pages_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Attachment_Pages_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Attachment_Pages_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Attachment_Pages_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Attachment_Pages_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Attachment_Pages_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Download ZIP Archive of Email Attachment Pages for HTML Representation #
 
@@ -361,34 +206,21 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [downlo
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/attachments/Test.pdf/pages/zip" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer pTPAHbcNbrMcerjvtBpYgfkSh44oB9uWBEhoLNLiJ3KYWTZ-LjDK1OhIiSkiFnpwEDvAENURIo6NndadzqbW7Di4ZKIKC6DOlEGoFI2hfiNBaXEAGDE00knZePkCNsupU48qe1N_eGluq4urBAX3VBFiIdwz1yEPlPrqWG1DOAWYglUo5Nc9TdwZroBiDJ00A0oKjWoEJ_mRsI_VYK-NnZlNqrUiPGd6918ivV-vTtN2VvqGGUAosz26F7NZe0uEDf5GZszp-bxQ4_-JimHUgOD3z2M4gldo58oYp-6NBGCEjA312kqpxYZs22MJ_Ma-fSgT8yMDqgixItd0JxciHUCmSR8XVG803g1UgUF3-rfoWOn0FJAYLkZ3SFrjqMwjcJAsxcpWc-vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 ZIP Archive with document pages as HTML
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -396,89 +228,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Download Zip Archive of Attachment Pages for HTML Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Attachment_Pages_ZIP_Html.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Attachment_Pages_Zip_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Attachment_Pages_ZIP_Html.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Attachment_Pages_Zip_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Attachment_Pages_Zip_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Attachment_Pages_Zip_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Download ZIP Archive of Email Attachment Pages for Image Representation #
 
@@ -490,34 +262,21 @@ The following GroupDocs.Viewer Cloud REST API resource has been used in the [do
 
 ## cURL Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/image/attachments/Test.pdf/pages/zip" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer pTPAHbcNbrMcerjvtBpYgfkSh44oB9uWBEhoLNLiJ3KYWTZ-LjDK1OhIiSkiFnpwEDvAENURIo6NndadzqbW7Di4ZKIKC6DOlEGoFI2hfiNBaXEAGDE00knZePkCNsupU48qe1N_eGluq4urBAX3VBFiIdwz1yEPlPrqWG1DOAWYglUo5Nc9TdwZroBiDJ00A0oKjWoEJ_mRsI_VYK-NnZlNqrUiPGd6918ivV-vTtN2VvqGGUAosz26F7NZe0uEDf5GZszp-bxQ4_-JimHUgOD3z2M4gldo58oYp-6NBGCEjA312kqpxYZs22MJ_Ma-fSgT8yMDqgixItd0JxciHUCmSR8XVG803g1UgUF3-rfoWOn0FJAYLkZ3SFrjqMwjcJAsxcpWc-vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 ZIP Archive with document pages as Image
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -525,89 +284,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Download Zip Archive of Attachment Pages for Image Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Attachment_Pages_ZIP_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Attachment_Pages_Zip_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Attachment_Pages_ZIP_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Attachment_Pages_Zip_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Attachment_Pages_Zip_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Attachment_Pages_Zip_Image.py >}}
-
-
-
-
-
-
-
- 
 
 # Get Email Attachment Page for HTML Representation #
 
@@ -619,34 +318,21 @@ The following GroupDocs.Viewer Cloud REST API resource has been used [to retrie
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/attachments/Test.pdf/pages/1" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer pTPAHbcNbrMcerjvtBpYgfkSh44oB9uWBEhoLNLiJ3KYWTZ-LjDK1OhIiSkiFnpwEDvAENURIo6NndadzqbW7Di4ZKIKC6DOlEGoFI2hfiNBaXEAGDE00knZePkCNsupU48qe1N_eGluq4urBAX3VBFiIdwz1yEPlPrqWG1DOAWYglUo5Nc9TdwZroBiDJ00A0oKjWoEJ_mRsI_VYK-NnZlNqrUiPGd6918ivV-vTtN2VvqGGUAosz26F7NZe0uEDf5GZszp-bxQ4_-JimHUgOD3z2M4gldo58oYp-6NBGCEjA312kqpxYZs22MJ_Ma-fSgT8yMDqgixItd0JxciHUCmSR8XVG803g1UgUF3-rfoWOn0FJAYLkZ3SFrjqMwjcJAsxcpWc-vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 Contents of Page as HTML
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -654,89 +340,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Get specific Page of Attachments for HTML Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Attachment_Page_Html.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Attachment_Page_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Attachment_Page_Html.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Attachment_Page_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Attachment_Page_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Attachment_Page_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Get Email Attachment Page for Image Representation #
 
@@ -748,34 +374,21 @@ The following GroupDocs.Viewer Cloud REST API resource has been used [to retrie
 
 ## cURL Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/image/attachments/Test.pdf/pages/1" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer pTPAHbcNbrMcerjvtBpYgfkSh44oB9uWBEhoLNLiJ3KYWTZ-LjDK1OhIiSkiFnpwEDvAENURIo6NndadzqbW7Di4ZKIKC6DOlEGoFI2hfiNBaXEAGDE00knZePkCNsupU48qe1N_eGluq4urBAX3VBFiIdwz1yEPlPrqWG1DOAWYglUo5Nc9TdwZroBiDJ00A0oKjWoEJ_mRsI_VYK-NnZlNqrUiPGd6918ivV-vTtN2VvqGGUAosz26F7NZe0uEDf5GZszp-bxQ4_-JimHUgOD3z2M4gldo58oYp-6NBGCEjA312kqpxYZs22MJ_Ma-fSgT8yMDqgixItd0JxciHUCmSR8XVG803g1UgUF3-rfoWOn0FJAYLkZ3SFrjqMwjcJAsxcpWc-vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 page Contents as Image
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -783,89 +396,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Specific Page of Attachments for Image Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Attachment_Page_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Attachment_Page_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Attachment_Page_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Attachment_Page_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Attachment_Page_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Attachment_Page_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Create Email Attachment Pages Cache for HTML Representation #
 
@@ -877,13 +430,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used [to create
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/attachments/Test.pdf/pages" \
 -X POST \
 -H "Content-Type: application/json" \
@@ -895,15 +444,11 @@ wZroBiDJ00A0oKjWoEJ_mRsI_VYK-NnZlNqrUiPGd6918ivV-vTtN2VvqGGUAosz26F7NZe0uEDf5GZs
 6NBGCEjA312kqpxYZs22MJ_Ma-fSgT8yMDqgixItd0JxciHUCmSR8XVG803g1UgUF3-rfoWOn0FJAYLkZ3SFrjqMwjcJAsxcpWc-
 vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "Test.msg",
   "folder": null,
@@ -928,100 +473,35 @@ vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Create Attachments Pages Cache for HTML Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Attachment_Pages_Cache_Html.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Create_Attachment_Pages_Cache_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Attachment_Pages_Cache_Html.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Attachment_Pages_Cache_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Attachment_Pages_Cache_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Attachment_Pages_Cache_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Create Email Attachment Pages Cache for Image Representation #
 
@@ -1033,13 +513,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used [to create
 
 ## cURL Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/image/attachments/Test.pdf/pages" \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1051,15 +527,11 @@ wZroBiDJ00A0oKjWoEJ_mRsI_VYK-NnZlNqrUiPGd6918ivV-vTtN2VvqGGUAosz26F7NZe0uEDf5GZs
 6NBGCEjA312kqpxYZs22MJ_Ma-fSgT8yMDqgixItd0JxciHUCmSR8XVG803g1UgUF3-rfoWOn0FJAYLkZ3SFrjqMwjcJAsxcpWc-
 vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "Test.msg",
   "folder": null,
@@ -1081,100 +553,35 @@ vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Create Attachments Pages Cache for Image Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Attachment_Pages_Cache_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Create_Attachment_Pages_Cache_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Attachment_Pages_Cache_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Attachment_Pages_Cache_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Attachment_Pages_Cache_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Attachment_Pages_Cache_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Remove Email Attachment Pages Cache #
 
@@ -1186,13 +593,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used [to remove
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/attachments/Test.pdf/pages/cache" \
 -X DELETE \
 -H "Content-Type: application/json" \
@@ -1202,22 +605,13 @@ wZroBiDJ00A0oKjWoEJ_mRsI_VYK-NnZlNqrUiPGd6918ivV-vTtN2VvqGGUAosz26F7NZe0uEDf5GZs
 6NBGCEjA312kqpxYZs22MJ_Ma-fSgT8yMDqgixItd0JxciHUCmSR8XVG803g1UgUF3-rfoWOn0FJAYLkZ3SFrjqMwjcJAsxcpWc-
 vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 Empty response with '204 No Content' status.
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -1225,89 +619,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Remove Attachments Pages Cache for Html Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Delete_Attachment_Pages_Cache_Html.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Delete_Attachment_Pages_Cache_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Delete_Attachment_Pages_Cache_Html.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Delete_Attachment_Pages_Cache_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Delete_Attachment_Pages_Cache_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Delete_Attachment_Pages_Cache_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Remove Email Attachment Pages Cache for Image Representation #
 
@@ -1319,13 +653,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used [to delete
 
 ## cURL Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/image/attachments/Test.pdf/pages/cache" \
 -X DELETE \
 -H "Content-Type: application/json" \
@@ -1335,22 +665,13 @@ wZroBiDJ00A0oKjWoEJ_mRsI_VYK-NnZlNqrUiPGd6918ivV-vTtN2VvqGGUAosz26F7NZe0uEDf5GZs
 6NBGCEjA312kqpxYZs22MJ_Ma-fSgT8yMDqgixItd0JxciHUCmSR8XVG803g1UgUF3-rfoWOn0FJAYLkZ3SFrjqMwjcJAsxcpWc-
 vm2eLneOPAh8R08ATyhemGBNCh3Ke3jJhaMf92"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 Empty response with '204 No Content' status.
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -1358,88 +679,28 @@ The API is completely independent of your operating system, database system or d
 
 ### Remove Attachments Pages Cache for Image Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Delete_Attachment_Pages_Cache_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Delete_Attachment_Pages_Cache_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Delete_Attachment_Pages_Cache_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Delete_Attachment_Pages_Cache_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Delete_Attachment_Pages_Cache_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Delete_Attachment_Pages_Cache_Image.py >}}
-
-
-
-
-
-
-
- 
 
  

@@ -12,36 +12,35 @@ GroupDocs.Viewer Cloud is a REST API for rendering over 50 documents and image 
 
 {{< alert style="info" >}}
 
-* Flexible rendering documents as HTML5 or Image including next supported file formats
+Flexible rendering documents as HTML5 or Image including next supported file formats
 
-  * Portable Document Format: PDF
-  * Microsoft Word: DOC, DOCX, DOCM, DOT, DOTX, DOTM
-  * Microsoft Excel: XLS, XLSX, XLSM, XLSB, XLTX, XLTM
-  * Microsoft PowerPoint: PPT, PPTX, PPS, PPSX, PPSM, POTM, PPTM, POTX
-  * Microsoft Visio: VSD, VDX, VSS, VSX, VST, VTX, VSDX, VDW, VSSX, VSTX, VSDM, VSTM, VSSM
-  * Microsoft Project: MPP, MPT
-  * Microsoft Outlook: MSG, EML, PST, OST
-  * Microsoft OneNote: ONE
-  * Apple Mail: EMLX
-  * OpenDocument Formats: ODT, OTT, ODS, ODP, OTP, OTS, ODG
-  * Rich Text Format: RTF
-  * Plain Text File: TXT
-  * Comma-Separated Values: CSV
-  * Tab Separated values: TSV
-  * HyperText Markup Language: HTML, MHT, MHTML
-  * Extensible Markup Language: XML
-  * XML Paper Specification: XPS
-  * Image files: BMP, GIF, JPG, PNG, TIFF, multi-page TIFF, WebP, DjVu, SVG, DNG
-  * Jpeg2000 (JP2, J2C, J2K, JPF, JPX, JPM)
-  * Electronic publication: EPUB
-  * Windows Icon: ICO
-  * Mobipocket e-book format: MOBI
-  * Digital Imaging and Communications in Medicine format: DICOM
-  * Metafile: WMF, EMF
-  * LaTeX: TEX
-  * Computer Graphics Metafile: CGM
-  * Printer Command Language Document: PCL
-
+* Portable Document Format: PDF
+* Microsoft Word: DOC, DOCX, DOCM, DOT, DOTX, DOTM
+* Microsoft Excel: XLS, XLSX, XLSM, XLSB, XLTX, XLTM
+* Microsoft PowerPoint: PPT, PPTX, PPS, PPSX, PPSM, POTM, PPTM, POTX
+* Microsoft Visio: VSD, VDX, VSS, VSX, VST, VTX, VSDX, VDW, VSSX, VSTX, VSDM, VSTM, VSSM
+* Microsoft Project: MPP, MPT
+* Microsoft Outlook: MSG, EML, PST, OST
+* Microsoft OneNote: ONE
+* Apple Mail: EMLX
+* OpenDocument Formats: ODT, OTT, ODS, ODP, OTP, OTS, ODG
+* Rich Text Format: RTF
+* Plain Text File: TXT
+* Comma-Separated Values: CSV
+* Tab Separated values: TSV
+* HyperText Markup Language: HTML, MHT, MHTML
+* Extensible Markup Language: XML
+* XML Paper Specification: XPS
+* Image files: BMP, GIF, JPG, PNG, TIFF, multi-page TIFF, WebP, DjVu, SVG, DNG
+* Jpeg2000 (JP2, J2C, J2K, JPF, JPX, JPM)
+* Electronic publication: EPUB
+* Windows Icon: ICO
+* Mobipocket e-book format: MOBI
+* Digital Imaging and Communications in Medicine format: DICOM
+* Metafile: WMF, EMF
+* LaTeX: TEX
+* Computer Graphics Metafile: CGM
+* Printer Command Language Document: PCL
 * Rotating and reordering
 * Watermarking pages
 * Rendering documents as PDF

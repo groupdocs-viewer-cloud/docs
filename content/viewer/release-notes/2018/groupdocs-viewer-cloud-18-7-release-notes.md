@@ -44,9 +44,7 @@ There 13 features and fixes in this release. The most notable are:
 |VIEWERCLOUD-172|Eliminate the gap between list of tasks and footer when rendering MS Project documents|Improvement
 |VIEWERCLOUD-145|Extend support for DefaultFontName setting to PDF documents when rendering into HTML|Improvement
 
-
 ## Public API and Backward Incompatible Changes ##
-
 
 ### Changing language for header of emails ###
 
@@ -54,9 +52,7 @@ There 13 features and fixes in this release. The most notable are:
 
 When rendering email messages by default Viewer uses English languge to render field labels such as (From, To, Subject etc.). To change field labels you can set **FieldLabels** on **EmailOptions** [options-objects]({{< ref "viewer/developer-guide/v1/common-resources/options-objects.md" >}})class.
 
-
-
-```html 
+```html
  ### Retrieve access token
 curl --request POST \
   --url https://api.groupdocs.cloud/oauth2/token \
@@ -126,43 +122,25 @@ curl --request GET \
 |User Field 3|User Field 3
 |User Field 4|User Field 4
 
-
 ### Rendering by coordinates or Tiled rendering ###
 
-![](viewer/images/RendCoordinate.jpg) 
+![](viewer/images/RendCoordinate.jpg)
 
 #### Introduction ####
 
- 
-
-Tiled rendering or (rendering by coordinates) is the process of rendering CAD documents (into an image, HTML or PDF) by dividing into square parts and rendering each part (or tile), separately. Since the version 18.7 tiled rendering is available for rendering into an image and HTML for DWG file format. Generally DWG documents are divided into pages by Model and Layouts, but when the tiled rendering is enabled, only the Model is rendered, and every tile composes a separate page. 
-
- 
+Tiled rendering or (rendering by coordinates) is the process of rendering CAD documents (into an image, HTML or PDF) by dividing into square parts and rendering each part (or tile), separately. Since the version 18.7 tiled rendering is available for rendering into an image and HTML for DWG file format. Generally DWG documents are divided into pages by Model and Layouts, but when the tiled rendering is enabled, only the Model is rendered, and every tile composes a separate page.
 
 #### How to render by coordinates ####
 
- 
+Before you start rendering by coordinates, it is recommended to obtain the overall width and height of the document with help of [document info methods]({{< ref "viewer/developer-guide/v1/document-information.md" >}}) as shown in example below. After you know the width and height, determine the starting point X and Y coordinates and the width with the height of the tile (region you want to render). Then add tiles to [CadOptions.Tiles]({{< ref "viewer/developer-guide/v1/common-resources/options-objects.md" >}}) as shown in example below. Coordinates start from bottom left corner of the drawing and have only positive values as shown in sample picture below.
 
-Before you start rendering by coordinates, it is recommended to obtain the overall width and height of the document with help of [document info methods]({{< ref "viewer/developer-guide/v1/document-information.md" >}}) as shown in example below. After you know the width and height, determine the starting point X and Y coordinates and the width with the height of the tile (region you want to render). Then add tiles to [CadOptions.Tiles]({{< ref "viewer/developer-guide/v1/common-resources/options-objects.md" >}}) as shown in example below. Coordinates start from bottom left corner of the drawing and have only positive values as shown in sample picture below. 
+,,Overall width of the document is 650px height and 750px width. The selected tile starts at coordinate X: 250 and Y: 100 and has a width 150px, height: 200px,,
 
- 
+![](viewer/images/coordinates.jpg)
 
+You can add as many tiles as you need, the following example demonstrates how to render DWG drawing into an image by dividing into four equal parts.
 
-,,Overall width of the document is 650px height and 750px width. The selected tile starts at coordinate X: 250 and Y: 100 and has a width 150px, height: 200px,, 
-
- 
-
-![](viewer/images/coordinates.jpg) 
-
-You can add as many tiles as you need, the following example demonstrates how to render DWG drawing into an image by dividing into four equal parts. 
-
- 
-
-
-
-
-
-```html 
+```html
 ### Retrieve access token
 curl --request POST \
   --url https://api.groupdocs.cloud/oauth2/token \
@@ -188,81 +166,51 @@ curl --request GET \
 
 ```
 
-
-
 ### Setting default font when rendering PDF documents into HTML ###
 
 Since the version 18.7, it is possible to set default font when rendering PDF document into HTML. This setting may be useful when you would like to specify which font should be used in case PDF document missing some font(s).
 
-
-
-```html 
+```html
 ### Retrieve access token
 curl --request POST \
   --url http://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
   --data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
- 
+
 ### Set default font name when rendering PDF document as HTML
 curl --request POST \
   --url http://api.groupdocs.cloud/v1/viewer/missing-font.pdf/html/pages \
   --header 'authorization: [Access Token]' \
   --header 'content-type: application/json' \
   --data '{"defaultFontName": "Arial"}'
- 
+
 ### Retrieve created page
 curl --request GET \
   --url http://api.groupdocs.cloud/v1/viewer/missing-font.pdf/html/pages/1 \
   --header 'authorization: [Access Token]'
 ```
- 
-
 
 ### Setting page size when rendering Email documents as PDF and image ###
 
-
-
-
-
-
-
- 
-
- 
-
- 
-
 ![](viewer/images/pagesize.jpg)
 
- 
+Since the version 18.7, it is possible to set output page size for rendering Email documents into PDF and images. To enable this feature, please set the **PageSize **property of the **[EmailOptions]({{< ref "viewer/developer-guide/v1/common-resources/options-objects.md" >}})** class as shown in example below. Please note, that for rendering into HTML the whole email message is rendered into one responsive HTML page and this new option will not influence the rendering.
 
- 
-
- 
-
-Since the version 18.7, it is possible to set output page size for rendering Email documents into PDF and images. To enable this feature, please set the **PageSize **property of the **[EmailOptions]({{< ref "viewer/developer-guide/v1/common-resources/options-objects.md" >}})** class as shown in example below. Please note, that for rendering into HTML the whole email message is rendered into one responsive HTML page and this new option will not influence the rendering. 
-
- 
-
-
-
-
-
-```html 
+```html
 
 ### Retrieve access token
 curl --request POST \
   --url http://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
   --data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
- 
+
 ### Set page size when rendering pages
 curl --request POST \
   --url http://api.groupdocs.cloud/v1/viewer/message.msg/image/pages \
   --header 'authorization: [Access Token]' \
   --header 'content-type: application/json' \
   --data '{"emailOptions": {"pageSize": "A0"}}'
- 
+
 ### Retrieve created page
 curl --request GET \
   --url http://api.groupdocs.cloud/v1/viewer/message.msg/image/pages/1 \
@@ -270,20 +218,20 @@ curl --request GET \
 
 ```
 
-```html 
+```html
 ### Retrieve access token
 curl --request POST \
   --url http://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
   --data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
- 
+
 ### Set page size when rendering into PDF
 curl --request POST \
   --url http://api.groupdocs.cloud/v1/viewer/message.msg/image/pdf \
   --header 'authorization: [Access Token]' \
   --header 'content-type: application/json' \
   --data '{"emailOptions": {"pageSize": "A0"}}'
- 
+
 ### Retrieve created PDF document
 curl --request GET \
   --url http://api.groupdocs.cloud/v1/viewer/message.msg/image/pdf \

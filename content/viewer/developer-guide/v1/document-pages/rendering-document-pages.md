@@ -12,16 +12,7 @@ keywords: ""
 Note:  The features listed in this page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-
-
-
-
 This section provides API details to create document pages cache, retrieve pages, modify pages and delete document pages cache.
-
-
-
-
-
 
 # Get List of Links to Document Pages as HTML #
 
@@ -33,13 +24,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [get li
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
 -X GET \
 -H "Content-Type: application/json" \
@@ -47,12 +34,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
 
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "folder": null,
@@ -115,100 +99,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocscloud/GroupDocs.Viewer-Cloud/tree/master/SDKs).
 
 ### Get Lists of Document Pages link for HTML Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pages_HTML.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pages_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pages_HTML.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pages_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pages_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pages_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Get List of Links to Document Pages as Image #
 
@@ -220,13 +139,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [get li
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
 -X GET \
 -H "Content-Type: application/json" \
@@ -234,12 +149,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
  
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "folder": null,
@@ -261,100 +173,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocscloud/GroupDocs.Viewer-Cloud/tree/master/SDKs).
 
 ### Get Lists of Document Pages link for Image Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pages_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pages_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pages_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pages_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pages_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pages_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Download ZIP Archive with Document Pages as HTML #
 
@@ -366,13 +213,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [get ZI
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/zip" \
 -X GET \
 -H "Content-Type: application/json" \
@@ -380,19 +223,11 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/zip" \
  
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 ZIP archive with document pages as HTML
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -400,85 +235,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Get ZIP Archive of Document Pages as HTML ###
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_ZIP_With_Pages_HTML.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_ZIP_With_Pages_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_ZIP_With_Pages_HTML.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_ZIP_With_Pages_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_ZIP_With_Pages_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_ZIP_With_Pages_HTML.py >}}
-
-
-
-
-
- 
 
 # Download ZIP Archive with Document Pages as Image #
 
@@ -490,13 +269,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [get zi
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages/zip" \
 -X GET \
 -H "Content-Type: application/json" \
@@ -504,19 +279,11 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages/zip" \
  
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 ZIP archive with document pages as Image
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -524,89 +291,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Get ZIP Archive of Document Pages as Image ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_ZIP_With_Pages_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_ZIP_With_Pages_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_ZIP_With_Pages_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_ZIP_With_Pages_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_ZIP_With_Pages_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_ZIP_With_Pages_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Get List of Links to Document Pages from provided URL as HTML #
 
@@ -618,13 +325,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [get li
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/html/pages?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1&#x26;embeddedResources#true" \
 -X GET \
 -H "Content-Type: application/json" \
@@ -632,12 +335,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/pages?url#https%3a%2f%2fwww.
 
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "folder": null,
@@ -651,96 +351,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/pages?url#https%3a%2f%2fwww.
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Get Lists of Document Pages link from provided URL for HTML Representation ###
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pages_URL_HTML.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pages_URL_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pages_URL_HTML.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pages_URL_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pages_URL_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pages_URL_HTML.py >}}
-
-
-
-
-
- 
 
 # Get List of Links to Document Pages from provided URL as Image #
 
@@ -752,13 +391,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [get li
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/image/pages?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
 -X GET \
 -H "Content-Type: application/json" \
@@ -766,12 +401,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/pages?url#https%3a%2f%2fwww
  
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "folder": null,
@@ -784,100 +416,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/pages?url#https%3a%2f%2fwww
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Get Lists of Document Pages from provided URL link for Image Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pages_URL_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pages_URL_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pages_URL_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pages_URL_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pages_URL_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pages_URL_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Download Document Page as HTML #
 
@@ -889,31 +456,19 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [downlo
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
-curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample-one-page.docx/html/pages/1?ignoreResourcePathInResources#true&#x26;embedResources#true&#x26;renderComments#false&#x26;renderHiddenPages#true&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
--H "Content-Type: application/json" 
+```html
+curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample-one-page.docx/html/pages/1?ignoreResourcePathInResources#true&#x26;embedResources#true&#x26;renderComments#false&#x26;renderHiddenPages#true&#x26;appsid#XXXX&#x26;signature#XXX-XX"
+-H "Content-Type: application/json"
 -X GET -d "{}"
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 Contents of page as HTML
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -921,89 +476,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Download Document Page as HTML ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Download_Document_Page_HTML.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Download_Document_Page_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Download_Document_Page_HTML.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Download_Document_Page_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Download_Document_Page_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Download_Document_Page_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Download Document Page as Image #
 
@@ -1015,31 +510,19 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [downlo
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
-curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample-one-page.docx/image/pages/1?extractText#true&#x26;renderComments#false&#x26;renderHiddenPages#true&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
--H "Content-Type: application/json" 
+```html
+curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample-one-page.docx/image/pages/1?extractText#true&#x26;renderComments#false&#x26;renderHiddenPages#true&#x26;appsid#XXXX&#x26;signature#XXX-XX"
+-H "Content-Type: application/json"
 -X GET -d "{}"
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 Contents of page as Image
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -1047,89 +530,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Download Document Page as Image ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Download_Document_Page_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Download_Document_Page_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Download_Document_Page_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Download_Document_Page_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Download_Document_Page_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Download_Document_Page_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Create Document Cache as HTML #
 
@@ -1141,24 +564,17 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
-curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/html/pages?storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
--H "Content-Type: application/json" 
+```html
+curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/html/pages?storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX"
+-H "Content-Type: application/json"
 -X POST -d "{'resourcePath': 'page/1/resource/style.css','embedResources': true,'startPageNumber': 1,'countPages': 3,'renderComments': false}"
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "sample.docx",
   "folder": null,
@@ -1182,100 +598,35 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/html/pages?storage
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Create Document Cache as HTML ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Document_Cache_HTML.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Document_Cache_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Document_Cache_HTML.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Document_Cache_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Document_Cache_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Document_Cache_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Create Document Cache as Image #
 
@@ -1287,22 +638,15 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
-curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/image/pages?storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
--H "Content-Type: application/json" 
+```html
+curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/image/pages?storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX"
+-H "Content-Type: application/json"
 -X POST -d "{'resourcePath': 'page/1/resource/style.css','embedResources': true,'startPageNumber': 1,'countPages': 3,'renderComments': false}"
 ```
 
-
-
-
- Response
+Response
 
 {
  "fileName": "sample.docx",
@@ -1324,102 +668,35 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/image/pages?storag
  "url": null
 }
 
-
-
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Create Document Cache as Image ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Document_Cache_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Document_Cache_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Document_Cache_HTML.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Document_Cache_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Document_Cache_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Document_Cache_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Rendering MS Project Document Pages as HTML #
 
@@ -1433,13 +710,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/pages" \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1447,12 +720,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/pages" \
 -H "authorization: Bearer [Access Token]"
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "sample.mpp",
   "folder": null,
@@ -1466,100 +736,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/pages" \
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Create Pages Cache as HTML of MS Project Document ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Project_Page_Cache_HTML.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Project_Page_Cache_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Project_Page_Cache_HTML.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Project_Page_Cache_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Project_Page_Cache_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Project_Page_Cache_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Rendering MS Project Document Pages as Image #
 
@@ -1573,13 +778,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/image/pages" \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1587,12 +788,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/image/pages" \
 -H "authorization: Bearer [Access Token]"
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "sample.mpp",
   "folder": null,
@@ -1606,100 +804,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/image/pages" \
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Create Pages Cache as Image of MS Project Document ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Project_Page_Cache_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Project_Page_Cache_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Project_Page_Cache_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Project_Page_Cache_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Project_Page_Cache_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Project_Page_Cache_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Create Document Cache as HTML from Document in Request Body #
 
@@ -1711,26 +844,19 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
-curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pages?fileName#one-page.docx&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
--H "Content-Type: application/json" 
--X POST 
--H "Accept: application/json" 
+```html
+curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pages?fileName#one-page.docx&#x26;appsid#XXXX&#x26;signature#XXX-XX"
+-H "Content-Type: application/json"
+-X POST
+-H "Accept: application/json"
 -d "{'resourcePath':'page/{page-number}/resource/{resource-name}"
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "folder": null,
@@ -1755,14 +881,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pages?fileName#one-page.d
   ]
 }
 
-
- 
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -1770,91 +889,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Create Document Cache as HTML from Document in Request Body ###
 
- 
-
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Pages_Cache_Request_HTML.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Pages_Cache_Request_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Pages_Cache_Request_HTML.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Pages_Cache_Request_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pages_Cache_Request_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Pages_Cache_Request_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Create Document Cache as Image from Document in Request Body #
 
@@ -1866,26 +923,19 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
-curl -v "https://api.groupdocs.cloud/v1.0/viewer/image/pages?fileName#one-page.docx&#x26;appsid#XXXX&#x26;signature#XXX-XX" 
--H "Content-Type: application/json" 
--X POST 
--H "Accept: application/json" 
+```html
+curl -v "https://api.groupdocs.cloud/v1.0/viewer/image/pages?fileName#one-page.docx&#x26;appsid#XXXX&#x26;signature#XXX-XX"
+-H "Content-Type: application/json"
+-X POST
+-H "Accept: application/json"
 -d "{'format':'jpg','quality':90,'width':600,'height':800,'startPageNumber':1,'countPages':1,'extractText':true,'renderComments':true}"
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "folder": null,
@@ -1898,102 +948,35 @@ curl -v "https://api.groupdocs.cloud/v1.0/viewer/image/pages?fileName#one-page.d
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Create Document Cache as Image from Document in Request Body ###
 
- 
-
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Pages_Cache_Request_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Pages_Cache_Request_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Pages_Cache_Request_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Pages_Cache_Request_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pages_Cache_Request_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Pages_Cache_Request_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Create Document Cache for Document URL with HtmlOptions as HTML #
 
@@ -2005,11 +988,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-
-
-
-
- Request
+Request
 
 curl -v "https://api.groupdocs.cloud/v1.0/viewer/html/pages?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&fileName#one-page.docx&storage#First%20Storage&appsid#XXXX&signature#XXX-XX"
 
@@ -2017,14 +996,9 @@ curl -v "https://api.groupdocs.cloud/v1.0/viewer/html/pages?url#https%3A%2F%2Fww
 
 -X PUT -d "{'embedResources': true}"
 
+Response
 
-
-
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "folder": null,
@@ -2038,100 +1012,35 @@ curl -v "https://api.groupdocs.cloud/v1.0/viewer/html/pages?url#https%3A%2F%2Fww
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Create Document Cache for Document URL with HTMLOptions as HTML ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Document_Cache_Url_With_HTMLOptions.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Document_Cache_Url_With_HTMLOptions.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Document_Cache_Url_With_HTMLOptions.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Document_Cache_Url_With_HTMLOptions.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Document_Cache_Url_With_HTMLOptions.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Document_Cache_Url_With_HTMLOptions.py >}}
-
-
-
-
-
-
-
-
 
 # Create Document Cache for Document URL with ImageOptions as Image #
 
@@ -2143,26 +1052,17 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
+Request
 
+curl -v  "XX-XX"
 
-
-
- Request
-
-curl -v  "XX-XX" 
-
--H "Content-Type: application/json" 
+-H "Content-Type: application/json"
 
 -X PUT -d "{'format': 'jpeg','quality': 70}"
 
+Response
 
-
-
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "one-page3.docx",
   "folder": null,
@@ -2176,100 +1076,35 @@ curl -v  "XX-XX"
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Create Document Cache for Document URL with ImageOptions as Image ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Document_Cache_Url_With_ImageOptions.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Document_Cache_Url_With_ImageOptions.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Document_Cache_Url_With_ImageOptions.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Document_Cache_Url_With_ImageOptions.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Document_Cache_Url_With_ImageOptions.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Document_Cache_Url_With_ImageOptions.py >}}
-
-
-
-
-
-
-
-
 
 # Rotate Document Pages for HTML Representation #
 
@@ -2281,13 +1116,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [rotate
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
 -X PUT \
 -H "Content-Type: application/json" \
@@ -2297,12 +1128,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
  
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "pages": [
     {
@@ -2336,100 +1164,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Rotate Document Pages for HTML Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Rotate_Page_HTML.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Rotate_Page_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Rotate_Page_HTML.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Rotate_Page_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Rotate_Page_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Rotate_Page_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Rotate Document Pages for Image Representation #
 
@@ -2441,13 +1204,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [rotate
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
 -X PUT \
 -H "Content-Type: application/json" \
@@ -2457,12 +1216,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
  
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "pages": [
     {
@@ -2496,100 +1252,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Rotate Document Pages for HTML Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Rotate_Page_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Rotate_Page_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Rotate_Page_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Rotate_Page_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Rotate_Page_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Rotate_Page_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Reorder Document Pages for HTML Representation #
 
@@ -2601,13 +1292,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [reorde
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
 -X PUT \
 -H "Content-Type: application/json" \
@@ -2617,12 +1304,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
  
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "pages": [
     {
@@ -2656,100 +1340,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Reorder Document Pages for HTML Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Reorder_Page_HTML.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Reorder_Page_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Reorder_Page_HTML.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Reorder_Page_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Reorder_Page_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Reorder_Page_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Reorder Document Pages for Image Representation #
 
@@ -2761,13 +1380,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [reorde
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
 -X PUT \
 -H "Content-Type: application/json" \
@@ -2777,12 +1392,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
  
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "pages": [
     {
@@ -2816,100 +1428,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Reorder Document Pages for HTML Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Reorder_Page_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Reorder_Page_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Reorder_Page_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Reorder_Page_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Reorder_Page_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Reorder_Page_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Remove Document Cache for HTML Pages #
 
@@ -2921,31 +1468,17 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [remove
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-curl -v  "XX-XX" 
+curl -v  "XX-XX"
 
 -H "Content-Type: application/json" -X DELETE -d "{}"
 
+Response
 
-
-
-
-
- Response
-
-```html 
+```html
 Empty response with '204 No Content' status.
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -2953,89 +1486,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Remove Document Cache for HTML Pages ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Remove_Document_Cache_for_HTML_Pages.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Remove_Document_Cache_for_HTML_Pages.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Remove_Document_Cache_for_HTML_Pages.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Remove_Document_Cache_for_HTML_Pages.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Remove_Document_Cache_for_HTML_Pages.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Remove_Document_Cache_for_HTML_Pages.py >}}
-
-
-
-
-
-
-
-
 
 # Remove Document Cache for Page Images #
 
@@ -3047,33 +1520,19 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [remove
 
 ## cURL REST Example ##
 
+Request
 
+curl -v  "XX-XX"
 
-
-
- Request
-
-curl -v  "XX-XX" 
-
--H "Content-Type: application/json" 
+-H "Content-Type: application/json"
 
 -X DELETE -d "{}"
 
+Response
 
-
-
-
-
- Response
-
-```html 
+```html
 Empty response with '204 No Content' status.
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -3081,89 +1540,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Remove Document Cache for Page Image ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Remove_Document_Cache_for_Image_Pages.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Remove_Document_Cache_for_Image_Pages.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Remove_Document_Cache_for_HTML_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Remove_Document_Cache_for_Image_Pages.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Remove_Document_Cache_for_Image_Pages.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Remove_Document_Cache_for_Image_Pages.py >}}
-
-
-
-
-
-
-
-
 
 # Specify Image Quality when Rendering PDF Documents as HTML #
 
@@ -3175,10 +1574,6 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Specif
 
 ## cURL REST Example ##
 
-
-
-
-
  Requestcurl -v "[http:~~/~~/api.groupdocs.cloud/v1/viewer/sample2.pdf/html/pages](http://api.groupdocs.cloud/v1/viewer/sample2.pdf/html/pages)" \
 
 -X GET \
@@ -3189,14 +1584,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Specif
 
 -H "authorization: Bearer "
 
+Response
 
-
-
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "sample2.pdf",
   "folder": null,
@@ -3241,96 +1631,35 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Specif
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Specify Image Quality when Rendering PDF Documents as HTML ###
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Set_image_quality.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Set_image_quality.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Set_image_quality.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Set_image_quality.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Set_image_quality.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Set_image_quality.py >}}
-
-
-
-
-
- 
 
 # Exclude fonts when rendering as HTML #
 
@@ -3346,10 +1675,6 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Preven
 
 ## cURL REST Example ##
 
-
-
-
-
  Requestcurl -v "http:~/~/api.groupdocs.cloud/v1/viewer/one-page1.docx/html/pages"  \
 
 -X GET -data '{"excludeFonts": true }' \
@@ -3358,14 +1683,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Preven
 
 -H "authorization: Bearer [Access Token]"
 
+Response
 
-
-
-
-
- Response
-
-```html 
+```html
       {
   "fileName": "one-page1.docx",
   "folder": null,
@@ -3388,101 +1708,35 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Preven
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Exclude font when rendering as HTML ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Exclude_Fonts.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Exclude_Fonts.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Exclude_Fonts.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Exclude_Fonts.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Exclude_Fonts.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Node_Exclude_Fonts.py >}}
-
-
-
-
-
-
-
-
-
 
 # Auto Fit column width rendering document as HTML #
 
@@ -3494,10 +1748,6 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Auto F
 
 ## cURL REST Example ##
 
-
-
-
-
  Requestcurl -v "[http:~~/~~/api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages](http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages)" \
 
 -X GET -data '{"cellsOptions": {"textOverflowMode": "AutoFitColumn"}'  \
@@ -3506,14 +1756,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Auto F
 
 -H "authorization: Bearer [Access Token]"
 
+Response
 
-
-
-
-
- Response
-
-```html 
+```html
       {
   "fileName": "with-overflowed-text.xlsx",
   "folder": null,
@@ -3536,101 +1781,35 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Auto F
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Autofit column width rendering document as HTML ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_text_Overflow_Mode.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_text_Overflow_Mode.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_text_Overflow_Mode.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_text_Overflow_Mode.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_text_Overflow_Mode.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Node_Exclude_Fonts.py >}}
-
-
-
-
-
-
-
-
-
 
 # Rendering only Print Area in Excel document as HTML #
 
@@ -3642,10 +1821,6 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Render
 
 ## cURL REST Example ##
 
-
-
-
-
  Requestcurl -v "[http:~~/~~/api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages](http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages)"  \
 
 -X GET -data '{"cellsOptions": {"renderPrintAreaOnly": true, "renderHiddenColumns": true}}'  \
@@ -3654,14 +1829,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Render
 
 -H "authorization: Bearer [Access Token]"
 
+Response
 
-
-
-
-
- Response
-
-```html 
+```html
       {
   "fileName": "with-overflowed-text.xlsx",
   "folder": null,
@@ -3684,98 +1854,35 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Render
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Rendering only Print Area in Excel document as HTML ###
 
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_render_PrintArea_Only.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_render_PrintArea_Only.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_render_PrintArea_Only.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_render_PrintArea_Only.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_render_PrintArea_Only.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Node_render_PrintArea_Only.py >}}
-
-
-
-
-
- 
-
 
 # Include/exclude hidden content in Excel documents as HTML #
 
@@ -3787,10 +1894,6 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [includ
 
 ## cURL REST Example ##
 
-
-
-
-
  Requestcurl -v "[http:~~/~~/api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages](http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages)"  \
 
 -X GET -data '{"cellsOptions": {"renderHiddenRows": true, "renderHiddenColumns": true}}'  \
@@ -3799,14 +1902,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [includ
 
 -H "authorization: Bearer [Access Token]"
 
+Response
 
-
-
-
-
- Response
-
-```html 
+```html
       {
   "fileName": "with-overflowed-text.xlsx",
   "folder": null,
@@ -3829,108 +1927,39 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [includ
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Include/exclude hidden content in Excel documents as HTML ###
 
-
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_render_Hidden_Rows.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_render_Hidden_Rows.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_render_Hidden_Rows.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_render_Hidden_Rows.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_render_Hidden_Rows.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Node_render_Hidden_Rows.py >}}
 
-
-
-
-
-
-
-
-
-
 # Rendering PDF Documents into HTML with Setting (Default Font) #
 
-
 Since the version 18.7, it is possible to set default font when rendering PDF document into HTML. This setting may be useful when you would like to specify which font should be used in case PDF document missing some font(s)
-
 
 ## Resource ##
 
@@ -3938,75 +1967,31 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Render
 
 ## cURL REST Example ##
 
-
-
-
-
  Request\\
-
-
 
 # Set default font name when rendering PDF document as HTML
 
-
-
-
 curl request POST \
-
-
-
 
 url http:~/~/api.groupdocs.cloud/v1/viewer/missing-font.pdf/html/pages \
 
-
-
-
 header 'authorization: [Access Token]' \
-
-
-
 
 header 'content-type: application/json' \
 
-
-
-
 data '{"defaultFontName": "Arial"}'
-
-
-
-
-  
-
-
-
 
 # Retrieve created page
 
-
-
-
 curl request GET \
-
-
-
 
   ~-~-url http:~/~/api.groupdocs.cloud/v1/viewer/missing-font.pdf/html/pages/1 \
 
-
-
-
   ~-~-header 'authorization: [Access Token]'
 
+Response
 
-
-
-
-
-
- Response
-
-```html 
+```html
       {
   "fileName": "sample.pdf",
   "folder": null,
@@ -4030,101 +2015,34 @@ curl request GET \
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Rendering PDF Documents into HTML with Setting (Default Font) ###
 
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Render_PDF_DefaultFont.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Render_PDF_DefaultFont.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Render_PDF_DefaultFont.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Render_PDF_DefaultFont.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Render_PDF_DefaultFont.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Node_Render_PDF_DefaultFont.py >}}
-
-
-
-
-
- 
-
-
-
-
-
- 
 
  

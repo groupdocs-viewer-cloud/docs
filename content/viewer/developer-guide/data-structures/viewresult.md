@@ -8,14 +8,11 @@ description: ""
 keywords: ""
 ---
 
-# ViewResult #
-
 ViewResult data structure returned by Document [View API]({{< ref "viewer/developer-guide/_index.md" >}})working-with-viewer-api/) as output result
-|---|---
 
 ##### ViewResult example #####
 
-```html 
+```html
 
 {
   "pages": [
@@ -61,4 +58,3 @@ ViewResult data structure returned by Document [View API]({{< ref "viewer/devel
 |page.downloadUrl|Page file direct download link (Requires Authorization).
 |attachments|List of document attachments
 |file|PDF file path. Returned instead of pages, if PDF view format requested
-

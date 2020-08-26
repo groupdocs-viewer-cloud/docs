@@ -26,17 +26,12 @@ This is hot-fix release which includes 3 bug-fixes and 2 improvements.
 |VIEWERCLOUD-282|GroupDocs.Viewer Cloud PHP SDK V2 is not proper on GitHub|Bug
 |VIEWERCLOUD-278|Serialize complex types to log message|Bug
 
-
 ## Public API and Backward Incompatible Changes ##
 
-IsResponsive option added to  [HtmlOptions]({{< ref "viewer/developer-guide/data-structures/htmloptions.md" >}})) 
+IsResponsive option added to  [HtmlOptions]({{< ref "viewer/developer-guide/data-structures/htmloptions.md" >}}))
 |---|---
 
-
-
-
-
-```bash 
+```bash
 ### Retrieve access token
     curl --request POST https://api.groupdocs.cloud/connect/token \
         --header 'Content-Type: application/x-www-form-urlencoded' \
@@ -45,18 +40,18 @@ IsResponsive option added to  [HtmlOptions]({{< ref "viewer/developer-guide/da
     {
     "access_token": "[ACCESS_TOKEN]",
     "expires_in": 86400,
-    "token_type": "Bearer" 
-    }    
+    "token_type": "Bearer"
+    }
 
 ### Upload file into the storage
     curl --request POST \
     'https://api.groupdocs.cloud/v2/viewer/storage/file/one-page.docx' \
     --header 'authorization: Bearer [ACCESS_TOKEN]' \
-    --data-binary @"c:\temp\one-page.docx" 
+    --data-binary @"c:\temp\one-page.docx"
     ### Result:
     {
     "uploaded": [
-        "one-page.docx" 
+        "one-page.docx"
     ],
     "errors": []
     }
@@ -66,9 +61,9 @@ curl --request POST \
   'https://api.groupdocs.cloud/v2/viewer/view' \
   --header 'authorization: Bearer [ACCESS_TOKEN]' \
   --header 'Content-Type: application/json' \
-  --data '{ 
+  --data '{
             "FileInfo": {
-                "FilePath": "one-page.docx" 
+                "FilePath": "one-page.docx"
             },
             "RenderOptions": {
                 "IsResponsive": true
@@ -81,7 +76,7 @@ curl --request POST \
         "number": 1,
         "resources": [],
         "path": "viewer/one-page_docx/p1.html",
-        "downloadUrl": "https://api.groupdocs.cloud/v2.0/viewer/storage/file/viewer/one-page_docx/p1.html" 
+        "downloadUrl": "https://api.groupdocs.cloud/v2.0/viewer/storage/file/viewer/one-page_docx/p1.html"
         }
     ],
     "attachments": [],
@@ -93,7 +88,7 @@ curl --request POST \
     'https://api.groupdocs.cloud/v2/viewer/storage/file/viewer/one-page_docx/p1.html' \
     --header 'authorization: Bearer [ACCESS_TOKEN]' \
     ### Result:
-    
+
 <Contents of viewer/one-page_docx/p1.html>
 ```
 

@@ -12,11 +12,6 @@ keywords: ""
 Note:  The features listed in this page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-
-
-
-
-
 # Get Document Information for HTML Representation #
 
 This API retrieves document information. It returns an object that contains information about file format and file size. It also Includes information about document pages and attachments
@@ -27,13 +22,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/info" \
 -X GET \
 -H "Content-Type: application/json" \
@@ -41,12 +32,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/info" \
  
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "Test.msg",
   "extension": ".msg",
@@ -73,13 +61,8 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/info" \
   "startDate": "0001-01-01T00:00:00",
   "endDate": "0001-01-01T00:00:00"
 }
- 
+
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -87,89 +70,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Document Information for HTML Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_DocumentInfo_Html.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Document_Info_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_DocumentInfo_Html.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Document_Info_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Document_Info_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Get Document Information for Image Representation #
 
@@ -181,27 +104,19 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/info?extractText#true" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer [Access Token]"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "extension": ".docx",
@@ -251,100 +166,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/info?extractT
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Get Document Information for Image Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_DocumentInfo_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Document_Info_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_DocumentInfo_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Document_Info_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Document_Info_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Get Document Information from URL for HTML Representation #
 
@@ -358,13 +208,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
 -X GET \
 -H "Content-Type: application/json" \
@@ -372,12 +218,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?url#https%3a%2f%2fwww.d
  
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "extension": ".docx",
@@ -398,13 +241,8 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?url#https%3a%2f%2fwww.d
   "attachments": [],
   "startDate": "0001-01-01T00:00:00",
   "endDate": "0001-01-01T00:00:00"
-} 
+}
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -412,89 +250,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Document Information from URL for HTML Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_DocumentInfo_URL_HTML.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Document_Info_URL_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_DocumentInfo_URL_HTML.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Document_Info_URL_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_URL_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Document_Info_URL_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Get Document Information from URL for Image Representation #
 
@@ -508,27 +286,19 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1&#x26;extractText#true&#x26;extractText#true" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer [Access Token]"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "folder": null,
@@ -579,100 +349,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?url#https%3a%2f%2fwww.
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Get Document Information from URL for Image Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_DocumentInfo_URL_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Document_Info_URL_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_DocumentInfo_URL_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Document_Info_URL_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_URL_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Document_Info_URL_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Get Document Information with DocumentInfoOptions for HTML Representation #
 
@@ -684,13 +389,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/excel.xlsx/html/info" \
 -X POST \
 -H "Content-Type: application/json" \
@@ -700,12 +401,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/excel.xlsx/html/info" \
  
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "excel.xlsx",
   "extension": ".xlsx",
@@ -729,100 +427,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/excel.xlsx/html/info" \
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Get Document Information with DocumentInfoOptions for HTML Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_DocumentInfo_with_Options_HTML.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Document_Info_With_Options_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_DocumentInfo_with_Options_HTML.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Document_Info_With_Options_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_With_Options_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Document_Info_With_Options_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Get Document Information with DocumentInfoOptions for Image Representation #
 
@@ -834,13 +467,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/excel.xlsx/image/info" \
 -X POST \
 -H "Content-Type: application/json" \
@@ -848,15 +477,11 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/excel.xlsx/image/info" \
 -d "{"cellsOptions":{"renderGridLines":true,"textOverflowMode":"HideText"}}" \
 -H "authorization: Bearer [Access Token]"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "excel.xlsx",
   "extension": ".xlsx",
@@ -880,100 +505,35 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/excel.xlsx/image/info" \
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Get Document Information with DocumentInfoOptions for Image Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_DocumentInfo_with_Options_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Document_Info_With_Options_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_DocumentInfo_with_Options_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Document_Info_With_Options_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_With_Options_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Document_Info_With_Options_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Get Document Information for Document Passed in Request Body for HTML Representation #
 
@@ -987,13 +547,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?fileName#one-page.docx" \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1003,12 +559,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?fileName#one-page.docx"
  
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
     "fileName": "one-page.docx",
     "folder": null,
@@ -1033,87 +586,31 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?fileName#one-page.docx"
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Get Document Information of Document Passed in Request Body for HTML Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_DocumentInfo_From_Request_Html.cs >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_DocumentInfo_From_Request_Html.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_DocumentInfo_From_Request_Html.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_DocumentInfo_From_Request_Html.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_DocumentInfo_From_Request_Html.py >}}
-
-
-
-
-
-
-
-
 
 # Get Document Information for Document Passed in Request Body for Image Representation #
 
@@ -1127,13 +624,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?fileName#one-page.docx" \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1141,15 +634,11 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?fileName#one-page.docx
 -d "{"wordsOptions":{"renderTrackedChanges":false}}" \
 -H "authorization: Bearer [Access Token]"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "extension": ".docx",
@@ -1173,87 +662,31 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?fileName#one-page.docx
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Get Document Information of Document Passed in Request Body for Image Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_DocumentInfo_From_Request_Image.cs >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_DocumentInfo_From_Request_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_DocumentInfo_From_Request_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_DocumentInfo_From_Request_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_DocumentInfo_From_Request_Image.py >}}
-
-
-
-
-
-
-
-
 
 # Get Document Information from URL with DocumentInfoOptions for HTML Representation #
 
@@ -1267,13 +700,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
 -X PUT \
 -H "Content-Type: application/json" \
@@ -1284,12 +713,9 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?url#https%3a%2f%2fwww.d
  
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
     "fileName": "one-page.docx",
     "folder": null,
@@ -1314,101 +740,36 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?url#https%3a%2f%2fwww.d
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Get Document Information from URL with DocumentInfoOptions for HTML Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_DocumentInfo_with_Options_URL_HTML.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Document_Info_WithOptions_URL_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_DocumentInfo_with_Options_URL_HTML.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Document_Info_With_Options_HTML.rb
              >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_With_Options_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Document_Info_With_Options_HTML.py >}}
-
-
-
-
-
-
-
-
 
 # Get Document Information from URL with DocumentInfoOptions for Image Representation #
 
@@ -1422,13 +783,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
 -X PUT \
 -H "Content-Type: application/json" \
@@ -1436,15 +793,11 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?url#https%3a%2f%2fwww.
 -d "{"wordsOptions":{"renderTrackedChanges":false}}" \
 -H "authorization: Bearer [Access Token]"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "fileName": "one-page.docx",
   "extension": ".docx",
@@ -1468,96 +821,33 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?url#https%3a%2f%2fwww.
 }
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Get Document Information from URL with DocumentInfoOptions for Image Representation ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_DocumentInfo_with_Options_URL_Image.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Document_Info_WithOptions_URL_Image.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_DocumentInfo_with_Options_URL_Image.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Document_Info_With_Options_Image.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_With_Options_Image.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Document_Info_With_Options_Image.py >}}
-
-
-
-
-
-
 

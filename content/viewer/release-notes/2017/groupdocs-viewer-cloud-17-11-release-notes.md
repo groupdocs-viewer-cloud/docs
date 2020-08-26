@@ -8,8 +8,6 @@ description: ""
 keywords: ""
 ---
 
-
-
 ## Major Features ##
 
 GroupDocs.Viewer Cloud is a REST API for rendering over 50 documents and image formats as HTML5 or Image for the whole document, page by page or custom range of pages. The main features are:
@@ -22,7 +20,7 @@ GroupDocs.Viewer Cloud is a REST API for rendering over 50 documents and image 
 ** Microsoft Visio: VSD, VDX, VSS, VSX, VST, VTX, VSDX, VDW, VSSX, VSTX, VSDM, VSTM, VSSM
 ** Microsoft Project: MPP, MPT
 ** Microsoft Outlook: MSG, EML
-** Microsoft OneNote: ONE 
+** Microsoft OneNote: ONE
 ** Apple Mail: EMLX
 ** OpenDocument Formats: ODT, OTT, ODS, ODP, OTP, OTS, ODG
 ** Rich Text Format: RTF
@@ -48,7 +46,7 @@ GroupDocs.Viewer Cloud is a REST API for rendering over 50 documents and image 
 
 ## Full List of Issues Covering all Changes in this Release ##
 
-This is the first version of new generation GroupDocs.Viewer Cloud. 
+This is the first version of new generation GroupDocs.Viewer Cloud.
 
 ## Public API and Backward Incompatible Changes ##
 

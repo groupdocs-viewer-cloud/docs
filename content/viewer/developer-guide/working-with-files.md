@@ -20,9 +20,7 @@ This API allows you to download a file from [GroupDocs Cloud Storage](https://da
 
 |Parameter|Description
 |---|---
-|**Path**|Path of the file including file name and extension e.g. /Folder1/file.ext
-
- Required. Can be passed as query string parameter or as part of the URL
+|**Path**|Path of the file including file name and extension e.g. /Folder1/file.ext Required. Can be passed as query string parameter or as part of the URL
 |storageName|Name of the storage. If not set, then default storage used
 |versionId|File version id
 
@@ -83,9 +81,7 @@ This API allows you to upload files to the [GroupDocs Cloud Storage](https://
 
 |Parameter|Description
 |---|---
-|**path**|Path of the file including file name and extension e.g. /Folder1/file.ext
-
- Required. Can be passed as query string parameter or as part of the URL
+|**path**|Path of the file including file name and extension e.g. /Folder1/file.ext Required. Can be passed as query string parameter or as part of the URL
 |storageName|Name of the storage. If not set, then default storage used
 |File|File content
 
@@ -162,9 +158,7 @@ This API allows you to delete specific file from [GroupDocs Cloud Storage](htt
 
 |Parameter|Description
 |---|---
-|**path**|Path of the file including file name and extension e.g. /Folder1/file.ext
-
- Required. Can be passed as query string parameter or as part of the URL
+|**path**|Path of the file including file name and extension e.g. /Folder1/file.ext Required. Can be passed as query string parameter or as part of the URL
 |storageName|Name of the storage. If not set, then default storage used
 |versionId|File version id
 
@@ -225,9 +219,7 @@ This API allows you to copy specific file from [GroupDocs Cloud Storage](https
 
 |Parameter|Description
 |---|---
-|**srcPath**|Path of the source file including file name and extension e.g. /Folder1/file.ext
-
-Required. Can be passed as query string parameter or as part of the URL
+|**srcPath**|Path of the source file including file name and extension e.g. /Folder1/file.ext Required. Can be passed as query string parameter or as part of the URL
 |**destPath**|Path of the destination file. Required.
 |srcStorageName|Name of the storage of source file. If not set, then default storage used
 |destStorageName|Name of the storage of destination file. If not set, then default storage used
@@ -284,15 +276,13 @@ This API allows you to copy specific file from [GroupDocs Cloud Storage](https
 
 ### File Move with API Explorer
 
-[GroupDocs.Viewer for Cloud API Reference](https://apireference.groupdocs.cloud/viewer/#/) lets you to try out [Move File](https://apireference.groupdocs.cloud/viewer/#/File/MoveFile) right away in your browser! It allows you to effortlessly interact and try out every single operation our APIs exposes. 
+[GroupDocs.Viewer for Cloud API Reference](https://apireference.groupdocs.cloud/viewer/#/) lets you to try out [Move File](https://apireference.groupdocs.cloud/viewer/#/File/MoveFile) right away in your browser! It allows you to effortlessly interact and try out every single operation our APIs exposes.
 
 ### File Move Request Parameters
 
 |Parameter|Description
 |---|---
-|**srcPath**|Path of the source file including file name and extension e.g. /Folder1/file.ext
-
-Required. Can be passed as query string parameter or as part of the URL
+|**srcPath**|Path of the source file including file name and extension e.g. /Folder1/file.ext Required. Can be passed as query string parameter or as part of the URL
 |**destPath**|Path of the destination file. Required.
 |srcStorageName|Name of the storage of source file. If not set, then default storage used
 |destStorageName|Name of the storage of destination file. If not set, then default storage used

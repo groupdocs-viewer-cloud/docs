@@ -8,14 +8,11 @@ description: ""
 keywords: ""
 ---
 
-# DeleteViewOptions #
-
-DeleteViewOptions data structure used as input parameters for [Delete View]({{< ref "viewer/developer-guide/_index.md" >}})working-with-viewer-api/) API 
-|---|---
+DeleteViewOptions data structure used as input parameters for [Delete View]({{< ref "viewer/developer-guide/_index.md" >}})working-with-viewer-api/) API
 
 ##### DeleteViewOptions example #####
 
-```html 
+```html
 
 {
   "FileInfo": {
@@ -36,4 +33,3 @@ DeleteViewOptions data structure used as input parameters for [Delete View]({{<
 |FileInfo.StorageName|Storage name
 |FileInfo.VersionId|File version Id
 |FileInfo.Password|Not used
-

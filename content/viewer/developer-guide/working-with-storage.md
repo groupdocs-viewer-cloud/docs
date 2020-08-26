@@ -78,9 +78,7 @@ This API intended for checking existence of file or folder in [GroupDocs Cloud S
 
 |Parameter|Description
 |---|---
-|**path**|Path of the file or folder
-
-Required. Can be passed as a query string parameter or as part of the URL
+|**path**|Path of the file or folder Required. Can be passed as a query string parameter or as part of the URL
 |storageName|Name of the storage. If not set, then default storage used
 |versionId|File version id
 
@@ -200,9 +198,7 @@ This API intended for getting the list of file versions, stored in the [GroupDoc
 
 |Parameter|Description
 |---|---
-|**path**|Path of the file including file name and extension e.g. /Folder1/file.ext
-
-Required. Can be passed as a query string parameter or as part of the URL
+|**path**|Path of the file including file name and extension e.g. /Folder1/file.ext Required. Can be passed as a query string parameter or as part of the URL
 |storageName|Name of the storage. If not set, then default storage used
 
 ### Storage File Versions with cURL

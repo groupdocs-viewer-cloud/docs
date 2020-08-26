@@ -23,7 +23,6 @@ This is hot-fix release which includes single feature - SDK for .NET Standard wh
 |---|---|---
 ||Support of .NET Core in GroupDocs.Viewer Cloud SDK for .NET|Feature
 
-
 ## Public API Examples ##
 
 None

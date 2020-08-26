@@ -12,15 +12,6 @@ keywords: ""
 Note:  The features listed on this page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-
-
-
-
-
-
-
-
-
 # Get Fonts Resource #
 
 GroupDocs.Viewer Cloud REST APIs support to get the installed fonts resource from the API server. API returns list of installed fonts.
@@ -31,26 +22,18 @@ The following GroupDocs.Viewer Cloud REST API resource has been used in the [Ge
 
 ## cURL Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
-curl -v  "https://api.groupdocs.cloud/v1.0/viewer/fonts?appsid#XXXX&#x26;signature#XXX-XX" 
--H "Content-Type: application/json" 
+```html
+curl -v  "https://api.groupdocs.cloud/v1.0/viewer/fonts?appsid#XXXX&#x26;signature#XXX-XX"
+-H "Content-Type: application/json"
 -X GET -d "{}"
-
 
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "families": [
     {
@@ -557,100 +540,35 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/fonts?appsid#XXXX&#x26;signatu
   ]
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### Get Font Resource ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Font_Resoruces.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_Fonts_Resources.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Font_Resoruces.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Font_Resoruces.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Fonts_Resources.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Fonts_Resources.py >}}
-
-
-
-
-
-
-
-
 
 # Delete Fonts Cache #
 
@@ -662,33 +580,20 @@ The following GroupDocs.Viewer Cloud REST API resource has been used in the [De
 
 ## cURL Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
-curl -v  "https://api.groupdocs.cloud/v1.0/viewer/fonts/cache?appsid#XXXX&#x26;signature#XXX-XX" 
--H "Content-Type: application/json" 
+```html
+curl -v  "https://api.groupdocs.cloud/v1.0/viewer/fonts/cache?appsid#XXXX&#x26;signature#XXX-XX"
+-H "Content-Type: application/json"
 -X DELETE -d "{}"
 
-
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 Empty response with '204 No Content' status.
 ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -696,85 +601,27 @@ The API is completely independent of your operating system, database system or d
 
 ### Delete Fonts Cache ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Delete_Font_Cache.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Delete_Fonts_Resources.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Delete_Font_Cache.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Delete_Fonts_Resources.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Exclude_Fonts.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Exclude_Fonts.py >}}
-
-
-
-
-
-
 

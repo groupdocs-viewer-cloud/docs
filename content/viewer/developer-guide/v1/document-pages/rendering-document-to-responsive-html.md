@@ -12,18 +12,13 @@ keywords: ""
 Note:  The features listed in this page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-
-
-
-
-
 # Rendering Document to Responsive HTML #
 
 GroupDocs.Viewer supports to render a document to responsive HTML. It provides a **EnableResponsiveRendering **property of the **** object, that lets you get responsive output HTML. The following example demonstrates how to minify output content when creating cache.
 
 **NOTE: **This feature is supported by all methods which accepts  objects.
 
-Please note, that currently this option works for most document types, but there are few (listed below) that are not supported yet. We are planning to extend support for this option in coming releases. 
+Please note, that currently this option works for most document types, but there are few (listed below) that are not supported yet. We are planning to extend support for this option in coming releases.
 
 **List of document types that do not support responsive rendering.**
 
@@ -50,7 +45,6 @@ Extension
 |Mobipocket e-book format|MOBI
 |LaTeX|TEX
 
-
 ## Resource ##
 
 The following GroupDocs.Viewer Cloud REST API resource has been used to [get document page as responsive HTML](https://apireference.groupdocs.cloud/viewer/#!/Rendering/HtmlGetPage).
@@ -58,13 +52,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [get do
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
 curl -v "http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1?embedResources#true&#x26;enableResponsiveRendering#true" \
 -X GET \
 -H "Content-Type: application/json" \
@@ -72,12 +62,9 @@ curl -v "http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1?embedRe
 
 ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 
 <!DOCTYPE html>
 
@@ -90,10 +77,10 @@ curl -v "http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1?embedRe
 <title>
 </title>
 
-<link rel#"stylesheet" type#"text/css" 
+<link rel#"stylesheet" type#"text/css"
 href#"http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1/resources/styles.css" media#"all" />
 
-<link rel#"stylesheet" type#"text/css" 
+<link rel#"stylesheet" type#"text/css"
 href#"http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1/resources/styles.css" media#"all" />
 
 </head>
@@ -116,11 +103,6 @@ ndex:1; >}}
 </html>
 ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
@@ -128,85 +110,27 @@ The API is completely independent of your operating system, database system or d
 
 ### Render Document Page as Responsive HTML ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Responsive_HTML.cs >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Responsive_HTML.php >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Responsive_HTML.java >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Responsive_HTML.rb >}}
 
-
-
-
-
-
-
- Node.js
-
-
-
+Node.js
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Responsive_HTML.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Responsive_HTML.py >}}
-
-
-
-
-
-
 
