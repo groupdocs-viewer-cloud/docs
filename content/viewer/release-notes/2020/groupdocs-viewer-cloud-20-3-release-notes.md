@@ -21,7 +21,8 @@ This page contains release notes for GroupDocs.Viewer Cloud 20.3
 
 ## Full List of Issues Covering all Changes in this Release ##
 
-|#Key|#Summary|#Category
+|Key|Summary|Category
+|---|---|---
 |VIEWERCLOUD-265|Add page rotation support|Feature
 |VIEWERCLOUD-348|Add Microsoft Excel Macro-Enabled Template (.xltm) file format support|Feature
 |VIEWERCLOUD-349|Add Microsoft Excel Template (.xltx) file format support|Feature
@@ -54,6 +55,4 @@ This page contains release notes for GroupDocs.Viewer Cloud 20.3
 
 ## Public API and Backward Incompatible Changes ##
 
-* [Public API Changes in v20.3]({{< ref "viewer/developer-guide/_index.md" >}}))
-
- 
+* [Public API Changes in v20.3]({{< ref "viewer/developer-guide/_index.md" >}})

@@ -42,7 +42,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+C#
 
 ```csharp
 
@@ -91,14 +91,14 @@ viewOptions = new ViewOptions
 viewOptions.RenderOptions.CadOptions.Tiles = new List<Tile>();
 var tile = new Tile { StartPointX = pointX, StartPointY = pointY, Width = tileWidth, Height = tileHeight };
 viewOptions.RenderOptions.CadOptions.Tiles.Add(tile);
-pointX +# tileWidth;
+pointX += tileWidth;
 tile = new Tile { StartPointX = pointX, StartPointY = pointY, Width = tileWidth, Height = tileHeight };
 viewOptions.RenderOptions.CadOptions.Tiles.Add(tile);
 pointX = 0;
-pointY +# tileHeight;
+pointY += tileHeight;
 tile = new Tile { StartPointX = pointX, StartPointY = pointY, Width = tileWidth, Height = tileHeight };
 viewOptions.RenderOptions.CadOptions.Tiles.Add(tile);
-pointX +# tileWidth;
+pointX += tileWidth;
 tile = new Tile { StartPointX = pointX, StartPointY = pointY, Width = tileWidth, Height = tileHeight };
 viewOptions.RenderOptions.CadOptions.Tiles.Add(tile);
 
@@ -106,4 +106,3 @@ var apiInstance = new ViewApi(configuration);
 var response = apiInstance.CreateView(new CreateViewRequest(viewOptions));
 
 ```
-

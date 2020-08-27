@@ -36,7 +36,7 @@ A browser or mobile client makes a request to the authentication server containi
 
 ## Applications
 
-To access GroupDocs REST APIs, you need to [create an application]({{< ref "viewer/getting-started/create-new-app-and-get-app-key-and-sid.md" >}})). To register new applications, login into the [Dashboard Developer](https://dashboard.groupdocs.cloud/#/) site using your GroupDocs Account, and go to the [My Apps](https://dashboard.groupdocs.cloud/#/apps) view. Once you create a new application, we will issue a **client_id** (App SID) and **client_secret** (App Key) that you can use to authenticate your REST API calls using the JWT authentication.
+To access GroupDocs REST APIs, you need to [create an application]({{< ref "viewer/getting-started/create-new-app-and-get-app-key-and-sid.md" >}}). To register new applications, login into the [Dashboard Developer](https://dashboard.groupdocs.cloud/#/) site using your GroupDocs Account, and go to the [My Apps](https://dashboard.groupdocs.cloud/#/apps) view. Once you create a new application, we will issue a **client_id** (App SID) and **client_secret** (App Key) that you can use to authenticate your REST API calls using the JWT authentication.
 
 ## Get Access Token
 
@@ -57,17 +57,17 @@ The endpoint acts as an authorization server and it verifies your credentials, i
 
 ### cURL Example
 
-#### Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```bash
 curl -v "https://api.groupdocs.cloud/connect/token" \
 -X POST \
--d "grant_type#client_credentials&#x26;client_id#xxxx&#x26;client_secret#xxxx" \
+-d "grant_type=client_credentials&#x26;client_id=xxxx&#x26;client_secret=xxxx" \
 -H "Content-Type: application/x-www-form-urlencoded" \
 -H "Accept: application/json"
 ```
 
-#### Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```json
 {
@@ -76,6 +76,8 @@ curl -v "https://api.groupdocs.cloud/connect/token" \
   "token_type": "Bearer"
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## Call REST API
 
@@ -90,7 +92,7 @@ Now that you have the Bearer Token (access_token) generated using the applicatio
 
 ### cURL Example
 
-#### Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```bash
 curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/view"
@@ -99,7 +101,7 @@ curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/view"
 -d "{  \"FileInfo\": {    \"FilePath\": \"viewerdocs/one-page.docx\",    \"StorageName\": \"MyStorage\",    \"Password\": \"\"  }  }"
 ```
 
-#### Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```json
 {
@@ -115,6 +117,8 @@ curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/view"
   "file": null
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## Token Lifetime
 

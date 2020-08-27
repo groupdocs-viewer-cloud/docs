@@ -624,6 +624,8 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="2" >}}
 
+{{< /tab >}} {{< tab tabNum="3" >}}
+
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_DocumentInfo_From_Request_Html.java >}}
 
 {{< /tab >}} {{< tab tabNum="6" >}}
@@ -637,6 +639,8 @@ The API is completely independent of your operating system, database system or d
 {{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_DocumentInfo_From_Request_Html.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Get Document Information for Document Passed in Request Body for Image Representation #
 
@@ -696,7 +700,7 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Document Information of Document Passed in Request Body for Image Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="26" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_DocumentInfo_From_Request_Image.cs >}}
 
@@ -704,19 +708,21 @@ C#
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_DocumentInfo_From_Request_Image.java >}}
 
-{{< /tab >}} {{< /tabs >}}
-
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_DocumentInfo_From_Request_Image.rb >}}
 
-Node
+{{< /tab >}} {{< tab tabNum="3" >}}
+
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_DocumentInfo_From_Request_Image.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_DocumentInfo_From_Request_Image.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Get Document Information from URL with DocumentInfoOptions for HTML Representation #
 
@@ -792,8 +798,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="6" >}}
 
-{{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Document_Info_With_Options_HTML.rb
-             >}}
+{{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Document_Info_With_Options_HTML.rb >}}
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
@@ -888,4 +893,3 @@ The API is completely independent of your operating system, database system or d
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Document_Info_With_Options_Image.py >}}
 
 {{< /tab >}} {{< /tabs >}}
-

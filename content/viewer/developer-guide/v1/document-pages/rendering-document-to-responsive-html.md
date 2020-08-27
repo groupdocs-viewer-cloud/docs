@@ -12,25 +12,16 @@ keywords: ""
 Note:  The features listed in this page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-# Rendering Document to Responsive HTML #
+GroupDocs.Viewer supports to render a document to responsive HTML. It provides a **EnableResponsiveRendering** property, that lets you get responsive output HTML. The following example demonstrates how to minify output content when creating cache.
 
-GroupDocs.Viewer supports to render a document to responsive HTML. It provides a **EnableResponsiveRendering **property of the **** object, that lets you get responsive output HTML. The following example demonstrates how to minify output content when creating cache.
-
-**NOTE: **This feature is supported by all methods which accepts  objects.
+**NOTE:** This feature is supported by all methods which accepts  objects.
 
 Please note, that currently this option works for most document types, but there are few (listed below) that are not supported yet. We are planning to extend support for this option in coming releases.
 
 **List of document types that do not support responsive rendering.**
 
-|
-|---
-
-Format Name
-
-|
-
-Extension
-
+|Format Name|Extension
+|---|---
 |Portable Document Format|PDF
 |Microsoft Excel|XLS, XLSX, XLSM, XLSB
 |Microsoft PowerPoint|PPT, PPTX, PPS, PPSX
@@ -48,7 +39,6 @@ Extension
 ## Resource ##
 
 The following GroupDocs.Viewer Cloud REST API resource has been used to [get document page as responsive HTML](https://apireference.groupdocs.cloud/viewer/#!/Rendering/HtmlGetPage).
-|---|---
 
 ## cURL REST Example ##
 
@@ -108,7 +98,6 @@ ndex:1; >}}
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
-|---|---
 
 ### Render Document Page as Responsive HTML ###
 
@@ -137,4 +126,3 @@ The API is completely independent of your operating system, database system or d
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Responsive_HTML.py >}}
 
 {{< /tab >}} {{< /tabs >}}
-

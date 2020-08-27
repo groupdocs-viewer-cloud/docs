@@ -12,7 +12,7 @@ keywords: ""
 
 This REST API allows to obtain basic information about the document and it's properties.
 
-It returns *[InfoResult]({{< ref "viewer/developer-guide/data-structures/inforesult.md" >}}))* data structure, which contains the list of properties:
+It returns *[InfoResult]({{< ref "viewer/developer-guide/data-structures/inforesult.md" >}})* data structure, which contains the list of properties:
 
 * Document file format
 * Pages count, size and visibility
@@ -34,7 +34,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 * Please get your App Key and App SID from https://dashboard.groupdocs.cloud/#/apps. Kindly place App Key in "client_secret" and App SID in "client_id" argument.
 curl -v "https://api.groupdocs.cloud/connect/token" \
 -X POST \
--d "grant_type#client_credentials&client_id#xxxx&client_secret#xxxx" \
+-d "grant_type=client_credentials&client_id=xxxx&client_secret=xxxx" \
 -H "Content-Type: application/x-www-form-urlencoded" \
 -H "Accept: application/json"
 

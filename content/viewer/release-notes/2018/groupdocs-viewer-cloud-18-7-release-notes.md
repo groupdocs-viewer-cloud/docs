@@ -13,23 +13,19 @@ keywords: ""
 There 13 features and fixes in this release. The most notable are:
 
 * Added next file formats support:
-** DGN (V7) (MicroStation design file)
-** DWF (AutoCAD Design Web Format)
-*  Extended support of DefaultFontName setting on
-** Rendering PDF documents into PDF and HTML
-
-* \\
-** Rendering MS Project documents into PDF
-** Rendering ODG, SVG and MetaFile Images
+  * DGN (V7) (MicroStation design file)
+  * DWF (AutoCAD Design Web Format)
+* Extended support of DefaultFontName setting on
+* Rendering PDF documents into PDF and HTML
+* Rendering MS Project documents into PDF
+* Rendering ODG, SVG and MetaFile Images
 * Added feature to set page size when rendering Email messages as PDF and image
 * Added feature which allows changing labels when rendering Email messages
 
 ## Full List of Issues Covering all Changes in this Release ##
 
-|Key
-|---
-|Summary
-|Category
+|Key|Summary|Category
+|---|---|---
 |VIEWERCLOUD-175|Add ISFF-based DGN (V7) file format support|New Feature
 |VIEWERCLOUD-171|Extend support for DefaultFontName setting to PDF documents when rendering into PDF|New Feature
 |VIEWERCLOUD-170|Render CAD documents by specifying coordinates|New Feature
@@ -50,14 +46,14 @@ There 13 features and fixes in this release. The most notable are:
 
 ![](viewer/images/EmailHeader.png)
 
-When rendering email messages by default Viewer uses English languge to render field labels such as (From, To, Subject etc.). To change field labels you can set **FieldLabels** on **EmailOptions** [options-objects]({{< ref "viewer/developer-guide/v1/common-resources/options-objects.md" >}})class.
+When rendering email messages by default Viewer uses English languge to render field labels such as (From, To, Subject etc.). To change field labels you can set **FieldLabels** on **EmailOptions** [options-objects]({{< ref "viewer/developer-guide/v1/common-resources/options-objects.md" >}}) class.
 
 ```html
  ### Retrieve access token
 curl --request POST \
   --url https://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type#client_credentials&#x26;client_id#appSid&#x26;client_secret#appKey'
+  --data 'grant_type=client_credentials&#x26;client_id=appSid&#x26;client_secret=appKey'
 
 ### Set field labels when rendering pages
 curl --request POST \
@@ -72,6 +68,7 @@ curl --request GET \
   --header 'authorization: [Access Token]'
 
 ```
+
   Viewer supports following field labels:
 
 |Field|Label
@@ -145,7 +142,7 @@ You can add as many tiles as you need, the following example demonstrates how to
 curl --request POST \
   --url https://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type#client_credentials&#x26;client_id#appSid&#x26;client_secret#appKey'
+  --data 'grant_type=client_credentials&#x26;client_id=appSid&#x26;client_secret=appKey'
 
 ### Retrive document width and height
 curl --request POST \
@@ -175,7 +172,7 @@ Since the version 18.7, it is possible to set default font when rendering PDF do
 curl --request POST \
   --url http://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
+  --data 'grant_type=client_credentials&#x26;client_id=[Your AppSid]&#x26;client_secret=[Your AppKey]'
 
 ### Set default font name when rendering PDF document as HTML
 curl --request POST \
@@ -194,7 +191,7 @@ curl --request GET \
 
 ![](viewer/images/pagesize.jpg)
 
-Since the version 18.7, it is possible to set output page size for rendering Email documents into PDF and images. To enable this feature, please set the **PageSize **property of the **[EmailOptions]({{< ref "viewer/developer-guide/v1/common-resources/options-objects.md" >}})** class as shown in example below. Please note, that for rendering into HTML the whole email message is rendered into one responsive HTML page and this new option will not influence the rendering.
+Since the version 18.7, it is possible to set output page size for rendering Email documents into PDF and images. To enable this feature, please set the **PageSize** property of the **[EmailOptions]({{< ref "viewer/developer-guide/v1/common-resources/options-objects.md" >}})** class as shown in example below. Please note, that for rendering into HTML the whole email message is rendered into one responsive HTML page and this new option will not influence the rendering.
 
 ```html
 
@@ -202,7 +199,7 @@ Since the version 18.7, it is possible to set output page size for rendering Ema
 curl --request POST \
   --url http://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
+  --data 'grant_type=client_credentials&#x26;client_id=[Your AppSid]&#x26;client_secret=[Your AppKey]'
 
 ### Set page size when rendering pages
 curl --request POST \
@@ -223,7 +220,7 @@ curl --request GET \
 curl --request POST \
   --url http://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
+  --data 'grant_type=client_credentials&#x26;client_id=[Your AppSid]&#x26;client_secret=[Your AppKey]'
 
 ### Set page size when rendering into PDF
 curl --request POST \

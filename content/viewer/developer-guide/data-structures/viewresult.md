@@ -8,7 +8,7 @@ description: ""
 keywords: ""
 ---
 
-ViewResult data structure returned by Document [View API]({{< ref "viewer/developer-guide/_index.md" >}})working-with-viewer-api/) as output result
+ViewResult data structure returned by Document [View API]({{< ref "viewer/developer-guide/_index.md" >}}) working-with-viewer-api as output result
 
 ##### ViewResult example #####
 
@@ -54,7 +54,7 @@ ViewResult data structure returned by Document [View API]({{< ref "viewer/devel
 |pages|List of document pages
 |page.number|Page number, starts from 1
 |page.resources|Page resources. Returned if HTML view format requested with ExternalResources option set to true
-|page.path|Page file path in the cloud storage. Use this value to download page using [File API]({{< ref "viewer/developer-guide/working-with-files.md" >}}))
+|page.path|Page file path in the cloud storage. Use this value to download page using [File API]({{< ref "viewer/developer-guide/working-with-files.md" >}})
 |page.downloadUrl|Page file direct download link (Requires Authorization).
 |attachments|List of document attachments
 |file|PDF file path. Returned instead of pages, if PDF view format requested

@@ -12,8 +12,6 @@ keywords: ""
 Note:  The features listed in this page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-# Download Document as PDF for HTML Representation #
-
 You can render a document to PDF for HTML representation and download it. The API returns actual file data of document in PDF format.
 
 ## Resource ##

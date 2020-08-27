@@ -15,7 +15,6 @@ This page contains release notes for GroupDocs.Viewer Cloud 19.3.1
 # Major Features #
 
 This is hot-fix release which includes single feature - SDK for .NET Standard which is shipped as part of [GroupDocs.Viewer-Cloud](https://www.nuget.org/packages/groupdocs.viewer-cloud) NuGet package.
-|---|---
 
 ## Full List of Issues Covering all Changes in this Release ##
 

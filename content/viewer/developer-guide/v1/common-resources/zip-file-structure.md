@@ -12,13 +12,11 @@ keywords: ""
 Note:  The features listed in this Page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-# ZIP File Structure #
-
 Page contains description about structure and naming of ZIP files.
 
-## [ZIP File Naming]("ZipFileNaming") ##
+## ZIP File Naming ##
 
-All ZIP files returned by the API follows same naming convention. File name consists of three parts where first is string "viewer-download-", second is combined date and time in [UTC](https://en.wikipedia.org/wiki/UTC||class#"mw-redirect" title#"UTC" shape#"rect") presented in [ISO_8601](https://en.wikipedia.org/wiki/ISO_8601) format and third is extension ".zip".
+All ZIP files returned by the API follows same naming convention. File name consists of three parts where first is string "viewer-download-", second is combined date and time in UTC presented in [ISO_8601](https://en.wikipedia.org/wiki/ISO_8601) format and third is extension ".zip".
 
 ### Example ZIP file name template ###
 
@@ -36,7 +34,7 @@ viewer-download-20170728T235959Z.zip
 
 ```
 
-## [ZIP File With Images]("ZipWithImages") ##
+## ZIP File With Images ##
 
 ZIP archive contains document pages where each file is image. Image file name consists of three parts where first is string "p", second is page number and third is one of listed extensions ".jpg" or ".png".
 
@@ -48,7 +46,7 @@ p{page-number}.[jpg|png]
 
 ```
 
-### Example image file name  ###
+### Example image file name ###
 
 ```html
 
@@ -68,7 +66,7 @@ ROOT
 
 ```
 
-## [ZIP File With HTML]("ZipWithHtml") ##
+## ZIP File With HTML ##
 
 ZIP archive contains document pages in HTML format and HTML resources (styles, fonts and images). HTML file name consists of three parts where first is string "p", second is page number and third is extension ".html".
 
@@ -80,7 +78,7 @@ p{page-number}.html
 
 ```
 
-### Example HTML file name  ###
+### Example HTML file name ###
 
 ```html
 

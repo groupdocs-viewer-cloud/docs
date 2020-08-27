@@ -126,8 +126,8 @@ docker run `
     -v "${pwd}/data:/data" `
     -e "LICENSE_PUBLIC_KEY#public_key" `
     -e "LICENSE_PRIVATE_KEY#private_key" `
-    -e "CLIENT_ID#client_id" `
-    -e "CLIENT_SECRET#client_secret" `
+    -e "client_id=client_id" `
+    -e "client_secret=client_secret" `
     --name viewer_cloud `
     groupdocs/viewer-cloud
 ```
@@ -141,8 +141,8 @@ docker run \
     -v $(pwd)/data:/data \
     -e LICENSE_PUBLIC_KEY#public_key \
     -e LICENSE_PRIVATE_KEY#private_key \
-    -e CLIENT_ID#client_id \
-    -e CLIENT_SECRET#client_secret \
+    -e client_id=client_id \
+    -e client_secret=client_secret \
     --name viewer_cloud \
     groupdocs/viewer-cloud
 ```

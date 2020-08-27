@@ -12,8 +12,6 @@ keywords: ""
 Note:  The features listed in this page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-# Render Outlook Data Files as HTML #
-
 GroupDocs.Viewer Cloud allows rendering the items in Outlook Data Files (OST/PST) as HTML. [OutlookOptions]({{< ref "viewer/developer-guide/v1/common-resources/options-objects.md" >}}) is used to set rendering options for OST and PST formats. The API returns object which contains list of links to document pages and if pages already created will be removed from cache.
 
 ## Resource ##
@@ -86,4 +84,3 @@ The API is completely independent of your operating system, database system or d
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Render_Outlook_HTML.py >}}
 
 {{< /tab >}} {{< /tabs >}}
-

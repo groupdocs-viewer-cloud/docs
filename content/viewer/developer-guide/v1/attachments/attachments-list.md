@@ -1,7 +1,7 @@
 ---
 id: "attachments"
-url: "viewer/attachments"
-title: "Attachments"
+url: "viewer/attachments-list"
+title: "Get list of attachments"
 productName: "GroupDocs.Viewer Cloud"
 weight: 1
 description: ""
@@ -269,8 +269,4 @@ The API is completely independent of your operating system, database system or d
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Attachment_From_Email_Image.py >}}
 
 {{< /tab >}} {{< /tabs >}}
-
-Python
-
-{{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Attachment_From_Email_HTML.py >}}
 

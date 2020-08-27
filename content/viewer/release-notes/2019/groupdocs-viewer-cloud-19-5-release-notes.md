@@ -25,6 +25,4 @@ This page contains release notes for GroupDocs.Viewer Cloud 19.5
 
 ## Public API and Backward Incompatible Changes  ##
 
-* [Public API Changes in v19.5]({{< ref "viewer/developer-guide/_index.md" >}})working-with-viewer-api/)
-|---|---
-\\
+* [Public API Changes in v19.5]({{< ref "viewer/developer-guide/_index.md" >}})

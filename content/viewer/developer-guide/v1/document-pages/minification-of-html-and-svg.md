@@ -12,11 +12,9 @@ keywords: ""
 Note:  The features listed in this page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-# Minification of HTML and SVG #
+Since the version 18.2 GroupDocs.Viewer API, we have provide a new **EnableMinification** property, that lets you get output content minified. Minification removes comments, extra white-spaces, and other unneeded characters without breaking the content structure. As a result page become smaller in size and loads faster. The following example demonstrates how to minify output content when creating cache.
 
-Since the version 18.2 GroupDocs.Viewer API, we have provide a new **EnableMinification **property of the **** object, that lets you get output content minified. Minification removes comments, extra white-spaces, and other unneeded characters without breaking the content structure. As a result page become smaller in size and loads faster. The following example demonstrates how to minify output content when creating cache.
-
-**NOTE: **This feature is supported by all methods which accepts  objects.
+**NOTE:** This feature is supported by all methods which accepts  objects.
 
 ## Resource ##
 
@@ -100,4 +98,3 @@ The API is completely independent of your operating system, database system or d
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Pages_Cache_Minified_HTML.py >}}
 
 {{< /tab >}} {{< /tabs >}}
-

@@ -13,12 +13,11 @@ keywords: ""
 The most notable features in this release are:
 
 * Added next file formats support:
-** CGM (Computer Graphics Metafile)
-** PST (MS Outlook data file)
-** OST (MS Outlook data file)
-** PCL (Printer Command Language)
-** TSV (Tab Separated values)
-
+  * CGM (Computer Graphics Metafile)
+  * PST (MS Outlook data file)
+  * OST (MS Outlook data file)
+  * PCL (Printer Command Language)
+  * TSV (Tab Separated values)
 * Temporally removed support for CAD file formats (DXF, DWG, DWF, DGN)
 * Added Time interval option for rendering MS Project documents
 * Added possibility to get project start and end dates from MS Porject document
@@ -27,10 +26,8 @@ The most notable features in this release are:
 
 ## Full List of Issues Covering all Changes in this Release ##
 
-|Key
-|---
-|Summary
-|Category
+|Key|Summary|Category
+|---|---|---
 |VIEWERCLOUD-215|Time interval option for rendering MS Project documents|Feature
 |VIEWERCLOUD-216|Add CGM (Computer Graphics Metafile) file format support|Feature
 |VIEWERCLOUD-217|Add support for rendering PST file format|Feature
@@ -60,7 +57,7 @@ Since the version 18.11 GroupDocs.Viewer Cloud API allows to get start and end 
 curl --request POST \
   --url https://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
+  --data 'grant_type=client_credentials&#x26;client_id=[Your AppSid]&#x26;client_secret=[Your AppKey]'
 
 ### Upload file into the storage
 curl --request PUT \
@@ -73,7 +70,6 @@ curl --request PUT \
 curl --request GET \
   --url https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/info \
   --header 'authorization: Bearer [Access Token]' \
-
 ```
 
 ```html
@@ -110,7 +106,7 @@ Adding fonts into HTML ensures that the text from the original document will app
 curl --request POST \
   --url https://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
+  --data 'grant_type=client_credentials&#x26;client_id=[Your AppSid]&#x26;client_secret=[Your AppKey]'
 
 ### Upload file into the storage
 curl --request PUT \
@@ -143,7 +139,7 @@ Additionally, an OutlookOptions can be used for rendering.
 curl --request POST \
   --url https://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
+  --data 'grant_type=client_credentials&#x26;client_id=[Your AppSid]&#x26;client_secret=[Your AppKey]'
 
 ### Upload file into the storage
 curl --request PUT \
@@ -166,7 +162,6 @@ curl --request GET \
 ```
 
 ### Rendering MS Project documents by specifying Project Start and End dates ###
-|---|---
 
 Since the version 18.11 GroupDocs.Viewer Cloud API allows to render part of MS Project  document according to specified StartDate and EndDate properties of ProjectOptions class as shown in examples below. When only one of this properties is set, rendering starts from project start or to end date correspondingly.
 
@@ -175,7 +170,7 @@ Since the version 18.11 GroupDocs.Viewer Cloud API allows to render part of MS P
 curl --request POST \
   --url https://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
+  --data 'grant_type=client_credentials&#x26;client_id=[Your AppSid]&#x26;client_secret=[Your AppKey]'
 
 ### Upload file into the storage
 curl --request PUT \
@@ -196,4 +191,3 @@ curl --request GET \
   --url https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/pages/1 \
   --header 'authorization: Bearer [Access Token]'
 ```
-

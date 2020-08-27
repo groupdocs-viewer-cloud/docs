@@ -1661,13 +1661,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Specif
 ## cURL REST Example ##
 
  Requestcurl -v "[http:~~/~~/api.groupdocs.cloud/v1/viewer/sample2.pdf/html/pages](http://api.groupdocs.cloud/v1/viewer/sample2.pdf/html/pages)" \
-
 -X GET \
-
 -data '{"pdfOptions": {"imageQuality": "High"}' \
-
 -H"Content-Type: application/json" \
-
 -H "authorization: Bearer "
 
 Response
@@ -1763,12 +1759,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Preven
 
 ## cURL REST Example ##
 
- Requestcurl -v "http:~/~/api.groupdocs.cloud/v1/viewer/one-page1.docx/html/pages"  \
-
+ Requestcurl -v "http://api.groupdocs.cloud/v1/viewer/one-page1.docx/html/pages"  \
 -X GET -data '{"excludeFonts": true }' \
-
 -H "Content-Type: application/json"  \
-
 -H "authorization: Bearer [Access Token]"
 
 Response
@@ -1839,11 +1832,8 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Auto F
 ## cURL REST Example ##
 
  Requestcurl -v "[http:~~/~~/api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages](http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages)" \
-
 -X GET -data '{"cellsOptions": {"textOverflowMode": "AutoFitColumn"}'  \
-
 -H "Content-Type: application/json"  \
-
 -H "authorization: Bearer [Access Token]"
 
 Response
@@ -1914,11 +1904,8 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Render
 ## cURL REST Example ##
 
  Requestcurl -v "[http:~~/~~/api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages](http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages)"  \
-
 -X GET -data '{"cellsOptions": {"renderPrintAreaOnly": true, "renderHiddenColumns": true}}'  \
-
 -H "Content-Type: application/json"  \
-
 -H "authorization: Bearer [Access Token]"
 
 Response
@@ -1989,11 +1976,8 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [includ
 ## cURL REST Example ##
 
  Requestcurl -v "[http:~~/~~/api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages](http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages)"  \
-
 -X GET -data '{"cellsOptions": {"renderHiddenRows": true, "renderHiddenColumns": true}}'  \
-
 -H "Content-Type: application/json" \
-
 -H "authorization: Bearer [Access Token]"
 
 Response
@@ -2068,22 +2052,16 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Render
 # Set default font name when rendering PDF document as HTML
 
 curl request POST \
-
-url http:~/~/api.groupdocs.cloud/v1/viewer/missing-font.pdf/html/pages \
-
+url http://api.groupdocs.cloud/v1/viewer/missing-font.pdf/html/pages \
 header 'authorization: [Access Token]' \
-
 header 'content-type: application/json' \
-
 data '{"defaultFontName": "Arial"}'
 
 # Retrieve created page
 
 curl request GET \
-
-  ~-~-url http:~/~/api.groupdocs.cloud/v1/viewer/missing-font.pdf/html/pages/1 \
-
-  ~-~-header 'authorization: [Access Token]'
+  --url http://api.groupdocs.cloud/v1/viewer/missing-font.pdf/html/pages/1 \
+  --header 'authorization: [Access Token]'
 
 Response
 

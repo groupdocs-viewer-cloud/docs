@@ -12,10 +12,7 @@ keywords: ""
 Note:  The features listed in this page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-# Changing Language for Header of Emails #
-
 When rendering email messages by GroupDocs.Viewer uses English language to render field labels such as (From, To, Subject etc.). To change field labels you can set **FieldLabels** on [**EmailOptions** ](https://docs.dynabic.com/display/viewercloud/Options+Objects)class.
-|---|---
 
 **Viewer supports following field labels:**
 
@@ -70,7 +67,6 @@ When rendering email messages by GroupDocs.Viewer uses English language to rende
 ## Resource ##
 
 The following GroupDocs.Viewer Cloud REST API resource has been used to [Render Email as HTML](https://apireference.groupdocs.cloud/viewer/#!/Rendering/HtmlCreatePagesCacheFromContent).
-|---|---
 
 ## cURL REST Example ##
 
@@ -128,7 +124,6 @@ curl request GET \
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
-|---|---
 
 ### Changing Language for Header of Emails ###
 
@@ -160,13 +155,11 @@ The API is completely independent of your operating system, database system or d
 
 # Render Email documents as Image with Setting to set  Page Size #
 
-Since the version 18.7, it is possible to set output page size for rendering Email documents into PDF. To enable this feature, please set the **PageSize **property of the **[EmailOptions](https://docs.dynabic.com/display/viewercloud/Options+Objects)** class as shown in example below. Please note, that for rendering into HTML the whole email message is rendered into one responsive HTML page and this new option will not influence the rendering.
-|---|---
+Since the version 18.7, it is possible to set output page size for rendering Email documents into PDF. To enable this feature, please set the **PageSize** property of the **[EmailOptions](https://docs.dynabic.com/display/viewercloud/Options+Objects)** class as shown in example below. Please note, that for rendering into HTML the whole email message is rendered into one responsive HTML page and this new option will not influence the rendering.
 
 ## Resource ##
 
 The following GroupDocs.Viewer Cloud REST API resource has been used to [Render Email as HTML](https://apireference.groupdocs.cloud/viewer/#!/Rendering/HtmlCreatePagesCacheFromContent).
-|---|---
 
 ## cURL REST Example ##
 
@@ -220,7 +213,6 @@ header 'authorization: [Access Token]'
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
-|---|---
 
 ### Render Email documents as Image with Setting to set  Page Size ###
 
@@ -249,4 +241,3 @@ The API is completely independent of your operating system, database system or d
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Render_Email_Image_PageSize.py >}}
 
 {{< /tab >}} {{< /tabs >}}
-

@@ -12,8 +12,6 @@ keywords: ""
 Note:  The features listed on this page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-# Download HTML Resource #
-
 GroupDocs.Viewer Cloud REST APIs support to download HTML page resource (image, style, graphics or font) of a specific page. API returns actual data of HTML page resource.
 
 ## Resource ##

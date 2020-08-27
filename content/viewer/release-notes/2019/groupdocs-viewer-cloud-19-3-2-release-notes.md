@@ -28,14 +28,14 @@ This is hot-fix release which includes 3 bug-fixes and 2 improvements.
 
 ## Public API and Backward Incompatible Changes ##
 
-IsResponsive option added to  [HtmlOptions]({{< ref "viewer/developer-guide/data-structures/htmloptions.md" >}}))
+IsResponsive option added to  [HtmlOptions]({{< ref "viewer/developer-guide/data-structures/htmloptions.md" >}})
 |---|---
 
 ```bash
 ### Retrieve access token
     curl --request POST https://api.groupdocs.cloud/connect/token \
         --header 'Content-Type: application/x-www-form-urlencoded' \
-        --data 'grant_type#client_credentials&#x26;client_id#[APP_SID]&#x26;client_secret#[APP_KEY]&#x26;undefined'
+        --data 'grant_type=client_credentials&#x26;client_id=[APP_SID]&#x26;client_secret=[APP_KEY]&#x26;undefined'
     ### Result:
     {
     "access_token": "[ACCESS_TOKEN]",

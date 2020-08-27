@@ -12,8 +12,6 @@ keywords: ""
 Note:  The features listed on this page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-# Get Fonts Resource #
-
 GroupDocs.Viewer Cloud REST APIs support to get the installed fonts resource from the API server. API returns list of installed fonts.
 
 ## Resource ##
