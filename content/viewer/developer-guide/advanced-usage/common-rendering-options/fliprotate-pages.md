@@ -93,35 +93,35 @@ C#
 
 ```csharp
 
-* For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
-string MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-string MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
+string MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+string MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-var configuration # new Configuration(MyAppSid, MyAppKey);
-var apiInstance # new ViewApi(configuration);
+var configuration = new Configuration(MyAppSid, MyAppKey);
+var apiInstance = new ViewApi(configuration);
 
-var viewOptions # new ViewOptions
+var viewOptions = new ViewOptions
 {
-    FileInfo # new FileInfo
+    FileInfo = new FileInfo
     {
-        FilePath # "SampleFiles/sample.docx"
+        FilePath = "SampleFiles/sample.docx"
     },
-    ViewFormat # ViewOptions.ViewFormatEnum.PDF,
+    ViewFormat = ViewOptions.ViewFormatEnum.PDF,
 
-    RenderOptions # new RenderOptions
+    RenderOptions = new RenderOptions
     {
-        PageRotations # new List<PageRotation>
+        PageRotations = new List<PageRotation>
         {
             new PageRotation
             {
-                PageNumber # 1,
-                RotationAngle # PageRotation.RotationAngleEnum.On90Degree
+                PageNumber = 1,
+                RotationAngle = PageRotation.RotationAngleEnum.On90Degree
             }
         }
     }
 };
 
-var response # apiInstance.CreateView(new CreateViewRequest(viewOptions));
+var response = apiInstance.CreateView(new CreateViewRequest(viewOptions));
 
 ```
 
@@ -129,26 +129,26 @@ Java
 
 ```java
 
-* For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
-String MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-String MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
+String MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+String MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-Configuration configuration # new Configuration(MyAppSid, MyAppKey);
-ViewApi apiInstance # new ViewApi(configuration);
+Configuration configuration = new Configuration(MyAppSid, MyAppKey);
+ViewApi apiInstance = new ViewApi(configuration);
 
-FileInfo fileInfo # new FileInfo();
+FileInfo fileInfo = new FileInfo();
 fileInfo.setFilePath("SampleFiles/sample.docx");
-ViewOptions viewOptions # new ViewOptions();
+ViewOptions viewOptions = new ViewOptions();
 viewOptions.setFileInfo(fileInfo);
 viewOptions.setViewFormat(ViewFormatEnum.PDF);
-RenderOptions renderOptions # new RenderOptions();
-PageRotation pageRotation # new PageRotation();
+RenderOptions renderOptions = new RenderOptions();
+PageRotation pageRotation = new PageRotation();
 pageRotation.setPageNumber(1);
 pageRotation.setRotationAngle(RotationAngleEnum.ON90DEGREE);
 renderOptions.addPageRotationsItem(pageRotation);
 viewOptions.setRenderOptions(renderOptions);
 
-ViewResult response # apiInstance.createView(new CreateViewRequest(viewOptions));
+ViewResult response = apiInstance.createView(new CreateViewRequest(viewOptions));
 
 ```
 
@@ -156,33 +156,33 @@ PHP
 
 ```php
 
-* For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-php-samples
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-php-samples
 use GroupDocs\Viewer\Model;
 use GroupDocs\Viewer\Model\Requests;
 
-$AppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$AppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$AppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$AppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-$configuration # new GroupDocs\Viewer\Configuration();
+$configuration = new GroupDocs\Viewer\Configuration();
 $configuration->setAppSid($AppSid);
 $configuration->setAppKey($AppKey);
 
 $apiInstance# new GroupDocs\Viewer\ViewApi($configuration);
 
-$viewOptions # new Model\ViewOptions();
-$fileInfo # new Model\FileInfo();
+$viewOptions = new Model\ViewOptions();
+$fileInfo = new Model\FileInfo();
 $fileInfo->setFilePath("SampleFiles/sample.docx");
 $viewOptions->setFileInfo($fileInfo);
 $viewOptions->setViewFormat(Model\ViewOptions::VIEW_FORMAT_PDF);
-$renderOptions # new Model\PdfOptions();
-$pageRotation # new Model\PageRotation();
+$renderOptions = new Model\PdfOptions();
+$pageRotation = new Model\PageRotation();
 $pageRotation->setPageNumber(1);
 $pageRotation->setRotationAngle(Model\PageRotation::ROTATION_ANGLE_ON90_DEGREE);
 $renderOptions->setPageRotations([$pageRotation]);
 $viewOptions->setRenderOptions($renderOptions);
 
-$request # new Requests\CreateViewRequest($viewOptions);
-$response # $apiInstance->createView($request);
+$request = new Requests\CreateViewRequest($viewOptions);
+$response = $apiInstance->createView($request);
 
 ```
 
@@ -190,27 +190,27 @@ $response # $apiInstance->createView($request);
 
 ```javascript
 
-* For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node-samples
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node-samples
 global.viewer# require("groupdocs-viewer-cloud");
 
-global.appSid # "XXXX-XXXX-XXXX-XXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-global.appKey # "XXXXXXXXXXXXXXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+global.appSid = "XXXX-XXXX-XXXX-XXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+global.appKey = "XXXXXXXXXXXXXXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-global.viewApi # viewer_cloud.ViewApi.fromKeys(appSid, appKey);
+global.viewApi = viewer_cloud.ViewApi.fromKeys(appSid, appKey);
 
-let fileInfo # new viewer_cloud.FileInfo();
-fileInfo.filePath # "SampleFiles/sample.docx";
-let viewOptions # new viewer_cloud.ViewOptions();
-viewOptions.fileInfo # fileInfo;
-viewOptions.viewFormat # viewer_cloud.ViewOptions.ViewFormatEnum.PDF;
-viewOptions.renderOptions # new viewer_cloud.PdfOptions();
-let pageRotation # new viewer_cloud.PageRotation();
-pageRotation.pageNumber # 1;
-pageRotation.rotationAngle # viewer_cloud.PageRotation.RotationAngleEnum.On90Degree;
-viewOptions.renderOptions.pageRotations # [pageRotation];
+let fileInfo = new viewer_cloud.FileInfo();
+fileInfo.filePath = "SampleFiles/sample.docx";
+let viewOptions = new viewer_cloud.ViewOptions();
+viewOptions.fileInfo = fileInfo;
+viewOptions.viewFormat = viewer_cloud.ViewOptions.ViewFormatEnum.PDF;
+viewOptions.renderOptions = new viewer_cloud.PdfOptions();
+let pageRotation = new viewer_cloud.PageRotation();
+pageRotation.pageNumber = 1;
+pageRotation.rotationAngle = viewer_cloud.PageRotation.RotationAngleEnum.On90Degree;
+viewOptions.renderOptions.pageRotations = [pageRotation];
 
-let request # new viewer_cloud.CreateViewRequest(viewOptions);
-let response # await viewApi.createView(request);
+let request = new viewer_cloud.CreateViewRequest(viewOptions);
+let response = await viewApi.createView(request);
 
 ```
 
@@ -221,23 +221,23 @@ Python
 # For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-python-samples
 import groupdocs_viewer_cloud
 
-app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
 apiInstance# groupdocs_viewer_cloud.ViewApi.from_keys(app_sid, app_key)
 
-view_options # groupdocs_viewer_cloud.ViewOptions()
-view_options.file_info # groupdocs_viewer_cloud.FileInfo()
-view_options.file_info.file_path # "SampleFiles/sample.docx"
-view_options.view_format # "PDF"
-view_options.render_options # groupdocs_viewer_cloud.PdfOptions()
-page_rotation # groupdocs_viewer_cloud.PageRotation()
-page_rotation.page_number # 1
-page_rotation.rotation_angle # "On90Degree"
-view_options.render_options.page_rotations # [page_rotation]
+view_options = groupdocs_viewer_cloud.ViewOptions()
+view_options.file_info = groupdocs_viewer_cloud.FileInfo()
+view_options.file_info.file_path = "SampleFiles/sample.docx"
+view_options.view_format = "PDF"
+view_options.render_options = groupdocs_viewer_cloud.PdfOptions()
+page_rotation = groupdocs_viewer_cloud.PageRotation()
+page_rotation.page_number = 1
+page_rotation.rotation_angle = "On90Degree"
+view_options.render_options.page_rotations = [page_rotation]
 
-request # groupdocs_viewer_cloud.CreateViewRequest(view_options)
-response # apiInstance.create_view(request)
+request = groupdocs_viewer_cloud.CreateViewRequest(view_options)
+response = apiInstance.create_view(request)
 
 ```
 
@@ -248,23 +248,23 @@ Ruby
 # For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-ruby-samples
 require 'groupdocs_viewer_cloud'
 
-$app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-apiInstance # GroupDocsViewerCloud::ViewApi.from_keys($app_sid, $app_key)
+apiInstance = GroupDocsViewerCloud::ViewApi.from_keys($app_sid, $app_key)
 
-viewOptions # GroupDocsViewerCloud::ViewOptions.new
-viewOptions.file_info # GroupDocsViewerCloud::FileInfo.new
-viewOptions.file_info.file_path # "SampleFiles/sample.docx"
-viewOptions.view_format # "PDF"
-viewOptions.render_options # GroupDocsViewerCloud::PdfOptions.new
-page_rotation # GroupDocsViewerCloud::PageRotation.new
-page_rotation.page_number # 1
-page_rotation.rotation_angle # "On90Degree"
-viewOptions.render_options.page_rotations # [page_rotation]
+viewOptions = GroupDocsViewerCloud::ViewOptions.new
+viewOptions.file_info = GroupDocsViewerCloud::FileInfo.new
+viewOptions.file_info.file_path = "SampleFiles/sample.docx"
+viewOptions.view_format = "PDF"
+viewOptions.render_options = GroupDocsViewerCloud::PdfOptions.new
+page_rotation = GroupDocsViewerCloud::PageRotation.new
+page_rotation.page_number = 1
+page_rotation.rotation_angle = "On90Degree"
+viewOptions.render_options.page_rotations = [page_rotation]
 
-request # GroupDocsViewerCloud::CreateViewRequest.new(viewOptions)
-response # apiInstance.create_view(request)
+request = GroupDocsViewerCloud::CreateViewRequest.new(viewOptions)
+response = apiInstance.create_view(request)
 
 ```
 

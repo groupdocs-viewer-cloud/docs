@@ -103,21 +103,21 @@ C#
 
 ```csharp
 
-* For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
-string MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-string MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
+string MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+string MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-var configuration # new Configuration(MyAppSid, MyAppKey);
+var configuration = new Configuration(MyAppSid, MyAppKey);
 
-var apiInstance # new InfoApi(configuration);
-var viewOptions # new ViewOptions
+var apiInstance = new InfoApi(configuration);
+var viewOptions = new ViewOptions
 {
-    FileInfo # new FileInfo
+    FileInfo = new FileInfo
     {
-        FilePath # "SampleFiles/sample.docx"
+        FilePath = "SampleFiles/sample.docx"
     }
 };
-var response # apiInstance.GetInfo(new GetInfoRequest(viewOptions));
+var response = apiInstance.GetInfo(new GetInfoRequest(viewOptions));
 
 ```
 
@@ -125,18 +125,18 @@ Java
 
 ```java
 
-* For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
-String MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-String MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
+String MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+String MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-Configuration configuration # new Configuration(MyAppSid, MyAppKey);
+Configuration configuration = new Configuration(MyAppSid, MyAppKey);
 
-InfoApi apiInstance # new InfoApi(configuration);
-FileInfo fileInfo # new FileInfo();
+InfoApi apiInstance = new InfoApi(configuration);
+FileInfo fileInfo = new FileInfo();
 fileInfo.setFilePath("SampleFiles/sample.docx");
-ViewOptions viewOptions # new ViewOptions();
+ViewOptions viewOptions = new ViewOptions();
 viewOptions.setFileInfo(fileInfo);
-InfoResult response # apiInstance.getInfo(new GetInfoRequest(viewOptions));
+InfoResult response = apiInstance.getInfo(new GetInfoRequest(viewOptions));
 
 ```
 
@@ -144,25 +144,25 @@ PHP
 
 ```php
 
-* For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-php-samples
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-php-samples
 use GroupDocs\Viewer\Model;
 use GroupDocs\Viewer\Model\Requests;
 
-$AppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$AppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$AppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$AppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-$configuration # new GroupDocs\Viewer\Configuration();
+$configuration = new GroupDocs\Viewer\Configuration();
 $configuration->setAppSid($AppSid);
 $configuration->setAppKey($AppKey);
 
 $apiInstance# new GroupDocs\Viewer\InfoApi($configuration);
 
-$viewOptions # new Model\ViewOptions();
-$fileInfo # new Model\FileInfo();
+$viewOptions = new Model\ViewOptions();
+$fileInfo = new Model\FileInfo();
 $fileInfo->setFilePath("SampleFiles/sample.docx");
 $viewOptions->setFileInfo($fileInfo);
-$request # new Requests\GetInfoRequest($viewOptions);
-$response # $apiInstance->getInfo($request);
+$request = new Requests\GetInfoRequest($viewOptions);
+$response = $apiInstance->getInfo($request);
 
 ```
 
@@ -170,20 +170,20 @@ $response # $apiInstance->getInfo($request);
 
 ```javascript
 
-* For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node-samples
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node-samples
 global.viewer# require("groupdocs-viewer-cloud");
 
-global.appSid # "XXXX-XXXX-XXXX-XXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-global.appKey # "XXXXXXXXXXXXXXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+global.appSid = "XXXX-XXXX-XXXX-XXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+global.appKey = "XXXXXXXXXXXXXXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-global.infoApi # viewer_cloud.InfoApi.fromKeys(appSid, appKey);
+global.infoApi = viewer_cloud.InfoApi.fromKeys(appSid, appKey);
 
-let fileInfo # new viewer_cloud.FileInfo();
-fileInfo.filePath # "SampleFiles/sample.docx";
-let viewOptions # new viewer_cloud.ViewOptions();
-viewOptions.fileInfo # fileInfo;
-let request # new viewer_cloud.GetInfoRequest(viewOptions);
-let response # await infoApi.getInfo(request);
+let fileInfo = new viewer_cloud.FileInfo();
+fileInfo.filePath = "SampleFiles/sample.docx";
+let viewOptions = new viewer_cloud.ViewOptions();
+viewOptions.fileInfo = fileInfo;
+let request = new viewer_cloud.GetInfoRequest(viewOptions);
+let response = await infoApi.getInfo(request);
 
 ```
 
@@ -194,16 +194,16 @@ Python
 # For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-python-samples
 import groupdocs_viewer_cloud
 
-app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-infoApi # groupdocs_viewer_cloud.InfoApi.from_keys(app_sid, app_key)
+infoApi = groupdocs_viewer_cloud.InfoApi.from_keys(app_sid, app_key)
 
-view_options # groupdocs_viewer_cloud.ViewOptions()
-view_options.file_info # groupdocs_viewer_cloud.FileInfo()
-view_options.file_info.file_path # "SampleFiles/sample.docx"
-request # groupdocs_viewer_cloud.GetInfoRequest(view_options)
-result # infoApi.get_info(request)
+view_options = groupdocs_viewer_cloud.ViewOptions()
+view_options.file_info = groupdocs_viewer_cloud.FileInfo()
+view_options.file_info.file_path = "SampleFiles/sample.docx"
+request = groupdocs_viewer_cloud.GetInfoRequest(view_options)
+result = infoApi.get_info(request)
 
 ```
 
@@ -214,16 +214,16 @@ Ruby
 # For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-ruby-samples
 require 'groupdocs_viewer_cloud'
 
-$app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-infoApi # GroupDocsViewerCloud::InfoApi.from_keys($app_sid, $app_key)
+infoApi = GroupDocsViewerCloud::InfoApi.from_keys($app_sid, $app_key)
 
-viewOptions # GroupDocsViewerCloud::ViewOptions.new
-viewOptions.file_info # GroupDocsViewerCloud::FileInfo.new
-viewOptions.file_info.file_path # "SampleFiles/sample.docx"
-request # GroupDocsViewerCloud::GetInfoRequest.new(viewOptions)
-response # infoApi.get_info(request)
+viewOptions = GroupDocsViewerCloud::ViewOptions.new
+viewOptions.file_info = GroupDocsViewerCloud::FileInfo.new
+viewOptions.file_info.file_path = "SampleFiles/sample.docx"
+request = GroupDocsViewerCloud::GetInfoRequest.new(viewOptions)
+response = infoApi.get_info(request)
 
 ```
 

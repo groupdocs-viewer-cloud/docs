@@ -153,22 +153,22 @@ C#
 
 ```csharp
 
-* For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
-string MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-string MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
+string MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+string MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-var configuration # new Configuration(MyAppSid, MyAppKey);
-var apiInstance # new InfoApi(configuration);
+var configuration = new Configuration(MyAppSid, MyAppKey);
+var apiInstance = new InfoApi(configuration);
 
-var viewOptions # new ViewOptions
+var viewOptions = new ViewOptions
 {
-    FileInfo # new FileInfo
+    FileInfo = new FileInfo
     {
-        FilePath # "SampleFiles/with_folders.zip"
+        FilePath = "SampleFiles/with_folders.zip"
     }
 };
 
-var response # apiInstance.GetInfo(new GetInfoRequest(viewOptions));
+var response = apiInstance.GetInfo(new GetInfoRequest(viewOptions));
 foreach (var folder in response.ArchiveViewInfo.Folders)
     Console.WriteLine(folder);
 
@@ -178,21 +178,21 @@ Java
 
 ```java
 
-* For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
-String MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-String MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
+String MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+String MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-Configuration configuration # new Configuration(MyAppSid, MyAppKey);
-InfoApi apiInstance # new InfoApi(configuration);
+Configuration configuration = new Configuration(MyAppSid, MyAppKey);
+InfoApi apiInstance = new InfoApi(configuration);
 
-FileInfo fileInfo # new FileInfo();
+FileInfo fileInfo = new FileInfo();
 fileInfo.setFilePath("SampleFiles/with_folders.zip");
-ViewOptions viewOptions # new ViewOptions();
+ViewOptions viewOptions = new ViewOptions();
 viewOptions.setFileInfo(fileInfo);
 
-InfoResult response # apiInstance.getInfo(new GetInfoRequest(viewOptions));
-List<String> folders # response.getArchiveViewInfo().getFolders();
-for(int i # 0; i < folders.size(); i++)
+InfoResult response = apiInstance.getInfo(new GetInfoRequest(viewOptions));
+List<String> folders = response.getArchiveViewInfo().getFolders();
+for(int i = 0; i < folders.size(); i++)
     System.out.println(folders.get(i));
 
 ```
@@ -201,26 +201,26 @@ PHP
 
 ```php
 
-* For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-php-samples
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-php-samples
 use GroupDocs\Viewer\Model;
 use GroupDocs\Viewer\Model\Requests;
 
-$AppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$AppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$AppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$AppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-$configuration # new GroupDocs\Viewer\Configuration();
+$configuration = new GroupDocs\Viewer\Configuration();
 $configuration->setAppSid($AppSid);
 $configuration->setAppKey($AppKey);
 
 $apiInstance# new GroupDocs\Viewer\InfoApi($configuration);
 
-$viewOptions # new Model\ViewOptions();
-$fileInfo # new Model\FileInfo();
+$viewOptions = new Model\ViewOptions();
+$fileInfo = new Model\FileInfo();
 $fileInfo->setFilePath("SampleFiles/with_folders.zip");
 $viewOptions->setFileInfo($fileInfo);
 
-$request # new Requests\GetInfoRequest($viewOptions);
-$response # $apiInstance->getInfo($request);
+$request = new Requests\GetInfoRequest($viewOptions);
+$response = $apiInstance->getInfo($request);
 foreach ($response->getArchiveViewInfo()->getFolders() as $folder) {
     echo $folder, "\n";
 }
@@ -231,24 +231,24 @@ foreach ($response->getArchiveViewInfo()->getFolders() as $folder) {
 
 ```javascript
 
-* For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node-samples
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node-samples
 global.viewer# require("groupdocs-viewer-cloud");
 
-global.appSid # "XXXX-XXXX-XXXX-XXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-global.appKey # "XXXXXXXXXXXXXXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+global.appSid = "XXXX-XXXX-XXXX-XXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+global.appKey = "XXXXXXXXXXXXXXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-global.infoApi # viewer_cloud.InfoApi.fromKeys(appSid, appKey);
+global.infoApi = viewer_cloud.InfoApi.fromKeys(appSid, appKey);
 
-let fileInfo # new viewer_cloud.FileInfo();
-fileInfo.filePath # "SampleFiles/with_folders.zip";
-let viewOptions # new viewer_cloud.ViewOptions();
-viewOptions.fileInfo # fileInfo;
-viewOptions.viewFormat # viewer_cloud.ViewOptions.ViewFormatEnum.HTML;
+let fileInfo = new viewer_cloud.FileInfo();
+fileInfo.filePath = "SampleFiles/with_folders.zip";
+let viewOptions = new viewer_cloud.ViewOptions();
+viewOptions.fileInfo = fileInfo;
+viewOptions.viewFormat = viewer_cloud.ViewOptions.ViewFormatEnum.HTML;
 
-let request # new viewer_cloud.GetInfoRequest(viewOptions);
-let response # await infoApi.getInfo(request);
-let folders # response.archiveViewInfo.folders;
-for (let i # 0; i < folders.length; i++) {
+let request = new viewer_cloud.GetInfoRequest(viewOptions);
+let response = await infoApi.getInfo(request);
+let folders = response.archiveViewInfo.folders;
+for (let i = 0; i < folders.length; i++) {
     console.log(folders[i]);
 }
 
@@ -261,19 +261,19 @@ Python
 # For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-python-samples
 import groupdocs_viewer_cloud
 
-app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
 apiInstance# groupdocs_viewer_cloud.InfoApi.from_keys(app_sid, app_key)
 
-view_options # groupdocs_viewer_cloud.ViewOptions()
-view_options.file_info # groupdocs_viewer_cloud.FileInfo()
-view_options.file_info.file_path # "SampleFiles/with_folders.zip"
-view_options.view_format # "HTML"
+view_options = groupdocs_viewer_cloud.ViewOptions()
+view_options.file_info = groupdocs_viewer_cloud.FileInfo()
+view_options.file_info.file_path = "SampleFiles/with_folders.zip"
+view_options.view_format = "HTML"
 
-request # groupdocs_viewer_cloud.GetInfoRequest(view_options)
-response # apiInstance.get_info(request)
-folders # response.archive_view_info.folders
+request = groupdocs_viewer_cloud.GetInfoRequest(view_options)
+response = apiInstance.get_info(request)
+folders = response.archive_view_info.folders
 for folder in folders:
     print(folder)
 
@@ -286,18 +286,18 @@ Ruby
 # For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-ruby-samples
 require 'groupdocs_viewer_cloud'
 
-$app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-apiInstance # GroupDocsViewerCloud::InfoApi.from_keys($app_sid, $app_key)
+apiInstance = GroupDocsViewerCloud::InfoApi.from_keys($app_sid, $app_key)
 
-viewOptions # GroupDocsViewerCloud::ViewOptions.new
-viewOptions.file_info # GroupDocsViewerCloud::FileInfo.new
-viewOptions.file_info.file_path # "SampleFiles/with_folders.zip"
-viewOptions.view_format # "HTML"
+viewOptions = GroupDocsViewerCloud::ViewOptions.new
+viewOptions.file_info = GroupDocsViewerCloud::FileInfo.new
+viewOptions.file_info.file_path = "SampleFiles/with_folders.zip"
+viewOptions.view_format = "HTML"
 
-request # GroupDocsViewerCloud::GetInfoRequest.new(viewOptions)
-response # infoApi.get_info(request)
+request = GroupDocsViewerCloud::GetInfoRequest.new(viewOptions)
+response = infoApi.get_info(request)
 for folder in response.archive_view_info.folders do
     puts(" " + folder)
 end

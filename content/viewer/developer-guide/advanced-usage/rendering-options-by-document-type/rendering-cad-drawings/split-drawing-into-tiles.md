@@ -46,64 +46,64 @@ C#
 
 ```csharp
 
-* For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
-string MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-string MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
+string MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+string MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-var configuration # new Configuration(MyAppSid, MyAppKey);
+var configuration = new Configuration(MyAppSid, MyAppKey);
 
-var infoApiInstance # new InfoApi(configuration);
-var viewOptions # new ViewOptions
+var infoApiInstance = new InfoApi(configuration);
+var viewOptions = new ViewOptions
 {
-    FileInfo # new FileInfo
+    FileInfo = new FileInfo
     {
-        FilePath # "SampleFiles/with_layers_and_layouts.dwg"
+        FilePath = "SampleFiles/with_layers_and_layouts.dwg"
     }
 };
 
-var infoResponse # infoApiInstance.GetInfo(new GetInfoRequest(viewOptions));
+var infoResponse = infoApiInstance.GetInfo(new GetInfoRequest(viewOptions));
 
-* Get width and height
-var width # infoResponse.Pages[0].Width.Value;
-var height # infoResponse.Pages[0].Height.Value;
+// Get width and height
+var width = infoResponse.Pages[0].Width.Value;
+var height = infoResponse.Pages[0].Height.Value;
 
-* Set tile width and height as a half of image total width
-var tileWidth # width / 2;
-var tileHeight # height / 2;
-var pointX # 0;
-var pointY # 0;
+// Set tile width and height as a half of image total width
+var tileWidth = width / 2;
+var tileHeight = height / 2;
+var pointX = 0;
+var pointY = 0;
 
 *Create image options and add four tiles, one for each quarter
 
-viewOptions # new ViewOptions
+viewOptions = new ViewOptions
 {
-    FileInfo # new FileInfo
+    FileInfo = new FileInfo
     {
-        FilePath # "SampleFiles/with_layers_and_layouts.dwg"
+        FilePath = "SampleFiles/with_layers_and_layouts.dwg"
     },
-    ViewFormat # ViewOptions.ViewFormatEnum.HTML,
-    RenderOptions # new HtmlOptions
+    ViewFormat = ViewOptions.ViewFormatEnum.HTML,
+    RenderOptions = new HtmlOptions
     {
-        CadOptions # new CadOptions()
+        CadOptions = new CadOptions()
     }
 };
 
-viewOptions.RenderOptions.CadOptions.Tiles # new List<Tile>();
-var tile # new Tile { StartPointX # pointX, StartPointY # pointY, Width # tileWidth, Height # tileHeight };
+viewOptions.RenderOptions.CadOptions.Tiles = new List<Tile>();
+var tile = new Tile { StartPointX = pointX, StartPointY = pointY, Width = tileWidth, Height = tileHeight };
 viewOptions.RenderOptions.CadOptions.Tiles.Add(tile);
 pointX +# tileWidth;
-tile # new Tile { StartPointX # pointX, StartPointY # pointY, Width # tileWidth, Height # tileHeight };
+tile = new Tile { StartPointX = pointX, StartPointY = pointY, Width = tileWidth, Height = tileHeight };
 viewOptions.RenderOptions.CadOptions.Tiles.Add(tile);
-pointX # 0;
+pointX = 0;
 pointY +# tileHeight;
-tile # new Tile { StartPointX # pointX, StartPointY # pointY, Width # tileWidth, Height # tileHeight };
+tile = new Tile { StartPointX = pointX, StartPointY = pointY, Width = tileWidth, Height = tileHeight };
 viewOptions.RenderOptions.CadOptions.Tiles.Add(tile);
 pointX +# tileWidth;
-tile # new Tile { StartPointX # pointX, StartPointY # pointY, Width # tileWidth, Height # tileHeight };
+tile = new Tile { StartPointX = pointX, StartPointY = pointY, Width = tileWidth, Height = tileHeight };
 viewOptions.RenderOptions.CadOptions.Tiles.Add(tile);
 
-var apiInstance # new ViewApi(configuration);
-var response # apiInstance.CreateView(new CreateViewRequest(viewOptions));
+var apiInstance = new ViewApi(configuration);
+var response = apiInstance.CreateView(new CreateViewRequest(viewOptions));
 
 ```
 
