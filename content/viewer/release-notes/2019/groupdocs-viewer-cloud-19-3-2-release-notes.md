@@ -3,7 +3,7 @@ id: "groupdocs-viewer-cloud-19-3-2-release-notes"
 url: "viewer/groupdocs-viewer-cloud-19-3-2-release-notes"
 title: "GroupDocs.Viewer Cloud 19.3.2 Release Notes"
 productName: "GroupDocs.Viewer Cloud"
-weight: 3
+weight: 4
 description: ""
 keywords: ""
 ---
@@ -29,7 +29,6 @@ This is hot-fix release which includes 3 bug-fixes and 2 improvements.
 ## Public API and Backward Incompatible Changes ##
 
 IsResponsive option added to  [HtmlOptions]({{< ref "viewer/developer-guide/data-structures/htmloptions.md" >}})
-|---|---
 
 ```bash
 ### Retrieve access token
@@ -91,4 +90,3 @@ curl --request POST \
 
 <Contents of viewer/one-page_docx/p1.html>
 ```
-

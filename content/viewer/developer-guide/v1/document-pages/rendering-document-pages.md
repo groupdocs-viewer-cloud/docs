@@ -125,7 +125,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pages_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Pages_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -203,7 +203,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pages_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Pages_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -263,7 +263,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_ZIP_With_Pages_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_ZIP_With_Pages_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -323,7 +323,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_ZIP_With_Pages_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_ZIP_With_Pages_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -393,7 +393,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pages_URL_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Pages_URL_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -462,7 +462,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pages_URL_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Pages_URL_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -520,7 +520,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Download_Document_Page_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Download_Document_Page_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -578,7 +578,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Download_Document_Page_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Download_Document_Page_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -656,7 +656,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Document_Cache_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Create_Document_Cache_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -674,7 +674,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-{{< tabs tabTotal="2" tabID="10" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="40" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/image/pages?storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX"
@@ -683,6 +683,8 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/image/pages?storag
 ```
 
 {{< /tab >}} {{< tab tabNum="2" >}}
+
+```html
 
 {
  "fileName": "sample.docx",
@@ -703,6 +705,9 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/image/pages?storag
  ],
  "url": null
 }
+```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -728,7 +733,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Document_Cache_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Create_Document_Cache_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -748,7 +753,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="41" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/pages" \
@@ -758,9 +763,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/pages" \
 -H "authorization: Bearer [Access Token]"
 ```
 
-{{< /tab >}} {{< /tabs >}}
-
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -775,6 +778,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -800,7 +805,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Project_Page_Cache_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Create_Project_Page_Cache_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -820,7 +825,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-{{< tabs tabTotal="2" tabID="11" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="42" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/image/pages" \
@@ -872,7 +877,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Project_Page_Cache_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Create_Project_Page_Cache_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -890,7 +895,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-{{< tabs tabTotal="2" tabID="12" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="43" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pages?fileName#one-page.docx&#x26;appsid#XXXX&#x26;signature#XXX-XX"
@@ -955,7 +960,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pages_Cache_Request_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Create_Pages_Cache_Request_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -973,7 +978,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-{{< tabs tabTotal="2" tabID="13" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="44" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1.0/viewer/image/pages?fileName#one-page.docx&#x26;appsid#XXXX&#x26;signature#XXX-XX"
@@ -1024,7 +1029,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pages_Cache_Request_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Create_Pages_Cache_Request_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -1042,7 +1047,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-{{< tabs tabTotal="2" tabID="14" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="45" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 curl -v "https://api.groupdocs.cloud/v1.0/viewer/html/pages?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&fileName#one-page.docx&storage#First%20Storage&appsid#XXXX&signature#XXX-XX"
 
@@ -1092,7 +1097,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Document_Cache_Url_With_HTMLOptions.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Create_Document_Cache_Url_With_HTMLOptions.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -1110,7 +1115,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-{{< tabs tabTotal="2" tabID="15" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="46" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 curl -v  "XX-XX"
 
@@ -1160,7 +1165,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Document_Cache_Url_With_ImageOptions.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Create_Document_Cache_Url_With_ImageOptions.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -1178,7 +1183,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [rotate
 
 ## cURL REST Example ##
 
-{{< tabs tabTotal="2" tabID="16" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="47" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
@@ -1252,7 +1257,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Rotate_Page_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Rotate_Page_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -1270,7 +1275,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [rotate
 
 ## cURL REST Example ##
 
-{{< tabs tabTotal="2" tabID="17" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="48" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
@@ -1344,7 +1349,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Rotate_Page_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Rotate_Page_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -1362,7 +1367,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [reorde
 
 ## cURL REST Example ##
 
-{{< tabs tabTotal="2" tabID="18" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="49" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
@@ -1436,7 +1441,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Reorder_Page_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Reorder_Page_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -1454,7 +1459,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [reorde
 
 ## cURL REST Example ##
 
-{{< tabs tabTotal="2" tabID="19" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="50" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
@@ -1528,7 +1533,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Reorder_Page_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Reorder_Page_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -1546,11 +1551,12 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [remove
 
 ## cURL REST Example ##
 
-{{< tabs tabTotal="2" tabID="20" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="51" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
+```html
 curl -v  "XX-XX"
-
 -H "Content-Type: application/json" -X DELETE -d "{}"
+```
 
 {{< /tab >}} {{< tab tabNum="2" >}}
 
@@ -1584,7 +1590,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Remove_Document_Cache_for_HTML_Pages.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Remove_Document_Cache_for_HTML_Pages.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -1602,13 +1608,13 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [remove
 
 ## cURL REST Example ##
 
-{{< tabs tabTotal="2" tabID="21" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="52" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
+```html
 curl -v  "XX-XX"
-
 -H "Content-Type: application/json"
-
 -X DELETE -d "{}"
+```
 
 {{< /tab >}} {{< tab tabNum="2" >}}
 
@@ -1642,7 +1648,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Remove_Document_Cache_for_Image_Pages.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Remove_Document_Cache_for_Image_Pages.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -1660,13 +1666,17 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Specif
 
 ## cURL REST Example ##
 
- Requestcurl -v "[http:~~/~~/api.groupdocs.cloud/v1/viewer/sample2.pdf/html/pages](http://api.groupdocs.cloud/v1/viewer/sample2.pdf/html/pages)" \
+{{< tabs tabTotal="2" tabID="53" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+
+ ```html
+ curl -v "[http://api.groupdocs.cloud/v1/viewer/sample2.pdf/html/pages](http://api.groupdocs.cloud/v1/viewer/sample2.pdf/html/pages)" \
 -X GET \
 -data '{"pdfOptions": {"imageQuality": "High"}' \
 -H"Content-Type: application/json" \
 -H "authorization: Bearer "
+```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -1713,6 +1723,8 @@ Response
 }
 ```
 
+{{< /tab >}} {{< /tabs >}}
+
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
@@ -1737,7 +1749,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Set_image_quality.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Set_image_quality.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -1759,12 +1771,16 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Preven
 
 ## cURL REST Example ##
 
- Requestcurl -v "http://api.groupdocs.cloud/v1/viewer/one-page1.docx/html/pages"  \
+{{< tabs tabTotal="2" tabID="54" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+
+```html
+ curl -v "http://api.groupdocs.cloud/v1/viewer/one-page1.docx/html/pages"  \
 -X GET -data '{"excludeFonts": true }' \
 -H "Content-Type: application/json"  \
 -H "authorization: Bearer [Access Token]"
+```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
       {
@@ -1788,6 +1804,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -1813,7 +1831,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Exclude_Fonts.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Exclude_Fonts.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -1831,12 +1849,16 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Auto F
 
 ## cURL REST Example ##
 
- Requestcurl -v "[http:~~/~~/api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages](http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages)" \
+{{< tabs tabTotal="2" tabID="55" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+
+```html
+ curl -v "[http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages](http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages)" \
 -X GET -data '{"cellsOptions": {"textOverflowMode": "AutoFitColumn"}'  \
 -H "Content-Type: application/json"  \
 -H "authorization: Bearer [Access Token]"
+```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
       {
@@ -1860,6 +1882,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -1885,7 +1909,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_text_Overflow_Mode.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_text_Overflow_Mode.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -1903,12 +1927,16 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Render
 
 ## cURL REST Example ##
 
- Requestcurl -v "[http:~~/~~/api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages](http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages)"  \
+{{< tabs tabTotal="2" tabID="56" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+
+```html
+ curl -v "[http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages](http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages)"  \
 -X GET -data '{"cellsOptions": {"renderPrintAreaOnly": true, "renderHiddenColumns": true}}'  \
 -H "Content-Type: application/json"  \
 -H "authorization: Bearer [Access Token]"
+```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
       {
@@ -1932,6 +1960,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -1957,7 +1987,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_render_PrintArea_Only.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_render_PrintArea_Only.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -1975,12 +2005,16 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [includ
 
 ## cURL REST Example ##
 
- Requestcurl -v "[http:~~/~~/api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages](http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages)"  \
+{{< tabs tabTotal="2" tabID="57" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+
+```html
+ curl -v "[http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages](http://api.groupdocs.cloud/v1/viewer/with-overflowed-text.xlsx/html/pages)"  \
 -X GET -data '{"cellsOptions": {"renderHiddenRows": true, "renderHiddenColumns": true}}'  \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer [Access Token]"
+```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
       {
@@ -2004,6 +2038,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -2029,7 +2065,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_render_Hidden_Rows.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_render_Hidden_Rows.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -2047,8 +2083,9 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Render
 
 ## cURL REST Example ##
 
- Request\\
+{{< tabs tabTotal="2" tabID="58" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
+```html
 # Set default font name when rendering PDF document as HTML
 
 curl request POST \
@@ -2062,8 +2099,9 @@ data '{"defaultFontName": "Arial"}'
 curl request GET \
   --url http://api.groupdocs.cloud/v1/viewer/missing-font.pdf/html/pages/1 \
   --header 'authorization: [Access Token]'
+```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
       {
@@ -2089,6 +2127,8 @@ Response
 }
 ```
 
+{{< /tab >}} {{< /tabs >}}
+
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
@@ -2113,12 +2153,10 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Render_PDF_DefaultFont.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Render_PDF_DefaultFont.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Node_Render_PDF_DefaultFont.py >}}
 
 {{< /tab >}} {{< /tabs >}}
-
- 

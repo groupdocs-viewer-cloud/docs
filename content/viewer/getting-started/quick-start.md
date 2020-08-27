@@ -46,7 +46,7 @@ Use the **App SID** and **App key (secret key)** from the API app client you
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_All_File_Formats.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_All_File_Formats.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 

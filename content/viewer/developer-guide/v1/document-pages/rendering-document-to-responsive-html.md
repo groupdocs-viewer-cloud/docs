@@ -57,37 +57,27 @@ curl -v "http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1?embedRe
 ```html
 
 <!DOCTYPE html>
-
 <html>
-
 <head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+    <title></title>
 
-<meta http-equiv#"Content-Type" content#"text/html; charset#utf-8" />
+    <link rel="stylesheet" type="text/css"
+    href="http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1/resources/styles.css" media="all" />
 
-<title>
-</title>
-
-<link rel#"stylesheet" type#"text/css"
-href#"http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1/resources/styles.css" media#"all" />
-
-<link rel#"stylesheet" type#"text/css"
-href#"http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1/resources/styles.css" media#"all" />
-
+    <link rel="stylesheet" type="text/css"
+    href="http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1/resources/styles.css" media="all" />
 </head>
 
 <body>
-
-<div class#"p1-uaUyVgCv-div p1-uaUyVgCv-page" style#"width:612pt;height:792pt; >}}
-<div class#"p1-uaUyVgCv-div" style#"left:72pt; top:72pt; z-index:1; >}}
-<span class#"p1-uaUyVgCv-span p1-uaUyVgCv-text1" style#"font-size:11pt; left:0pt; top:0pt; >}}This is test
-</span>
-</div>
-<div class#"p1-uaUyVgCv-div" style#"z-i
-ndex:1; >}}
-<img class#"p1-uaUyVgCv-img" style#"left:512pt; top:346pt; width:100pt; height:100pt;" src#"http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1/resources/image.png" />
-</div>
-</div>
-
+    <div class="p1-uaUyVgCv-div p1-uaUyVgCv-page" style="width:612pt;height:792pt;" >
+        <div class="p1-uaUyVgCv-div" style="left:72pt; top:72pt; z-index:1;" >
+            <span class="p1-uaUyVgCv-span p1-uaUyVgCv-text1" style="font-size:11pt; left:0pt; top:0pt;" >This is test</span>
+        </div>
+        <div class="p1-uaUyVgCv-div" style="z-index:1;" >
+            <img class="p1-uaUyVgCv-img" style="left:512pt; top:346pt; width:100pt; height:100pt;" src="http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1/resources/image.png" />
+        </div>
+    </div>
 </body>
 
 </html>
@@ -119,7 +109,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Responsive_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Responsive_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 

@@ -99,12 +99,6 @@ curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/storage/file/viewerdocs%2F
 
 {{< /tab >}} {{< tab tabNum="2" >}}
 
-```html
-HTTP status code: 200
-```
-
-{{< /tab >}} {{< /tabs >}}
-
 ```json
 {
   "Uploaded": [
@@ -123,6 +117,8 @@ HTTP status code: 200
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ### Upload File with SDK
 

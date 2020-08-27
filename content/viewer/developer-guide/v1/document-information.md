@@ -90,7 +90,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Document_Info_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -196,7 +196,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Document_Info_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -278,7 +278,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_URL_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Document_Info_URL_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -387,7 +387,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_URL_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Document_Info_URL_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -469,7 +469,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_With_Options_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Document_Info_With_Options_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -551,7 +551,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_With_Options_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Document_Info_With_Options_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -618,25 +618,23 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Document Information of Document Passed in Request Body for HTML Representation ###
 
-{{< tabs tabTotal="6" tabID="16" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="5" tabID="16" tabName1="C#" tabName2="Java" tabName3="Node.js" tabName4="Python" tabName5="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_DocumentInfo_From_Request_Html.cs >}}
 
 {{< /tab >}} {{< tab tabNum="2" >}}
 
-{{< /tab >}} {{< tab tabNum="3" >}}
-
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_DocumentInfo_From_Request_Html.java >}}
 
-{{< /tab >}} {{< tab tabNum="6" >}}
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_DocumentInfo_From_Request_Html.rb >}}
 
+{{< /tab >}} {{< tab tabNum="3" >}}
+
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_DocumentInfo_From_Request_Html.js >}}
+
 {{< /tab >}} {{< tab tabNum="4" >}}
-
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_DocumentInfo_From_Request_Html.js >}}
-
-{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_DocumentInfo_From_Request_Html.py >}}
 
@@ -700,7 +698,7 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Document Information of Document Passed in Request Body for Image Representation ###
 
-{{< tabs tabTotal="6" tabID="26" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="5" tabID="26" tabName1="C#" tabName2="Java" tabName3="Node.js" tabName4="Python" tabName5="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_DocumentInfo_From_Request_Image.cs >}}
 
@@ -708,17 +706,15 @@ The API is completely independent of your operating system, database system or d
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_DocumentInfo_From_Request_Image.java >}}
 
-{{< /tab >}} {{< tab tabNum="6" >}}
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_DocumentInfo_From_Request_Image.rb >}}
 
 {{< /tab >}} {{< tab tabNum="3" >}}
 
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_DocumentInfo_From_Request_Image.js >}}
+
 {{< /tab >}} {{< tab tabNum="4" >}}
-
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_DocumentInfo_From_Request_Image.js >}}
-
-{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_DocumentInfo_From_Request_Image.py >}}
 
@@ -802,7 +798,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_With_Options_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Document_Info_With_Options_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -822,7 +818,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
-{{< tabs tabTotal="2" tabID="10" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="28" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
@@ -886,7 +882,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Document_Info_With_Options_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Document_Info_With_Options_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 

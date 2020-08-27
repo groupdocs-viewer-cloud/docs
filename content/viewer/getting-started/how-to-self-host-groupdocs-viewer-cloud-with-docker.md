@@ -99,7 +99,7 @@ curl -i http://localhost:8080/
 
 {{< /tab >}} {{< /tabs >}}
 
-At the following screenshot, I'm calling [http:~~/~~/localhost:8080/](http://localhost:8080/) in a separate Powershell window and response indicates that service is alive:
+At the following screenshot, I'm calling [http://localhost:8080/](http://localhost:8080/) in a separate Powershell window and response indicates that service is alive:
 
 ![Health check](viewer/images/health_check.png)
 

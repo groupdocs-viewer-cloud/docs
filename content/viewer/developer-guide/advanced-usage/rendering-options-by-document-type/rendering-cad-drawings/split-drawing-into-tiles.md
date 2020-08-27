@@ -34,15 +34,13 @@ Steps 1 and 3 are storage operations, please refer to this [File API document
 
 [Swagger UI](https://apireference.groupdocs.cloud/viewer/) lets you call this REST API directly from the browser.
 
-##   ##
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### SDK Examples ###
 
-C#
+{{< tabs tabTotal="1" tabID="1" tabName1="С#" >}} {{< tab tabNum="1" >}}
 
 ```csharp
 
@@ -106,3 +104,5 @@ var apiInstance = new ViewApi(configuration);
 var response = apiInstance.CreateView(new CreateViewRequest(viewOptions));
 
 ```
+
+{{< /tab >}} {{< /tabs >}}

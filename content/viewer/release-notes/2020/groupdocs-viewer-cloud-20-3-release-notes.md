@@ -3,6 +3,7 @@ id: "groupdocs-viewer-cloud-20-3-release-notes"
 url: "viewer/groupdocs-viewer-cloud-20-3-release-notes"
 title: "GroupDocs.Viewer Cloud 20.3 Release Notes"
 productName: "GroupDocs.Viewer Cloud"
+weight: 2
 description: ""
 keywords: ""
 ---

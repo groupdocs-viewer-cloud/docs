@@ -62,7 +62,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pdf_File_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Pdf_File_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -120,7 +120,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pdf_File_from_Url_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Pdf_File_from_Url_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -180,7 +180,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pdf_File_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Pdf_File_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -238,7 +238,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pdf_File_from_Url_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Pdf_File_from_Url_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -307,7 +307,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Watermark_Pdf_File_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Watermark_Pdf_File_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -376,7 +376,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Watermark_Pdf_File_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Watermark_Pdf_File_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -441,7 +441,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pdf_File_Request_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Create_Pdf_File_Request_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -506,7 +506,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pdf_File_Request_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Create_Pdf_File_Request_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -569,7 +569,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pdf_File_from_Url_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Create_Pdf_File_from_Url_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -587,7 +587,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-{{< tabs tabTotal="2" tabID="10" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="39" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/image/pdf?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&#x26;fileName#one-page.docx&#x26;folder#viewerdocs&#x26;storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX"
@@ -632,11 +632,10 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pdf_File_from_Url_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Create_Pdf_File_from_Url_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Pdf_File_from_Url_Image.py >}}
 
 {{< /tab >}} {{< /tabs >}}
-

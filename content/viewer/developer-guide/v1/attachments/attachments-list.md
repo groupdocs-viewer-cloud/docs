@@ -73,7 +73,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Attachments_Html.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Attachments_Html.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -142,7 +142,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Attachments_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Attachments_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -202,7 +202,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Attachment_From_Email_HTML.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Attachment_From_Email_HTML.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 
@@ -262,7 +262,7 @@ The API is completely independent of your operating system, database system or d
 
 {{< /tab >}} {{< tab tabNum="4" >}}
 
-{{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Attachment_From_Email_Image.js >}}
+{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Attachment_From_Email_Image.js >}}
 
 {{< /tab >}} {{< tab tabNum="5" >}}
 

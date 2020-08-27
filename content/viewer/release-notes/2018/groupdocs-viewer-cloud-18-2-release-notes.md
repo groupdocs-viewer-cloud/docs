@@ -26,16 +26,16 @@ There are 12 features and fixes in this release. The most notable are:
 
 |Key|Summary|Category
 |---|---|---
-|VIEWERCLOUD-117|[Add option for specifying Layers when rendering CAD documents]({{< ref "viewer/developer-guide/_index.md" >}})document-pages/rendering-document-pages/#HCreateDocumentCacheasHTML)|New Feature
+|VIEWERCLOUD-117|Add option for specifying Layers when rendering CAD documents|New Feature
 |VIEWERCLOUD-116|Support rendering notes when rendering Presentation documents as HTML|New Feature
 |VIEWERCLOUD-114|Add JPEG2000 file format support|New Feature
 |VIEWERCLOUD-113|Add PPSM (PowerPoint macro-enabled slide show) file format support|New Feature
 |VIEWERCLOUD-112|Add POTM (PowerPoint macro-enabled template) file format support|New Feature
 |VIEWERCLOUD-110|Add ODG (OpenDocument Graphics) file format support|New Feature
-|VIEWERCLOUD-106|[Support rendering to responsive HTML]({{< ref "viewer/developer-guide/v1/document-pages/rendering-document-to-responsive-html.md" >}})|New Feature
-|VIEWERCLOUD-103|[Add PHP SDK for GroupDocs.Viewer Cloud](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-php)|New Feature
-|VIEWERCLOUD-102|[Support HTML and SVG minification]({{< ref "viewer/developer-guide/v1/document-pages/minification-of-html-and-svg.md" >}})|New Feature
-|VIEWERCLOUD-98|[Support rendering MS Project documents by time intervals]({{< ref "viewer/developer-guide/_index.md" >}})document-pages/rendering-document-pages/#HRenderingMSProjectDocumentPagesasHTML)|New Feature
+|VIEWERCLOUD-106|Support rendering to responsive HTML|New Feature
+|VIEWERCLOUD-103|Add PHP SDK for GroupDocs.Viewer Cloud|New Feature
+|VIEWERCLOUD-102|Support HTML and SVG minification|New Feature
+|VIEWERCLOUD-98|Support rendering MS Project documents by time intervals|New Feature
 |VIEWERCLOUD-108|Improve Swagger specification of GroupDocs.Viewer Cloud|Improvement
 |VIEWERCLOUD-109|Swagger API reference to create PDF document from request body issue|Bug
 |VIEWERCLOUD-100|Platform does not handle version of GroupDocs SDK|Bug
