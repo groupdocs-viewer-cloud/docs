@@ -46,29 +46,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Download Document as PDF for HTML Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pdf_File_HTML.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pdf_File_HTML.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pdf_File_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pdf_File_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pdf_File_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pdf_File_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Download Document as PDF from Document URL for HTML Representation #
 
@@ -102,29 +104,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Download Document as PDF from Document URL for HTML Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="11" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pdf_File_from_Url_HTML.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pdf_File_from_Url_HTML.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pdf_File_from_Url_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pdf_File_from_Url_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pdf_File_from_Url_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pdf_File_from_Url_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Download Document as PDF for Image Representation #
 
@@ -160,29 +164,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Downlaod Document as PDF for Image Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="12" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pdf_File_Image.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pdf_File_Image.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pdf_File_Image.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pdf_File_Image.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pdf_File_Image.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pdf_File_Image.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Download Document as PDF from Document URL for Image Representation #
 
@@ -216,29 +222,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Download Document as PDF from Document URL for Image Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="13" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pdf_File_from_Url_Image.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pdf_File_from_Url_Image.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pdf_File_from_Url_Image.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pdf_File_from_Url_Image.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pdf_File_from_Url_Image.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pdf_File_from_Url_Image.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Watermark Document for HTML Representation #
 
@@ -283,29 +291,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Watermark document and download as PDF for HTML Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="14" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Watermark_Pdf_File_HTML.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Watermark_Pdf_File_HTML.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Watermark_Pdf_File_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Watermark_Pdf_File_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Watermark_Pdf_File_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Watermark_Pdf_File_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Watermark Document for Image Representation #
 
@@ -350,29 +360,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Watermark document and download as PDF for Image Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="15" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Watermark_PdfFile_Image.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Watermark_Pdf_File_Image.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Watermark_Pdf_File_Image.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Watermark_Pdf_File_Image.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Watermark_Pdf_File_Image.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Watermark_Pdf_File_Image.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Create PDF Document as HTML Representation from Document in Request Body #
 
@@ -413,29 +425,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Create PDF Document as HTML Representation from Document in Request Body ###
 
-C#
+{{< tabs tabTotal="6" tabID="16" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Pdf_File_Request_HTML.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Pdf_File_Request_HTML.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Pdf_File_Request_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Pdf_File_Request_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pdf_File_Request_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Pdf_File_Request_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Create PDF Document as Image Representation from Document in Request Body #
 
@@ -476,29 +490,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Create PDF Document as Image Representation from Document in Request Body ###
 
-C#
+{{< tabs tabTotal="6" tabID="17" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Pdf_File_Request_Image.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Pdf_File_Request_Image.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Pdf_File_Request_Image.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Pdf_File_Request_Image.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pdf_File_Request_Image.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Pdf_File_Request_Image.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Create PDF Document from Document URL for HTML Representation #
 
@@ -537,29 +553,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Create PDF Document from Document URL for HTML Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="18" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Pdf_File_from_Url_HTML.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Pdf_File_from_Url_HTML.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_java_Create_Pdf_File_from_Url_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Pdf_File_from_Url_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pdf_File_from_Url_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Pdf_File_from_Url_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Create PDF Document from Document URL for Image Representation #
 
@@ -598,27 +616,29 @@ The API is completely independent of your operating system, database system or d
 
 ### Create PDF Document from Document URL for Image Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="19" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Pdf_File_from_Url_Image.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Pdf_File_from_Url_Image.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Pdf_File_from_Url_Image.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Pdf_File_from_Url_Image.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pdf_File_from_Url_Image.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Pdf_File_from_Url_Image.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 

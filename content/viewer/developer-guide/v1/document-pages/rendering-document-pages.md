@@ -107,29 +107,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Lists of Document Pages link for HTML Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pages_HTML.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pages_HTML.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pages_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pages_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pages_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pages_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Get List of Links to Document Pages as Image #
 
@@ -183,29 +185,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Lists of Document Pages link for Image Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="11" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pages_Image.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pages_Image.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pages_Image.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pages_Image.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pages_Image.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pages_Image.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Download ZIP Archive with Document Pages as HTML #
 
@@ -241,29 +245,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Get ZIP Archive of Document Pages as HTML ###
 
-C#
+{{< tabs tabTotal="6" tabID="12" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_ZIP_With_Pages_HTML.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_ZIP_With_Pages_HTML.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_ZIP_With_Pages_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_ZIP_With_Pages_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_ZIP_With_Pages_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_ZIP_With_Pages_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Download ZIP Archive with Document Pages as Image #
 
@@ -299,29 +305,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Get ZIP Archive of Document Pages as Image ###
 
-C#
+{{< tabs tabTotal="6" tabID="13" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_ZIP_With_Pages_Image.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_ZIP_With_Pages_Image.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_ZIP_With_Pages_Image.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_ZIP_With_Pages_Image.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_ZIP_With_Pages_Image.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_ZIP_With_Pages_Image.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Get List of Links to Document Pages from provided URL as HTML #
 
@@ -367,29 +375,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Lists of Document Pages link from provided URL for HTML Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="14" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pages_URL_HTML.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pages_URL_HTML.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pages_URL_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pages_URL_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pages_URL_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pages_URL_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Get List of Links to Document Pages from provided URL as Image #
 
@@ -434,29 +444,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Lists of Document Pages from provided URL link for Image Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="15" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Pages_URL_Image.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Pages_URL_Image.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Pages_URL_Image.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Pages_URL_Image.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Get_Pages_URL_Image.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Pages_URL_Image.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Download Document Page as HTML #
 
@@ -490,29 +502,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Download Document Page as HTML ###
 
-C#
+{{< tabs tabTotal="6" tabID="16" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Download_Document_Page_HTML.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Download_Document_Page_HTML.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Download_Document_Page_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Download_Document_Page_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Download_Document_Page_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Download_Document_Page_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Download Document Page as Image #
 
@@ -546,29 +560,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Download Document Page as Image ###
 
-C#
+{{< tabs tabTotal="6" tabID="17" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Download_Document_Page_Image.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Download_Document_Page_Image.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Download_Document_Page_Image.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Download_Document_Page_Image.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Download_Document_Page_Image.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Download_Document_Page_Image.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Create Document Cache as HTML #
 
@@ -622,29 +638,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Create Document Cache as HTML ###
 
-C#
+{{< tabs tabTotal="6" tabID="18" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Document_Cache_HTML.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Document_Cache_HTML.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Document_Cache_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Document_Cache_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Document_Cache_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Document_Cache_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Create Document Cache as Image #
 
@@ -692,29 +710,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Create Document Cache as Image ###
 
-C#
+{{< tabs tabTotal="6" tabID="19" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Document_Cache_Image.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Document_Cache_Image.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Document_Cache_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Document_Cache_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Document_Cache_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Document_Cache_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Rendering MS Project Document Pages as HTML #
 
@@ -762,29 +782,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Create Pages Cache as HTML of MS Project Document ###
 
-C#
+{{< tabs tabTotal="6" tabID="20" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Project_Page_Cache_HTML.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Project_Page_Cache_HTML.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Project_Page_Cache_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Project_Page_Cache_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Project_Page_Cache_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Project_Page_Cache_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Rendering MS Project Document Pages as Image #
 
@@ -832,29 +854,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Create Pages Cache as Image of MS Project Document ###
 
-C#
+{{< tabs tabTotal="6" tabID="21" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Project_Page_Cache_Image.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Project_Page_Cache_Image.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Project_Page_Cache_Image.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Project_Page_Cache_Image.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Project_Page_Cache_Image.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Project_Page_Cache_Image.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Create Document Cache as HTML from Document in Request Body #
 
@@ -913,29 +937,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Create Document Cache as HTML from Document in Request Body ###
 
-C#
+{{< tabs tabTotal="6" tabID="22" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Pages_Cache_Request_HTML.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Pages_Cache_Request_HTML.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Pages_Cache_Request_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Pages_Cache_Request_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pages_Cache_Request_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Pages_Cache_Request_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Create Document Cache as Image from Document in Request Body #
 
@@ -980,29 +1006,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Create Document Cache as Image from Document in Request Body ###
 
-C#
+{{< tabs tabTotal="6" tabID="23" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Pages_Cache_Request_Image.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Pages_Cache_Request_Image.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Pages_Cache_Request_Image.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Pages_Cache_Request_Image.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Pages_Cache_Request_Image.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Pages_Cache_Request_Image.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Create Document Cache for Document URL with HtmlOptions as HTML #
 
@@ -1046,29 +1074,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Create Document Cache for Document URL with HTMLOptions as HTML ###
 
-C#
+{{< tabs tabTotal="6" tabID="24" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Document_Cache_Url_With_HTMLOptions.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Document_Cache_Url_With_HTMLOptions.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Document_Cache_Url_With_HTMLOptions.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Document_Cache_Url_With_HTMLOptions.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Document_Cache_Url_With_HTMLOptions.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Document_Cache_Url_With_HTMLOptions.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Create Document Cache for Document URL with ImageOptions as Image #
 
@@ -1112,29 +1142,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Create Document Cache for Document URL with ImageOptions as Image ###
 
-C#
+{{< tabs tabTotal="6" tabID="25" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Document_Cache_Url_With_ImageOptions.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Create_Document_Cache_Url_With_ImageOptions.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Create_Document_Cache_Url_With_ImageOptions.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Create_Document_Cache_Url_With_ImageOptions.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Create_Document_Cache_Url_With_ImageOptions.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Create_Document_Cache_Url_With_ImageOptions.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Rotate Document Pages for HTML Representation #
 
@@ -1202,29 +1234,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Rotate Document Pages for HTML Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="26" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Rotate_Page_HTML.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Rotate_Page_HTML.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Rotate_Page_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Rotate_Page_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Rotate_Page_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Rotate_Page_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Rotate Document Pages for Image Representation #
 
@@ -1292,29 +1326,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Rotate Document Pages for HTML Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="27" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Rotate_Page_Image.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Rotate_Page_Image.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Rotate_Page_Image.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Rotate_Page_Image.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Rotate_Page_Image.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Rotate_Page_Image.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Reorder Document Pages for HTML Representation #
 
@@ -1382,29 +1418,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Reorder Document Pages for HTML Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="28" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Reorder_Page_HTML.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Reorder_Page_HTML.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Reorder_Page_HTML.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Reorder_Page_HTML.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Reorder_Page_HTML.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Reorder_Page_HTML.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Reorder Document Pages for Image Representation #
 
@@ -1472,29 +1510,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Reorder Document Pages for HTML Representation ###
 
-C#
+{{< tabs tabTotal="6" tabID="29" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Reorder_Page_Image.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Reorder_Page_Image.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Reorder_Page_Image.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Reorder_Page_Image.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Reorder_Page_Image.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Reorder_Page_Image.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Remove Document Cache for HTML Pages #
 
@@ -1526,29 +1566,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Remove Document Cache for HTML Pages ###
 
-C#
+{{< tabs tabTotal="6" tabID="30" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Remove_Document_Cache_for_HTML_Pages.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Remove_Document_Cache_for_HTML_Pages.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Remove_Document_Cache_for_HTML_Pages.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Remove_Document_Cache_for_HTML_Pages.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Remove_Document_Cache_for_HTML_Pages.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Remove_Document_Cache_for_HTML_Pages.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Remove Document Cache for Page Images #
 
@@ -1582,29 +1624,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Remove Document Cache for Page Image ###
 
-C#
+{{< tabs tabTotal="6" tabID="31" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Remove_Document_Cache_for_Image_Pages.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Remove_Document_Cache_for_Image_Pages.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Remove_Document_Cache_for_HTML_Image.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Remove_Document_Cache_for_Image_Pages.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Remove_Document_Cache_for_Image_Pages.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Remove_Document_Cache_for_Image_Pages.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Specify Image Quality when Rendering PDF Documents as HTML #
 
@@ -1679,29 +1723,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Specify Image Quality when Rendering PDF Documents as HTML ###
 
-C#
+{{< tabs tabTotal="6" tabID="32" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Set_image_quality.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Set_image_quality.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Set_image_quality.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Set_image_quality.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Set_image_quality.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Set_image_quality.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Exclude fonts when rendering as HTML #
 
@@ -1756,29 +1802,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Exclude font when rendering as HTML ###
 
-C#
+{{< tabs tabTotal="6" tabID="33" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Exclude_Fonts.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Exclude_Fonts.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Exclude_Fonts.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Exclude_Fonts.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Exclude_Fonts.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Node_Exclude_Fonts.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Auto Fit column width rendering document as HTML #
 
@@ -1829,29 +1877,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Autofit column width rendering document as HTML ###
 
-C#
+{{< tabs tabTotal="6" tabID="34" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_text_Overflow_Mode.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_text_Overflow_Mode.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_text_Overflow_Mode.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_text_Overflow_Mode.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_text_Overflow_Mode.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Node_Exclude_Fonts.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Rendering only Print Area in Excel document as HTML #
 
@@ -1902,29 +1952,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Rendering only Print Area in Excel document as HTML ###
 
-C#
+{{< tabs tabTotal="6" tabID="35" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_render_PrintArea_Only.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_render_PrintArea_Only.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_render_PrintArea_Only.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_render_PrintArea_Only.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_render_PrintArea_Only.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Node_render_PrintArea_Only.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Include/exclude hidden content in Excel documents as HTML #
 
@@ -1975,29 +2027,31 @@ The API is completely independent of your operating system, database system or d
 
 ### Include/exclude hidden content in Excel documents as HTML ###
 
-C#
+{{< tabs tabTotal="6" tabID="36" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_render_Hidden_Rows.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_render_Hidden_Rows.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_render_Hidden_Rows.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_render_Hidden_Rows.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_render_Hidden_Rows.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Node_render_Hidden_Rows.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Rendering PDF Documents into HTML with Setting (Default Font) #
 
@@ -2063,28 +2117,30 @@ The API is completely independent of your operating system, database system or d
 
 ### Rendering PDF Documents into HTML with Setting (Default Font) ###
 
-C#
+{{< tabs tabTotal="6" tabID="37" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Render_PDF_DefaultFont.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Render_PDF_DefaultFont.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Render_PDF_DefaultFont.java >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Render_PDF_DefaultFont.rb >}}
 
-Node.js
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud b1f41cc6e7c5c3179441554d37ecbfc9 Viewer_Node_Render_PDF_DefaultFont.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Node_Render_PDF_DefaultFont.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
  

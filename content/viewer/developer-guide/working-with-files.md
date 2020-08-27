@@ -51,23 +51,23 @@ Our API is completely independent of your operating system, database system or d
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Download_File.cs >}}
 
-#### Download File with PHP SDK
+PHP
 
 {{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Download_File.php >}}
 
-#### Download File with Java SDK
+Java
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Download_File.java >}}
 
-#### Download File with Ruby SDK
+Ruby
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Download_File.rb >}}
 
-#### Download File with Node.js SDK
+Node
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Download_File.js >}}
 
-#### Download File with Python SDK
+Python
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Download_File.py >}}
 
@@ -126,29 +126,31 @@ HTTP status code: 200
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [File API](https://apireference.groupdocs.cloud/viewer/#/File) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
 
-#### Upload File with C# SDK
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Upload_File.cs >}}
 
-#### Upload File with PHP SDK
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Upload_File.php >}}
 
-#### Upload File with Java SDK
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Upload_File.java >}}
 
-#### Upload File with Ruby SDK
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Upload_File.rb >}}
 
-#### Upload File with Node.js SDK
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Upload_File.js >}}
 
-#### Upload File with Python SDK
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Upload_File.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 ## Delete File API
 
@@ -189,29 +191,31 @@ curl -X DELETE "https://api.groupdocs.cloud/v2.0/viewer/storage/file/viewerdocs1
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [File API](https://apireference.groupdocs.cloud/viewer/#/File) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
 
-#### Delete File with C# SDK
+{{< tabs tabTotal="6" tabID="11" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Delete_File.cs >}}
 
-#### Delete File with PHP SDK
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Delete_File.php >}}
 
-#### Delete File with Java SDK
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Delete_File.java >}}
 
-#### Delete File with Ruby SDK
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Delete_File.rb >}}
 
-#### Delete File with Node.js SDK
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Delete_File.js >}}
 
-#### Delete File with Python SDK
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Delete_File.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 ## File Copy API
 
@@ -254,29 +258,31 @@ curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/file/copy/viewerdoc
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [File API](https://apireference.groupdocs.cloud/viewer/#/File) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-#### File Copy with C# SDK
+{{< tabs tabTotal="6" tabID="12" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Copy_File.cs >}}
 
-#### File Copy with PHP SDK
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Copy_File.php >}}
 
-#### File Copy with Java SDK
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Copy_File.java >}}
 
-#### File Copy with Ruby SDK
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Copy_File.rb >}}
 
-#### File Copy with Node.js SDK
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Copy_File.js >}}
 
-##### File Copy with Python SDK
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Copy_File.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 ## File Move API
 
@@ -319,26 +325,28 @@ curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/file/move/viewerdoc
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [File API](https://apireference.groupdocs.cloud/viewer/#/File) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
 
-#### File Move with C# SDK
+{{< tabs tabTotal="6" tabID="13" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Move_File.cs >}}
 
-#### File Move with PHP SDK
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Move_File.php >}}
 
-#### File Move with Java SDK
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Move_File.java >}}
 
-#### File Move with Ruby SDK
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Move_File.rb >}}
 
-#### File Move with Node.js SDK
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Move_File.js >}}
 
-#### File Move with Python SDK
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Move_File.py >}}
+
+{{< /tab >}} {{< /tabs >}}

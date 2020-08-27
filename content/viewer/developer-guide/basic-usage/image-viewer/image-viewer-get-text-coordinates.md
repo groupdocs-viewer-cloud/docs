@@ -96,7 +96,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-C#
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 ```csharp
 
@@ -124,7 +124,7 @@ var response = apiInstance.GetInfo(new GetInfoRequest(viewOptions));
 
 ```
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```java
 
@@ -148,7 +148,7 @@ InfoResult response = apiInstance.getInfo(new GetInfoRequest(viewOptions));
 
 ```
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 ```php
 
@@ -179,7 +179,7 @@ $response = $apiInstance->getInfo($request);
 
 ```
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 ```javascript
 
@@ -204,7 +204,7 @@ let response = await infoApi.getInfo(request);
 
 ```
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 ```python
 
@@ -227,7 +227,7 @@ request = groupdocs_viewer_cloud.GetInfoRequest(view_options)
 
 ```
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 ```ruby
 
@@ -249,4 +249,6 @@ viewOptions.render_options.extract_text = true
 request = GroupDocsViewerCloud::GetInfoRequest.new(viewOptions)
 
 ```
+
+{{< /tab >}} {{< /tabs >}}
 

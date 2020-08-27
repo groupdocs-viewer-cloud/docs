@@ -96,7 +96,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-C#
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 ```csharp
 
@@ -124,7 +124,7 @@ var response = apiInstance.CreateView(new CreateViewRequest(viewOptions));
 
 ```
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```java
 
@@ -148,7 +148,7 @@ ViewResult response = apiInstance.createView(new CreateViewRequest(viewOptions))
 
 ```
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 ```php
 
@@ -179,7 +179,7 @@ $response = $apiInstance->createView($request);
 
 ```
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 ```javascript
 
@@ -204,7 +204,7 @@ let response = await viewApi.createView(request);
 
 ```
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 ```python
 
@@ -228,7 +228,7 @@ response = apiInstance.create_view(request)
 
 ```
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 ```ruby
 
@@ -251,4 +251,6 @@ request = GroupDocsViewerCloud::CreateViewRequest.new(viewOptions)
 response = apiInstance.create_view(request)
 
 ```
+
+{{< /tab >}} {{< /tabs >}}
 

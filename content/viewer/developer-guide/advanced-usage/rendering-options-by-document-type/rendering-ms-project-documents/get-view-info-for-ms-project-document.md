@@ -90,7 +90,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-C#
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 ```csharp
 
@@ -115,7 +115,7 @@ Console.WriteLine(" End date: " + response.ProjectManagementViewInfo.EndDate);
 
 ```
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```java
 
@@ -140,7 +140,7 @@ System.out.println(" End date: " + projectManagementViewInfo.getEndDate());
 
 ```
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 ```php
 
@@ -171,7 +171,7 @@ echo " End date: ", $response->getProjectManagementViewInfo()->getEndDate()->for
 
 ```
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 ```javascript
 
@@ -195,7 +195,7 @@ console.log(" End date: " + response.projectManagementViewInfo.endDate);
 
 ```
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 ```python
 
@@ -219,7 +219,7 @@ print(" End date: " + str(response.project_management_view_info.end_date))
 
 ```
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 ```ruby
 
@@ -242,4 +242,6 @@ puts(" Start date: " + response.project_management_view_info.start_date.to_s)
 puts(" End date: " + response.project_management_view_info.end_date.to_s)
 
 ```
+
+{{< /tab >}} {{< /tabs >}}
 

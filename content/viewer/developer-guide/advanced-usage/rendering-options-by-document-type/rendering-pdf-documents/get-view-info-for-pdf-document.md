@@ -96,7 +96,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-C#
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 ```csharp
 
@@ -120,7 +120,7 @@ Console.WriteLine(" PrintingAllowed: " + response.PdfViewInfo.PrintingAllowed);
 
 ```
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```java
 
@@ -144,7 +144,7 @@ System.out.println(" PrintingAllowed: " + pdfViewInfo.getPrintingAllowed());
 
 ```
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 ```php
 
@@ -174,7 +174,7 @@ echo " PrintingAllowed: ", $response->getPdfViewInfo()->getPrintingAllowed(), "\
 
 ```
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 ```javascript
 
@@ -197,7 +197,7 @@ console.log(" PrintingAllowed: " + response.pdfViewInfo.printingAllowed);
 
 ```
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 ```python
 
@@ -220,7 +220,7 @@ print(" PrintingAllowed: " + str(response.pdf_view_info.printing_allowed))
 
 ```
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 ```ruby
 
@@ -242,4 +242,6 @@ response = infoApi.get_info(request)
 puts(" PrintingAllowed: " + response.pdf_view_info.printing_allowed.to_s)
 
 ```
+
+{{< /tab >}} {{< /tabs >}}
 

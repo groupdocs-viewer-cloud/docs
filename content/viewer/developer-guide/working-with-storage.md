@@ -44,29 +44,31 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/MyStorage/exist" -H
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Storage existence](https://apireference.groupdocs.cloud/viewer/#/Storage/StorageExists) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-#### Check Storage Exist with C# SDK
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Storage_Exist.cs >}}
 
-#### Check Storage Exist with PHP SDK
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Storage_Exist.php >}}
 
-#### Check Storage Exist with Java SDK
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Storage_Exist.java >}}
 
-#### Check Storage Exist with Ruby SDK
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Storage_Exist.rb >}}
 
-#### Check Storage Exist with Node.js SDK
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Storage_Exist.js >}}
 
-#### Check Storage Exist with Python SDK
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Storage_Exist.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 ## Check Storage Object Exist API
 
@@ -107,29 +109,31 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/exist/viewerdocs?st
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Storage Object existence](https://apireference.groupdocs.cloud/viewer/#/Storage/ObjectExists) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-#### Check Storage Object Exist with C# SDK
+{{< tabs tabTotal="6" tabID="11" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Object_Exists.cs >}}
 
-#### Check Storage Object Exist with PHP SDK
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Object_Exists.php >}}
 
-#### Check Storage Object Exist with Java SDK
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Object_Exists.java >}}
 
-#### Check Storage Object Exist with Ruby SDK
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Object_Exists.rb >}}
 
-#### Check Storage Object Exist with Node.js SDK
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Object_Exists.js >}}
 
-#### Check Storage Object Exist with Python SDK
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Object_Exists.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 ## Storage Space Usage API
 
@@ -168,29 +172,31 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/disc?storageName#My
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [storage space usage API](https://apireference.groupdocs.cloud/viewer/#/Storage/GetDiscUsage) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-#### Storage Space Usage with C# SDK
+{{< tabs tabTotal="6" tabID="12" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Disc_Usage.cs >}}
 
-#### Storage Space Usage with PHP SDK
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Get_Disc_Usage.php >}}
 
-#### Storage Space Usage with Java SDK
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Get_Disc_Usage.java >}}
 
-#### Storage Space Usage with Ruby SDK
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Get_Disc_Usage.rb >}}
 
-#### Storage Space Usage with Node.js SDK
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Disc_Usage.js >}}
 
-#### Storage Space Usage with Python SDK
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Get_Disc_Usage.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 ## Storage File Versions API
 
@@ -239,26 +245,28 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/version/one-page.do
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Storage File Versions API](https://apireference.groupdocs.cloud/viewer/#/Storage/GetFileVersions) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-#### Storage File Versions with C# SDK
+{{< tabs tabTotal="6" tabID="13" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_File_Versions.cs >}}
 
-#### Storage File Versions with PHP SDK
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Get_File_Versions.php >}}
 
-#### Storage File Versions with Java SDK
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Get_File_Versions.java >}}
 
-#### Storage File Versions with Ruby SDK
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Get_File_Versions.rb >}}
 
-#### Storage File Versions with Node.js SDK
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_File_Versions.js >}}
 
-#### Storage File Versions with Python SDK
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Get_File_Versions.py >}}
+
+{{< /tab >}} {{< /tabs >}}

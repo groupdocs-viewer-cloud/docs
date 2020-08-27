@@ -106,7 +106,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-C#
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 ```csharp
 
@@ -130,7 +130,7 @@ Console.WriteLine(" Folders count: " + response.OutlookViewInfo.Folders.Count);
 
 ```
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```java
 
@@ -154,7 +154,7 @@ System.out.println(" Folders count: " + outlookViewInfo.getFolders().size());
 
 ```
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 ```php
 
@@ -184,7 +184,7 @@ echo " Folders count: ", count($response->getOutlookViewInfo()->getFolders()), "
 
 ```
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 ```javascript
 
@@ -207,7 +207,7 @@ console.log(" Folders count: " + response.outlookViewInfo.folders.length);
 
 ```
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 ```python
 
@@ -230,7 +230,7 @@ print(" Folders count: " + str(len(response.outlook_view_info.folders
 
 ```
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 ```ruby
 
@@ -250,4 +250,6 @@ response = infoApi.get_info(request)
 puts(" Folders count: " + response.outlook_view_info.folders.length.to_s)
 
 ```
+
+{{< /tab >}} {{< /tabs >}}
 

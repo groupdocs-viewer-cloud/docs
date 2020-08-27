@@ -113,7 +113,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-C#
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 ```csharp
 
@@ -138,7 +138,7 @@ Console.WriteLine(" Layouts count: " + response.CadViewInfo.Layouts.Count);
 
 ```
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```java
 
@@ -163,7 +163,7 @@ System.out.println(" Layouts count: " + cadViewInfo.getLayouts().size());
 
 ```
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 ```php
 
@@ -193,7 +193,7 @@ echo " Layouts count: ", count($response->getCadViewInfo()->getLayouts()), "\n";
 
 ```
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 ```javascript
 
@@ -217,7 +217,7 @@ console.log(" Layouts count: " + response.cadViewInfo.layouts.length);
 
 ```
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 ```python
 
@@ -242,7 +242,7 @@ response = apiInstance.create_view(request)
 
 ```
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 ```ruby
 
@@ -265,4 +265,6 @@ puts(" Layers count: " + response.cad_view_info.layers.length.to_s)
 puts(" Layouts count: " + response.cad_view_info.layouts.length.to_s)
 
 ```
+
+{{< /tab >}} {{< /tabs >}}
 

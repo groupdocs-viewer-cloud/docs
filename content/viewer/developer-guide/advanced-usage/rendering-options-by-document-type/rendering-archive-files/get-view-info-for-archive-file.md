@@ -151,7 +151,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-C#
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 ```csharp
 
@@ -176,7 +176,7 @@ foreach (var folder in response.ArchiveViewInfo.Folders)
 
 ```
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```java
 
@@ -199,7 +199,7 @@ for(int i = 0; i < folders.size(); i++)
 
 ```
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 ```php
 
@@ -229,7 +229,7 @@ foreach ($response->getArchiveViewInfo()->getFolders() as $folder) {
 
 ```
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 ```javascript
 
@@ -256,7 +256,7 @@ for (let i = 0; i < folders.length; i++) {
 
 ```
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 ```python
 
@@ -281,7 +281,7 @@ for folder in folders:
 
 ```
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 ```ruby
 
@@ -305,4 +305,6 @@ for folder in response.archive_view_info.folders do
 end
 
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
