@@ -52,7 +52,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [get do
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1?embedResources#true&#x26;enableResponsiveRendering#true" \
@@ -62,7 +62,7 @@ curl -v "http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1?embedRe
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 
@@ -102,6 +102,8 @@ ndex:1; >}}
 
 </html>
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 

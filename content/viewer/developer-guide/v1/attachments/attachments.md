@@ -22,7 +22,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used in the [at
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/attachments" \
@@ -32,7 +32,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/attachments" \
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -46,6 +46,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -87,7 +89,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used in the [at
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/image/attachments" \
@@ -97,7 +99,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/image/attachments" \
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -111,6 +113,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -152,7 +156,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used in the [do
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="3" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/attachments/Test.pdf" \
@@ -162,11 +166,13 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/attachments/Test.pd
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 Contents of Test.Pdf attachment
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -208,7 +214,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used in the [do
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/image/attachments/Test.pdf" \
@@ -218,11 +224,13 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/image/attachments/Test.p
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 Contents of Test.Pdf attachment
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 

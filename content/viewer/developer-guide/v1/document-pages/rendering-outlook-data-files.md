@@ -22,7 +22,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Render
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 ### Render Outlook Data file as HTML
@@ -38,7 +38,7 @@ curl --request GET \
   --header 'authorization: Bearer [Access Token]'
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -52,6 +52,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 

@@ -24,7 +24,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/pages" \
@@ -34,7 +34,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/pages" \
 -H "authorization: Bearer [Access Token]"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -49,6 +49,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -92,7 +94,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/image/pages" \
@@ -102,7 +104,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/image/pages" \
 -H "authorization: Bearer [Access Token]"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -117,6 +119,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -162,7 +166,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="3" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl --request POST \
@@ -172,7 +176,7 @@ curl --request POST \
   --data '{"projectOptions": {"startDate": "07/01/2008","endDate": "07/31/2008"}}'
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -215,6 +219,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 

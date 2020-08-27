@@ -35,7 +35,7 @@ To run GroupDocs.Viewer Cloud in Docker type one of the following commands:
 In case you don't have license keys you can omit LICENSE_PUBLIC_KEY and LICENSE_PRIVATE_KEY parameters. Without license GroupDocs.Viewer will work in evaluation mode.
 {{< /alert >}}
 
-**Windows (PowerShell)**
+{{< tabs tabTotal="2" tabID="1" tabName1="Windows (PowerShell)" tabName2="Linux (bash)" >}} {{< tab tabNum="1" >}}
 
 ```powershell
 
@@ -50,7 +50,7 @@ docker run `
 
 ```
 
-**Linux (bash)**
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```bash
 
@@ -64,6 +64,8 @@ docker run \
     groupdocs/viewer-cloud
 
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 The Docker would download GroupDocs.Viewer Cloud image from Docker Hub and start a container. While downloading the image the output similar to shown on screenshot would be printed to the console:
 
@@ -83,17 +85,19 @@ Now you can work with GroupDocs.Viewer Cloud which is hosted on your machine.
 
 When the container and GroupDocs.Viewer Cloud started you can check service status by calling GET [http://localhost:8080/](http://localhost:8080/). The successful response status (200) will indicate that the service is up and running.
 
-#### Windows (PowerShell)
+{{< tabs tabTotal="2" tabID="2" tabName1="Windows (PowerShell)" tabName2="Linux (bash)" >}} {{< tab tabNum="1" >}}
 
 ```powershell
 Invoke-WebRequest -Uri http://localhost:8080/
 ```
 
-#### Linux (bash)
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```bash
 curl -i http://localhost:8080/
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 At the following screenshot, I'm calling [http:~~/~~/localhost:8080/](http://localhost:8080/) in a separate Powershell window and response indicates that service is alive:
 
@@ -113,7 +117,7 @@ We generate our SDKs in different languages so you may check if yours is availab
 If you don't find your language in the SKD list, feel free to request for it on our [Support Forums](https://forum.groupdocs.cloud/c/viewer), or use raw REST API requests as you can find it [here](https://products.groupdocs.cloud/viewer/curl).
 {{< /alert >}}
 
-#### Windows (PowerShell)
+{{< tabs tabTotal="2" tabID="3" tabName1="Windows (PowerShell)" tabName2="Linux (bash)" >}} {{< tab tabNum="1" >}}
 
 ```powershell
 docker run `
@@ -128,7 +132,7 @@ docker run `
     groupdocs/viewer-cloud
 ```
 
-#### Linux (bash)
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```bash
 docker run \
@@ -142,6 +146,8 @@ docker run \
     --name viewer_cloud \
     groupdocs/viewer-cloud
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ### Stop Container
 

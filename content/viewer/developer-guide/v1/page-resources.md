@@ -22,7 +22,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used in the [do
 
 ## cURL Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1/resources/styles.css" \
@@ -32,11 +32,13 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1/resour
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 Contents of styles.css
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 # SDKs #
 

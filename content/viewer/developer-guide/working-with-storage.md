@@ -24,19 +24,21 @@ This API intended for checking the existence of cloud storage with a given name 
 
 ### Check Storage Exist with cURL
 
-Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```bash
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/MyStorage/exist" -H  "accept: application/json" -H  "authorization: Bearer  [Access Token]"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```json
 {
   "exists": true
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ### Check Storage Exist with SDK
 
@@ -84,13 +86,13 @@ This API intended for checking existence of file or folder in [GroupDocs Cloud S
 
 ### Check Storage Object Exist with cURL
 
-Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```bash
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/exist/viewerdocs?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```json
 {
@@ -98,6 +100,8 @@ Response
   "isFolder": true
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ### Check Storage Object Exist with SDK
 
@@ -143,13 +147,13 @@ This API intended for getting total and used space of the[ GroupDocs Cloud Stora
 
 ### Storage Space Usage with cURL
 
-Request
+{{< tabs tabTotal="2" tabID="3" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```bash
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/disc?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```json
 {
@@ -157,6 +161,8 @@ Response
   "totalSize": 3221225472
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ### Storage Space Usage with SDK
 
@@ -203,13 +209,13 @@ This API intended for getting the list of file versions, stored in the [GroupDoc
 
 ### Storage File Versions with cURL
 
-Request
+{{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```bash
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/version/one-page.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```json
 {
@@ -226,6 +232,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ### Storage File Versions with SDK
 

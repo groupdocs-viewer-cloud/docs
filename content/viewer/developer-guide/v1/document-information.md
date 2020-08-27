@@ -22,7 +22,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/info" \
@@ -32,7 +32,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/Test.msg/html/info" \
  
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -63,6 +63,8 @@ Response
 }
 
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -104,7 +106,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/info?extractText#true" \
@@ -114,7 +116,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/info?extractT
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -166,6 +168,8 @@ Response
 }
 ```
 
+{{< /tab >}} {{< /tabs >}}
+
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
@@ -208,7 +212,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="3" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
@@ -218,7 +222,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?url#https%3a%2f%2fwww.d
  
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -243,6 +247,8 @@ Response
   "endDate": "0001-01-01T00:00:00"
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -286,7 +292,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1&#x26;extractText#true&#x26;extractText#true" \
@@ -296,7 +302,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?url#https%3a%2f%2fwww.
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -349,6 +355,8 @@ Response
 }
 ```
 
+{{< /tab >}} {{< /tabs >}}
+
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
@@ -389,7 +397,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="5" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/excel.xlsx/html/info" \
@@ -401,7 +409,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/excel.xlsx/html/info" \
  
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -426,6 +434,8 @@ Response
   "endDate": "0001-01-01T00:00:00"
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -467,7 +477,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="6" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/excel.xlsx/image/info" \
@@ -479,7 +489,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/excel.xlsx/image/info" \
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -504,6 +514,8 @@ Response
   "endDate": "0001-01-01T00:00:00"
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -547,7 +559,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="7" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?fileName#one-page.docx" \
@@ -559,7 +571,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?fileName#one-page.docx"
  
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -585,6 +597,8 @@ Response
   "endDate": "0001-01-01T00:00:00"
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -624,7 +638,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="8" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?fileName#one-page.docx" \
@@ -636,7 +650,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?fileName#one-page.docx
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -661,6 +675,8 @@ Response
   "endDate": "0001-01-01T00:00:00"
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -700,7 +716,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="9" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
@@ -713,7 +729,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/info?url#https%3a%2f%2fwww.d
  
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -739,6 +755,8 @@ Response
     "endDate": "0001-01-01T00:00:00"
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -783,7 +801,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to get [do
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="10" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
@@ -795,7 +813,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/info?url#https%3a%2f%2fwww.
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -820,6 +838,8 @@ Response
   "endDate": "0001-01-01T00:00:00"
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 

@@ -24,7 +24,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
@@ -35,7 +35,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -66,6 +66,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 

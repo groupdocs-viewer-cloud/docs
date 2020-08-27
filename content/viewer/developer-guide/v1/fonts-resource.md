@@ -22,7 +22,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used in the [Ge
 
 ## cURL Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/fonts?appsid#XXXX&#x26;signature#XXX-XX"
@@ -31,7 +31,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/fonts?appsid#XXXX&#x26;signatu
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -540,6 +540,8 @@ Response
   ]
 ```
 
+{{< /tab >}} {{< /tabs >}}
+
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
@@ -580,7 +582,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used in the [De
 
 ## cURL Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/fonts/cache?appsid#XXXX&#x26;signature#XXX-XX"
@@ -589,11 +591,13 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/fonts/cache?appsid#XXXX&#x26;s
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 Empty response with '204 No Content' status.
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 

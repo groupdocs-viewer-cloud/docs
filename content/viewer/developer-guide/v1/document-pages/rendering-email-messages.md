@@ -74,7 +74,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Render
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 # Set field labels when rendering pages
@@ -91,7 +91,7 @@ curl request GET \
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -122,6 +122,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -166,7 +168,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [Render
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 # Set page size when rendering pages  curl request POST \ 
@@ -179,7 +181,7 @@ url http://api.groupdocs.cloud/v1/viewer/message.msg/image/pages/1 \ 
 header 'authorization: [Access Token]'
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -210,6 +212,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 

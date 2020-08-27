@@ -27,7 +27,7 @@ Steps 1 and 3 are storage operations, please refer to this [File API document
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 
@@ -53,7 +53,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/info" \
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 
@@ -104,6 +104,8 @@ Response
 }
 
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -191,7 +193,7 @@ echo " Layouts count: ", count($response->getCadViewInfo()->getLayouts()), "\n";
 
 ```
 
- Node
+Node
 
 ```javascript
 

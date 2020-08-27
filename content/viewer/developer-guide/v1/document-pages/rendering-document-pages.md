@@ -24,7 +24,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [get li
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
@@ -34,7 +34,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -99,6 +99,8 @@ Response
 }
 ```
 
+{{< /tab >}} {{< /tabs >}}
+
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocscloud/GroupDocs.Viewer-Cloud/tree/master/SDKs).
@@ -139,7 +141,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [get li
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
@@ -149,7 +151,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
  
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -172,6 +174,8 @@ Response
   "url": null
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -213,7 +217,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [get ZI
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="3" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/zip" \
@@ -223,11 +227,13 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/zip" \
  
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 ZIP archive with document pages as HTML
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -269,7 +275,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [get zi
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages/zip" \
@@ -279,11 +285,13 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages/zip" \
  
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 ZIP archive with document pages as Image
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -325,7 +333,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [get li
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="5" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/html/pages?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1&#x26;embeddedResources#true" \
@@ -335,7 +343,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/html/pages?url#https%3a%2f%2fwww.
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -350,6 +358,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -391,7 +401,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [get li
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="6" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/image/pages?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
@@ -401,7 +411,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/image/pages?url#https%3a%2f%2fwww
  
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -415,6 +425,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -456,7 +468,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [downlo
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="7" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample-one-page.docx/html/pages/1?ignoreResourcePathInResources#true&#x26;embedResources#true&#x26;renderComments#false&#x26;renderHiddenPages#true&#x26;appsid#XXXX&#x26;signature#XXX-XX"
@@ -464,11 +476,13 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample-one-page.docx/html/page
 -X GET -d "{}"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 Contents of page as HTML
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -510,7 +524,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [downlo
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="8" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample-one-page.docx/image/pages/1?extractText#true&#x26;renderComments#false&#x26;renderHiddenPages#true&#x26;appsid#XXXX&#x26;signature#XXX-XX"
@@ -518,11 +532,13 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample-one-page.docx/image/pag
 -X GET -d "{}"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 Contents of page as Image
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -564,7 +580,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="9" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/html/pages?storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX"
@@ -572,7 +588,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/html/pages?storage
 -X POST -d "{'resourcePath': 'page/1/resource/style.css','embedResources': true,'startPageNumber': 1,'countPages': 3,'renderComments': false}"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -597,6 +613,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -638,7 +656,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="10" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/image/pages?storage#First%20Storage&#x26;appsid#XXXX&#x26;signature#XXX-XX"
@@ -646,7 +664,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/sample.docx/image/pages?storag
 -X POST -d "{'resourcePath': 'page/1/resource/style.css','embedResources': true,'startPageNumber': 1,'countPages': 3,'renderComments': false}"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {
  "fileName": "sample.docx",
@@ -720,6 +738,8 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/html/pages" \
 -H "authorization: Bearer [Access Token]"
 ```
 
+{{< /tab >}} {{< /tabs >}}
+
 Response
 
 ```html
@@ -778,7 +798,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="11" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/image/pages" \
@@ -788,7 +808,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/sample.mpp/image/pages" \
 -H "authorization: Bearer [Access Token]"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -803,6 +823,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -844,7 +866,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="12" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pages?fileName#one-page.docx&#x26;appsid#XXXX&#x26;signature#XXX-XX"
@@ -854,7 +876,7 @@ curl -v  "https://api.groupdocs.cloud/v1.0/viewer/html/pages?fileName#one-page.d
 -d "{'resourcePath':'page/{page-number}/resource/{resource-name}"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -882,6 +904,8 @@ Response
 }
 
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -923,7 +947,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="13" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1.0/viewer/image/pages?fileName#one-page.docx&#x26;appsid#XXXX&#x26;signature#XXX-XX"
@@ -933,7 +957,7 @@ curl -v "https://api.groupdocs.cloud/v1.0/viewer/image/pages?fileName#one-page.d
 -d "{'format':'jpg','quality':90,'width':600,'height':800,'startPageNumber':1,'countPages':1,'extractText':true,'renderComments':true}"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -947,6 +971,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -988,7 +1014,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="14" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 curl -v "https://api.groupdocs.cloud/v1.0/viewer/html/pages?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fumokluz338w4ng7%252fone-page.docx&fileName#one-page.docx&storage#First%20Storage&appsid#XXXX&signature#XXX-XX"
 
@@ -996,7 +1022,7 @@ curl -v "https://api.groupdocs.cloud/v1.0/viewer/html/pages?url#https%3A%2F%2Fww
 
 -X PUT -d "{'embedResources': true}"
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -1011,6 +1037,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -1052,7 +1080,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [create
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="15" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 curl -v  "XX-XX"
 
@@ -1060,7 +1088,7 @@ curl -v  "XX-XX"
 
 -X PUT -d "{'format': 'jpeg','quality': 70}"
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -1075,6 +1103,8 @@ Response
   "url": null
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -1116,7 +1146,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [rotate
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="16" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
@@ -1128,7 +1158,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
  
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -1163,6 +1193,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -1204,7 +1236,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [rotate
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="17" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
@@ -1216,7 +1248,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
  
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -1251,6 +1283,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -1292,7 +1326,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [reorde
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="18" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
@@ -1304,7 +1338,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages" \
  
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -1339,6 +1373,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -1380,7 +1416,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [reorde
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="19" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```html
 curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
@@ -1392,7 +1428,7 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/one-page.docx/image/pages" \
  
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 {
@@ -1427,6 +1463,8 @@ Response
   ]
 }
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -1468,17 +1506,19 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [remove
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="20" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 curl -v  "XX-XX"
 
 -H "Content-Type: application/json" -X DELETE -d "{}"
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 Empty response with '204 No Content' status.
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -1520,7 +1560,7 @@ The following GroupDocs.Viewer Cloud REST API resource has been used to [remove
 
 ## cURL REST Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="21" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 curl -v  "XX-XX"
 
@@ -1528,11 +1568,13 @@ curl -v  "XX-XX"
 
 -X DELETE -d "{}"
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```html
 Empty response with '204 No Content' status.
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
