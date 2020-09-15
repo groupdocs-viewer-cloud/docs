@@ -163,4 +163,34 @@ pip install groupdocs-viewer-cloud
 Complete source code of GroupDocs.Viewer Cloud SDK for Python is freely available on the [GitHub](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-python)
 {{< /alert >}}
 
-{{< alert style="info" >}}Please see the GroupDocs.Viewer Cloud SDK for Python Examples [here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-python/tree/master/test/apis).{{< /alert >}}
+{{< alert style="info" >}}Please see the GroupDocs.Viewer Cloud SDK for Python Examples [here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-android).{{< /alert >}}
+
+## SDK for Android
+
+Allows you to incorporate GroupDocs.Viewer Cloud services in your Android applications quickly and easily.
+
+You can directly include the source code of GroupDocs.Viewer Cloud SDK for Android in your own project, the source code is available from [here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-android).
+
+Add Internet permission in the AndroidManifest.xml:
+
+```xml
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="<package name>">
+    <uses-permission android:name="android.permission.INTERNET" />
+    ...
+```
+
+Add following repository and dependency to your android module's build.gradle after "apply plugin: 'com.android.application'" section:
+
+```xml
+repositories {
+    maven {
+        url "https://repository.groupdocs.cloud/repo/"
+    }
+}
+
+...
+dependencies {
+    ...
+    implementation 'com.groupdocs:groupdocs-viewer-cloud:19.5'
+}
+```
