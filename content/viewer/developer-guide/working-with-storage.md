@@ -44,7 +44,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/MyStorage/exist" -H
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Storage existence](https://apireference.groupdocs.cloud/viewer/#/Storage/StorageExists) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="7" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Storage_Exist.cs >}}
 
@@ -55,6 +55,10 @@ Our API is completely independent of your operating system, database system or d
 {{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Storage_Exist.java >}}
+
+{{< /tab >}}  {{< tab tabNum="7" >}}
+
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Storage_Exist.java >}}
 
 {{< /tab >}} {{< tab tabNum="6" >}}
 
@@ -109,7 +113,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/exist/viewerdocs?st
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Storage Object existence](https://apireference.groupdocs.cloud/viewer/#/Storage/ObjectExists) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="6" tabID="11" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="7" tabID="11" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Object_Exists.cs >}}
 
@@ -120,6 +124,10 @@ Our API is completely independent of your operating system, database system or d
 {{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Object_Exists.java >}}
+
+{{< /tab >}} {{< tab tabNum="7" >}}
+
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Object_Exists.java >}}
 
 {{< /tab >}} {{< tab tabNum="6" >}}
 
@@ -172,7 +180,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/disc?storageName#My
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [storage space usage API](https://apireference.groupdocs.cloud/viewer/#/Storage/GetDiscUsage) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="6" tabID="12" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="7" tabID="12" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Disc_Usage.cs >}}
 
@@ -183,6 +191,10 @@ Our API is completely independent of your operating system, database system or d
 {{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Get_Disc_Usage.java >}}
+
+{{< /tab >}}  {{< tab tabNum="7" >}}
+
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Get_Disc_Usage.java >}}
 
 {{< /tab >}} {{< tab tabNum="6" >}}
 
@@ -245,7 +257,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/version/one-page.do
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Storage File Versions API](https://apireference.groupdocs.cloud/viewer/#/Storage/GetFileVersions) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="6" tabID="13" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="7" tabID="13" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_File_Versions.cs >}}
 
@@ -256,6 +268,10 @@ Our API is completely independent of your operating system, database system or d
 {{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Get_File_Versions.java >}}
+
+{{< /tab >}}  {{< tab tabNum="7" >}}
+
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Get_File_Versions.java >}}
 
 {{< /tab >}} {{< tab tabNum="6" >}}
 

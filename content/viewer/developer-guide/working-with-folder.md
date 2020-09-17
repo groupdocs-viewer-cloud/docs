@@ -54,7 +54,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs?s
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-storage-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="7" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Files_List.cs >}}
 
@@ -77,6 +77,10 @@ Our API is completely independent of your operating system, database system or d
 {{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Get_Files_List.py >}}
+
+{{< /tab >}} {{< tab tabNum="7" >}}
+
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Get_Files_List.java >}}
 
 {{< /tab >}} {{< /tabs >}}
 
@@ -182,7 +186,7 @@ curl -X DELETE "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdoc
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Delete Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder/DeleteFolder) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="6" tabID="12" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="7" tabID="12" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Delete_Folder.cs >}}
 
@@ -193,6 +197,10 @@ Our API is completely independent of your operating system, database system or d
 {{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Delete_Folder.java >}}
+
+{{< /tab >}}  {{< tab tabNum="7" >}}
+
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Delete_Folder.java >}}
 
 {{< /tab >}} {{< tab tabNum="6" >}}
 
@@ -248,7 +256,7 @@ curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/copy/viewerd
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Copy Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder/CopyFolder) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="6" tabID="13" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="7" tabID="13" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Copy_Folder.cs >}}
 
@@ -259,6 +267,10 @@ Our API is completely independent of your operating system, database system or d
 {{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Copy_Folder.java >}}
+
+{{< /tab >}}  {{< tab tabNum="7" >}}
+
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Copy_Folder.java >}}
 
 {{< /tab >}} {{< tab tabNum="6" >}}
 
@@ -314,7 +326,7 @@ curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/move/viewerd
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Move Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder/MoveFolder) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="6" tabID="14" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="7" tabID="14" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Move_Folder.cs >}}
 
@@ -325,6 +337,10 @@ Our API is completely independent of your operating system, database system or d
 {{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Move_Folder.java >}}
+
+{{< /tab >}}  {{< tab tabNum="7" >}}
+
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Move_Folder.java >}}
 
 {{< /tab >}} {{< tab tabNum="6" >}}
 

@@ -373,7 +373,7 @@ The API is completely independent of your operating system, database system or d
 
 ### Get List of Supported File Formats ###
 
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="7" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Supported_Formats.cs >}}
 
@@ -384,6 +384,10 @@ The API is completely independent of your operating system, database system or d
 {{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_All_Supported_Formats.java >}}
+
+{{< /tab >}}  {{< tab tabNum="7" >}}
+
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Get_Supported_Formats.java >}}
 
 {{< /tab >}} {{< tab tabNum="6" >}}
 

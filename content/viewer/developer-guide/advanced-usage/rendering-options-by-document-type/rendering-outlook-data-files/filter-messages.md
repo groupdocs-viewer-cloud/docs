@@ -109,7 +109,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="7" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android">}} {{< tab tabNum="1" >}}
 
 ```csharp
 
@@ -142,6 +142,33 @@ var response = apiInstance.CreateView(new CreateViewRequest(viewOptions));
 ```
 
 {{< /tab >}} {{< tab tabNum="2" >}}
+
+```java
+
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
+String MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+String MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+
+Configuration configuration = new Configuration(MyAppSid, MyAppKey);
+ViewApi apiInstance = new ViewApi(configuration);
+
+FileInfo fileInfo = new FileInfo();
+fileInfo.setFilePath("SampleFiles/sample.ost");
+ViewOptions viewOptions = new ViewOptions();
+viewOptions.setFileInfo(fileInfo);
+viewOptions.setViewFormat(ViewFormatEnum.HTML);
+HtmlOptions renderOptions = new HtmlOptions();
+OutlookOptions outlookOptions = new OutlookOptions();
+outlookOptions.setTextFilter("Microsoft");
+outlookOptions.setAddressFilter("susan");
+renderOptions.setOutlookOptions(outlookOptions);
+viewOptions.setRenderOptions(renderOptions);
+
+ViewResult response = apiInstance.createView(new CreateViewRequest(viewOptions));
+
+```
+
+{{< /tab >}}  {{< tab tabNum="7" >}}
 
 ```java
 

@@ -28,7 +28,7 @@ Use the **App SID** and **App key (secret key)** from the API app client you
 
 {{< alert style="info" >}}The GitHub repository for [GroupDocs.Viewer Cloud](https://github.com/groupdocs-viewer-cloud) has a complete set of examples, demonstrating our API capabilities.{{< /alert >}}
 
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="7" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_All_Supported_Formats.cs >}}
 
@@ -39,6 +39,10 @@ Use the **App SID** and **App key (secret key)** from the API app client you
 {{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_All_Supported_Formats.java >}}
+
+{{< /tab >}} {{< tab tabNum="7" >}}
+
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Get_Supported_Formats.java >}}
 
 {{< /tab >}} {{< tab tabNum="6" >}}
 
