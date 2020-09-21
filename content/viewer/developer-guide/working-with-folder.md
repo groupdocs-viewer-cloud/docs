@@ -122,7 +122,7 @@ curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-storage-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [Folder API](https://apireference.groupdocs.cloud/viewer/#/Folder/) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="6" tabID="11" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="7" tabID="11" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android">}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Create_Folder.cs >}}
 
@@ -133,6 +133,10 @@ Our API is completely independent of your operating system, database system or d
 {{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Create_Folder.java >}}
+
+{{< /tab >}}  {{< tab tabNum="7" >}}
+
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Create_Folder.java >}}
 
 {{< /tab >}} {{< tab tabNum="6" >}}
 
