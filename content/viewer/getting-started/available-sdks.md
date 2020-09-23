@@ -191,6 +191,6 @@ repositories {
 ...
 dependencies {
     ...
-    implementation 'com.groupdocs:groupdocs-viewer-cloud:19.5'
+    implementation 'com.groupdocs:groupdocs-viewer-cloud-android:20.5'
 }
 ```
