@@ -57,7 +57,7 @@ Since the version 18.11 GroupDocs.Viewer Cloud API allows to get start and end 
 curl --request POST \
   --url https://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type=client_credentials&#x26;client_id=[Your AppSid]&#x26;client_secret=[Your AppKey]'
+  --data 'grant_type=client_credentials&#x26;client_id=[Your ClientId]&#x26;client_secret=[Your ClientSecret]'
 
 ### Upload file into the storage
 curl --request PUT \
@@ -106,7 +106,7 @@ Adding fonts into HTML ensures that the text from the original document will app
 curl --request POST \
   --url https://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type=client_credentials&#x26;client_id=[Your AppSid]&#x26;client_secret=[Your AppKey]'
+  --data 'grant_type=client_credentials&#x26;client_id=[Your ClientId]&#x26;client_secret=[Your ClientSecret]'
 
 ### Upload file into the storage
 curl --request PUT \
@@ -139,7 +139,7 @@ Additionally, an OutlookOptions can be used for rendering.
 curl --request POST \
   --url https://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type=client_credentials&#x26;client_id=[Your AppSid]&#x26;client_secret=[Your AppKey]'
+  --data 'grant_type=client_credentials&#x26;client_id=[Your ClientId]&#x26;client_secret=[Your ClientSecret]'
 
 ### Upload file into the storage
 curl --request PUT \
@@ -170,7 +170,7 @@ Since the version 18.11 GroupDocs.Viewer Cloud API allows to render part of MS P
 curl --request POST \
   --url https://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type=client_credentials&#x26;client_id=[Your AppSid]&#x26;client_secret=[Your AppKey]'
+  --data 'grant_type=client_credentials&#x26;client_id=[Your ClientId]&#x26;client_secret=[Your ClientSecret]'
 
 ### Upload file into the storage
 curl --request PUT \

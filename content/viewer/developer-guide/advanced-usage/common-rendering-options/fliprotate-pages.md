@@ -38,7 +38,7 @@ Steps 1 and 3 are storage operations, please refer to this [File API document
 ```html
 
 * First get JSON Web Token
-* Please get your App Key and App SID from https://dashboard.groupdocs.cloud/#/apps. Kindly place App Key in "client_secret" and App SID in "client_id" argument.
+* Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications. Kindly place Client Id in "client_id" and Client Secret in "client_secret" argument.
 curl -v "https://api.groupdocs.cloud/connect/token" \
 -X POST \
 -d "grant_type=client_credentials&client_id=xxxx&client_secret=xxxx" \
@@ -96,10 +96,10 @@ The API is completely independent of your operating system, database system or d
 ```csharp
 
 // For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
-string MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-string MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+string MyClientSecret = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+string MyClientId = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
-var configuration = new Configuration(MyAppSid, MyAppKey);
+var configuration = new Configuration(MyClientId, MyClientSecret);
 var apiInstance = new ViewApi(configuration);
 
 var viewOptions = new ViewOptions
@@ -132,10 +132,10 @@ var response = apiInstance.CreateView(new CreateViewRequest(viewOptions));
 ```java
 
 // For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
-String MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-String MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+string MyClientSecret = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+string MyClientId = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
-Configuration configuration = new Configuration(MyAppSid, MyAppKey);
+Configuration configuration = new Configuration(MyClientId, MyClientSecret);
 ViewApi apiInstance = new ViewApi(configuration);
 
 FileInfo fileInfo = new FileInfo();
@@ -159,10 +159,10 @@ ViewResult response = apiInstance.createView(new CreateViewRequest(viewOptions))
 ```java
 
 // For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
-String MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-String MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+string MyClientSecret = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+string MyClientId = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
-Configuration configuration = new Configuration(MyAppSid, MyAppKey);
+Configuration configuration = new Configuration(MyClientId, MyClientSecret);
 ViewApi apiInstance = new ViewApi(configuration);
 
 FileInfo fileInfo = new FileInfo();
@@ -189,12 +189,12 @@ ViewResult response = apiInstance.createView(new CreateViewRequest(viewOptions))
 use GroupDocs\Viewer\Model;
 use GroupDocs\Viewer\Model\Requests;
 
-$AppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$AppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$ClientId = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+$ClientSecret = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
 $configuration = new GroupDocs\Viewer\Configuration();
-$configuration->setAppSid($AppSid);
-$configuration->setAppKey($AppKey);
+$configuration->setAppSid($ClientId);
+$configuration->setAppKey($ClientSecret);
 
 $apiInstance# new GroupDocs\Viewer\ViewApi($configuration);
 
@@ -222,10 +222,10 @@ $response = $apiInstance->createView($request);
 // For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node-samples
 global.viewer# require("groupdocs-viewer-cloud");
 
-global.appSid = "XXXX-XXXX-XXXX-XXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-global.appKey = "XXXXXXXXXXXXXXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+global.clientId = "XXXX-XXXX-XXXX-XXXX"; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+global.clientSecret = "XXXXXXXXXXXXXXXX"; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
-global.viewApi = viewer_cloud.ViewApi.fromKeys(appSid, appKey);
+global.viewApi = viewer_cloud.ViewApi.fromKeys(clientId, clientSecret);
 
 let fileInfo = new viewer_cloud.FileInfo();
 fileInfo.filePath = "SampleFiles/sample.docx";
@@ -250,10 +250,10 @@ let response = await viewApi.createView(request);
 # For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-python-samples
 import groupdocs_viewer_cloud
 
-app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+client_id = "XXXX-XXXX-XXXX-XXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+client_secret = "XXXXXXXXXXXXXXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
-apiInstance# groupdocs_viewer_cloud.ViewApi.from_keys(app_sid, app_key)
+apiInstance# groupdocs_viewer_cloud.ViewApi.from_keys(client_id, client_secret)
 
 view_options = groupdocs_viewer_cloud.ViewOptions()
 view_options.file_info = groupdocs_viewer_cloud.FileInfo()
@@ -277,10 +277,10 @@ response = apiInstance.create_view(request)
 # For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-ruby-samples
 require 'groupdocs_viewer_cloud'
 
-$app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$client_id = "XXXX-XXXX-XXXX-XXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+$client_secret = "XXXXXXXXXXXXXXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
-apiInstance = GroupDocsViewerCloud::ViewApi.from_keys($app_sid, $app_key)
+apiInstance = GroupDocsViewerCloud::ViewApi.from_keys($client_id, $client_secret)
 
 viewOptions = GroupDocsViewerCloud::ViewOptions.new
 viewOptions.file_info = GroupDocsViewerCloud::FileInfo.new

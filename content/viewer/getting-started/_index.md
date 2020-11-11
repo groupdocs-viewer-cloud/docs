@@ -16,7 +16,7 @@ This section introduces GroupDocs.Viewer Cloud specific Resources & Operations.
 https://api.groupdocs.cloud/v2.0/viewer/
 ```
 
-In the rest of the documentation base URI presented as '~' character.
+In the rest of the documentation base URI is presented as '~' character.
 
 ## Request & Response Format
 
