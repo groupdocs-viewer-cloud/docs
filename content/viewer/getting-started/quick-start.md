@@ -14,7 +14,7 @@ Sign up at <https://id.containerize.com/signup> to create a free account.
 
 ## Create an API client app
 
-Before you can make any requests to GroupDocs for Cloud API you need to get Client Id and Client Secret. That will be used to invoke the GroupDocs Cloud API.
+Before you can make any requests to GroupDocs Cloud API you need to get Client Id and Client Secret. That will be used to invoke the GroupDocs Cloud API.
 
 You can get it from existing Application or create new Application from [Applications View of GroupDocs Cloud Dashboard]({{< ref "total/getting-started/ui-topics/creating-and-managing-application.md" >}}).
 
