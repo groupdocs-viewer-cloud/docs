@@ -53,7 +53,7 @@ When rendering email messages by default Viewer uses English languge to render f
 curl --request POST \
   --url https://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type=client_credentials&#x26;client_id=appSid&#x26;client_secret=appKey'
+  --data 'grant_type=client_credentials&#x26;client_id=clientId&#x26;client_secret=clientSecret'
 
 ### Set field labels when rendering pages
 curl --request POST \
@@ -142,7 +142,7 @@ You can add as many tiles as you need, the following example demonstrates how to
 curl --request POST \
   --url https://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type=client_credentials&#x26;client_id=appSid&#x26;client_secret=appKey'
+  --data 'grant_type=client_credentials&#x26;client_id=clientId&#x26;client_secret=clientSecret'
 
 ### Retrive document width and height
 curl --request POST \
@@ -172,7 +172,7 @@ Since the version 18.7, it is possible to set default font when rendering PDF do
 curl --request POST \
   --url http://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type=client_credentials&#x26;client_id=[Your AppSid]&#x26;client_secret=[Your AppKey]'
+  --data 'grant_type=client_credentials&#x26;client_id=[Your ClientId]&#x26;client_secret=[Your ClientSecret]'
 
 ### Set default font name when rendering PDF document as HTML
 curl --request POST \
@@ -199,7 +199,7 @@ Since the version 18.7, it is possible to set output page size for rendering Ema
 curl --request POST \
   --url http://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type=client_credentials&#x26;client_id=[Your AppSid]&#x26;client_secret=[Your AppKey]'
+  --data 'grant_type=client_credentials&#x26;client_id=[Your ClientId]&#x26;client_secret=[Your ClientSecret]'
 
 ### Set page size when rendering pages
 curl --request POST \
@@ -220,7 +220,7 @@ curl --request GET \
 curl --request POST \
   --url http://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type=client_credentials&#x26;client_id=[Your AppSid]&#x26;client_secret=[Your AppKey]'
+  --data 'grant_type=client_credentials&#x26;client_id=[Your ClientId]&#x26;client_secret=[Your ClientSecret]'
 
 ### Set page size when rendering into PDF
 curl --request POST \

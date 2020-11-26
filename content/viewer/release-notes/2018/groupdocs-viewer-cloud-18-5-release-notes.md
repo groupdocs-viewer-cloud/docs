@@ -61,7 +61,7 @@ Set **ExcludeFonts** **= true** to prevent adding fonts to HTML document.
 curl --request POST \
   --url http://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type=client_credentials&client_id=[Your AppSid]&client_secret=[Your AppKey]'
+  --data 'grant_type=client_credentials&client_id=[Your ClientId]&client_secret=[Your ClientSecret]'
 
 curl --request POST \
   --url http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages \
@@ -112,7 +112,7 @@ When rendering worksheets which contains overlapping text GroupDocs.Viewer adds 
 curl --request POST \
   --url http://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type=client_credentials&client_id=[Your AppSid]&client_secret=[Your AppKey]'
+  --data 'grant_type=client_credentials&client_id=[Your ClientId]&client_secret=[Your ClientSecret]'
 
 # Render worksheet and expand cells width to fit overflowed text
 
@@ -143,7 +143,7 @@ When rendering PDF documents as HTML Viewer creates single image resource which 
 curl --request POST \
   --url http://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type=client_credentials&client_id=[Your AppSid]&client_secret=[Your AppKey]'
+  --data 'grant_type=client_credentials&client_id=[Your ClientId]&client_secret=[Your ClientSecret]'
 
 # Create pages with High image quality
 
@@ -167,7 +167,7 @@ To render sections of the workshet(s) defined as [print area](https://support.o
 curl --request POST \
   --url http://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type=client_credentials&client_id=[Your AppSid]&client_secret=[Your AppKey]'
+  --data 'grant_type=client_credentials&client_id=[Your ClientId]&client_secret=[Your ClientSecret]'
 
 # Enable rendering of print area(s)
 
@@ -198,7 +198,7 @@ Starting from 18.5 GroupDocs.Viewer provides new two new options **RenderHidden
 curl --request POST \
   --url http://api.groupdocs.cloud/oauth2/token \
   --header 'content-type: application/x-www-form-urlencoded' \
-  --data 'grant_type=client_credentials&client_id=[Your AppSid]&client_secret=[Your AppKey]'
+  --data 'grant_type=client_credentials&client_id=[Your ClientId]&client_secret=[Your ClientSecret]'
 
 # Render hidden rows and columns when creating pages
 

@@ -14,9 +14,9 @@ Sign up at <https://id.containerize.com/signup> to create a free account.
 
 ## Create an API client app
 
-Before you can make any requests to GroupDocs for Cloud API you need to get APP SID and APP key (secret key). That will be used to invoke the GroupDocs Cloud API.
+Before you can make any requests to GroupDocs Cloud API you need to get Client Id and Client Secret. That will be used to invoke the GroupDocs Cloud API.
 
-You can get it from default Application or create new Application from [My Apps tab of GroupDocs for Cloud Dashboard]({{< ref "total/getting-started/ui-topics/create-new-app-and-get-app-key-and-sid.md" >}}).
+You can get it from existing Application or create new Application from [Applications View of GroupDocs Cloud Dashboard]({{< ref "total/getting-started/ui-topics/creating-and-managing-application.md" >}}).
 
 ## Install the SDK of your choice
 
@@ -24,7 +24,7 @@ GroupDocs.Viewer Cloud SDK is written in different languages, all you need to ge
 
 ## Make an API request
 
-Use the **App SID** and **App key (secret key)** from the API app client you created in step one and replace in the corresponding code. Below is an example demonstrating using Formats API to get all supported file formats in GroupDocs.Viewer Cloud.
+Use the **Client Id** and **Client Secret** from the API app client you created in step one and replace in the corresponding code. Below is an example demonstrating using Formats API to get all supported file formats in GroupDocs.Viewer Cloud.
 
 {{< alert style="info" >}}The GitHub repository for [GroupDocs.Viewer Cloud](https://github.com/groupdocs-viewer-cloud) has a complete set of examples, demonstrating our API capabilities.{{< /alert >}}
 

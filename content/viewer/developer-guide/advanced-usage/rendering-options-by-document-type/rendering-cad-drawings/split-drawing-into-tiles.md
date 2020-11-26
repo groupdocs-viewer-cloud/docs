@@ -45,10 +45,10 @@ The API is completely independent of your operating system, database system or d
 ```csharp
 
 // For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
-string MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-string MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+string MyClientSecret = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+string MyClientId = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
-var configuration = new Configuration(MyAppSid, MyAppKey);
+var configuration = new Configuration(MyClientId, MyClientSecret);
 
 var infoApiInstance = new InfoApi(configuration);
 var viewOptions = new ViewOptions
