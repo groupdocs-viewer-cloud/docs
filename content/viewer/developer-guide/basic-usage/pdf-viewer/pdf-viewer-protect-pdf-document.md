@@ -102,7 +102,7 @@ var viewOptions = new ViewOptions
     ViewFormat = ViewOptions.ViewFormatEnum.PDF,
     RenderOptions = new PdfOptions
     {
-        Permissions = PdfOptions.PermissionsEnum.DenyModification,
+        Permissions = new List<string> { "DenyModification" },
         PermissionsPassword = "p123",
         DocumentOpenPassword = "o123"
     }
@@ -129,7 +129,7 @@ ViewOptions viewOptions = new ViewOptions();
 viewOptions.setFileInfo(fileInfo);
 viewOptions.setViewFormat(ViewFormatEnum.PDF);
 PdfOptions renderOptions = new PdfOptions();
-renderOptions.setPermissions(PermissionsEnum.DENYMODIFICATION);
+renderOptions.addPermissionsItem("DenyModification");
 renderOptions.setPermissionsPassword("p123");
 renderOptions.setDocumentOpenPassword("o123");
 viewOptions.setRenderOptions(renderOptions);
@@ -155,7 +155,7 @@ ViewOptions viewOptions = new ViewOptions();
 viewOptions.setFileInfo(fileInfo);
 viewOptions.setViewFormat(ViewFormatEnum.PDF);
 PdfOptions renderOptions = new PdfOptions();
-renderOptions.setPermissions(PermissionsEnum.DENYMODIFICATION);
+renderOptions.addPermissionsItem("DenyModification");
 renderOptions.setPermissionsPassword("p123");
 renderOptions.setDocumentOpenPassword("o123");
 viewOptions.setRenderOptions(renderOptions);
@@ -187,7 +187,7 @@ $fileInfo->setFilePath("SampleFiles/sample.docx");
 $viewOptions->setFileInfo($fileInfo);
 $viewOptions->setViewFormat(Model\ViewOptions::VIEW_FORMAT_PDF);
 $renderOptions = new Model\PdfOptions();
-$renderOptions->setPermissions(Model\PdfOptions::PERMISSIONS_DENY_MODIFICATION);
+$renderOptions->setPermissions(["DenyModification", "DenyPrinting"]);
 $renderOptions->setPermissionsPassword("p123");
 $renderOptions->setDocumentOpenPassword("o123");
 $viewOptions->setRenderOptions($renderOptions);
@@ -215,7 +215,7 @@ let viewOptions = new viewer_cloud.ViewOptions();
 viewOptions.fileInfo = fileInfo;
 viewOptions.viewFormat = viewer_cloud.ViewOptions.ViewFormatEnum.PDF;
 viewOptions.renderOptions = new viewer_cloud.PdfOptions();
-viewOptions.renderOptions.permissions = viewer_cloud.PdfOptions.PermissionsEnum.DenyModification,
+viewOptions.renderOptions.permissions = ["DenyModification"],
 viewOptions.renderOptions.permissionsPassword = "p123";
 viewOptions.renderOptions.documentOpenPassword = "o123";
 
@@ -241,7 +241,7 @@ view_options.file_info = groupdocs_viewer_cloud.FileInfo()
 view_options.file_info.file_path = "SampleFiles/sample.docx"
 view_options.view_format = "PDF"
 view_options.render_options = groupdocs_viewer_cloud.PdfOptions()
-view_options.render_options.permissions = "DenyModification"
+view_options.render_options.permissions = ["DenyModification"]
 view_options.render_options.permissions_password = "p123"
 view_options.render_options.document_open_password = "o123"
 
@@ -267,7 +267,7 @@ viewOptions.file_info = GroupDocsViewerCloud::FileInfo.new
 viewOptions.file_info.file_path = "SampleFiles/sample.docx"
 viewOptions.view_format = "PDF"
 viewOptions.render_options = GroupDocsViewerCloud::PdfOptions.new
-viewOptions.render_options.permissions = "DenyModification"
+viewOptions.render_options.permissions = ["DenyModification"]
 viewOptions.render_options.permissions_password = "p123"
 viewOptions.render_options.document_open_password = "o123"
 
