@@ -1,7 +1,7 @@
 ---
-id: "enable-layered-rendering"
-url: "viewer/enable-layered-rendering"
-title: "Enable layered rendering"
+id: "filter-mail-storage"
+url: "viewer/filter-mail-storage"
+title: "Filter mail storage"
 productName: "GroupDocs.Viewer Cloud"
 description: ""
 keywords: ""
@@ -9,11 +9,14 @@ keywords: ""
 
 # Introduction #
 
-When rendering into HTML GroupDocs.Viewer Cloud renders text and graphics as a single layer that improves performance and reduces HTML document size. To improve content positioning wen rendering multi-layered PDF document GroupDocs.Viewer provides EnableLayeredRendering option that enables rendering of text and graphics according to z-order in original PDF document when rendering into HTML.
+Lotus Notes allows filtering messages inside folders by some text value from message content and by part of the sender’s or recipient’s address.
 
-This option is supported when rendering to HTML only.
+![](viewer/images/filter-nsf-messages.jpg)
 
-Following code sample demonstrates how to enable layered rendering.
+GroupDocs.Viewer also allows filtering the rendered messages using the following filters:
+
++ Filter by subject and content using LotusNotesOptions.TextFilter;
++ Filter by the sender’s and recipient’s email addresses using LotusNotesOptions.AddressFilter;
 
 ## API Usage ##
 
@@ -49,12 +52,13 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
 -H "Authorization: Bearer <jwt token>"
 -d "{
   'FileInfo': {
-    'FilePath': 'SampleFiles/sample.pdf'
+    'FilePath': 'SampleFiles/sample.nsf'
   },
   'ViewFormat': 'HTML',
   'RenderOptions': {
-    'PdfDocumentOptions': {
-      'EnableLayeredRendering' : true
+    'MailStorageOptions': {
+      'TextFilter' : 'April 2015',
+      'AddressFilter' : 'test@test.com'
     }
   }
 }"
@@ -70,14 +74,8 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
     {
       "number": 1,
       "resources": null,
-      "path": "viewer/sample_pdf/sample_page_1.html",
-      "downloadUrl": "https://api.groupdocs.cloud/v2.0/viewer/storage/file/viewer/sample_pdf/sample_page_1.html"
-    },
-    {
-      "number": 2,
-      "resources": null,
-      "path": "viewer/sample_pdf/sample_page_2.html",
-      "downloadUrl": "https://api.groupdocs.cloud/v2.0/viewer/storage/file/viewer/sample_pdf/sample_page_2.html"
+      "path": "viewer/sample_nsf/sample_page_1.html",
+      "downloadUrl": "https://api.groupdocs.cloud/v2.0/viewer/storage/file/viewer/sample_nsf/sample_page_1.html"
     }
   ],
   "attachments": [],
@@ -94,7 +92,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-{{< tabs tabTotal="7" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
+{{< tabs tabTotal="7" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android">}} {{< tab tabNum="1" >}}
 
 ```csharp
 
@@ -109,14 +107,15 @@ var viewOptions = new ViewOptions
 {
     FileInfo = new FileInfo
     {
-        FilePath = "SampleFiles/sample.pdf"
+        FilePath = "SampleFiles/sample.nsf"
     },
     ViewFormat = ViewOptions.ViewFormatEnum.HTML,
     RenderOptions = new HtmlOptions
     {
-        PdfDocumentOptions = new PdfDocumentOptions
+        MailStorageOptions = new MailStorageOptions
         {
-            EnableLayeredRendering = true
+            TextFilter = "April 2015",
+            AddressFilter = "test@test.com"
         }
     }
 };
@@ -137,14 +136,15 @@ Configuration configuration = new Configuration(MyClientId, MyClientSecret);
 ViewApi apiInstance = new ViewApi(configuration);
 
 FileInfo fileInfo = new FileInfo();
-fileInfo.setFilePath("SampleFiles/sample.pdf");
+fileInfo.setFilePath("SampleFiles/sample.nsf");
 ViewOptions viewOptions = new ViewOptions();
 viewOptions.setFileInfo(fileInfo);
 viewOptions.setViewFormat(ViewFormatEnum.HTML);
-HtmlOptions renderOptions = new HtmlOptions();
-PdfDocumentOptions pdfDocumentOptions = new PdfDocumentOptions();
-pdfDocumentOptions.setEnableLayeredRendering(true);
-renderOptions.setPdfDocumentOptions(pdfDocumentOptions);
+HtmlOptions renderOptions = new HtmlOptions();            
+MailStorageOptions mailStorageOptions = new MailStorageOptions();
+mailStorageOptions.setTextFilter("April 2015");
+mailStorageOptions.setAddressFilter("test@test.com");
+renderOptions.setMailStorageOptions(mailStorageOptions);
 viewOptions.setRenderOptions(renderOptions);
 
 ViewResult response = apiInstance.createView(new CreateViewRequest(viewOptions));
@@ -163,14 +163,15 @@ Configuration configuration = new Configuration(MyClientId, MyClientSecret);
 ViewApi apiInstance = new ViewApi(configuration);
 
 FileInfo fileInfo = new FileInfo();
-fileInfo.setFilePath("SampleFiles/sample.pdf");
+fileInfo.setFilePath("SampleFiles/sample.nsf");
 ViewOptions viewOptions = new ViewOptions();
 viewOptions.setFileInfo(fileInfo);
 viewOptions.setViewFormat(ViewFormatEnum.HTML);
-HtmlOptions renderOptions = new HtmlOptions();
-PdfDocumentOptions pdfDocumentOptions = new PdfDocumentOptions();
-pdfDocumentOptions.setEnableLayeredRendering(true);
-renderOptions.setPdfDocumentOptions(pdfDocumentOptions);
+HtmlOptions renderOptions = new HtmlOptions();            
+MailStorageOptions mailStorageOptions = new MailStorageOptions();
+mailStorageOptions.setTextFilter("April 2015");
+mailStorageOptions.setAddressFilter("test@test.com");
+renderOptions.setMailStorageOptions(mailStorageOptions);
 viewOptions.setRenderOptions(renderOptions);
 
 ViewResult response = apiInstance.createView(new CreateViewRequest(viewOptions));
@@ -194,15 +195,15 @@ $configuration->setAppKey($ClientSecret);
 
 $apiInstance = new GroupDocs\Viewer\ViewApi($configuration);
 
-$viewOptions = new Model\ViewOptions();
 $fileInfo = new Model\FileInfo();
-$fileInfo->setFilePath("SampleFiles/sample.pdf");
+$fileInfo->setFilePath("SampleFiles/sample.nsf");
 $viewOptions->setFileInfo($fileInfo);
 $viewOptions->setViewFormat(Model\ViewOptions::VIEW_FORMAT_HTML);
 $renderOptions = new Model\HtmlOptions();
-$pdfDocumentOptions = new Model\PdfDocumentOptions();
-$pdfDocumentOptions->setEnableLayeredRendering(true);
-$renderOptions->setPdfDocumentOptions($pdfDocumentOptions);
+$mailStorageOptions = new Model\MailStorageOptions();
+$mailStorageOptions->setTextFilter("April 2015");
+$mailStorageOptions->setAddressFilter("test@test.com");
+$renderOptions->setMailStorageOptions($mailStorageOptions);
 $viewOptions->setRenderOptions($renderOptions);
 
 $request = new Requests\CreateViewRequest($viewOptions);
@@ -223,13 +224,14 @@ global.clientSecret = "XXXXXXXXXXXXXXXX"; // Get Client Id and Client Secret fro
 global.viewApi = viewer_cloud.ViewApi.fromKeys(clientId, clientSecret);
 
 let fileInfo = new viewer_cloud.FileInfo();
-fileInfo.filePath = "SampleFiles/sample.pdf";
+fileInfo.filePath = "SampleFiles/sample.nsf";
 let viewOptions = new viewer_cloud.ViewOptions();
 viewOptions.fileInfo = fileInfo;
 viewOptions.viewFormat = viewer_cloud.ViewOptions.ViewFormatEnum.HTML;
 viewOptions.renderOptions = new viewer_cloud.HtmlOptions();
-viewOptions.renderOptions.pdfDocumentOptions = new viewer_cloud.PdfDocumentOptions();
-viewOptions.renderOptions.pdfDocumentOptions.enableLayeredRendering = true;
+viewOptions.renderOptions.mailStorageOptions = new viewer_cloud.MailStorageOptions();     
+viewOptions.renderOptions.mailStorageOptions.textFilter = "April 2015";
+viewOptions.renderOptions.mailStorageOptions.addressFilter = "test@test.com";
 
 let request = new viewer_cloud.CreateViewRequest(viewOptions);
 let response = await viewApi.createView(request);
@@ -250,11 +252,12 @@ apiInstance = groupdocs_viewer_cloud.ViewApi.from_keys(client_id, client_secret)
 
 view_options = groupdocs_viewer_cloud.ViewOptions()
 view_options.file_info = groupdocs_viewer_cloud.FileInfo()
-view_options.file_info.file_path = "SampleFiles/sample.pdf"
+view_options.file_info.file_path = "SampleFiles/sample.nsf"
 view_options.view_format = "HTML"
 view_options.render_options = groupdocs_viewer_cloud.HtmlOptions()
-view_options.render_options.pdf_document_options = groupdocs_viewer_cloud.PdfDocumentOptions()
-view_options.render_options.pdf_document_options.enable_layered_rendering = True
+view_options.render_options.mail_storage_options = groupdocs_viewer_cloud.MailStorageOptions()    
+view_options.render_options.mail_storage_options.text_filter = "April 2015"
+view_options.render_options.mail_storage_options.address_filter = "test@test.com"
 
 request = groupdocs_viewer_cloud.CreateViewRequest(view_options)
 response = apiInstance.create_view(request)
@@ -275,11 +278,12 @@ apiInstance = GroupDocsViewerCloud::ViewApi.from_keys($client_id, $client_secret
 
 viewOptions = GroupDocsViewerCloud::ViewOptions.new
 viewOptions.file_info = GroupDocsViewerCloud::FileInfo.new
-viewOptions.file_info.file_path = "SampleFiles/sample.pdf"
+viewOptions.file_info.file_path = "SampleFiles/sample.nsf"
 viewOptions.view_format = "HTML"
 viewOptions.render_options = GroupDocsViewerCloud::HtmlOptions.new
-viewOptions.render_options.pdf_document_options = GroupDocsViewerCloud::PdfDocumentOptions.new
-viewOptions.render_options.pdf_document_options.enable_layered_rendering = true
+viewOptions.render_options.mail_storage_options = GroupDocsViewerCloud::MailStorageOptions.new
+viewOptions.render_options.mail_storage_options.text_filter = "April 2015"
+viewOptions.render_options.mail_storage_options.address_filter = "test@test.com"
 
 request = GroupDocsViewerCloud::CreateViewRequest.new(viewOptions)
 response = apiInstance.create_view(request)

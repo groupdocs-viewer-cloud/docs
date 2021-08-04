@@ -184,7 +184,7 @@ $configuration = new GroupDocs\Viewer\Configuration();
 $configuration->setAppSid($ClientId);
 $configuration->setAppKey($ClientSecret);
 
-$apiInstance# new GroupDocs\Viewer\ViewApi($configuration);
+$apiInstance = new GroupDocs\Viewer\ViewApi($configuration);
 
 $fileInfo = new Model\FileInfo();
 $fileInfo->setFilePath("SampleFiles/with_empty_row.xlsx");
@@ -237,7 +237,7 @@ import groupdocs_viewer_cloud
 client_id = "XXXX-XXXX-XXXX-XXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 client_secret = "XXXXXXXXXXXXXXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
-apiInstance# groupdocs_viewer_cloud.ViewApi.from_keys(client_id, client_secret)
+apiInstance = groupdocs_viewer_cloud.ViewApi.from_keys(client_id, client_secret)
 
 view_options = groupdocs_viewer_cloud.ViewOptions()
 view_options.file_info = groupdocs_viewer_cloud.FileInfo()

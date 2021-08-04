@@ -17,8 +17,6 @@ GroupDocs.Viewer Cloud also allows filtering the rendered messages using the fol
 * Filter by subject and content using OutlookOptions.TextFilter;
 * Filter by the sender's and recipient's email addresses using OutlookOptions.[AddressFilter](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/outlookoptions/properties/addressfilter);
 
-As an example, when setting OutlookOptions.TextFilter as 'Microsoft' the API will render all messages that contain the text 'Microsoft' in the message's subject or body. Whereas, setting OutlookOptions.[AddressFilter](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/outlookoptions/properties/addressfilter) as 'susan' will filter messages that contain 'susan' as a part of the sender's or recipient's address. The following code samples show how to filter the messages.
-
 ## API Usage ##
 
 There are steps that usage of GroupDocs.Viewer Cloud consists of:
@@ -210,7 +208,7 @@ $configuration = new GroupDocs\Viewer\Configuration();
 $configuration->setAppSid($ClientId);
 $configuration->setAppKey($ClientSecret);
 
-$apiInstance# new GroupDocs\Viewer\ViewApi($configuration);
+$apiInstance = new GroupDocs\Viewer\ViewApi($configuration);
 
 $viewOptions = new Model\ViewOptions();
 $fileInfo = new Model\FileInfo();
@@ -266,7 +264,7 @@ import groupdocs_viewer_cloud
 client_id = "XXXX-XXXX-XXXX-XXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 client_secret = "XXXXXXXXXXXXXXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
-apiInstance# groupdocs_viewer_cloud.ViewApi.from_keys(client_id, client_secret)
+apiInstance = groupdocs_viewer_cloud.ViewApi.from_keys(client_id, client_secret)
 
 view_options = groupdocs_viewer_cloud.ViewOptions()
 view_options.file_info = groupdocs_viewer_cloud.FileInfo()
