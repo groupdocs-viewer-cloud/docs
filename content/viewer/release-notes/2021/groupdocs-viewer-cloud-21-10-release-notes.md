@@ -3,7 +3,7 @@ id: "groupdocs-viewer-cloud-21-10-release-notes"
 url: "viewer/groupdocs-viewer-cloud-21-10-release-notes"
 title: "GroupDocs.Viewer Cloud 21.10 Release Notes"
 productName: "GroupDocs.Viewer Cloud"
-weight: 1
+weight: 2
 description: ""
 keywords: ""
 ---

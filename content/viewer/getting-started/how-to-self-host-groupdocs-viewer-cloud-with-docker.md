@@ -149,6 +149,38 @@ docker run \
 
 {{< /tab >}} {{< /tabs >}}
 
+### Enable Google Cloud Storage
+
+By default, a local storage used inside container for file operations. It's possible to connect a Google Cloud storage by setting GOOGLE_APPLICATION_CREDENTIALS and GOOGLE_STORAGE_BUCKET environment variables.
+
+{{< tabs tabTotal="2" tabID="35" tabName1="Windows (PowerShell)" tabName2="Linux (bash)" >}} {{< tab tabNum="1" >}}
+
+```powershell
+docker run `
+    -p 8080:80 `
+    -v "${pwd}/fonts:/fonts" `
+    -v "${pwd}/data:/data" `
+    -e "GOOGLE_APPLICATION_CREDENTIALS=/data/key.json" `
+    -e "GOOGLE_STORAGE_BUCKET=bucket_id" `
+    --name viewer_cloud `
+    groupdocs/viewer-cloud
+```
+
+{{< /tab >}} {{< tab tabNum="2" >}}
+
+```bash
+docker run \
+    -p 8080:80 \
+    -v $(pwd)/fonts:/fonts \
+    -v $(pwd)/data:/data \
+    -e GOOGLE_APPLICATION_CREDENTIALS=/data/key.json \
+    -e GOOGLE_STORAGE_BUCKET=bucket_id \
+    --name viewer_cloud \
+    groupdocs/viewer-cloud
+```
+
+{{< /tab >}} {{< /tabs >}}
+
 ### Stop Container
 
 To stop the running Docker container, just use Ctrl+C in the same terminal where the container is running. Alternatively, you can stop the container by name.
@@ -165,3 +197,7 @@ GroupDocs.Viewer Cloud can be started in trial and licensed modes. When GroupDoc
 * Evaluation watermarks added to the output
 
 You can find more information about evaluation at [Evaluate GroupDocs.Viewer]({{< ref "viewer/getting-started/evaluate-groupdocs-viewer.md" >}}).
+
+## DockerHub
+
+You can find more information at [DockerHub](https://hub.docker.com/repository/docker/groupdocs/viewer-cloud).
