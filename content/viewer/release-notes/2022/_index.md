@@ -1,9 +1,9 @@
 ---
-id: "2019"
-url: "viewer/2019"
-title: "Release Notes - 2019"
+id: "2022"
+url: "viewer/2022"
+title: "Release Notes - 2022"
 productName: "GroupDocs.Viewer Cloud"
-weight: 4
+weight: 1
 description: ""
 keywords: ""
 ---
