@@ -57,7 +57,7 @@ Allows you to incorporate GroupDocs.Viewer Cloud services in your Java applicati
 
 You can directly include the source code of GroupDocs.Viewer Cloud SDK for Java in your own project, the source code is available from [here](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java).
 
-Alternatively, you can use **[Maven](https://repository.groupdocs.cloud/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-viewer-cloud)** to include in your Java project. Below are the steps for Maven.
+Alternatively, you can use **[Maven](https://releases.groupdocs.cloud/java/repo/com/groupdocs/groupdocs-viewer-cloud/)** to include in your Java project. Below are the steps for Maven.
 
 ### Adding dependency to pom.xml
 
@@ -65,7 +65,7 @@ Alternatively, you can use **[Maven](https://repository.groupdocs.cloud/webapp/#
 <repository>
     <id>groupdocs-artifact-repository</id>
     <name>GroupDocs Artifact Repository</name>
-    <url>http://repository.groupdocs.cloud/repo</url>
+    <url>https://releases.groupdocs.cloud/java/repo/</url>
 </repository>
 
 <dependency>
@@ -184,7 +184,7 @@ Add following repository and dependency to your android module's build.gradle af
 ```xml
 repositories {
     maven {
-        url "https://repository.groupdocs.cloud/repo/"
+        url "https://releases.groupdocs.cloud/java/repo/"
     }
 }
 
