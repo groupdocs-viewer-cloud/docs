@@ -1,7 +1,7 @@
 ---
-id: "pdf-viewer-adjust-quality-for-jpg-images"
-url: "viewer/pdf-viewer-adjust-quality-for-jpg-images"
-title: "PDF Viewer - Adjust quality for JPG images"
+id: "pdf-viewer-optimization-options"
+url: "viewer/pdf-viewer-optimization-options"
+title: "PDF Viewer - Optimization options"
 productName: "GroupDocs.Viewer Cloud"
 description: ""
 keywords: ""
@@ -9,9 +9,10 @@ keywords: ""
 
 # Introduction #
 
-When rendering documents to PDF format that contains JPG images it may be reasonable to reduce size of the output file by adjusting quality of the JPG images. GroupDocs.Viewer Cloud enables you to adjust quality of images in the output PDF document with JpgQuality setting of PdfOptions class. The supported values range of JpgQuality is from 1 to 100. Default value is 90.
+GroupDocs.Viewer Cloud allows you to optimize the output PDF file for a web browser or to reduce the file size by optimizing resources. Optimization for a web allows a browser to display the first pages of a PDF file when you open the  document, instead of waiting for the entire file to download. Resource optimization allows you to reduce the size of the output PDF file. While optimizing, GroupDocs.Viewer may reduce the image size or quality, remove notes or form fields, remove objects, fonts, or personal information from a document, and so on.
+See [PdfOptimizationOptions]({{< ref "viewer/developer-guide/data-structures/pdfoptimizationoptions.md" >}}) for more information.
 
-The following code sample shows how to adjust JPG image quality in the output PDF document.
+The following code sample shows how to adjust image quality in the output PDF document.
 
 ## API Usage ##
 
@@ -51,7 +52,10 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
   },
   'ViewFormat': 'PDF',
   'RenderOptions': {
-     'JpgQuality': 50
+     'PdfOptimizationOptions': {
+        'CompressImages': true,
+        'ImageQuality': 80
+      }
   }
 }"
 
@@ -100,7 +104,10 @@ var viewOptions = new ViewOptions
     ViewFormat = ViewOptions.ViewFormatEnum.PDF,
     RenderOptions = new PdfOptions
     {
-        JpgQuality = 50
+        PdfOptimizationOptions = new PdfOptimizationOptions {
+          CompressImages = true,
+          ImageQuality = 80
+        }
     }
 };
 
@@ -125,7 +132,10 @@ ViewOptions viewOptions = new ViewOptions();
 viewOptions.setFileInfo(fileInfo);
 viewOptions.setViewFormat(ViewFormatEnum.PDF);
 PdfOptions renderOptions = new PdfOptions();
-renderOptions.setJpgQuality(50);
+PdfOptimizationOptions pdfOptimizationOptions = new PdfOptimizationOptions();
+pdfOptimizationOptions.setCompressImages(true);
+pdfOptimizationOptions.setImageQuality(80);
+renderOptions.setPdfOptimizationOptions(pdfOptimizationOptions);
 viewOptions.setRenderOptions(renderOptions);
 
 ViewResult response = apiInstance.createView(new CreateViewRequest(viewOptions));
@@ -149,7 +159,10 @@ ViewOptions viewOptions = new ViewOptions();
 viewOptions.setFileInfo(fileInfo);
 viewOptions.setViewFormat(ViewFormatEnum.PDF);
 PdfOptions renderOptions = new PdfOptions();
-renderOptions.setJpgQuality(50);
+PdfOptimizationOptions pdfOptimizationOptions = new PdfOptimizationOptions();
+pdfOptimizationOptions.setCompressImages(true);
+pdfOptimizationOptions.setImageQuality(80);
+renderOptions.setPdfOptimizationOptions(pdfOptimizationOptions);
 viewOptions.setRenderOptions(renderOptions);
 
 ViewResult response = apiInstance.createView(new CreateViewRequest(viewOptions));
@@ -179,7 +192,12 @@ $fileInfo->setFilePath("SampleFiles/with_jpg_image.pptx");
 $viewOptions->setFileInfo($fileInfo);
 $viewOptions->setViewFormat(Model\ViewOptions::VIEW_FORMAT_PDF);
 $renderOptions = new Model\PdfOptions();
-$renderOptions->setJpgQuality(50);
+
+$pdfOptimizationOptions = new Model\PdfOptimizationOptions();
+$pdfOptimizationOptions->setCompressImages(true);
+$pdfOptimizationOptions->setImageQuality(80);
+$renderOptions->setPdfOptimizationOptions($pdfOptimizationOptions);
+
 $viewOptions->setRenderOptions($renderOptions);
 
 $request = new Requests\CreateViewRequest($viewOptions);
@@ -205,7 +223,9 @@ let viewOptions = new viewer_cloud.ViewOptions();
 viewOptions.fileInfo = fileInfo;
 viewOptions.viewFormat = viewer_cloud.ViewOptions.ViewFormatEnum.PDF;
 viewOptions.renderOptions = new viewer_cloud.PdfOptions();
-viewOptions.renderOptions.jpgQuality = 50;
+viewOptions.renderOptions.pdfOptimizationOptions = new viewer_cloud.PdfOptimizationOptions();
+viewOptions.renderOptions.pdfOptimizationOptions.compressImages = true;
+viewOptions.renderOptions.pdfOptimizationOptions.imageQuality = 80;
 
 let request = new viewer_cloud.CreateViewRequest(viewOptions);
 let response = await viewApi.createView(request);
@@ -229,7 +249,9 @@ view_options.file_info = groupdocs_viewer_cloud.FileInfo()
 view_options.file_info.file_path = "SampleFiles/with_jpg_image.pptx"
 view_options.view_format = "PDF"
 view_options.render_options = groupdocs_viewer_cloud.PdfOptions()
-view_options.render_options.jpg_quality = 50
+viewOptions.render_options.pdf_optimization_options = new groupdocs_viewer_cloud.PdfOptimizationOptions()
+viewOptions.render_options.pdf_optimization_options.compress_images = True
+viewOptions.render_options.pdf_optimization_options.image_quality = 80
 
 request = groupdocs_viewer_cloud.CreateViewRequest(view_options)
 response = apiInstance.create_view(request)
@@ -253,7 +275,9 @@ viewOptions.file_info = GroupDocsViewerCloud::FileInfo.new
 viewOptions.file_info.file_path = "SampleFiles/with_jpg_image.pptx"
 viewOptions.view_format = "PDF"
 viewOptions.render_options = GroupDocsViewerCloud::PdfOptions.new
-viewOptions.render_options.jpg_quality = 50
+viewOptions.render_options.pdf_optimization_options = GroupDocsViewerCloud::PdfOptimizationOptions.new
+viewOptions.render_options.pdf_optimization_options.compress_images = true
+viewOptions.render_options.pdf_optimization_options.image_quality = 80
 
 request = GroupDocsViewerCloud::CreateViewRequest.new(viewOptions)
 response = apiInstance.create_view(request)
@@ -261,4 +285,3 @@ response = apiInstance.create_view(request)
 ```
 
 {{< /tab >}} {{< /tabs >}}
-
