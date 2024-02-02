@@ -249,9 +249,9 @@ view_options.file_info = groupdocs_viewer_cloud.FileInfo()
 view_options.file_info.file_path = "SampleFiles/with_jpg_image.pptx"
 view_options.view_format = "PDF"
 view_options.render_options = groupdocs_viewer_cloud.PdfOptions()
-viewOptions.render_options.pdf_optimization_options = new groupdocs_viewer_cloud.PdfOptimizationOptions()
-viewOptions.render_options.pdf_optimization_options.compress_images = True
-viewOptions.render_options.pdf_optimization_options.image_quality = 80
+view_options.render_options.pdf_optimization_options = groupdocs_viewer_cloud.PdfOptimizationOptions()
+view_options.render_options.pdf_optimization_options.compress_images = True
+view_options.render_options.pdf_optimization_options.image_quality = 80
 
 request = groupdocs_viewer_cloud.CreateViewRequest(view_options)
 response = apiInstance.create_view(request)
