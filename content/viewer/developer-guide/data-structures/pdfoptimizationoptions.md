@@ -10,10 +10,9 @@ keywords: ""
 
 PdfOptimizationOptions data structure contains the PDF optimization options to apply to the output PDF file.
 
-##### ImageOptions example #####
+### ImageOptions example
 
-```html
-
+```json
 {
     "Lineriaze": false,
     "RemoveAnnotations": false,
@@ -26,10 +25,9 @@ PdfOptimizationOptions data structure contains the PDF optimization options to a
     "MaxResolution": 300,
     "OptimizeSpreadsheets": false
 }
-
 ```
 
-##### ImageOptions fields #####
+### ImageOptions fields
 
 |Name|Description
 |---|---

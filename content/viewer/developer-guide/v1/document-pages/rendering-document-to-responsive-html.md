@@ -6,10 +6,11 @@ productName: "GroupDocs.Viewer Cloud"
 weight: 3
 description: ""
 keywords: ""
+toc: True
 ---
 
 {{< alert style="info" >}}
-Note:  The features listed in this page are supported only in GroupDocs.Viewer Cloud V1
+Note: The features listed in this page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
 GroupDocs.Viewer supports to render a document to responsive HTML. It provides a **EnableResponsiveRendering** property, that lets you get responsive output HTML. The following example demonstrates how to minify output content when creating cache.
@@ -36,26 +37,20 @@ Please note, that currently this option works for most document types, but there
 |Mobipocket e-book format|MOBI
 |LaTeX|TEX
 
-## Resource ##
-
 The following GroupDocs.Viewer Cloud REST API resource has been used to [get document page as responsive HTML](https://apireference.groupdocs.cloud/viewer/#!/Rendering/HtmlGetPage).
 
-## cURL REST Example ##
+## cURL example
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
-
-```html
+{{< tabs "example1">}}
+{{< tab "Request" >}}
+```bash
 curl -v "http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1?embedResources#true&#x26;enableResponsiveRendering#true" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer xxxxxxxxxxx"
-
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}} {{< tab "Resonse" >}}
 ```html
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -79,40 +74,31 @@ curl -v "http://api.groupdocs.cloud/v1/viewer/one-page.docx/html/pages/1?embedRe
         </div>
     </div>
 </body>
-
 </html>
 ```
-
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+## SDK examples
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
-### Render Document Page as Responsive HTML ###
-
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "example1-sdk">}}
+{{< tab "C#" >}}
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Responsive_HTML.cs >}}
-
-{{< /tab >}} {{< tab tabNum="3" >}}
-
+{{< /tab >}} 
+{{< tab "PHP">}}
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Get_Responsive_HTML.php >}}
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}} 
+{{< tab "Java">}}
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_Responsive_HTML.java >}}
-
-{{< /tab >}} {{< tab tabNum="6" >}}
-
+{{< /tab >}} 
+{{< tab "Ruby">}}
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_Responsive_HTML.rb >}}
-
-{{< /tab >}} {{< tab tabNum="4" >}}
-
+{{< /tab >}} 
+{{< tab "Node.js">}}
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_Responsive_HTML.js >}}
-
-{{< /tab >}} {{< tab tabNum="5" >}}
-
+{{< /tab >}} 
+{{< tab "Python">}}
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_Responsive_HTML.py >}}
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}} 
+{{< /tabs >}}

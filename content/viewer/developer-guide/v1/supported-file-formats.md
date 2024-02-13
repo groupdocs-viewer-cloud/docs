@@ -6,35 +6,30 @@ productName: "GroupDocs.Viewer Cloud"
 weight: 13
 description: ""
 keywords: ""
+toc: True
 ---
 
 {{< alert style="info" >}}
 Note:  The features listed in this Page are supported only in GroupDocs.Viewer Cloud V1
 {{< /alert >}}
 
-# Introduction #
-
 GroupDocs.Viewer Cloud REST APIs support to render over 50 file formats to HTML5 or Image formats for the whole document, page by page or custom range of pages. To get list of supported formats, You can use the below API.
-
-## Resource ##
 
 The following GroupDocs.Viewer Cloud REST API resource has been used in the [Supported File Formats](https://apireference.groupdocs.cloud/viewer/#!/Formats/GetSupportedFileFormats) example.
 
-## cURL Example ##
+## cURL example
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
-
-```html
+{{< tabs "get-supported-file-formats-curl">}}
+{{< tab "Request" >}}
+```bash
 curl -v "https://api.groupdocs.cloud/v1/viewer/formats" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer olzXlublkkhjir2lLJeQZa6JLmodllVmX7pU7jf5t7iZm8bbbsXtzrV1t_t5FGro0bq36vg5syRH0ZILdIjDQxSNM5EuuoJFDvLrUtL9YO3t4vMRP0o-JDejzco8Ut8qGClOqYu1EIj5bfvL51Zd2YliHFlHX-nInUzyDxWESrfR0kOiODJvW_k-OiIChGMAOQnGByi4NSlIaYtvHEeVXgkRd8yMbK2Gn5-vyDGEgTlx0q_g_9cXnGUHRFVRCozY6tklo-GqLeGe65VNSzo0Zd9X4Y5p-hBOZnHpkyMMc1DHT8WPAeZrpLunemAQo6EIjusN_mtP_v4G_LLcvFAgAf2-mkBoYuNdjl7i8mbh5mrQraU-gJu5BSMY-U-EcHhghKJybWMqD-Gft2mG4Ajv-k1gY4RxHNG85dc_pXOquvQFROaK"
-
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
-```html
+{{< /tab >}} 
+{{< tab "Response" >}}
+```json
 {
   "formats": [
     {
@@ -316,38 +311,30 @@ curl -v "https://api.groupdocs.cloud/v1/viewer/formats" \
   ]
 }
 ```
+{{< /tab >}} 
+{{< /tabs >}}
 
-{{< /tab >}} {{< /tabs >}}
-
-## SDKs ##
+## SDK example
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
-### Get List of Supported File Formats ###
-
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "get-supported-file-formats-sdk">}}
+{{< tab "C#" >}}
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_All_Supported_Formats.cs >}}
-
-{{< /tab >}} {{< tab tabNum="3" >}}
-
+{{< /tab >}} 
+{{< tab "PHP">}}
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_All_File_Formats.php >}}
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}} 
+{{< tab "Java">}}
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_All_Supported_Formats.java >}}
-
-{{< /tab >}} {{< tab tabNum="6" >}}
-
+{{< /tab >}} 
+{{< tab "Ruby">}}
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_All_Supported_Formats.rb >}}
-
-{{< /tab >}} {{< tab tabNum="4" >}}
-
+{{< /tab >}} 
+{{< tab "Node.js">}}
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_All_File_Formats.js >}}
-
-{{< /tab >}} {{< tab tabNum="5" >}}
-
+{{< /tab >}} 
+{{< tab "Python">}}
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_All_File_Formats.py >}}
-
-{{< /tab >}} {{< /tabs >}}
-
+{{< /tab >}} 
+{{< /tabs >}}

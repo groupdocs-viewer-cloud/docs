@@ -10,10 +10,9 @@ keywords: ""
 
 ViewResult data structure returned by Document [View API]({{< ref "viewer/developer-guide/_index.md" >}}) working-with-viewer-api as output result
 
-##### ViewResult example #####
+### ViewResult example
 
-```html
-
+```json
 {
   "pages": [
     {
@@ -47,7 +46,7 @@ ViewResult data structure returned by Document [View API]({{< ref "viewer/devel
 
 ```
 
-##### ViewResult fields #####
+### ViewResult fields
 
 |Name|Description
 |---|---

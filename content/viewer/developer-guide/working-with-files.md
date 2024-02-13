@@ -6,6 +6,7 @@ productName: "GroupDocs.Viewer Cloud"
 weight: 4
 description: "GroupDocs.Viewer Cloud Working With Files"
 keywords: "GroupDocs.Viewer Cloud, Working With Files"
+toc: True
 ---
 
 ## Download File API
@@ -26,56 +27,49 @@ This API allows you to download a file from [GroupDocs Cloud Storage](https://da
 
 ### Download File with cURL
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "download-file-with-curl">}}
+{{< tab "Request" >}}
 ```bash
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/file/one-page.docx?storageName#MyStorage" -H  "accept: multipart/form-data" -H  "authorization: Bearer [Access Token]"
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Resonse" >}}
 ```json
 {
   "Code": 200,
   "Status": "OK"
 }
 ```
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Download File with SDK
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [File API](https://apireference.groupdocs.cloud/viewer/#/) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="7" tabID="9" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "download-file-with-sdk">}}
+{{< tab "C#" >}}
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Download_File.cs >}}
-
-{{< /tab >}} {{< tab tabNum="3" >}}
-
-{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Download_File.php >}}
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Java" >}}
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Download_File.java >}}
-
-{{< /tab >}}  {{< tab tabNum="7" >}}
-
-{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Download_File.java >}}
-
-{{< /tab >}} {{< tab tabNum="6" >}}
-
-{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Download_File.rb >}}
-
-{{< /tab >}} {{< tab tabNum="4" >}}
-
+{{< /tab >}}
+{{< tab "PHP" >}}
+{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Download_File.php >}}
+{{< /tab >}}
+{{< tab "Node.js" >}}
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Download_File.js >}}
-
-{{< /tab >}} {{< tab tabNum="5" >}}
-
+{{< /tab >}}
+{{< tab "Python" >}}
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Download_File.py >}}
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< tab "Ruby" >}}
+{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Download_File.rb >}}
+{{< /tab >}}
+{{< tab "Android" >}}
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Download_File.java >}}
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Upload File API
 
@@ -95,14 +89,14 @@ This API allows you to upload files to the [GroupDocs Cloud Storage](https://
 
 ### Upload File with cURL
 
-{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
+{{< tabs "upload-file-with-curl">}}
+{{< tab "Request" >}}
 ```bash
 curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/storage/file/viewerdocs%2Fone-page2.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Resonse" >}}
 ```json
 {
   "Uploaded": [
@@ -121,42 +115,36 @@ curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/storage/file/viewerdocs%2F
   ]
 }
 ```
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Upload File with SDK
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [File API](https://apireference.groupdocs.cloud/viewer/#/File) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="7" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "upload-file-with-sdk">}}
+{{< tab "C#" >}}
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Upload_File.cs >}}
-
-{{< /tab >}} {{< tab tabNum="3" >}}
-
-{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Upload_File.php >}}
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Java" >}}
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Upload_File.java >}}
-
-{{< /tab >}} {{< tab tabNum="7" >}}
-
-{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Upload_File.java >}}
-
-{{< /tab >}} {{< tab tabNum="6" >}}
-
-{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Upload_File.rb >}}
-
-{{< /tab >}} {{< tab tabNum="4" >}}
-
+{{< /tab >}}
+{{< tab "PHP" >}}
+{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Upload_File.php >}}
+{{< /tab >}}
+{{< tab "Node.js" >}}
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Upload_File.js >}}
-
-{{< /tab >}} {{< tab tabNum="5" >}}
-
+{{< /tab >}}
+{{< tab "Python" >}}
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Upload_File.py >}}
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< tab "Ruby" >}}
+{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Upload_File.rb >}}
+{{< /tab >}}
+{{< tab "Android" >}}
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Upload_File.java >}}
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Delete File API
 
@@ -176,56 +164,49 @@ This API allows you to delete specific file from [GroupDocs Cloud Storage](htt
 
 ### Delete File with cURL
 
-{{< tabs tabTotal="2" tabID="3" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "delete-file-with-curl">}}
+{{< tab "Request" >}}
 ```bash
 curl -X DELETE "https://api.groupdocs.cloud/v2.0/viewer/storage/file/viewerdocs1%2Fone-page1.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Resonse" >}}
 ```json
 {
   "Code": 200,
   "Status": "OK"
 }
 ```
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Delete File with SDK
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [File API](https://apireference.groupdocs.cloud/viewer/#/File) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="7" tabID="11" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "delete-file-with-sdk">}}
+{{< tab "C#" >}}
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Delete_File.cs >}}
-
-{{< /tab >}} {{< tab tabNum="3" >}}
-
-{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Delete_File.php >}}
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Java" >}}
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Delete_File.java >}}
-
-{{< /tab >}}  {{< tab tabNum="7" >}}
-
-{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Delete_File.java >}}
-
-{{< /tab >}} {{< tab tabNum="6" >}}
-
-{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Delete_File.rb >}}
-
-{{< /tab >}} {{< tab tabNum="4" >}}
-
+{{< /tab >}}
+{{< tab "PHP" >}}
+{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Delete_File.php >}}
+{{< /tab >}}
+{{< tab "Node.js" >}}
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Delete_File.js >}}
-
-{{< /tab >}} {{< tab tabNum="5" >}}
-
+{{< /tab >}}
+{{< tab "Python" >}}
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Delete_File.py >}}
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< tab "Ruby" >}}
+{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Delete_File.rb >}}
+{{< /tab >}}
+{{< tab "Android" >}}
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Delete_File.java >}}
+{{< /tab >}}
+{{< /tabs >}}
 
 ## File Copy API
 
@@ -247,56 +228,49 @@ This API allows you to copy specific file from [GroupDocs Cloud Storage](https
 
 ### File Copy with cURL
 
-{{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "copy-file-with-curl">}}
+{{< tab "Request" >}}
 ```bash
 curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/file/copy/viewerdocs%2Fone-page1.docx?destPath#viewerdocs1%2Fone-page1.docx'&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Resonse" >}}
 ```json
 {
   "Code": 200,
   "Status": "OK"
 }
 ```
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< /tabs >}}
 
 ### File Copy with SDK
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [File API](https://apireference.groupdocs.cloud/viewer/#/File) calls and lets you use GroupDocs Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="7" tabID="12" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "copy-file-with-sdk">}}
+{{< tab "C#" >}}
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Copy_File.cs >}}
-
-{{< /tab >}} {{< tab tabNum="3" >}}
-
-{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Copy_File.php >}}
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Java" >}}
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Copy_File.java >}}
-
-{{< /tab >}}  {{< tab tabNum="7" >}}
-
-{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Copy_File.java >}}
-
-{{< /tab >}} {{< tab tabNum="6" >}}
-
-{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Copy_File.rb >}}
-
-{{< /tab >}} {{< tab tabNum="4" >}}
-
+{{< /tab >}}
+{{< tab "PHP" >}}
+{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Copy_File.php >}}
+{{< /tab >}}
+{{< tab "Node.js" >}}
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Copy_File.js >}}
-
-{{< /tab >}} {{< tab tabNum="5" >}}
-
+{{< /tab >}}
+{{< tab "Python" >}}
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Copy_File.py >}}
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< tab "Ruby" >}}
+{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Copy_File.rb >}}
+{{< /tab >}}
+{{< tab "Android" >}}
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Copy_File.java >}}
+{{< /tab >}}
+{{< /tabs >}}
 
 ## File Move API
 
@@ -318,53 +292,46 @@ This API allows you to copy specific file from [GroupDocs Cloud Storage](https
 
 ### File Move with cURL
 
-{{< tabs tabTotal="2" tabID="5" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "move-file-with-curl">}}
+{{< tab "Request" >}}
 ```bash
 curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/file/move/viewerdocs%2Fone-page1.docx?destPath#viewerdocs1%2Fone-page1.docx'&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Resonse" >}}
 ```json
 {
   "Code": 200,
   "Status": "OK"
 }
 ```
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< /tabs >}}
 
 ### File Move with SDK
 
 Our API is completely independent of your operating system, database system or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone and time-consuming. Therefore, we have provided and support API [SDKs](https://github.com/groupdocs-viewer-cloud) in many development languages in order to make it easier to integrate with us. If you use [SDK](https://github.com/groupdocs-viewer-cloud), it hides the [File API](https://apireference.groupdocs.cloud/viewer/#/File) calls and lets you use GroupDocs for Cloud features in a native way for your preferred language.
 
-{{< tabs tabTotal="7" tabID="13" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "move-file-with-sdk">}}
+{{< tab "C#" >}}
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Move_File.cs >}}
-
-{{< /tab >}} {{< tab tabNum="3" >}}
-
-{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Move_File.php >}}
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Java" >}}
 {{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Move_File.java >}}
-
-{{< /tab >}}  {{< tab tabNum="7" >}}
-
-{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Move_File.java >}}
-
-{{< /tab >}} {{< tab tabNum="6" >}}
-
-{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Move_File.rb >}}
-
-{{< /tab >}} {{< tab tabNum="4" >}}
-
+{{< /tab >}}
+{{< tab "PHP" >}}
+{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Move_File.php >}}
+{{< /tab >}}
+{{< tab "Node.js" >}}
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Move_File.js >}}
-
-{{< /tab >}} {{< tab tabNum="5" >}}
-
+{{< /tab >}}
+{{< tab "Python" >}}
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Move_File.py >}}
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< tab "Ruby" >}}
+{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Move_File.rb >}}
+{{< /tab >}}
+{{< tab "Android" >}}
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Move_File.java >}}
+{{< /tab >}}
+{{< /tabs >}}

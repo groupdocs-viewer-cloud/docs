@@ -6,6 +6,7 @@ productName: "GroupDocs.Viewer Cloud"
 weight: 4
 description: ""
 keywords: ""
+toc: True
 ---
 
 {{< alert style="info" >}}
@@ -64,15 +65,13 @@ When rendering email messages by GroupDocs.Viewer uses English language to rende
 |User Field 3|User Field 3
 |User Field 4|User Field 4
 
-## Resource ##
-
 The following GroupDocs.Viewer Cloud REST API resource has been used to [Render Email as HTML](https://apireference.groupdocs.cloud/viewer/#!/Rendering/HtmlCreatePagesCacheFromContent).
 
-## cURL REST Example ##
+### cURL example
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
-
-```html
+{{< tabs "example1">}}
+{{< tab "Request" >}}
+```bash
 # Set field labels when rendering pages
 curl --request POST \
 url https://api.groupdocs.cloud/v1/viewer/sample.msg/html/pages \
@@ -82,14 +81,11 @@ data '{"emailOptions": {"fieldLabels": [{"Field":"From", "Label":"Sender"}, {"Fi
 
 # Retrieve created page
 curl request GET \
- url https://api.groupdocs.cloud/v1/viewer/sample.msg/html/pages/1 \
- header 'authorization: [Access Token]'
-
+url https://api.groupdocs.cloud/v1/viewer/sample.msg/html/pages/1 \
+header 'authorization: [Access Token]'
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
-```html
+{{< /tab >}} {{< tab "Resonse" >}}
+```json
 {
   "fileName": "sample.msg",
   "pages": [
@@ -118,54 +114,44 @@ curl request GET \
   ]
 }
 ```
-
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+### SDK examples
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
-### Changing Language for Header of Emails ###
-
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "example1-sdk">}}
+{{< tab "C#" >}}
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Render_Email_Header.cs >}}
-
-{{< /tab >}} {{< tab tabNum="3" >}}
-
+{{< /tab >}} 
+{{< tab "PHP">}}
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Render_Email_Header.php >}}
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}} 
+{{< tab "Java">}}
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Render_Email_Header.java >}}
-
-{{< /tab >}} {{< tab tabNum="6" >}}
-
+{{< /tab >}} 
+{{< tab "Ruby">}}
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Render_Email_Header.rb >}}
-
-{{< /tab >}} {{< tab tabNum="4" >}}
-
+{{< /tab >}} 
+{{< tab "Node.js">}}
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Render_Email_Header.js >}}
-
-{{< /tab >}} {{< tab tabNum="5" >}}
-
+{{< /tab >}} 
+{{< tab "Python">}}
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Render_Email_Header.py >}}
+{{< /tab >}} 
+{{< /tabs >}}
 
-{{< /tab >}} {{< /tabs >}}
+## Render Email documents as Image with Setting to set  Page Size #
 
-# Render Email documents as Image with Setting to set  Page Size #
-
-Since the version 18.7, it is possible to set output page size for rendering Email documents into PDF. To enable this feature, please set the **PageSize** property of the **[EmailOptions](https://docs.dynabic.com/display/viewercloud/Options+Objects)** class as shown in example below. Please note, that for rendering into HTML the whole email message is rendered into one responsive HTML page and this new option will not influence the rendering.
-
-## Resource ##
+It is possible to set output page size for rendering Email documents into PDF.
 
 The following GroupDocs.Viewer Cloud REST API resource has been used to [Render Email as HTML](https://apireference.groupdocs.cloud/viewer/#!/Rendering/HtmlCreatePagesCacheFromContent).
 
-## cURL REST Example ##
+### cURL example
 
-{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
-
-```html
+{{< tabs "example2">}}
+{{< tab "Request" >}}
+```bash
 # Set page size when rendering pages  curl request POST \ 
 url http://api.groupdocs.cloud/v1/viewer/message.msg/image/pages \ 
 header 'authorization: [Access Token]' \  header 'content-type: application/json' \
@@ -175,10 +161,8 @@ data '{"emailOptions": {"pageSize": "A0"}}' 
 url http://api.groupdocs.cloud/v1/viewer/message.msg/image/pages/1 \ 
 header 'authorization: [Access Token]'
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
-```html
+{{< /tab >}} {{< tab "Resonse" >}}
+```json
 {
   "fileName": "sample.msg",
   "pages": [
@@ -207,37 +191,29 @@ header 'authorization: [Access Token]'
   ]
 }
 ```
-
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+### SDK examples
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
-### Render Email documents as Image with Setting to set  Page Size ###
-
-{{< tabs tabTotal="6" tabID="11" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "example2-sdk">}}
+{{< tab "C#" >}}
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Render_Email_Image_PageSize.cs >}}
-
-{{< /tab >}} {{< tab tabNum="3" >}}
-
+{{< /tab >}} 
+{{< tab "PHP">}}
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_Php_Render_Email_Image_PageSize.php >}}
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}} 
+{{< tab "Java">}}
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Render_Email_Image_PageSize.java >}}
-
-{{< /tab >}} {{< tab tabNum="6" >}}
-
+{{< /tab >}} 
+{{< tab "Ruby">}}
 {{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Render_Email_Image_PageSize.rb >}}
-
-{{< /tab >}} {{< tab tabNum="4" >}}
-
+{{< /tab >}} 
+{{< tab "Node.js">}}
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Render_Email_Image_PageSize.js >}}
-
-{{< /tab >}} {{< tab tabNum="5" >}}
-
+{{< /tab >}} 
+{{< tab "Python">}}
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Render_Email_Image_PageSize.py >}}
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}} 
+{{< /tabs >}}

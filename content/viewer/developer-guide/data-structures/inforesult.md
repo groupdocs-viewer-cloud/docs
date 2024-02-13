@@ -10,10 +10,9 @@ keywords: ""
 
 InfoResult data structure returned by [Document Info API]({{< ref "viewer/developer-guide/basic-usage/get-document-information.md" >}}) as output result
 
-##### InfoResult example #####
+### InfoResult example
 
-```html
-
+```json
 {
   "FormatExtension": "string",
   "Format": "string",
@@ -90,10 +89,9 @@ InfoResult data structure returned by [Document Info API]({{< ref "viewer/devel
     "PrintingAllowed": true
   }
 }
-
 ```
 
-##### InfoResult fields #####
+### InfoResult fields
 
 |Name|Description
 |---|---

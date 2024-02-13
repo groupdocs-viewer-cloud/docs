@@ -5,24 +5,23 @@ title: "Split drawing into tiles"
 productName: "GroupDocs.Viewer Cloud"
 description: ""
 keywords: ""
+toc: True
 ---
-
-# Introduction #
 
 Tiled rendering or (rendering by coordinates) is the process of rendering CAD drawings (into an image, HTML or PDF) by dividing into square parts and rendering each part (or tile) separately. The advantage of this process is that the amount of memory involved is reduced as compared to rendering the entire document at once. Generally, DWG documents are divided into pages by Model and Layouts, but when the tiled rendering is enabled, only the Model is rendered and every tile composes a separate page.
 
-![](viewer/images/Shesternya.jpg)
+![](/viewer/images/Shesternya.jpg)
 
 Before you start rendering by coordinates, you should obtain the overall width and height of the document using the Info method as shown in the code sample below. After you know the width and height, determine the starting point (X and Y coordinates) and the width and the height of the tile (region you want to render). Add the tiles to CadOptions.Tiles list as shown in the sample below. The coordinates start from the bottom left corner of the drawing and have only positive values as shown in the sample picture below.
 
-,,Overall size of the document is 650px height and 750px width. The selected tile starts at coordinate X: 250 and Y: 100 and has a width 150px, height: 200px,,
+Overall size of the document is 650px height and 750px width. The selected tile starts at coordinate X: 250 and Y: 100 and has a width 150px, height: 200px,,
 
-![](viewer/images/coordinates.jpg)
+![](/viewer/images/coordinates.jpg)
 
 You can add as many tiles as you need.
 The following code sample demonstrates how to render DWG drawing into an image by dividing into four equal parts.
 
-## API Usage ##
+## API Usage
 
 There are steps that usage of GroupDocs.Viewer Cloud consists of:
 
@@ -34,15 +33,15 @@ Steps 1 and 3 are storage operations, please refer to this [File API document
 
 [Swagger UI](https://apireference.groupdocs.cloud/viewer/) lets you call this REST API directly from the browser.
 
-## SDKs ##
+## SDK examples
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
 ### SDK Examples ###
 
-{{< tabs tabTotal="1" tabID="1" tabName1="С#" >}} {{< tab tabNum="1" >}}
-
-```csharp
+{{< tabs "example1-sdk">}}
+{{< tab "C#" >}}
+```cs
 
 // For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
 string MyClientSecret = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
@@ -104,5 +103,4 @@ var apiInstance = new ViewApi(configuration);
 var response = apiInstance.CreateView(new CreateViewRequest(viewOptions));
 
 ```
-
 {{< /tab >}} {{< /tabs >}}

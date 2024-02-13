@@ -6,26 +6,22 @@ productName: "GroupDocs.Viewer Cloud"
 weight: 4
 description: ""
 keywords: ""
+toc: True
 ---
 
 GroupDocs.Viewer Cloud REST APIs support to render over 50 file formats to HTML5 or Image formats for the whole document, page by page or custom range of pages. To get list of supported formats, You can use the below API.
 
-## Resource ##
-
 The following GroupDocs.Viewer Cloud REST API resource has been used in the [Supported File Formats](https://apireference.groupdocs.cloud/viewer/#/Viewer/GetSupportedFileFormats) example.
 
-## cURL Example ##
+## cURL example
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
-
-```html
+{{< tabs "example1">}}
+{{< tab "Request" >}}
+```bash
 curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/formats" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
-
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
-```html
+{{< /tab >}} {{< tab "Resonse" >}}
+```json
 {
   "formats": [
     {
@@ -364,41 +360,32 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/formats" -H  "accept: appli
 }
 
 ```
-
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+## SDK examples
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
-### Get List of Supported File Formats ###
-
-{{< tabs tabTotal="7" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "example1-sdk">}}
+{{< tab "C#" >}}
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Supported_Formats.cs >}}
-
-{{< /tab >}} {{< tab tabNum="3" >}}
-
+{{< /tab >}} 
+{{< tab "PHP">}}
 {{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_All_File_Formats.php >}}
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}} 
+{{< tab "Java">}}
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_All_Supported_Formats.java >}}
-
-{{< /tab >}}  {{< tab tabNum="7" >}}
-
-{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Get_Supported_Formats.java >}}
-
-{{< /tab >}} {{< tab tabNum="6" >}}
-
+{{< /tab >}} 
+{{< tab "Ruby">}}
 {{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Get_All_Supported_Formats.rb >}}
-
-{{< /tab >}} {{< tab tabNum="4" >}}
-
+{{< /tab >}} 
+{{< tab "Node.js">}}
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_All_Supported_Formats.js >}}
-
-{{< /tab >}} {{< tab tabNum="5" >}}
-
+{{< /tab >}} 
+{{< tab "Python">}}
 {{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Get_All_Supported_Formats.py >}}
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}} 
+{{< tab "Android">}}
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Get_Supported_Formats.java >}}
+{{< /tab >}} 
+{{< /tabs >}}

@@ -14,10 +14,9 @@ ViewOptions data structure used as input parameters for [Document Info]({{< ref 
 Not all options are supported by all document formats. Each option may correspond to one or more formats.
 {{< /alert >}}
 
-##### ViewOptions example #####
+### ViewOptions example
 
-```html
-
+```json
 {
   "ViewFormat": "HTML",
   "FileInfo": {
@@ -41,10 +40,9 @@ Not all options are supported by all document formats. Each option may correspon
 	"ExtractText": false,
   }
 }
-
 ```
 
-##### ViewOptions fields #####
+### ViewOptions fields
 
 |Name|Description|API Version
 |---|---|---

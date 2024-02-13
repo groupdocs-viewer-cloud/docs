@@ -6,6 +6,7 @@ productName: "GroupDocs.Viewer Cloud"
 weight: 1
 description: "This section introduces GroupDocs.Viewer Cloud specific Resources & Operations."
 keywords: "groupdocs.viewer cloud, getting started"
+toc: True
 ---
 
 This section introduces GroupDocs.Viewer Cloud specific Resources & Operations.
@@ -45,9 +46,9 @@ GroupDocs.Viewer Cloud API returns errors by using HTTP Status Codes with detail
 
 ### Example Error Response
 
-```html
-Status: 404 Not Found
-```
+
+**Status:**
+404 Not Found
 
 ```json
 {

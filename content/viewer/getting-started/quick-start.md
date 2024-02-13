@@ -6,6 +6,7 @@ productName: "GroupDocs.Viewer Cloud"
 weight: 3
 description: "GroupDocs.Viewer Cloud Quick Start"
 keywords: "GroupDocs.Viewer Cloud, Quick Start"
+toc: True
 ---
 
 ## Create an account
@@ -28,32 +29,26 @@ Use the **Client Id** and **Client Secret** from the API app client you crea
 
 {{< alert style="info" >}}The GitHub repository for [GroupDocs.Viewer Cloud](https://github.com/groupdocs-viewer-cloud) has a complete set of examples, demonstrating our API capabilities.{{< /alert >}}
 
-{{< tabs tabTotal="7" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "example1">}}
+{{< tab "C#" >}}
 {{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_All_Supported_Formats.cs >}}
-
-{{< /tab >}} {{< tab tabNum="3" >}}
-
-{{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_All_File_Formats.php >}}
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Java" >}}
 {{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_All_Supported_Formats.java >}}
-
-{{< /tab >}} {{< tab tabNum="7" >}}
-
-{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Get_Supported_Formats.java >}}
-
-{{< /tab >}} {{< tab tabNum="6" >}}
-
-{{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_All_Supported_Formats.rb >}}
-
-{{< /tab >}} {{< tab tabNum="4" >}}
-
+{{< /tab >}}
+{{< tab "PHP" >}}
+{{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_All_File_Formats.php >}}
+{{< /tab >}}
+{{< tab "Node.js" >}}
 {{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_All_File_Formats.js >}}
-
-{{< /tab >}} {{< tab tabNum="5" >}}
-
+{{< /tab >}}
+{{< tab "Python" >}}
 {{< gist groupdocscloud 62dc8525f388f52d68047c1ce56986a4 Viewer_Python_Get_All_File_Formats.py >}}
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< tab "Ruby" >}}
+{{< gist groupdocscloud 2c9c4af250204823444eb40f8c412ed0 Viewer_Ruby_Get_All_Supported_Formats.rb >}}
+{{< /tab >}}
+{{< tab "Android" >}}
+{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Get_Supported_Formats.java >}}
+{{< /tab >}}
+{{< /tabs >}}

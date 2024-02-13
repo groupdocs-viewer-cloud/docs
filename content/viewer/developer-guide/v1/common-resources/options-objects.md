@@ -6,6 +6,7 @@ productName: "GroupDocs.Viewer Cloud"
 weight: 1
 description: ""
 keywords: ""
+toc: True
 ---
 
 {{< alert style="info" >}}
@@ -20,7 +21,7 @@ Provides options for retrieving attachment information.
 
 Example DocumentInfoOptions object
 
-```html
+```json
 {
   "password": "document password",
   "attachmentPassword": "attachment password",
@@ -30,8 +31,8 @@ Example DocumentInfoOptions object
   "defaultFontName": "font name",
   "transforms": [
     "Rotate",
-	"Reorder",
-	"AddPrintAction"
+    "Reorder",
+    "AddPrintAction"
   ],
   "watermark": {
     "text": "watermark text",
@@ -46,7 +47,7 @@ Example DocumentInfoOptions object
     "internalHyperlinkPrefix": "prefix",
     "countRowsPerPage": 50,
     "textOverflowMode": "OverlayIfNextIsEmpty",
-	"ignoreEmptyRows": false
+    "ignoreEmptyRows": false
   },
   "cadOptions": {
     "scaleFactor": 50,
@@ -54,7 +55,7 @@ Example DocumentInfoOptions object
     "height": 800,
     "renderLayouts": true,
     "layoutName": "Master",
-	"layers": ["Layer1"]
+    "layers": ["Layer1"]
   },
   "emailOptions": {
     "encoding": "utf-8"
@@ -104,7 +105,7 @@ Provides options for rendering document as image.
 
 Example ImageOptions object
 
-```html
+```json
 {
   "format": "png",
   "quality": 90,
@@ -120,11 +121,11 @@ Example ImageOptions object
   "defaultFontName": "string",
   "transforms": [
     "Rotate",
-	"Reorder",
-	"AddPrintAction"
+    "Reorder",
+    "AddPrintAction"
   ],
   "watermark": {
-    "text": "watermark text,
+    "text": "watermark text",
     "color": "Magenta",
     "position": "Diagonal",
     "size": 50
@@ -136,7 +137,7 @@ Example ImageOptions object
     "internalHyperlinkPrefix": "prefix",
     "countRowsPerPage": 50,
     "textOverflowMode": "OverlayIfNextIsEmpty",
-	"ignoreEmptyRows": false
+    "ignoreEmptyRows": false
   },
   "cadOptions": {
     "scaleFactor": 50,
@@ -144,7 +145,7 @@ Example ImageOptions object
     "height": 800,
     "renderLayouts": true,
     "layoutName": "Master",
-	"layers": ["Layer1"]
+    "layers": ["Layer1"]
   },
   "emailOptions": {
     "encoding": "utf-8"
@@ -197,10 +198,10 @@ Provides options for rendering document pages as HTML.
 
 Example HtmlOptions object
 
-```html
+```json
 {
   "resourcePath": "string",
-  "ignoreResourcePathInResources": false
+  "ignoreResourcePathInResources": false,
   "embedResources": false,
   "enableMinification": false,
   "enableResponsiveRendering": false,
@@ -215,8 +216,8 @@ Example HtmlOptions object
   "defaultFontName": "string",
   "transforms": [
     "Rotate",
-	"Reorder",
-	"AddPrintAction"
+    "Reorder",
+    "AddPrintAction"
   ],
   "watermark": {
     "text": "watermark text",
@@ -231,10 +232,10 @@ Example HtmlOptions object
     "internalHyperlinkPrefix": "prefix",
     "countRowsPerPage": 50,
     "textOverflowMode": "OverlayIfNextIsEmpty",
-	"ignoreEmptyRows": false,
-	"renderHiddenRows": false,
-	"renderHiddenColumns": false,
-	"renderPrintAreaOnly": false
+    "ignoreEmptyRows": false,
+    "renderHiddenRows": false,
+    "renderHiddenColumns": false,
+    "renderPrintAreaOnly": false
   },
   "cadOptions": {
     "scaleFactor": 50,
@@ -242,7 +243,7 @@ Example HtmlOptions object
     "height": 800,
     "renderLayouts": true,
     "layoutName": "Master",
-	"layers": ["Layer1"]
+    "layers": ["Layer1"]
   },
   "emailOptions": {
     "encoding": "utf-8"
@@ -255,7 +256,7 @@ Example HtmlOptions object
     "enablePreciseRendering": false,
     "enableInitialContentOrdering": false,
     "renderLayersSeparately": false,
-	"imageQuality": "Low"
+    "imageQuality": "Low"
   },
   "slidesOptions": {
     "renderNotes": false
@@ -302,7 +303,7 @@ Provides options for rendering document as PDF.
 
 Example PdfFileOptions object
 
-```html
+```json
 {
   "password": "document password",
   "extractText": false,
@@ -311,8 +312,8 @@ Example PdfFileOptions object
   "defaultFontName": "string",
   "transforms": [
     "Rotate",
-	"Reorder",
-	"AddPrintAction"
+    "Reorder",
+    "AddPrintAction"
   ],
   "watermark": {
     "text": "watermark text",
@@ -327,7 +328,7 @@ Example PdfFileOptions object
     "internalHyperlinkPrefix": "prefix",
     "countRowsPerPage": 50,
     "textOverflowMode": "OverlayIfNextIsEmpty",
-	"ignoreEmptyRows": false
+	  "ignoreEmptyRows": false
   },
   "cadOptions": {
     "scaleFactor": 50,
@@ -335,7 +336,7 @@ Example PdfFileOptions object
     "height": 800,
     "renderLayouts": true,
     "layoutName": "Master",
-	"layers": ["Layer1"]
+	  "layers": ["Layer1"]
   },
   "emailOptions": {
     "encoding": "utf-8"
@@ -384,7 +385,7 @@ Provides options for rotating document pages.
 
 Example RotateOptions object
 
-```html
+```json
 {
   "pageNumber": 1,
   "angle": 90,
@@ -406,7 +407,7 @@ Provides options for reordering document pages.
 
 Example ReorderOptions object
 
-```html
+```json
 
 {
   "pageNumber": 1,
@@ -430,7 +431,7 @@ Provides options for watermarking.
 
 Example Watermark object.
 
-```html
+```json
 "watermark": {
   "text": "watermark text",
   "color": "Magenta",
@@ -454,7 +455,7 @@ Provides options for rendering spreadsheet documents.
 
 Example CellOptions object.
 
-```html
+```json
 "cellsOptions": {
   "renderGridLines": false,
   "paginateSheets": true,
@@ -490,7 +491,7 @@ Provides options for rendering CAD documents.
 
 Example CadOptions object.
 
-```html
+```json
 "cadOptions": {
   "scaleFactor": 50,
   "width": 600,
@@ -518,7 +519,7 @@ Provides options for rendering Email documents.
 
 Example EmailOptions object.
 
-```html
+```json
 "emailOptions": {
   "encoding": "utf-8",
   "pageSize": "Unknown",
@@ -540,7 +541,7 @@ Provides options for rendering Text documents.
 
 Example WordsOptions object.
 
-```html
+```json
 "wordsOptions": {
   "encoding": "utf-8",
   "renderTrackedChanges": false
@@ -560,7 +561,7 @@ Provides options for rendering PDF documents.
 
 Example PdfOptions object.
 
-```html
+```json
 "pdfOptions": {
   "enablePreciseRendering": false,
   "enableInitialContentOrdering": false,
@@ -584,7 +585,7 @@ Provides options for rendering Presentation documents.
 
 Example SlidesOptions object.
 
-```html
+```json
 "slidesOptions": {
   "renderNotes": false
 }
@@ -606,7 +607,7 @@ Provides options for rendering Microsoft Project documents.
 
 Example ProjectOptions object.
 
-```html
+```json
 "projectOptions": {
   "pageSize": "unknown",
   "timeUnit": "unknown",
@@ -634,7 +635,7 @@ Provides options for rendering Microsoft Outlook data files (.pst|.ost).
 
 Example of OutlookOptions
 
-```html
+```json
 "outlookOptions": {
   "maxItemsInFolder": "1000"
 }

@@ -10,10 +10,9 @@ keywords: ""
 
 PdfOptions data structure inherits [RenderOptions]({{< ref "viewer/developer-guide/data-structures/renderoptions.md" >}}) and used as part of [ViewOptions]({{< ref "viewer/developer-guide/data-structures/viewoptions.md" >}}) data structure.
 
-##### ImageOptions example #####
+### ImageOptions example
 
-```html
-
+```json
 {
     "DocumentOpenPassword": "string",
     "PermissionsPassword": "string",
@@ -24,10 +23,9 @@ PdfOptions data structure inherits [RenderOptions]({{< ref "viewer/developer-gui
     "ImageWidth": 0,
     "ImageHeight": 0
 }
-
 ```
 
-##### ImageOptions fields #####
+### ImageOptions fields
 
 |Name|Description
 |---|---

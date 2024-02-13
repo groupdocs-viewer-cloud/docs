@@ -5,6 +5,7 @@ title: "Self-host GroupDocs.Viewer Cloud with Docker"
 productName: "GroupDocs.Viewer Cloud"
 description: "Self-host GroupDocs.Viewer Cloud with Docker"
 keywords: "groupdocs.viewer cloud, docker"
+toc: True
 ---
 
 [Docker](https://docs.docker.com/get-started/overview/) is an open platform that effectively solves three main tasks development, deployment, and running the applications. With Docker, you can isolate your applications from the infrastructure that simplifies software development and delivery. The main building blocs are images and containers. The image includes everything you need to run the application: code or binaries, runtime dependencies, file system. The container is an isolated process with additional features that you can interact with. The use of containers to deploy applications is called *containerization*.
@@ -35,10 +36,9 @@ To run GroupDocs.Viewer Cloud in Docker type one of the following commands:
 In case you don't have license keys you can omit LICENSE_PUBLIC_KEY and LICENSE_PRIVATE_KEY parameters. Without license GroupDocs.Viewer will work in evaluation mode.
 {{< /alert >}}
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Windows (PowerShell)" tabName2="Linux (bash)" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "example1">}}
+{{< tab "Powershell" >}}
 ```powershell
-
 docker run `
     -p 8080:80 `
     -v "${pwd}/fonts:/fonts" `
@@ -47,13 +47,10 @@ docker run `
     -e "LICENSE_PRIVATE_KEY#private_key" `
     --name viewer_cloud `
     groupdocs/viewer-cloud
-
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Bash" >}}
 ```bash
-
 docker run \
     -p 8080:80 \
     -v $(pwd)/fonts:/fonts \
@@ -62,10 +59,9 @@ docker run \
     -e LICENSE_PRIVATE_KEY#private_key \
     --name viewer_cloud \
     groupdocs/viewer-cloud
-
 ```
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< /tabs >}}
 
 The Docker would download GroupDocs.Viewer Cloud image from Docker Hub and start a container. While downloading the image the output similar to shown on screenshot would be printed to the console:
 
@@ -73,11 +69,11 @@ The Docker would download GroupDocs.Viewer Cloud image from Docker Hub and start
 I'm running Docker on Windows and will be using PowerShell to run the commands but the experience would be the same in case you're on Linux.
 {{< /alert >}}
 
-![Docker image downloading process](viewer/images/downloading_image.png)
+![Docker image downloading process](/viewer/images/downloading_image.png)
 
 After the container is started you'll see the following messages that indicate that GroupDocs.Viewer Cloud service up and running.
 
-![Docker container started](viewer/images/container_started.png)
+![Docker container started](/viewer/images/container_started.png)
 
 Now you can work with GroupDocs.Viewer Cloud which is hosted on your machine.
 
@@ -85,29 +81,28 @@ Now you can work with GroupDocs.Viewer Cloud which is hosted on your machine.
 
 When the container and GroupDocs.Viewer Cloud started you can check service status by calling GET [http://localhost:8080/](http://localhost:8080/). The successful response status (200) will indicate that the service is up and running.
 
-{{< tabs tabTotal="2" tabID="2" tabName1="Windows (PowerShell)" tabName2="Linux (bash)" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "example2">}}
+{{< tab "PowerShell" >}}
 ```powershell
 Invoke-WebRequest -Uri http://localhost:8080/
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Bash" >}}
 ```bash
 curl -i http://localhost:8080/
 ```
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< /tabs >}}
 
 At the following screenshot, I'm calling [http://localhost:8080/](http://localhost:8080/) in a separate Powershell window and response indicates that service is alive:
 
-![Health check](viewer/images/health_check.png)
+![Health check](/viewer/images/health_check.png)
 
 ### Using UI
 
 After starting, you can use Swagger UI at [http://localhost:8080/swagger/](http://localhost:8080/swagger/) and explore the API. With Swagger UI you can call API methods in your browser.
 
-![Swagger UI](viewer/images/swagger_ui.png)
+![Swagger UI](/viewer/images/swagger_ui.png)
 
 ### Using SDK
 
@@ -117,10 +112,10 @@ We generate our SDKs in different languages so you may check if yours is availab
 If you don't find your language in the SKD list, feel free to request for it on our [Support Forums](https://forum.groupdocs.cloud/c/viewer), or use raw REST API requests as you can find it [here](https://products.groupdocs.cloud/viewer/curl).
 {{< /alert >}}
 
-The authentication is required in case you're going to use SDK. To enable authentication set CLIENT_ID/CLIENT_SECRET parameters as it shown below.
+The authentication is required in case you're going to use SDK. To enable authentication set `CLIENT_ID` & `CLIENT_SECRET` parameters as it shown below.
 
-{{< tabs tabTotal="2" tabID="3" tabName1="Windows (PowerShell)" tabName2="Linux (bash)" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "example3">}}
+{{< tab "PowerShell" >}}
 ```powershell
 docker run `
     -p 8080:80 `
@@ -133,9 +128,8 @@ docker run `
     --name viewer_cloud `
     groupdocs/viewer-cloud
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Bash" >}}
 ```bash
 docker run \
     -p 8080:80 \
@@ -148,15 +142,14 @@ docker run \
     --name viewer_cloud \
     groupdocs/viewer-cloud
 ```
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< /tabs >}}
 
 Then, when using SDK, setup the api base url, as shown in examples below:
 
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java & Android" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "example4">}}
+{{< tab "C#" >}}
 ```csharp
-
 // For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
 string ClientId = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 string ClientSecret = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
@@ -167,13 +160,10 @@ var configuration = new Configuration(ClientId, ClientSecret)
 };
 var apiInstance = new InfoApi(configuration);
 var response = apiInstance.GetSupportedFileFormats();
-
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Java" >}}
 ```java
-
 // For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
 String ClientId = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 String ClientSecret = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
@@ -183,13 +173,10 @@ configuration.setApiBaseUrl("http://localhost:8080");
 
 InfoApi apiInstance = new InfoApi(configuration);
 FormatsResult response = apiInstance.getSupportedFileFormats();
-
 ```
-
-{{< /tab >}} {{< tab tabNum="3" >}}
-
+{{< /tab >}}
+{{< tab "PHP" >}}
 ```php
-
 // For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-php-samples
 use GroupDocs\Viewer\Model;
 use GroupDocs\Viewer\Model\Requests;
@@ -205,13 +192,10 @@ $configuration->setApiBaseUrl("http://localhost:8080");
 $infoApi= new GroupDocs\Viewer\InfoApi($configuration);
 
 $response = $infoApi->getSupportedFileFormats();
-
 ```
-
-{{< /tab >}} {{< tab tabNum="4" >}}
-
-```javascript
-
+{{< /tab >}}
+{{< tab "JavaScript" >}}
+```js
 // For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node-samples
 global.viewer_cloud = require("groupdocs-viewer-cloud");
 
@@ -222,13 +206,10 @@ config.apiBaseUrl = "http://localhost:8080";
 global.infoApi = viewer_cloud.InfoApi.fromConfig(config);
 
 let response = await infoApi.getSupportedFileFormats();
-
 ```
-
-{{< /tab >}} {{< tab tabNum="5" >}}
-
+{{< /tab >}}
+{{< tab "Python" >}}
 ```python
-
 # For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-python-samples
 import groupdocs_viewer_cloud
 
@@ -241,13 +222,10 @@ configuration.api_base_url = "http://localhost:8080"
 infoApi = groupdocs_viewer_cloud.InfoApi.from_config(configuration)
 
 result = infoApi.get_supported_file_formats()
-
 ```
-
-{{< /tab >}} {{< tab tabNum="6" >}}
-
+{{< /tab >}}
+{{< tab "Ruby" >}}
 ```ruby
-
 # For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-ruby-samples
 require 'groupdocs_viewer_cloud'
 
@@ -260,17 +238,16 @@ config.api_base_url = "http://localhost:8080"
 infoApi = GroupDocsViewerCloud::InfoApi.from_config(config)
 
 result = infoApi.get_supported_file_formats()
-
 ```
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Enable Google Cloud Storage
 
 By default, a local storage used inside container for file operations. It's possible to connect a Google Cloud storage by setting GOOGLE_APPLICATION_CREDENTIALS and GOOGLE_STORAGE_BUCKET environment variables.
 
-{{< tabs tabTotal="2" tabID="35" tabName1="Windows (PowerShell)" tabName2="Linux (bash)" >}} {{< tab tabNum="1" >}}
-
+{{< tabs "example5">}}
+{{< tab "PowerShell" >}}
 ```powershell
 docker run `
     -p 8080:80 `
@@ -281,9 +258,8 @@ docker run `
     --name viewer_cloud `
     groupdocs/viewer-cloud
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
+{{< /tab >}}
+{{< tab "Bash" >}}
 ```bash
 docker run \
     -p 8080:80 \
@@ -294,8 +270,9 @@ docker run \
     --name viewer_cloud \
     groupdocs/viewer-cloud
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-{{< /tab >}} {{< /tabs >}}
 
 ### Stop Container
 

@@ -14,10 +14,9 @@ RenderOptions data structure used as part of [ViewOptions]({{< ref "viewer/devel
 Not all options are supported by all document formats. Each option may correspond to one or more formats.
 {{< /alert >}}
 
-##### RenderOptions example #####
+### RenderOptions example
 
-```html
-
+```json
 {
     "StartPageNumber": 0,
     "CountPagesToRender": 0,
@@ -59,7 +58,7 @@ Not all options are supported by all document formats. Each option may correspon
 
 ```
 
-##### RenderOptions fields #####
+### RenderOptions fields
 
 |Name|Description
 |---|---

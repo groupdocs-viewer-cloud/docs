@@ -10,9 +10,9 @@ keywords: ""
 
 HtmlOptions data structure inherits [RenderOptions]({{< ref "viewer/developer-guide/data-structures/renderoptions.md" >}}) and used as part of [ViewOptions]({{< ref "viewer/developer-guide/data-structures/viewoptions.md" >}}) data structure.
 
-##### HtmlOptions example #####
+### HtmlOptions example
 
-```html
+```json
 
 {
 	"ExternalResources": false,
@@ -22,7 +22,7 @@ HtmlOptions data structure inherits [RenderOptions]({{< ref "viewer/developer-g
 
 ```
 
-##### HtmlOptions fields #####
+### HtmlOptions fields
 
 |Name|Description
 |---|---

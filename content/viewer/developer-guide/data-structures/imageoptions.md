@@ -10,20 +10,18 @@ keywords: ""
 
 ImageOptions data structure inherits [RenderOptions]({{< ref "viewer/developer-guide/data-structures/renderoptions.md" >}}) and used as part of [ViewOptions]({{< ref "viewer/developer-guide/data-structures/viewoptions.md" >}}) data structure.
 
-##### ImageOptions example #####
+### ImageOptions example
 
-```html
-
+```json
 {
 	"Width": 0,
 	"Height": 0,
 	"ExtractText": false,
 	"JpegQuality": 0,
 }
-
 ```
 
-##### ImageOptions fields #####
+### ImageOptions fields
 
 |Name|Description
 |---|---

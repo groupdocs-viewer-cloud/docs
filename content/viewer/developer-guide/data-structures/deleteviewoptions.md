@@ -10,10 +10,9 @@ keywords: ""
 
 DeleteViewOptions data structure used as input parameters for [Delete View]({{< ref "viewer/developer-guide/_index.md" >}}) working-with-viewer-api API
 
-##### DeleteViewOptions example #####
+### DeleteViewOptions example
 
-```html
-
+```json
 {
   "FileInfo": {
     "FilePath": "string",
@@ -22,10 +21,9 @@ DeleteViewOptions data structure used as input parameters for [Delete View]({{<
     "Password": "string"
   }
 }
-
 ```
 
-##### DeleteViewOptions fields #####
+### DeleteViewOptions fields
 
 |Name|Description
 |---|---

@@ -5,13 +5,12 @@ title: "Split worksheets into pages"
 productName: "GroupDocs.Viewer Cloud"
 description: ""
 keywords: ""
+toc: True
 ---
 
-# Introduction #
+There might be the case when you do not want to render the whole Spreadsheet on a single page and limit the number of rows that would be rendered on each output page. In this situation, the GroupDocs.Viewer Cloud allows you to specify the number of rows in an Spreadsheet to be rendered on each page.This example demonstrates how to split worksheets into pages.
 
-There might be the case when you do not want to render the whole Spreadsheet on a single page and limit the number of rows that would be rendered on each output page. In this situation, the GroupDocs.Viewer Cloud allows you to specify the number of rows in an Spreadsheet to be rendered on each page. This example demonstrates how to split worksheets into pages.
-
-## API Usage ##
+## API Usage
 
 There are steps that usage of GroupDocs.Viewer Cloud consists of:
 
@@ -23,21 +22,21 @@ Steps 1 and 3 are storage operations, please refer to this [File API document
 
 [Swagger UI](https://apireference.groupdocs.cloud/viewer/) lets you call this REST API directly from the browser.
 
-## cURL REST Example ##
+## cURL example
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example1">}}
+{{< tab "Request" >}}
+```bash
 
-```html
-
-* First get JSON Web Token
-* Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications. Kindly place Client Id in "client_id" and Client Secret in "client_secret" argument.
+# First get JSON Web Token
+# Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications. Kindly place Client Id in "client_id" and Client Secret in "client_secret" argument.
 curl -v "https://api.groupdocs.cloud/connect/token" \
 -X POST \
 -d "grant_type=client_credentials&client_id=xxxx&client_secret=xxxx" \
 -H "Content-Type: application/x-www-form-urlencoded" \
 -H "Accept: application/json"
 
-* cURL example to get document information
+# cURL example to get document information
 curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
 -X POST \
 -H "Content-Type: application/json" \
@@ -55,13 +54,9 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
     }
   }
 }"
-
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
-```html
-
+{{< /tab >}} {{< tab "Resonse" >}}
+```json
 {
   "pages": [
     {
@@ -89,19 +84,15 @@ curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
 }
 
 ```
-
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+## SDK examples
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-viewer-cloud).
 
-### SDK Examples ###
-
-{{< tabs tabTotal="7" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" tabName7="Android" >}} {{< tab tabNum="1" >}}
-
-```csharp
-
+{{< tabs "example1-sdk">}}
+{{< tab "C#" >}}
+```cs
 // For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
 string MyClientSecret = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 string MyClientId = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
@@ -127,67 +118,10 @@ var viewOptions = new ViewOptions
 };
 
 var response = apiInstance.CreateView(new CreateViewRequest(viewOptions));
-
 ```
-
-{{< /tab >}} {{< tab tabNum="2" >}}
-
-```java
-
-// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
-string MyClientSecret = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
-string MyClientId = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
-
-Configuration configuration = new Configuration(MyClientId, MyClientSecret);
-ViewApi apiInstance = new ViewApi(configuration);
-
-FileInfo fileInfo = new FileInfo();
-fileInfo.setFilePath("SampleFiles/sample.xlsx");
-ViewOptions viewOptions = new ViewOptions();
-viewOptions.setFileInfo(fileInfo);
-viewOptions.setViewFormat(ViewFormatEnum.HTML);
-HtmlOptions renderOptions = new HtmlOptions();
-SpreadsheetOptions spreadsheetOptions = new SpreadsheetOptions();
-spreadsheetOptions.setPaginateSheets(true);
-spreadsheetOptions.setCountRowsPerPage(45);
-renderOptions.setSpreadsheetOptions(spreadsheetOptions);
-viewOptions.setRenderOptions(renderOptions);
-
-ViewResult response = apiInstance.createView(new CreateViewRequest(viewOptions));
-
-```
-
-{{< /tab >}} {{< tab tabNum="7" >}}
-
-```java
-
-// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
-string MyClientSecret = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
-string MyClientId = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
-
-Configuration configuration = new Configuration(MyClientId, MyClientSecret);
-ViewApi apiInstance = new ViewApi(configuration);
-
-FileInfo fileInfo = new FileInfo();
-fileInfo.setFilePath("SampleFiles/sample.xlsx");
-ViewOptions viewOptions = new ViewOptions();
-viewOptions.setFileInfo(fileInfo);
-viewOptions.setViewFormat(ViewFormatEnum.HTML);
-HtmlOptions renderOptions = new HtmlOptions();
-SpreadsheetOptions spreadsheetOptions = new SpreadsheetOptions();
-spreadsheetOptions.setPaginateSheets(true);
-spreadsheetOptions.setCountRowsPerPage(45);
-renderOptions.setSpreadsheetOptions(spreadsheetOptions);
-viewOptions.setRenderOptions(renderOptions);
-
-ViewResult response = apiInstance.createView(new CreateViewRequest(viewOptions));
-
-```
-
-{{< /tab >}} {{< tab tabNum="3" >}}
-
+{{< /tab >}} 
+{{< tab "PHP">}}
 ```php
-
 // For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-php-samples
 use GroupDocs\Viewer\Model;
 use GroupDocs\Viewer\Model\Requests;
@@ -215,66 +149,34 @@ $viewOptions->setRenderOptions($renderOptions);
 
 $request = new Requests\CreateViewRequest($viewOptions);
 $response = $apiInstance->createView($request);
-
 ```
+{{< /tab >}} 
+{{< tab "Java">}}
+```java
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
+string MyClientSecret = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+string MyClientId = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
-{{< /tab >}} {{< tab tabNum="4" >}}
+Configuration configuration = new Configuration(MyClientId, MyClientSecret);
+ViewApi apiInstance = new ViewApi(configuration);
 
-```javascript
+FileInfo fileInfo = new FileInfo();
+fileInfo.setFilePath("SampleFiles/sample.xlsx");
+ViewOptions viewOptions = new ViewOptions();
+viewOptions.setFileInfo(fileInfo);
+viewOptions.setViewFormat(ViewFormatEnum.HTML);
+HtmlOptions renderOptions = new HtmlOptions();
+SpreadsheetOptions spreadsheetOptions = new SpreadsheetOptions();
+spreadsheetOptions.setPaginateSheets(true);
+spreadsheetOptions.setCountRowsPerPage(45);
+renderOptions.setSpreadsheetOptions(spreadsheetOptions);
+viewOptions.setRenderOptions(renderOptions);
 
-// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node-samples
-global.viewer# require("groupdocs-viewer-cloud");
-
-global.clientId = "XXXX-XXXX-XXXX-XXXX"; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
-global.clientSecret = "XXXXXXXXXXXXXXXX"; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
-
-global.viewApi = viewer_cloud.ViewApi.fromKeys(clientId, clientSecret);
-
-let fileInfo = new viewer_cloud.FileInfo();
-fileInfo.filePath = "SampleFiles/sample.xlsx";
-let viewOptions = new viewer_cloud.ViewOptions();
-viewOptions.fileInfo = fileInfo;
-viewOptions.viewFormat = viewer_cloud.ViewOptions.ViewFormatEnum.HTML;
-viewOptions.renderOptions = new viewer_cloud.HtmlOptions();
-viewOptions.renderOptions.spreadsheetOptions = new viewer_cloud.SpreadsheetOptions();
-viewOptions.renderOptions.spreadsheetOptions.paginateSheets = true;
-viewOptions.renderOptions.spreadsheetOptions.countRowsPerPage = 45;
-
-let request = new viewer_cloud.CreateViewRequest(viewOptions);
-let response = await viewApi.createView(request);
-
+ViewResult response = apiInstance.createView(new CreateViewRequest(viewOptions));
 ```
-
-{{< /tab >}} {{< tab tabNum="5" >}}
-
-```python
-
-# For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-python-samples
-import groupdocs_viewer_cloud
-
-client_id = "XXXX-XXXX-XXXX-XXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
-client_secret = "XXXXXXXXXXXXXXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
-
-apiInstance = groupdocs_viewer_cloud.ViewApi.from_keys(client_id, client_secret)
-
-view_options = groupdocs_viewer_cloud.ViewOptions()
-view_options.file_info = groupdocs_viewer_cloud.FileInfo()
-view_options.file_info.file_path = "SampleFiles/sample.xlsx"
-view_options.view_format = "HTML"
-view_options.render_options = groupdocs_viewer_cloud.HtmlOptions()
-view_options.render_options.spreadsheet_options = groupdocs_viewer_cloud.SpreadsheetOptions()
-view_options.render_options.spreadsheet_options.paginate_sheets = True
-view_options.render_options.spreadsheet_options.count_rows_per_page = 45
-
-request = groupdocs_viewer_cloud.CreateViewRequest(view_options)
-response = apiInstance.create_view(request)
-
-```
-
-{{< /tab >}} {{< tab tabNum="6" >}}
-
+{{< /tab >}} 
+{{< tab "Ruby">}}
 ```ruby
-
 # For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-ruby-samples
 require 'groupdocs_viewer_cloud'
 
@@ -296,6 +198,52 @@ request = GroupDocsViewerCloud::CreateViewRequest.new(viewOptions)
 response = apiInstance.create_view(request)
 
 ```
+{{< /tab >}} 
+{{< tab "Node.js">}}
+```js
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node-samples
+global.viewer# require("groupdocs-viewer-cloud");
 
-{{< /tab >}} {{< /tabs >}}
+global.clientId = "XXXX-XXXX-XXXX-XXXX"; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+global.clientSecret = "XXXXXXXXXXXXXXXX"; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
+global.viewApi = viewer_cloud.ViewApi.fromKeys(clientId, clientSecret);
+
+let fileInfo = new viewer_cloud.FileInfo();
+fileInfo.filePath = "SampleFiles/sample.xlsx";
+let viewOptions = new viewer_cloud.ViewOptions();
+viewOptions.fileInfo = fileInfo;
+viewOptions.viewFormat = viewer_cloud.ViewOptions.ViewFormatEnum.HTML;
+viewOptions.renderOptions = new viewer_cloud.HtmlOptions();
+viewOptions.renderOptions.spreadsheetOptions = new viewer_cloud.SpreadsheetOptions();
+viewOptions.renderOptions.spreadsheetOptions.paginateSheets = true;
+viewOptions.renderOptions.spreadsheetOptions.countRowsPerPage = 45;
+
+let request = new viewer_cloud.CreateViewRequest(viewOptions);
+let response = await viewApi.createView(request);
+```
+{{< /tab >}} 
+{{< tab "Python">}}
+```py
+# For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-python-samples
+import groupdocs_viewer_cloud
+
+client_id = "XXXX-XXXX-XXXX-XXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+client_secret = "XXXXXXXXXXXXXXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+
+apiInstance = groupdocs_viewer_cloud.ViewApi.from_keys(client_id, client_secret)
+
+view_options = groupdocs_viewer_cloud.ViewOptions()
+view_options.file_info = groupdocs_viewer_cloud.FileInfo()
+view_options.file_info.file_path = "SampleFiles/sample.xlsx"
+view_options.view_format = "HTML"
+view_options.render_options = groupdocs_viewer_cloud.HtmlOptions()
+view_options.render_options.spreadsheet_options = groupdocs_viewer_cloud.SpreadsheetOptions()
+view_options.render_options.spreadsheet_options.paginate_sheets = True
+view_options.render_options.spreadsheet_options.count_rows_per_page = 45
+
+request = groupdocs_viewer_cloud.CreateViewRequest(view_options)
+response = apiInstance.create_view(request)
+```
+{{< /tab >}} 
+{{< /tabs >}}
