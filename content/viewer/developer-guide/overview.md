@@ -50,7 +50,7 @@ Flexible rendering documents as HTML5 or Image including next supported file for
 
 ## Security and Authentication
 
-The GroupDocs.Viewer Cloud API is secured and requires authentication. Developers can [create]({{< ref "total/getting-started/ui-topics/creating-and-managing-application.md" >}}) an application with Client Id and Client Secret when they [register]({{< ref "total/getting-started/ui-topics/creating-and-managing-account.md" >}}). Authenticated requests require an OAuth 2.0 authorization header. You can see complete details [here]({{< ref "total/getting-started/overview-rest-api/authenticating-api-requests.md" >}}).
+The GroupDocs.Viewer Cloud API is secured and requires authentication. Developers can [create]({{< ref "total/ui-topics/creating-and-managing-application.md" >}}) an application with Client Id and Client Secret when they [register]({{< ref "total/ui-topics/creating-and-managing-account.md" >}}). Authenticated requests require an OAuth 2.0 authorization header. You can see complete details [here]({{< ref "total/overview-rest-api/authenticating-api-requests.md" >}}).
 
 ## SDKs
 
