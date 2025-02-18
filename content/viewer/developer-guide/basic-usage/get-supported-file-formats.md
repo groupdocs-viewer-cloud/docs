@@ -368,24 +368,196 @@ The API is completely independent of your operating system, database system or d
 
 {{< tabs "example1-sdk">}}
 {{< tab "C#" >}}
-{{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Get_Supported_Formats.cs >}}
+
+```csharp
+using GroupDocs.Viewer.Cloud.Sdk.Api;
+using GroupDocs.Viewer.Cloud.Sdk.Client;
+using System;
+
+namespace GroupDocs.Viewer.Cloud.Examples.CSharp
+{
+	// Get All Supported Formats
+	class Get_All_Supported_Formats
+	{
+		public static void Run()
+		{
+			var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
+
+			var apiInstance = new InfoApi(configuration);
+
+			try
+			{
+				// Get supported file formats
+				var response = apiInstance.GetSupportedFileFormats();
+
+				foreach (var entry in response.Formats)
+				{
+					Console.WriteLine(string.Format("{0}: {1}", entry.FileFormat, string.Join(",", entry.Extension)));
+				}
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine("Exception while calling InfoApi: " + e.Message);
+			}
+		}
+	}
+}
+```
+
 {{< /tab >}} 
-{{< tab "PHP">}}
-{{< gist groupdocscloud 59f66e2a32e4f47157573d93b6c824cd Viewer_PHP_Get_All_File_Formats.php >}}
+{{< tab "PHP" >}}
+
+```php
+//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
+$configuration = new GroupDocs\Viewer\Configuration();
+$configuration->setAppSid($sid);
+$configuration->setAppKey($key);
+
+$viewerApi = new GroupDocs\Viewer\ViewerApi($configuration); 
+
+try {
+    $request = new GroupDocs\Viewer\Model\Requests\GetSupportedFileFormatsRequest();
+    $response = $viewerApi->getSupportedFileFormats($request);
+
+    foreach ($response->getFormats() as $key => $format) {
+        echo $format->getFileFormat() . " - " .  $format->getExtension(), "\n";
+    }
+} catch (Exception $e) {
+    echo  "Something went wrong: ",  $e->getMessage(), "\n";    
+}
+
+```
+
 {{< /tab >}} 
-{{< tab "Java">}}
-{{< gist groupdocscloud e86f05aeed57101c77e399f1c80b99b5 Viewer_Java_Get_All_Supported_Formats.java >}}
+{{< tab "Java" >}}
+
+```java
+
+// TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
+String appSid = "xxxx";
+String appKey = "xxx-xx";
+
+ViewerApi apiInstance = new ViewerApi(appSid, appKey);
+try {
+	FormatCollection response = apiInstance.getSupportedFileFormats();
+
+	if (response.getFormats().size() > 0) {
+		for (Format format : response.getFormats()) {
+			System.out.println("Format: " + format.toString());
+		}
+	}
+	System.out.println("Executed Successfully");
+} catch (ApiException e) {
+	System.err.println("Exception when calling ViewerApi");
+	e.printStackTrace();
+}
+```
+
 {{< /tab >}} 
-{{< tab "Ruby">}}
-{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Get_All_Supported_Formats.rb >}}
+{{< tab "Ruby" >}}
+
+```ruby
+# Load the gem
+require 'groupdocs_viewer_cloud'
+require 'common_utilities/Utils.rb'
+
+class File_Formats
+  def self.Get_All_Supported_File_Formats()
+
+    # Getting instance of the API
+    api = Common_Utilities.Get_InfoApi_Instance()
+
+    # Retrieve supported file-formats
+    response = api.get_supported_file_formats()
+
+    # Print out supported file-formats
+    puts("Supported file-formats:")
+    response.formats.each do |format|
+      puts("#{format.file_format} (#{format.extension})")
+    end
+  end
+end
+```
+
 {{< /tab >}} 
-{{< tab "Node.js">}}
-{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Get_All_Supported_Formats.js >}}
+{{< tab "Node.js" >}}
+
+```js
+"use strict";
+class Viewer_Node_Get_All_Supported_Formats {
+	static Run() {
+		// retrieve supported file-formats
+		infoApi.getSupportedFileFormats()
+			.then(function (response) {
+				console.log("Supported file-formats:");
+				response.formats.forEach(function (format) {
+					console.log(format.fileFormat + "(" + format.extension + ")");
+				});
+			})
+			.catch(function (error) {
+				console.log("Error: " + error.message);
+			});
+	}
+}
+module.exports = Viewer_Node_Get_All_Supported_Formats;
+```
+
 {{< /tab >}} 
-{{< tab "Python">}}
-{{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Get_All_Supported_Formats.py >}}
+{{< tab "Python" >}}
+
+```python
+# Import modules
+import groupdocs_viewer_cloud
+from Common_Utilities.Utils import Common_Utilities
+
+class Viewer_Python_Get_All_Supported_Formats:
+    
+    @classmethod
+    def Run(self):
+        # Create instance of the API
+        api = Common_Utilities.Get_InfoApi_Instance()
+        
+        try:
+            # Retrieve supported file-formats
+            response = api.get_supported_file_formats()
+    
+            # Print out supported file-formats
+            print("Supported file-formats:")
+            for fileformat in response.formats:
+                print('{0} ({1})'.format(fileformat.file_format, fileformat.extension))
+        except groupdocs_viewer_cloud.ApiException as e:
+            print("Exception when calling get_supported_viewer_types: {0}".format(e.message))
+```
+
 {{< /tab >}} 
-{{< tab "Android">}}
-{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Get_Supported_Formats.java >}}
+{{< tab "Android" >}}
+
+```java
+package examples.Supported_File_Formats;
+
+import com.groupdocs.cloud.viewer.client.*;
+import com.groupdocs.cloud.viewer.model.*;
+import com.groupdocs.cloud.viewer.api.InfoApi;
+import examples.Utils;
+
+public class Viewer_Android_Get_Supported_Formats {
+
+	public static void main(String[] args) {
+
+		InfoApi apiInstance = new InfoApi(Utils.AppSID, Utils.AppKey);
+		try {
+			FormatsResult response = apiInstance.getSupportedFileFormats();
+
+			for (Format format : response.getFormats()) {
+				System.out.println(format.getFileFormat());
+			}
+		} catch (ApiException e) {
+			System.err.println("Exception while calling InfoApi:");
+			e.printStackTrace();
+		}
+	}
+}
+```
+
 {{< /tab >}} 
 {{< /tabs >}}

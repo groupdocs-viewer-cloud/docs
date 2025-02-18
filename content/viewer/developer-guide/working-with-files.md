@@ -49,25 +49,187 @@ Our API is completely independent of your operating system, database system or d
 
 {{< tabs "download-file-with-sdk">}}
 {{< tab "C#" >}}
-{{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Download_File.cs >}}
+
+```csharp
+using GroupDocs.Viewer.Cloud.Sdk.Api;
+using GroupDocs.Viewer.Cloud.Sdk.Client;
+using GroupDocs.Viewer.Cloud.Sdk.Model.Requests;
+using System;
+
+namespace GroupDocs.Viewer.Cloud.Examples.CSharp
+{
+	// Download_File
+	class Download_File
+	{
+		public static void Run()
+		{
+			var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
+			var apiInstance = new FileApi(configuration);
+
+			try
+			{
+				var request = new DownloadFileRequest("viewerdocs/one-page.docx", Common.MyStorage);
+
+				var response = apiInstance.DownloadFile(request);
+				Console.WriteLine("Expected response type is Stream: " + response.Length.ToString());
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine("Exception while calling FileApi: " + e.Message);
+			}
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< tab "Java" >}}
-{{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Download_File.java >}}
+
+```java
+package examples.Working_With_Files;
+
+import java.io.File;
+import com.groupdocs.cloud.viewer.api.*;
+import com.groupdocs.cloud.viewer.client.ApiException;
+import com.groupdocs.cloud.viewer.model.requests.*;
+import examples.Utils;
+
+public class Viewer_Java_Download_File {
+
+	public static void main(String[] args) {
+
+		FileApi apiInstance = new FileApi(Utils.AppSID, Utils.AppKey);
+		try {
+
+			DownloadFileRequest request = new DownloadFileRequest("viewers\\one-page.docx", Utils.MYStorage, null);
+			File response = apiInstance.downloadFile(request);
+			System.err.println("Expected response type is File: " + response.length());
+		} catch (ApiException e) {
+			System.err.println("Exception while calling FileApi:");
+			e.printStackTrace();
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< tab "PHP" >}}
-{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Download_File.php >}}
+
+```php
+<?php
+
+include(dirname(__DIR__) . '\CommonUtils.php');
+
+	try {
+		$apiInstance = CommonUtils::GetFileApiInstance();
+
+		$request = new GroupDocs\Viewer\Model\Requests\DownloadFileRequest("viewerdocs\\one-page.docx", CommonUtils::$MyStorage, null);
+		$response = $apiInstance->downloadFile($request);
+		
+		echo "Expected response type is File: ", strlen($response);
+	} catch (Exception $e) {
+		echo "Something went wrong: ", $e->getMessage(), "\n";
+	}
+?>
+```
+
 {{< /tab >}}
 {{< tab "Node.js" >}}
-{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Download_File.js >}}
+
+```js
+"use strict";
+class Viewer_Node_Download_File {
+	static Run() {
+		var request = new groupdocs_viewer_cloud_1.DownloadFileRequest("viewerdocs/one-page.docx", myStorage);
+		fileApi.downloadFile(request)
+			.then(function (response) {
+				console.log("Expected response type is Stream: " + response.length);
+			})
+			.catch(function (error) {
+				console.log("Error: " + error.message);
+			});
+	}
+}
+module.exports = Viewer_Node_Download_File;
+
+```
+
 {{< /tab >}}
 {{< tab "Python" >}}
-{{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Download_File.py >}}
+
+```python
+# Import modules
+import groupdocs_viewer_cloud
+from Common_Utilities.Utils import Common_Utilities
+
+class Viewer_Python_Download_File:
+    
+    @classmethod
+    def Run(self):
+        # Create instance of the API
+        api = Common_Utilities.Get_FileApi_Instance()
+        
+        try:
+            request = groupdocs_viewer_cloud.DownloadFileRequest("viewerdocs\\one-page.docx", Common_Utilities.myStorage)
+            response = api.download_file(request)
+            
+            print("Expected response type is Stream: " + str(len(response)))
+        except groupdocs_viewer_cloud.ApiException as e:
+            print("Exception while calling API: {0}".format(e.message))
+```
+
 {{< /tab >}}
 {{< tab "Ruby" >}}
-{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Download_File.rb >}}
+
+```ruby
+# Load the gem
+require 'groupdocs_viewer_cloud'
+require 'common_utilities/Utils.rb'
+
+class Working_With_Files
+  def self.Viewer_Ruby_Download_File()
+
+    # Getting instance of the API
+    $api = Common_Utilities.Get_FileApi_Instance()
+
+    $request = GroupDocsViewerCloud::DownloadFileRequest.new("viewerdocs/one-page.docx", $myStorage)
+    $response = $api.download_file($request)
+    
+    puts("Expected response type is Stream: " + ($response).to_s)
+  end
+end
+```
+
 {{< /tab >}}
 {{< tab "Android" >}}
-{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Download_File.java >}}
+
+```java
+package examples.Working_With_Files;
+
+import java.io.File;
+import com.groupdocs.cloud.viewer.api.*;
+import com.groupdocs.cloud.viewer.client.ApiException;
+import com.groupdocs.cloud.viewer.model.requests.*;
+import examples.Utils;
+
+public class Viewer_Android_Download_File {
+
+	public static void main(String[] args) {
+
+		FileApi apiInstance = new FileApi(Utils.AppSID, Utils.AppKey);
+		try {
+
+			DownloadFileRequest request = new DownloadFileRequest("viewers\\one-page.docx", Utils.MYStorage, null);
+			File response = apiInstance.downloadFile(request);
+			System.err.println("Expected response type is File: " + response.length());
+		} catch (ApiException e) {
+			System.err.println("Exception while calling FileApi:");
+			e.printStackTrace();
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -124,25 +286,212 @@ Our API is completely independent of your operating system, database system or d
 
 {{< tabs "upload-file-with-sdk">}}
 {{< tab "C#" >}}
-{{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Upload_File.cs >}}
+
+```csharp
+using GroupDocs.Viewer.Cloud.Sdk.Api;
+using GroupDocs.Viewer.Cloud.Sdk.Client;
+using GroupDocs.Viewer.Cloud.Sdk.Model.Requests;
+using System;
+using System.IO;
+
+namespace GroupDocs.Viewer.Cloud.Examples.CSharp
+{
+	// Upload File
+	class Upload_File
+	{
+		public static void Run()
+		{
+			var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
+			var apiInstance = new FileApi(configuration);
+
+			try
+			{
+				// Open file in IOStream from local/disc.
+				var fileStream = File.Open("..\\..\\..\\Data\\viewerdocs\\one-page.docx", FileMode.Open);
+
+				var request = new UploadFileRequest("viewerdocs/one-page1.docx", fileStream, Common.MyStorage);
+
+				var response = apiInstance.UploadFile(request);
+				Console.WriteLine("Expected response type is FilesUploadResult: " + response.Uploaded.Count.ToString());
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine("Exception while calling FileApi: " + e.Message);
+			}
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< tab "Java" >}}
-{{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Upload_File.java >}}
+
+```java
+package examples.Working_With_Files;
+
+import java.io.File;
+import java.nio.file.Paths;
+
+import com.groupdocs.cloud.viewer.api.*;
+import com.groupdocs.cloud.viewer.client.ApiException;
+import com.groupdocs.cloud.viewer.model.*;
+import com.groupdocs.cloud.viewer.model.requests.*;
+import examples.Utils;
+
+public class Viewer_Java_Upload_File {
+
+	public static void main(String[] args) {
+
+		FileApi apiInstance = new FileApi(Utils.AppSID, Utils.AppKey);
+		try {
+			File fileStream = new File(
+					Paths.get("src\\main\\resources").toAbsolutePath().toString() + "\\viewers\\one-page.docx");
+			UploadFileRequest request = new UploadFileRequest("viewers\\one-page1.docx", fileStream,
+					Utils.MYStorage);
+			FilesUploadResult response = apiInstance.uploadFile(request);
+			System.out.println("Expected response type is FilesUploadResult: " + response.getUploaded().size());
+		} catch (ApiException e) {
+			System.err.println("Exception while calling FileApi:");
+			e.printStackTrace();
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< tab "PHP" >}}
-{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Upload_File.php >}}
+
+```php
+<?php
+
+include(dirname(__DIR__) . '\CommonUtils.php');
+
+	try {
+		$apiInstance = CommonUtils::GetFileApiInstance();
+
+		$fileStream = readfile("..\\resources\\viewerdocs\\one-page.docx");
+		$request = new GroupDocs\Conversion\Model\Requests\UploadFileRequest("viewerdocs\\one-page1.docx", $fileStream, CommonUtils::$MyStorage, null);
+		$response = $apiInstance->downloadFile($request);
+		
+		echo "Expected response type is FilesUploadResult: ", $response;
+	} catch (Exception $e) {
+		echo "Something went wrong: ", $e->getMessage(), "\n";
+	}
+?>
+```
+
 {{< /tab >}}
 {{< tab "Node.js" >}}
-{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Upload_File.js >}}
+
+```js
+"use strict";
+class Viewer_Node_Upload_File {
+	static Run() {
+
+		// Open file in IOStream from local/disc.
+		var resourcesFolder = './Resources/viewerdocs/one-page.docx';
+		fs.readFile(resourcesFolder, (err, fileStream) => {
+
+			var request = new groupdocs_viewer_cloud_1.UploadFileRequest("viewerdocs/one-page1.docx", fileStream, myStorage);
+			fileApi.uploadFile(request)
+				.then(function (response) {
+					console.log("Expected response type is FilesUploadResult: " + response.uploaded.length);
+				})
+				.catch(function (error) {
+					console.log("Error: " + error.message);
+				});
+		});
+	}
+}
+module.exports = Viewer_Node_Upload_File;
+
+```
+
 {{< /tab >}}
 {{< tab "Python" >}}
-{{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Upload_File.py >}}
+
+```python
+# Import modules
+import groupdocs_viewer_cloud
+from Common_Utilities.Utils import Common_Utilities
+
+class Viewer_Python_Upload_File:
+    
+    @classmethod
+    def Run(self):
+        # Create instance of the API
+        api = Common_Utilities.Get_FileApi_Instance()
+        
+        try:
+            request = groupdocs_viewer_cloud.UploadFileRequest("viewerdocs\\one-page.docx", "D:\\ewspace\\GroupDocs.Viewer.Cloud.Python.Examples\\src\\Resources\\viewerdocs\\one-page.docx", Common_Utilities.myStorage)
+            response = api.upload_file(request)
+            
+            print("Expected response type is FilesUploadResult: " + str(response))
+        except groupdocs_viewer_cloud.ApiException as e:
+            print("Exception while calling API: {0}".format(e.message))
+```
+
 {{< /tab >}}
 {{< tab "Ruby" >}}
-{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Upload_File.rb >}}
+
+```ruby
+# Load the gem
+require 'groupdocs_viewer_cloud'
+require 'common_utilities/Utils.rb'
+
+class Working_With_Files
+  def self.Viewer_Ruby_Upload_File()
+
+    # Getting instance of the API
+    $api = Common_Utilities.Get_FileApi_Instance()
+   
+    $fileStream = File.new("..\\Resources\\viewerdocs\\one-page.docx", "r")
+    
+    $request = GroupDocsViewerCloud::UploadFileRequest.new("viewerdocs/one-page1.docx", $fileStream, $myStorage)
+    $response = $api.upload_file($request)
+    
+    $fileStream.close()
+
+    puts("Expected response type is FilesUploadResult: " + ($response).to_s)
+  end
+end
+```
+
 {{< /tab >}}
 {{< tab "Android" >}}
-{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Upload_File.java >}}
+
+```java
+package examples.Working_With_Files;
+
+import java.io.File;
+import java.nio.file.Paths;
+
+import com.groupdocs.cloud.viewer.api.*;
+import com.groupdocs.cloud.viewer.client.ApiException;
+import com.groupdocs.cloud.viewer.model.*;
+import com.groupdocs.cloud.viewer.model.requests.*;
+import examples.Utils;
+
+public class Viewer_Android_Upload_File {
+
+	public static void main(String[] args) {
+
+		FileApi apiInstance = new FileApi(Utils.AppSID, Utils.AppKey);
+		try {
+			File fileStream = new File(
+					Paths.get("src\\main\\resources").toAbsolutePath().toString() + "\\viewers\\one-page.docx");
+			UploadFileRequest request = new UploadFileRequest("viewers\\one-page1.docx", fileStream,
+					Utils.MYStorage);
+			FilesUploadResult response = apiInstance.uploadFile(request);
+			System.out.println("Expected response type is FilesUploadResult: " + response.getUploaded().size());
+		} catch (ApiException e) {
+			System.err.println("Exception while calling FileApi:");
+			e.printStackTrace();
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -186,25 +535,185 @@ Our API is completely independent of your operating system, database system or d
 
 {{< tabs "delete-file-with-sdk">}}
 {{< tab "C#" >}}
-{{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Delete_File.cs >}}
+
+```csharp
+using GroupDocs.Viewer.Cloud.Sdk.Api;
+using GroupDocs.Viewer.Cloud.Sdk.Client;
+using GroupDocs.Viewer.Cloud.Sdk.Model.Requests;
+using System;
+
+namespace GroupDocs.Viewer.Cloud.Examples.CSharp
+{
+	// Delete File
+	class Delete_File
+	{
+		public static void Run()
+		{
+			var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
+			var apiInstance = new FileApi(configuration);
+
+			try
+			{
+				var request = new DeleteFileRequest("viewerdocs1/one-page1.docx", Common.MyStorage);
+
+				apiInstance.DeleteFile(request);
+				Console.WriteLine("Expected response type is Void: 'viewerdocs1/one-page1.docx' deleted.");
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine("Exception while calling FileApi: " + e.Message);
+			}
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< tab "Java" >}}
-{{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Delete_File.java >}}
+
+```java
+package examples.Working_With_Files;
+
+import com.groupdocs.cloud.viewer.api.*;
+import com.groupdocs.cloud.viewer.client.ApiException;
+import com.groupdocs.cloud.viewer.model.requests.*;
+import examples.Utils;
+
+public class Viewer_Java_Delete_File {
+
+	public static void main(String[] args) {
+
+		FileApi apiInstance = new FileApi(Utils.AppSID, Utils.AppKey);
+		try {
+
+			DeleteFileRequest request = new DeleteFileRequest("viewers1\\one-page1.docx", Utils.MYStorage, null);
+			apiInstance.deleteFile(request);
+			System.out.println("Expected response type is Void: 'viewers1/one-page1.docx' deleted.");
+		} catch (ApiException e) {
+			System.err.println("Exception while calling FileApi:");
+			e.printStackTrace();
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< tab "PHP" >}}
-{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Delete_File.php >}}
+
+```php
+<?php
+
+include(dirname(__DIR__) . '\CommonUtils.php');
+
+	try {
+		$apiInstance = CommonUtils::GetFileApiInstance();
+
+		$request = new GroupDocs\Viewer\Model\Requests\DeleteFileRequest("viewerdocs1\\one-page-copied.docx", CommonUtils::$MyStorage);
+		$apiInstance->deleteFile($request);
+		
+		echo "Expected response type is Void: 'viewerdocs1/one-page-copied.docx' file deleted.";
+	} catch (Exception $e) {
+		echo "Something went wrong: ", $e->getMessage(), "\n";
+	}
+?>
+```
+
 {{< /tab >}}
 {{< tab "Node.js" >}}
-{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Delete_File.js >}}
+
+```js
+"use strict";
+class Viewer_Node_Delete_File {
+	static Run() {
+		var request = new groupdocs_viewer_cloud_1.DeleteFileRequest("viewerdocs1/one-page1.docx", myStorage);
+		fileApi.deleteFile(request)
+			.then(function (response) {
+				console.log("Expected response type is Void: 'viewerdocs1/one-page1.docx' deleted.");
+			})
+			.catch(function (error) {
+				console.log("Error: " + error.message);
+			});
+	}
+}
+module.exports = Viewer_Node_Delete_File;
+
+```
+
 {{< /tab >}}
 {{< tab "Python" >}}
-{{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Delete_File.py >}}
+
+```python
+# Import modules
+import groupdocs_viewer_cloud
+from Common_Utilities.Utils import Common_Utilities
+
+class Viewer_Python_Delete_File:
+    
+    @classmethod
+    def Run(self):
+        # Create instance of the API
+        api = Common_Utilities.Get_FileApi_Instance()
+        
+        try:
+            request = groupdocs_viewer_cloud.DeleteFileRequest("viewerdocs1\\one-page.docx", Common_Utilities.myStorage)
+            api.delete_file(request)
+            
+            print("Expected response type is Void: 'viewerdocs1/one-page.docx' deleted.")
+        except groupdocs_viewer_cloud.ApiException as e:
+            print("Exception while calling API: {0}".format(e.message))
+```
+
 {{< /tab >}}
 {{< tab "Ruby" >}}
-{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Delete_File.rb >}}
+
+```ruby
+# Load the gem
+require 'groupdocs_viewer_cloud'
+require 'common_utilities/Utils.rb'
+
+class Working_With_Files
+  def self.Viewer_Ruby_Delete_File()
+
+    # Getting instance of the API
+    $api = Common_Utilities.Get_FileApi_Instance()
+
+    $request = GroupDocsViewerCloud::DeleteFileRequest.new("viewerdocs1/one-page1.docx", $myStorage)
+    $response = $api.delete_file($request)
+
+    puts("Expected response type is Void: 'viewerdocs1/one-page1.docx' deleted.")
+  end
+end
+```
+
 {{< /tab >}}
 {{< tab "Android" >}}
-{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Delete_File.java >}}
+
+```java
+package examples.Working_With_Files;
+
+import com.groupdocs.cloud.viewer.api.*;
+import com.groupdocs.cloud.viewer.client.ApiException;
+import com.groupdocs.cloud.viewer.model.requests.*;
+import examples.Utils;
+
+public class Viewer_Android_Delete_File {
+
+	public static void main(String[] args) {
+
+		FileApi apiInstance = new FileApi(Utils.AppSID, Utils.AppKey);
+		try {
+
+			DeleteFileRequest request = new DeleteFileRequest("viewers1\\one-page1.docx", Utils.MYStorage, null);
+			apiInstance.deleteFile(request);
+			System.out.println("Expected response type is Void: 'viewers1/one-page1.docx' deleted.");
+		} catch (ApiException e) {
+			System.err.println("Exception while calling FileApi:");
+			e.printStackTrace();
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -250,25 +759,189 @@ Our API is completely independent of your operating system, database system or d
 
 {{< tabs "copy-file-with-sdk">}}
 {{< tab "C#" >}}
-{{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Copy_File.cs >}}
+
+```csharp
+using GroupDocs.Viewer.Cloud.Sdk.Api;
+using GroupDocs.Viewer.Cloud.Sdk.Client;
+using GroupDocs.Viewer.Cloud.Sdk.Model.Requests;
+using System;
+
+namespace GroupDocs.Viewer.Cloud.Examples.CSharp
+{
+	// Copy File
+	class Copy_File
+	{
+		public static void Run()
+		{
+			var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
+			var apiInstance = new FileApi(configuration);
+
+			try
+			{
+				var request = new CopyFileRequest("viewerdocs/one-page1.docx", "viewerdocs/one-page-copied.docx", Common.MyStorage, Common.MyStorage);
+
+				apiInstance.CopyFile(request);
+				Console.WriteLine("Expected response type is Void: 'viewerdocs/one-page1.docx' file copied as 'viewerdocs/one-page-copied.docx'.");
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine("Exception while calling FileApi: " + e.Message);
+			}
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< tab "Java" >}}
-{{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Copy_File.java >}}
+
+```java
+package examples.Working_With_Files;
+
+import com.groupdocs.cloud.viewer.api.*;
+import com.groupdocs.cloud.viewer.client.ApiException;
+import com.groupdocs.cloud.viewer.model.requests.*;
+import examples.Utils;
+
+public class Viewer_Java_Copy_File {
+
+	public static void main(String[] args) {
+
+		FileApi apiInstance = new FileApi(Utils.AppSID, Utils.AppKey);
+		try {
+
+			CopyFileRequest request = new CopyFileRequest("viewers\\one-page.docx",
+					"viewers\\one-page-copied.docx", Utils.MYStorage, Utils.MYStorage, null);
+			apiInstance.copyFile(request);
+			System.out.println(
+					"Expected response type is Void: 'viewers/one-page1.docx' file copied as 'viewers/one-page-copied.docx'.");
+		} catch (ApiException e) {
+			System.err.println("Exception while calling FileApi:");
+			e.printStackTrace();
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< tab "PHP" >}}
-{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Copy_File.php >}}
+
+```php
+<?php
+
+include(dirname(__DIR__) . '\CommonUtils.php');
+
+	try {
+		$apiInstance = CommonUtils::GetFileApiInstance();
+
+		$request = new GroupDocs\Viewer\Model\Requests\CopyFileRequest("viewerdocs\\one-page.docx", "viewerdocs\\one-page-copied.docx", CommonUtils::$MyStorage, CommonUtils::$MyStorage);
+		$apiInstance->copyFile($request);
+		
+		echo "Expected response type is Void: 'viewerdocs/one-page.docx' file copied as 'viewerdocs/one-page-copied.docx'.";
+	} catch (Exception $e) {
+		echo "Something went wrong: ", $e->getMessage(), "\n";
+	}
+?>
+```
+
 {{< /tab >}}
 {{< tab "Node.js" >}}
-{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Copy_File.js >}}
+
+```js
+"use strict";
+class Viewer_Node_Copy_File {
+	static Run() {
+		var request = new groupdocs_viewer_cloud_1.CopyFileRequest("viewerdocs/one-page1.docx", "viewerdocs/one-page-copied.docx", myStorage, myStorage);
+		fileApi.copyFile(request)
+			.then(function (response) {
+				console.log("Expected response type is Void: 'viewerdocs/one-page1.docx' file copied as 'viewerdocs/one-page-copied.docx'.");
+			})
+			.catch(function (error) {
+				console.log("Error: " + error.message);
+			});
+	}
+}
+module.exports = Viewer_Node_Copy_File;
+
+```
+
 {{< /tab >}}
 {{< tab "Python" >}}
-{{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Copy_File.py >}}
+
+```python
+# Import modules
+import groupdocs_viewer_cloud
+from Common_Utilities.Utils import Common_Utilities
+
+class Viewer_Python_Copy_File:
+    
+    @classmethod
+    def Run(self):
+        # Create instance of the API
+        api = Common_Utilities.Get_FileApi_Instance()
+        
+        try:
+            request = groupdocs_viewer_cloud.CopyFileRequest("viewerdocs\\one-page.docx", "viewerdocs\\one-page-copied.docx", Common_Utilities.myStorage, Common_Utilities.myStorage)
+            api.copy_file(request)
+            
+            print("Expected response type is Void: 'viewerdocs/one-page.docx' file copied as 'viewerdocs/one-page-copied.docx'.")
+        except groupdocs_viewer_cloud.ApiException as e:
+            print("Exception while calling API: {0}".format(e.message))
+```
+
 {{< /tab >}}
 {{< tab "Ruby" >}}
-{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Copy_File.rb >}}
+
+```ruby
+# Load the gem
+require 'groupdocs_viewer_cloud'
+require 'common_utilities/Utils.rb'
+
+class Working_With_Files
+  def self.Viewer_Ruby_Copy_File()
+
+    # Getting instance of the API
+    $api = Common_Utilities.Get_FileApi_Instance()
+
+    $request = GroupDocsViewerCloud::CopyFileRequest.new("viewerdocs/one-page1.docx", "viewerdocs/one-page-copied.docx", $myStorage, $myStorage)
+    $response = $api.copy_file($request)
+
+    puts("Expected response type is Void: 'viewerdocs/one-page1.docx' file copied as 'viewerdocs/one-page-copied.docx'.")
+  end
+end
+```
+
 {{< /tab >}}
 {{< tab "Android" >}}
-{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Copy_File.java >}}
+
+```java
+package examples.Working_With_Files;
+
+import com.groupdocs.cloud.viewer.api.*;
+import com.groupdocs.cloud.viewer.client.ApiException;
+import com.groupdocs.cloud.viewer.model.requests.*;
+import examples.Utils;
+
+public class Viewer_Android_Copy_File {
+
+	public static void main(String[] args) {
+
+		FileApi apiInstance = new FileApi(Utils.AppSID, Utils.AppKey);
+		try {
+
+			CopyFileRequest request = new CopyFileRequest("viewers\\one-page.docx",
+					"viewers\\one-page-copied.docx", Utils.MYStorage, Utils.MYStorage, null);
+			apiInstance.copyFile(request);
+			System.out.println(
+					"Expected response type is Void: 'viewers/one-page1.docx' file copied as 'viewers/one-page-copied.docx'.");
+		} catch (ApiException e) {
+			System.err.println("Exception while calling FileApi:");
+			e.printStackTrace();
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -314,24 +987,188 @@ Our API is completely independent of your operating system, database system or d
 
 {{< tabs "move-file-with-sdk">}}
 {{< tab "C#" >}}
-{{< gist groupdocscloud caf8bcd223759d65afaa07436f251820 Viewer_CSharp_Move_File.cs >}}
+
+```csharp
+using GroupDocs.Viewer.Cloud.Sdk.Api;
+using GroupDocs.Viewer.Cloud.Sdk.Client;
+using GroupDocs.Viewer.Cloud.Sdk.Model.Requests;
+using System;
+
+namespace GroupDocs.Viewer.Cloud.Examples.CSharp
+{
+	// Move File
+	class Move_File
+	{
+		public static void Run()
+		{
+			var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
+			var apiInstance = new FileApi(configuration);
+
+			try
+			{
+				var request = new MoveFileRequest("viewerdocs/one-page1.docx", "viewerdocs1/one-page1.docx", Common.MyStorage, Common.MyStorage);
+
+				apiInstance.MoveFile(request);
+				Console.WriteLine("Expected response type is Void: 'viewerdocs/one-page1.docx' file moved to 'viewerdocs1/one-page1.docx'.");
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine("Exception while calling FileApi: " + e.Message);
+			}
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< tab "Java" >}}
-{{< gist groupdocscloud 4b05c33e76577ff3c4e35778db3f5ad5 Viewer_Java_Move_File.java >}}
+
+```java
+package examples.Working_With_Files;
+
+import com.groupdocs.cloud.viewer.api.*;
+import com.groupdocs.cloud.viewer.client.ApiException;
+import com.groupdocs.cloud.viewer.model.requests.*;
+import examples.Utils;
+
+public class Viewer_Java_Move_File {
+
+	public static void main(String[] args) {
+
+		FileApi apiInstance = new FileApi(Utils.AppSID, Utils.AppKey);
+		try {
+
+			MoveFileRequest request = new MoveFileRequest("viewers\\one-page1.docx", "viewers1\\one-page1.docx",
+					Utils.MYStorage, Utils.MYStorage, null);
+			apiInstance.moveFile(request);
+			System.out.println(
+					"Expected response type is Void: 'viewers/one-page1.docx' file moved to 'viewers1/one-page1.docx'.");
+		} catch (ApiException e) {
+			System.err.println("Exception while calling FileApi:");
+			e.printStackTrace();
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< tab "PHP" >}}
-{{< gist groupdocscloud 5fd8210b5b3e38cfaffee952036b264a Viewer_Php_Move_File.php >}}
+
+```php
+<?php
+
+include(dirname(__DIR__) . '\CommonUtils.php');
+
+	try {
+		$apiInstance = CommonUtils::GetFileApiInstance();
+
+		$request = new GroupDocs\Viewer\Model\Requests\MoveFileRequest("viewerdocs\\one-page.docx", "viewerdocs1\\one-page-copied.docx", CommonUtils::$MyStorage, CommonUtils::$MyStorage);
+		$apiInstance->moveFile($request);
+		
+		echo "Expected response type is Void: 'viewerdocs/one-page.docx' file moved as 'viewerdocs1/one-page-copied.docx'.";
+	} catch (Exception $e) {
+		echo "Something went wrong: ", $e->getMessage(), "\n";
+	}
+?>
+```
+
 {{< /tab >}}
 {{< tab "Node.js" >}}
-{{< gist groupdocscloud f96d4c7dbf8cb43ec3d6717a7309d3b8 Viewer_Node_Move_File.js >}}
+
+```js
+"use strict";
+class Viewer_Node_Move_File {
+	static Run() {
+		var request = new groupdocs_viewer_cloud_1.MoveFileRequest("viewerdocs/one-page1.docx", "viewerdocs1/one-page1.docx", myStorage, myStorage);
+		fileApi.moveFile(request)
+			.then(function (response) {
+				console.log("Expected response type is Void: 'viewerdocs/one-page1.docx' file moved to 'viewerdocs1/one-page1.docx'.");
+			})
+			.catch(function (error) {
+				console.log("Error: " + error.message);
+			});
+	}
+}
+module.exports = Viewer_Node_Move_File;
+
+```
+
 {{< /tab >}}
 {{< tab "Python" >}}
-{{< gist groupdocscloud 46af986198f1d3f84ef2db07ef9a56f9 Viewer_Python_Move_File.py >}}
+
+```python
+# Import modules
+import groupdocs_viewer_cloud
+from Common_Utilities.Utils import Common_Utilities
+
+class Viewer_Python_Move_File:
+    
+    @classmethod
+    def Run(self):
+        # Create instance of the API
+        api = Common_Utilities.Get_FileApi_Instance()
+        
+        try:
+            request = groupdocs_viewer_cloud.MoveFileRequest("viewerdocs\\one-page.docx", "viewerdocs1\\one-page.docx", Common_Utilities.myStorage, Common_Utilities.myStorage)
+            api.move_file(request)
+            
+            print("Expected response type is Void: 'viewerdocs/one-page.docx' file moved to 'viewerdocs1/one-page.docx'.")
+        except groupdocs_viewer_cloud.ApiException as e:
+            print("Exception while calling API: {0}".format(e.message))
+```
+
 {{< /tab >}}
 {{< tab "Ruby" >}}
-{{< gist groupdocscloud cb1b9fbd2cc419d83ca2c2dd1d7fcfc5 Viewer_Ruby_Move_File.rb >}}
+
+```ruby
+# Load the gem
+require 'groupdocs_viewer_cloud'
+require 'common_utilities/Utils.rb'
+
+class Working_With_Files
+  def self.Viewer_Ruby_Move_File()
+
+    # Getting instance of the API
+    $api = Common_Utilities.Get_FileApi_Instance()
+
+    $request = GroupDocsViewerCloud::MoveFileRequest.new("viewerdocs/one-page1.docx", "viewerdocs1/one-page1.docx", $myStorage, $myStorage)
+    $response = $api.move_file($request)
+
+    puts("Expected response type is Void: 'viewerdocs/one-page1.docx' file moved to 'viewerdocs1/one-page1.docx'.")
+  end
+end
+```
+
 {{< /tab >}}
 {{< tab "Android" >}}
-{{< gist groupdocscloud 6e9d8e6b54cde933baba15e2a645a57a Viewer_Android_Move_File.java >}}
+
+```java
+package examples.Working_With_Files;
+
+import com.groupdocs.cloud.viewer.api.*;
+import com.groupdocs.cloud.viewer.client.ApiException;
+import com.groupdocs.cloud.viewer.model.requests.*;
+import examples.Utils;
+
+public class Viewer_Android_Move_File {
+
+	public static void main(String[] args) {
+
+		FileApi apiInstance = new FileApi(Utils.AppSID, Utils.AppKey);
+		try {
+
+			MoveFileRequest request = new MoveFileRequest("viewers\\one-page1.docx", "viewers1\\one-page1.docx",
+					Utils.MYStorage, Utils.MYStorage, null);
+			apiInstance.moveFile(request);
+			System.out.println(
+					"Expected response type is Void: 'viewers/one-page1.docx' file moved to 'viewers1/one-page1.docx'.");
+		} catch (ApiException e) {
+			System.err.println("Exception while calling FileApi:");
+			e.printStackTrace();
+		}
+	}
+}
+```
+
 {{< /tab >}}
 {{< /tabs >}}
