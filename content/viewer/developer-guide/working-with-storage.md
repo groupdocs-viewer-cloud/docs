@@ -228,6 +228,34 @@ public class Viewer_Android_Storage_Exist {
 ```
 
 {{< /tab >}}
+{{< tab "Go">}}
+```go
+package basicUsage
+
+import (
+    "fmt"
+
+    "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+    viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func CheckStorageExists() {
+    storageName := "YourStorageName"
+
+    storageExist, _, err := config.Client.StorageApi.StorageExists(config.Ctx, storageName)
+    if err != nil {
+        fmt.Printf("StorageExists error: %v\n", err)
+        return
+    }
+
+    if storageExist.Exists {
+        fmt.Println("Storage exists")
+    } else {
+        fmt.Println("Storage does not exist")
+    }
+}
+```
+{{< /tab >}}
 {{< /tabs >}}
 
 ## Check Storage Object Exist API
@@ -451,6 +479,37 @@ public class Viewer_Android_Object_Exists {
 ```
 
 {{< /tab >}}
+{{< tab "Go">}}
+```go
+package basicUsage
+
+import (
+    "fmt"
+
+    "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+    viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func ObjectExists() {
+    objectPath := "SampleFiles/sample.docx"
+    existsOpts := viewer.StorageApiObjectExistsOpts{
+        StorageName: optional.NewString("YourStorageName"),
+    }
+
+    objectExist, _, err := config.Client.StorageApi.ObjectExists(config.Ctx, objectPath, &existsOpts)
+    if err != nil {
+        fmt.Printf("ObjectExists error: %v\n", err)
+        return
+    }
+
+    if objectExist.Exists {
+        fmt.Println("Object exists")
+    } else {
+        fmt.Println("Object does not exist")
+    }
+}
+```
+{{< /tab >}}
 {{< /tabs >}}
 
 ## Storage Space Usage API
@@ -671,6 +730,33 @@ public class Viewer_Android_Get_Disc_Usage {
 }
 ```
 
+{{< /tab >}}
+{{< tab "Go">}}
+```go
+package basicUsage
+
+import (
+    "fmt"
+
+    "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+    viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func GetDiskUsage() {
+    usageOpts := viewer.StorageApiGetDiscUsageOpts{
+        StorageName: optional.NewString("YourStorageName"),
+    }
+
+    diskUsage, _, err := config.Client.StorageApi.GetDiscUsage(config.Ctx, &usageOpts)
+    if err != nil {
+        fmt.Printf("GetDiskUsage error: %v\n", err)
+        return
+    }
+
+    fmt.Printf("Total Size: %v\n", diskUsage.TotalSize)
+    fmt.Printf("Used Size: %v\n", diskUsage.UsedSize)
+}
+```
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -903,5 +989,34 @@ public class Viewer_Android_Get_File_Versions {
 }
 ```
 
+{{< /tab >}}
+{{< tab "Go">}}
+```go
+package basicUsage
+
+import (
+    "fmt"
+
+    "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+    viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func GetFileVersions() {
+    filePath := "SampleFiles/sample.docx"
+    versionsOpts := viewer.StorageApiGetFileVersionsOpts{
+        StorageName: optional.NewString("YourStorageName"),
+    }
+
+    fileVersions, _, err := config.Client.StorageApi.GetFileVersions(config.Ctx, filePath, &versionsOpts)
+    if err != nil {
+        fmt.Printf("GetFileVersions error: %v\n", err)
+        return
+    }
+
+    for _, version := range fileVersions.Value {
+        fmt.Printf("Version ID: %v, Size: %v\n", version.VersionId, version.Size)
+    }
+}
+```
 {{< /tab >}}
 {{< /tabs >}}

@@ -220,4 +220,47 @@ d_request = groupdocs_viewer_cloud.DeleteViewRequest(d_view_options)
 apiInstance.delete_view(d_request)
 ```
 {{< /tab >}} 
+{{< tab "Go">}}
+```go
+package basicUsage
+
+import (
+	"fmt"
+
+	"github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+	viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func DeleteViewExample() {
+
+	// Create view
+    opts := viewer.ViewOptions{
+		FileInfo: &viewer.FileInfo{
+			FilePath: "SampleFiles/sample.docx",
+		},
+	}
+    
+	response, _, err := config.Client.ViewApi.CreateView(config.Ctx, opts)
+	if err != nil {
+		fmt.Printf("Exception: %v\n", err)
+		return
+	}
+
+    // Delete view
+	delOpts := viewer.DeleteViewOptions{
+		FileInfo: &viewer.FileInfo{
+			FilePath: "SampleFiles/sample.docx",
+		},
+	}
+
+	delResponse, _, err := config.Client.ViewApi.DeleteView(config.Ctx, delOpts)
+	if err != nil {
+		fmt.Printf("Exception: %v\n", err)
+		return
+	}    
+}
+
+```
+{{< /tab >}}
 {{< /tabs >}}
+

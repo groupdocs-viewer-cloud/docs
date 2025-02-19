@@ -231,6 +231,48 @@ public class Viewer_Android_Download_File {
 ```
 
 {{< /tab >}}
+{{< tab "Go">}}
+```go
+package basicUsage
+
+import (
+    "fmt"
+    "os"
+
+    "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+    viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func DownloadFile() {
+    filePath := "SampleFiles/sample.docx"
+    downloadOpts := viewer.FileApiDownloadFileOpts{
+        StorageName: optional.NewString("YourStorageName"),
+    }
+
+    file, _, err := config.Client.FileApi.DownloadFile(config.Ctx, filePath, &downloadOpts)
+    if err != nil {
+        fmt.Printf("DownloadFile error: %v\n", err)
+        return
+    }
+    defer file.Close()
+
+    outFile, err := os.Create("downloaded_sample.docx")
+    if err != nil {
+        fmt.Printf("Error creating file: %v\n", err)
+        return
+    }
+    defer outFile.Close()
+
+    _, err = io.Copy(outFile, file)
+    if err != nil {
+        fmt.Printf("Error saving file: %v\n", err)
+        return
+    }
+
+    fmt.Println("File downloaded successfully")
+}
+```
+{{< /tab >}}
 {{< /tabs >}}
 
 ## Upload File API
@@ -493,6 +535,43 @@ public class Viewer_Android_Upload_File {
 ```
 
 {{< /tab >}}
+{{< tab "Go">}}
+```go
+package basicUsage
+
+import (
+    "fmt"
+    "os"
+
+    "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+    viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func UploadFile() {
+    filePath := "SampleFiles/sample.docx"
+    file, err := os.Open(filePath)
+    if err != nil {
+        fmt.Printf("Error opening file: %v\n", err)
+        return
+    }
+    defer file.Close()
+
+    uploadOpts := viewer.FileApiUploadFileOpts{
+        StorageName: optional.NewString("YourStorageName"),
+    }
+
+    uploadResult, _, err := config.Client.FileApi.UploadFile(config.Ctx, "uploaded_sample.docx", file, &uploadOpts)
+    if err != nil {
+        fmt.Printf("UploadFile error: %v\n", err)
+        return
+    }
+
+    fmt.Printf("File uploaded successfully: %v\n", uploadResult.Uploaded)
+}
+
+```
+{{< /tab >}}
+
 {{< /tabs >}}
 
 ## Delete File API
@@ -715,6 +794,34 @@ public class Viewer_Android_Delete_File {
 ```
 
 {{< /tab >}}
+{{< tab "Go">}}
+```go
+package basicUsage
+
+import (
+    "fmt"
+
+    "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+    viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func DeleteFile() {
+    filePath := "SampleFiles/sample.docx"
+    deleteOpts := viewer.FileApiDeleteFileOpts{
+        StorageName: optional.NewString("YourStorageName"),
+    }
+
+    _, err := config.Client.FileApi.DeleteFile(config.Ctx, filePath, &deleteOpts)
+    if err != nil {
+        fmt.Printf("DeleteFile error: %v\n", err)
+        return
+    }
+
+    fmt.Println("File deleted successfully")
+}
+```
+{{< /tab >}}
+
 {{< /tabs >}}
 
 ## File Copy API
@@ -943,6 +1050,34 @@ public class Viewer_Android_Copy_File {
 ```
 
 {{< /tab >}}
+{{< tab "Go">}}
+```go
+package basicUsage
+
+import (
+    "fmt"
+
+    "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+    viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func DeleteFile() {
+    filePath := "SampleFiles/sample.docx"
+    deleteOpts := viewer.FileApiDeleteFileOpts{
+        StorageName: optional.NewString("YourStorageName"),
+    }
+
+    _, err := config.Client.FileApi.DeleteFile(config.Ctx, filePath, &deleteOpts)
+    if err != nil {
+        fmt.Printf("DeleteFile error: %v\n", err)
+        return
+    }
+
+    fmt.Println("File deleted successfully")
+}
+```
+{{< /tab >}}
+
 {{< /tabs >}}
 
 ## File Move API
@@ -1170,5 +1305,34 @@ public class Viewer_Android_Move_File {
 }
 ```
 
+{{< /tab >}}
+{{< tab "Go">}}
+```go
+package basicUsage
+
+import (
+    "fmt"
+
+    "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+    viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func MoveFile() {
+    srcPath := "SampleFiles/sample.docx"
+    destPath := "SampleFiles/moved_sample.docx"
+    moveOpts := viewer.FileApiMoveFileOpts{
+        SrcStorageName:  optional.NewString("YourStorageName"),
+        DestStorageName: optional.NewString("YourStorageName"),
+    }
+
+    _, err := config.Client.FileApi.MoveFile(config.Ctx, srcPath, destPath, &moveOpts)
+    if err != nil {
+        fmt.Printf("MoveFile error: %v\n", err)
+        return
+    }
+
+    fmt.Println("File moved successfully")
+}
+```
 {{< /tab >}}
 {{< /tabs >}}

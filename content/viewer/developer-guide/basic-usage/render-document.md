@@ -203,4 +203,33 @@ request = groupdocs_viewer_cloud.CreateViewRequest(view_options)
 response = apiInstance.create_view(request)
 ```
 {{< /tab >}} 
+{{< tab "Go">}}
+```go
+package basicUsage
+
+import (
+	"fmt"
+
+	"github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+	viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func CreateViewExample() {
+
+	// Create view
+    opts := viewer.ViewOptions{
+		FileInfo: &viewer.FileInfo{
+			FilePath: "SampleFiles/sample.docx",
+		},
+	}
+    
+	response, _, err := config.Client.ViewApi.CreateView(config.Ctx, opts)
+	if err != nil {
+		fmt.Printf("Exception: %v\n", err)
+		return
+	}  
+}
+
+```
+{{< /tab >}}
 {{< /tabs >}}

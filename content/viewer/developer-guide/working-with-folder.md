@@ -249,6 +249,36 @@ public class Viewer_Android_Get_Files_List {
 ```
 
 {{< /tab >}}
+{{< tab "Go">}}
+```go
+package basicUsage
+
+import (
+    "fmt"
+
+    "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+    viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func GetFilesList() {
+    folderPath := "SampleFiles"
+    listOpts := viewer.FolderApiGetFilesListOpts{
+        StorageName: optional.NewString("YourStorageName"),
+    }
+
+    filesList, _, err := config.Client.FolderApi.GetFilesList(config.Ctx, folderPath, &listOpts)
+    if err != nil {
+        fmt.Printf("GetFilesList error: %v\n", err)
+        return
+    }
+
+    for _, file := range filesList.Value {
+        fmt.Printf("File: %v\n", file.Name)
+    }
+}
+```
+{{< /tab >}}
+
 {{< /tabs >}}
 
 ## Create New Folder
@@ -439,7 +469,6 @@ class Working_With_Folder
   end
 end
 ```
-
 {{< /tab >}}
 {{< tab "Android" >}}
 
@@ -468,6 +497,33 @@ public class Viewer_Android_Create_Folder {
 }
 ```
 
+{{< /tab >}}
+{{< tab "Go">}}
+```go
+package basicUsage
+
+import (
+    "fmt"
+
+    "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+    viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func CreateFolder() {
+    folderPath := "NewFolder"
+    createOpts := viewer.FolderApiCreateFolderOpts{
+        StorageName: optional.NewString("YourStorageName"),
+    }
+
+    _, err := config.Client.FolderApi.CreateFolder(config.Ctx, folderPath, &createOpts)
+    if err != nil {
+        fmt.Printf("CreateFolder error: %v\n", err)
+        return
+    }
+
+    fmt.Println("Folder created successfully")
+}
+```
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -689,7 +745,34 @@ public class Viewer_Android_Delete_Folder {
 	}
 }
 ```
+{{< /tab >}}
+{{< tab "Go">}}
+```go
+package basicUsage
 
+import (
+    "fmt"
+
+    "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+    viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func DeleteFolder() {
+    folderPath := "SampleFiles/OldFolder"
+    deleteOpts := viewer.FolderApiDeleteFolderOpts{
+        StorageName: optional.NewString("YourStorageName"),
+        Recursive:   optional.NewBool(true),
+    }
+
+    _, err := config.Client.FolderApi.DeleteFolder(config.Ctx, folderPath, &deleteOpts)
+    if err != nil {
+        fmt.Printf("DeleteFolder error: %v\n", err)
+        return
+    }
+
+    fmt.Println("Folder deleted successfully")
+}
+```
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -913,7 +996,35 @@ public class Viewer_Android_Copy_Folder {
 	}
 }
 ```
+{{< /tab >}}
+{{< tab "Go">}}
+```go
+package basicUsage
 
+import (
+    "fmt"
+
+    "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+    viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func CopyFolder() {
+    srcPath := "SampleFiles/OldFolder"
+    destPath := "SampleFiles/NewFolder"
+    copyOpts := viewer.FolderApiCopyFolderOpts{
+        SrcStorageName:  optional.NewString("YourStorageName"),
+        DestStorageName: optional.NewString("YourStorageName"),
+    }
+
+    _, err := config.Client.FolderApi.CopyFolder(config.Ctx, srcPath, destPath, &copyOpts)
+    if err != nil {
+        fmt.Printf("CopyFolder error: %v\n", err)
+        return
+    }
+
+    fmt.Println("Folder copied successfully")
+}
+```
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -1140,6 +1251,34 @@ public class Viewer_Android_Move_Folder {
 	}
 }
 ```
+{{< /tab >}}
+{{< tab "Go">}}
+```go
+package basicUsage
 
+import (
+    "fmt"
+
+    "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
+    viewer "github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go/models"
+)
+
+func MoveFolder() {
+    srcPath := "SampleFiles/OldFolder"
+    destPath := "SampleFiles/NewFolder"
+    moveOpts := viewer.FolderApiMoveFolderOpts{
+        SrcStorageName:  optional.NewString("YourStorageName"),
+        DestStorageName: optional.NewString("YourStorageName"),
+    }
+
+    _, err := config.Client.FolderApi.MoveFolder(config.Ctx, srcPath, destPath, &moveOpts)
+    if err != nil {
+        fmt.Printf("MoveFolder error: %v\n", err)
+        return
+    }
+
+    fmt.Println("Folder moved successfully")
+}
+```
 {{< /tab >}}
 {{< /tabs >}}
