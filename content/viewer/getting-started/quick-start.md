@@ -25,196 +25,118 @@ GroupDocs.Viewer Cloud SDK is written in different languages, all you need to ge
 
 ## Make an API request
 
-Use the **Client Id** and **Client Secret** from the API app client you created in step one and replace in the corresponding code. Below is an example demonstrating using Formats API to get all supported file formats in GroupDocs.Viewer Cloud.
+Use the **Client Id** and **Client Secret** from the API app client you created in step one and replace in the corresponding code. Below is an example demonstrating how to preview document using GroupDocs.Viewer Cloud.
 
 {{< alert style="info" >}}The GitHub repository for [GroupDocs.Viewer Cloud](https://github.com/groupdocs-viewer-cloud) has a complete set of examples, demonstrating our API capabilities.{{< /alert >}}
 
-{{< tabs "example1">}}
+{{< tabs "example1-sdk">}}
 {{< tab "C#" >}}
+```cs
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples
+string MyClientSecret = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+string MyClientId = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
-```csharp
-//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
-var configuration = new Configuration
-{
-           AppSid = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
-           AppKey = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-};
- 
-var apiInstance = new ViewerApi(configuration);
- 
-try
-{
-          var request = new GetSupportedFileFormatsRequest();
- 
-          // Get supported file formats
-          var response = apiInstance.GetSupportedFileFormats(request);
- 
-          foreach (var format in response.Formats)
-          {
-          Debug.Print(format.ToString());
-          }
-}
-catch (Exception e)
-{
-           Debug.Print("Exception when calling ViewerApi.DeleteFontsCache: " + e.Message);
-}
+var configuration = new Configuration(MyClientId, MyClientSecret);
+var apiInstance = new ViewApi(configuration);
+
+var format = "jpg";
+var request = new ConvertAndDownloadRequest(format, File.OpenRead("myfile.txt"));
+var result = apiInstance.ConvertAndDownload(request);
 ```
+{{< /tab >}} 
+{{< tab "PHP">}}
+```php
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-php-samples
+use GroupDocs\Viewer\Model;
+use GroupDocs\Viewer\Model\Requests;
 
-{{< /tab >}}
-{{< tab "Java" >}}
+$ClientId = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+$ClientSecret = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
+$configuration = new GroupDocs\Viewer\Configuration();
+$configuration->setAppSid($ClientId);
+$configuration->setAppKey($ClientSecret);
+
+$apiInstance = new GroupDocs\Viewer\ViewApi($configuration);
+
+$format ="jpg";
+$path = __DIR__ . 'myfile.txt';
+
+$request = new Requests\convertAndDownloadRequest($format, $path);
+
+$result = $apiInstance->convertAndDownload($request);
+```
+{{< /tab >}} 
+{{< tab "Java">}}
 ```java
 
-// TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
-String appSid = "xxxx";
-String appKey = "xxx-xx";
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-java-samples
+string MyClientSecret = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+string MyClientId = ""; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
-ViewerApi apiInstance = new ViewerApi(appSid, appKey);
-try {
-	FormatCollection response = apiInstance.getSupportedFileFormats();
+Configuration configuration = new Configuration(MyClientId, MyClientSecret);
+ViewApi apiInstance = new ViewApi(configuration);
 
-	if (response.getFormats().size() > 0) {
-		for (Format format : response.getFormats()) {
-			System.out.println("Format: " + format.toString());
-		}
-	}
-	System.out.println("Executed Successfully");
-} catch (ApiException e) {
-	System.err.println("Exception when calling ViewerApi");
-	e.printStackTrace();
-}
+String format = "pdf";
+File fileObj = new File("myfile.txt");
+
+ConvertAndDownloadRequest request = new ConvertAndDownloadRequest(format, fileObj, null, null);
+
+File file = apiInstance.convertAndDownload(request);
 ```
+{{< /tab >}} 
+{{< tab "Ruby">}}
+```ruby
+# For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-ruby-samples
+require 'groupdocs_viewer_cloud'
 
-{{< /tab >}}
-{{< tab "PHP" >}}
+$client_id = "XXXX-XXXX-XXXX-XXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+$client_secret = "XXXXXXXXXXXXXXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
-```php
-//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
-$configuration = new GroupDocs\Viewer\Configuration();
-$configuration->setAppSid($sid);
-$configuration->setAppKey($key);
+apiInstance = GroupDocsViewerCloud::ViewApi.from_keys($client_id, $client_secret)
 
-$viewerApi = new GroupDocs\Viewer\ViewerApi($configuration); 
+format = "jpg"      
+file = File.open("myfile.txt", "r")
 
-try {
-    $request = new GroupDocs\Viewer\Model\Requests\GetSupportedFileFormatsRequest();
-    $response = $viewerApi->getSupportedFileFormats($request);
+request = ConvertAndDownloadRequest.new format, file
 
-    foreach ($response->getFormats() as $key => $format) {
-        echo $format->getFileFormat() . " - " .  $format->getExtension(), "\n";
-    }
-} catch (Exception $e) {
-    echo  "Something went wrong: ",  $e->getMessage(), "\n";    
-}
-
+response = apiInstance.convert_and_download(request)
 ```
-
-{{< /tab >}}
-{{< tab "Node.js" >}}
-
+{{< /tab >}} 
+{{< tab "Node.js">}}
 ```js
-"use strict";
-exports.__esModule = true;
-// load the module
-var groupdocs_viewer_cloud_1 = require("groupdocs-viewer-cloud");
-// get your appSid and appKey at https://dashboard.groupdocs.cloud (free registration is required).
-var appSid = "XXXX-XXXX-XXXXX";
-var appKey = "XXXXXXXXXX";
-// construct ViewerApi
-var viewerApi = groupdocs_viewer_cloud_1.ViewerApi.fromKeys(appSid, appKey);
-// retrieve supported file-formats
-viewerApi.getSupportedFileFormats()
-    .then(function (result) {
-    console.log("Supported file-formats:");
-    result.formats.forEach(function (format) {
-        console.log(format.fileFormat + " (" + format.extension + ")");
-    });
-})["catch"](function (error) {
-    console.log("Error: " + error.message);
-});
+// For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-node-samples
+global.viewer# require("groupdocs-viewer-cloud");
 
+global.clientId = "XXXX-XXXX-XXXX-XXXX"; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+global.clientSecret = "XXXXXXXXXXXXXXXX"; // Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+
+global.viewApi = viewer_cloud.ViewApi.fromKeys(clientId, clientSecret);
+
+var format = "jpg";
+let filebuf = fs.readFileSync("myfile.txt");
+
+var request = new ConvertAndDownloadRequest(format, filebuf);
+let response = await viewApi.convertAndDownload(request);
 ```
-
-{{< /tab >}}
-{{< tab "Python" >}}
-
-```python
-# Import module
+{{< /tab >}} 
+{{< tab "Python">}}
+```py
+# For complete examples and data files, please go to https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-python-samples
 import groupdocs_viewer_cloud
 
-# Get your app_sid and app_key at https://dashboard.groupdocs.cloud (free registration is required).
-app_sid = "XXX-XXXXXXX-XXXX"
-app_key = "XXXXXXXXXXXXX"
+client_id = "XXXX-XXXX-XXXX-XXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+client_secret = "XXXXXXXXXXXXXXXX" # Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
 
-# Create instance of the GroupDocs Viewer APIapi = groupdocs_viewer_cloud.ViewerApi.from_keys(app_sid, app_key)
+apiInstance = groupdocs_viewer_cloud.ViewApi.from_keys(client_id, client_secret)
 
-try:
+format = "jpg"      
+file = File.open("myfile.txt", "r")
 
-    response = api.get_supported_file_formats()
-    print('Response:')
+request = ConvertAndDownloadRequest.new format, file
 
-    for format in response.formats:
-        print('{0} ({1})'.format(format.file_format, format.extension)) 
-
-except groupdocs_viewer_cloud.ApiException as e:
-    print('Exception while calling Viewer API: {0}'.format(e.message))
+response = apiInstance.convert_and_download(request)
 ```
-
-{{< /tab >}}
-{{< tab "Ruby" >}}
-
-```ruby
-	# Load the gem
-	require 'groupdocs_viewer_cloud'
-	require '..\lib\groupdocs_viewer_cloud\api\viewer_api'
-
-	# Get your app_sid and app_key at https://dashboard.groupdocs.cloud (free registration is required).
-	app_sid = "XXX-XXXXXXX-XXXX"
-	app_key = "XXXXXXXXXXXXX"
-
-	# Create instance of the API class
-	api = GroupDocsViewerCloud.from_keys(app_sid, app_key)
-
-	# Retrieve supported file-formats
-	response = api.get_supported_file_formats
-
-	# Print out supported file-formats
-	puts("Supported file-formats:")
-	response.formats.each do |format|
-	  puts("#{format.file_format} (#{format.extension})") 
-	end
-```
-
-{{< /tab >}}
-{{< tab "Android" >}}
-
-```java
-package examples.Supported_File_Formats;
-
-import com.groupdocs.cloud.viewer.client.*;
-import com.groupdocs.cloud.viewer.model.*;
-import com.groupdocs.cloud.viewer.api.InfoApi;
-import examples.Utils;
-
-public class Viewer_Android_Get_Supported_Formats {
-
-	public static void main(String[] args) {
-
-		InfoApi apiInstance = new InfoApi(Utils.AppSID, Utils.AppKey);
-		try {
-			FormatsResult response = apiInstance.getSupportedFileFormats();
-
-			for (Format format : response.getFormats()) {
-				System.out.println(format.getFileFormat());
-			}
-		} catch (ApiException e) {
-			System.err.println("Exception while calling InfoApi:");
-			e.printStackTrace();
-		}
-	}
-}
-```
-
 {{< /tab >}}
 {{< tab "Go">}}
 ```go
@@ -222,22 +144,34 @@ package basicUsage
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-go-samples/config"
 )
 
-func GetSupportedFormats() {
-
-	response, _, err := config.Client.InfoApi.GetSupportedFileFormats(config.Ctx)
-
+func ConvertAndDownload() {
+	// Open the file to be converted
+	file, err := os.Open("Resources/SampleFiles/sample.docx")
 	if err != nil {
-		fmt.Printf("GetSupportedViewers error: %v\n", err)
+		fmt.Printf("Exception: %v\n", err)
+		return
+	}
+	defer file.Close()
+
+	// Call the API
+	response, _, err := config.Client.ViewApi.ConvertAndDownload(config.Ctx, "jpg", file, nil)
+	if err != nil {
+		fmt.Printf("Exception: %v\n", err)
 		return
 	}
 
-	fmt.Printf("Formats num: %v\n", len(response.Formats))
+	fileInfo, err := response.Stat()
+	if err != nil {
+		fmt.Printf("Exception: %v\n", err)
+		return
+	}
+	fmt.Printf("ConvertAndDownload completed: %v bytes received\n", fileInfo.Size())
 }
-
 ```
 {{< /tab >}}
 {{< /tabs >}}
