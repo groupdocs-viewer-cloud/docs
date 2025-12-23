@@ -27,12 +27,30 @@ This API allows you to get a list of all files of a specific folder from the 
 ### List Files with cURL
 
 {{< tabs "list-files-with-curl">}}
-{{< tab "Request" >}}
+{{< tab "Linux/MacOS/Bash" >}}
 ```bash
-curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+curl -X GET 'https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs?storageName=MyStorage' \
+  -H 'accept: application/json' \
+  -H 'authorization: Bearer $JWT_TOKEN'
 ```
 {{< /tab >}}
-{{< tab "Resonse" >}}
+
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs?storageName=MyStorage" `
+  -H "accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs?storageName=MyStorage" ^
+  -H "accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
+{{< /tab >}}
+{{< tab "Response" >}}
 ```json
 {
   "value": [
@@ -299,12 +317,30 @@ This API allows you to create a new Folder in the specified Cloud Storage. If yo
 ### Create New Folder with cURL
 
 {{< tabs "create-folder-with-curl">}}
-{{< tab "Request" >}}
+{{< tab "Linux/MacOS/Bash" >}}
 ```bash
-curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+curl -X POST 'https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3?storageName=MyStorage' \
+  -H 'accept: application/json' \
+  -H 'authorization: Bearer $JWT_TOKEN'
 ```
 {{< /tab >}}
-{{< tab "Resonse" >}}
+
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X POST "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3?storageName=MyStorage" `
+  -H "accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X POST "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3?storageName=MyStorage" ^
+  -H "accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
+{{< /tab >}}
+{{< tab "Response" >}}
 ```json
 {
   "code": 200,
@@ -545,12 +581,30 @@ This API allows you to delete a particular Folder in the specified Cloud Storage
 ### Delete Folder with cURL
 
 {{< tabs "delete-folder-with-curl">}}
-{{< tab "Request" >}}
+{{< tab "Linux/MacOS/Bash" >}}
 ```bash
-curl -X DELETE "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3?storageName#MyStorage&#x26;recursive#true" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+curl -X DELETE 'https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3?storageName=MyStorage&recursive=true' \
+  -H 'accept: application/json' \
+  -H 'authorization: Bearer $JWT_TOKEN'
 ```
 {{< /tab >}}
-{{< tab "Resonse" >}}
+
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X DELETE "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3?storageName=MyStorage&recursive=true" `
+  -H "accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X DELETE "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/viewerdocs3?storageName=MyStorage&recursive=true" ^
+  -H "accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
+{{< /tab >}}
+{{< tab "Response" >}}
 ```json
 {
   "code": 200,
@@ -796,12 +850,30 @@ This API allows you to copy a Folder to another location in the GroupDocs Cloud 
 ### Copy Folder with cURL
 
 {{< tabs "copy-folder-with-curl">}}
-{{< tab "Request" >}}
+{{< tab "Linux/MacOS/Bash" >}}
 ```bash
-curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/copy/viewerdocs?destPath#viewerdocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+curl -X PUT 'https://api.groupdocs.cloud/v2.0/viewer/storage/folder/copy/viewerdocs?destPath=viewerdocs1&srcStorageName=MyStorage&destStorageName=MyStorage' \
+  -H 'accept: application/json' \
+  -H 'authorization: Bearer $JWT_TOKEN'
 ```
 {{< /tab >}}
-{{< tab "Resonse" >}}
+
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/copy/viewerdocs?destPath=viewerdocs1&srcStorageName=MyStorage&destStorageName=MyStorage" `
+  -H "accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/copy/viewerdocs?destPath=viewerdocs1&srcStorageName=MyStorage&destStorageName=MyStorage" ^
+  -H "accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
+{{< /tab >}}
+{{< tab "Response" >}}
 ```json
 {
   "code": 200,
@@ -1048,12 +1120,30 @@ This API allows you to move a Folder to another location in the GroupDocs Cloud 
 ### Move Folder with cURL
 
 {{< tabs "move-folder-with-curl">}}
-{{< tab "Request" >}}
+{{< tab "Linux/MacOS/Bash" >}}
 ```bash
-curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/move/viewerdocs?destPath#viewerdocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+curl -X PUT 'https://api.groupdocs.cloud/v2.0/viewer/storage/folder/move/viewerdocs?destPath=viewerdocs1&srcStorageName=MyStorage&destStorageName=MyStorage' \
+  -H 'accept: application/json' \
+  -H 'authorization: Bearer $JWT_TOKEN'
 ```
 {{< /tab >}}
-{{< tab "Resonse" >}}
+
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/move/viewerdocs?destPath=viewerdocs1&srcStorageName=MyStorage&destStorageName=MyStorage" `
+  -H "accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X PUT "https://api.groupdocs.cloud/v2.0/viewer/storage/folder/move/viewerdocs?destPath=viewerdocs1&srcStorageName=MyStorage&destStorageName=MyStorage" ^
+  -H "accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
+{{< /tab >}}
+{{< tab "Response" >}}
 ```json
 {
   "code": 200,

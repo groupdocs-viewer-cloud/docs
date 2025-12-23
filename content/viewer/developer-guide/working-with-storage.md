@@ -27,12 +27,32 @@ This API intended for checking the existence of cloud storage with a given name 
 
 
 {{< tabs "check-storage-exist-wit-curl">}}
-{{< tab "Request" >}}
+{{< tab "Linux/MacOS/Bash" >}}
 ```bash
-curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/MyStorage/exist" -H  "accept: application/json" -H  "authorization: Bearer  [Access Token]"
+curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/MyStorage/exist" \
+     -H "accept: application/json" \
+     -H "authorization: Bearer $JWT_TOKEN"
 ```
 {{< /tab >}}
-{{< tab "Resonse" >}}
+
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe ` 
+    -X GET ` 
+    "https://api.groupdocs.cloud/v2.0/viewer/storage/MyStorage/exist" ` 
+    -H "accept: application/json" ` 
+    -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/MyStorage/exist" ^
+     -H "accept: application/json" ^
+     -H "authorization: Bearer %JWT_TOKEN%"
+```
+{{< /tab >}}
+{{< tab "Response" >}}
 ```json
 {
   "exists": true
@@ -277,12 +297,32 @@ This API intended for checking existence of file or folder in [GroupDocs Cloud S
 ### Check Storage Object Exist with cURL
 
 {{< tabs "check-storage-object-exist-with-curl">}}
-{{< tab "Request" >}}
+{{< tab "Linux/MacOS/Bash" >}}
 ```bash
-curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/exist/viewerdocs?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/exist/viewerdocs?storageName#MyStorage" \
+     -H "accept: application/json" \
+     -H "authorization: Bearer $JWT_TOKEN"
 ```
 {{< /tab >}}
-{{< tab "Resonse" >}}
+
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe ` 
+    -X GET ` 
+    "https://api.groupdocs.cloud/v2.0/viewer/storage/exist/viewerdocs?storageName#MyStorage" ` 
+    -H "accept: application/json" ` 
+    -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/exist/viewerdocs?storageName#MyStorage" ^
+     -H "accept: application/json" ^
+     -H "authorization: Bearer %JWT_TOKEN%"
+```
+{{< /tab >}}
+{{< tab "Response" >}}
 ```json
 {
   "exists": true,
@@ -529,12 +569,32 @@ This API intended for getting total and used space of the[ GroupDocs Cloud Stora
 ### Storage Space Usage with cURL
 
 {{< tabs "storage-space-usage-with-curl">}}
-{{< tab "Request" >}}
+{{< tab "Linux/MacOS/Bash" >}}
 ```bash
-curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/disc?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/disc?storageName#MyStorage" \
+     -H "accept: application/json" \
+     -H "authorization: Bearer $JWT_TOKEN"
 ```
 {{< /tab >}}
-{{< tab "Resonse" >}}
+
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe ` 
+    -X GET ` 
+    "https://api.groupdocs.cloud/v2.0/viewer/storage/disc?storageName#MyStorage" ` 
+    -H "accept: application/json" ` 
+    -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/disc?storageName#MyStorage" ^
+     -H "accept: application/json" ^
+     -H "authorization: Bearer %JWT_TOKEN%"
+```
+{{< /tab >}}
+{{< tab "Response" >}}
 ```json
 {
   "usedSize": 31032368,
@@ -778,12 +838,32 @@ This API intended for getting the list of file versions, stored in the [GroupDoc
 ### Storage File Versions with cURL
 
 {{< tabs "storage-file-version-with-curl">}}
-{{< tab "Request" >}}
+{{< tab "Linux/MacOS/Bash" >}}
 ```bash
-curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/version/one-page.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/version/one-page.docx?storageName#MyStorage" \
+     -H "accept: application/json" \
+     -H "authorization: Bearer $JWT_TOKEN"
 ```
 {{< /tab >}}
-{{< tab "Resonse" >}}
+
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe ` 
+    -X GET ` 
+    "https://api.groupdocs.cloud/v2.0/viewer/storage/version/one-page.docx?storageName#MyStorage" ` 
+    -H "accept: application/json" ` 
+    -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X GET "https://api.groupdocs.cloud/v2.0/viewer/storage/version/one-page.docx?storageName#MyStorage" ^
+     -H "accept: application/json" ^
+     -H "authorization: Bearer %JWT_TOKEN%"
+```
+{{< /tab >}}
+{{< tab "Response" >}}
 
 ```json
 {

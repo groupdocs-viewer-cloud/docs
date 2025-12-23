@@ -30,34 +30,84 @@ Steps 1 and 3 are storage operations, please refer to this [File API document
 ## cURL example
 
 {{< tabs "example1">}}
-{{< tab "Request" >}}
+{{< tab "Linux/MacOS/Bash" >}}
 ```bash
-
 # First get JSON Web Token
-# Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications. Kindly place Client Id in "client_id" and Client Secret in "client_secret" argument.
-curl -v "https://api.groupdocs.cloud/connect/token" \
--X POST \
--d "grant_type=client_credentials&client_id=xxxx&client_secret=xxxx" \
--H "Content-Type: application/x-www-form-urlencoded" \
--H "Accept: application/json"
+# Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications.
+# They are provided via environment variables CLIENT_ID and CLIENT_SECRET.
+curl -v 'https://api.groupdocs.cloud/connect/token' \
+  -X POST \
+  -d 'grant_type=client_credentials&client_id=$CLIENT_ID&client_secret=$CLIENT_SECRET' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'Accept: application/json'
 
 # cURL example to get document information
-curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{
-  'FileInfo': {
-    'FilePath': 'SampleFiles/with_missing_font.pptx'
-  },
-  'ViewFormat': 'HTML',
-  'RenderOptions': {
-    'DefaultFontName': 'Courier New'
-  }
-}"
+curl -v 'https://api.groupdocs.cloud/v2.0/viewer/view' \
+  -X POST \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json' \
+  -H "Authorization: Bearer $JWT_TOKEN" \
+  -d '{
+    "FileInfo": {
+      "FilePath": "SampleFiles/with_missing_font.pptx"
+    },
+    "ViewFormat": "HTML",
+    "RenderOptions": {
+      "DefaultFontName": "Courier New"
+    }
+  }'
 ```
-{{< /tab >}} {{< tab "Resonse" >}}
+{{< /tab >}}
+
+{{< tab "Windows PowerShell" >}}
+```powershell
+# First get JSON Web Token
+# Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications.
+# They are provided via environment variables CLIENT_ID and CLIENT_SECRET.
+curl.exe -v "https://api.groupdocs.cloud/connect/token" `
+  -X POST `
+  -d "grant_type=client_credentials&client_id=$env:CLIENT_ID&client_secret=$env:CLIENT_SECRET" `
+  -H "Content-Type: application/x-www-form-urlencoded" `
+  -H "Accept: application/json"
+
+# cURL example to get document information
+curl.exe -v "https://api.groupdocs.cloud/v2.0/viewer/view" `
+  -X POST `
+  -H "Content-Type: application/json" `
+  -H "Accept: application/json" `
+  -H "Authorization: Bearer $env:JWT_TOKEN" `
+  -d "{
+    'FileInfo': {
+      'FilePath': 'SampleFiles/with_missing_font.pptx'
+    },
+    'ViewFormat': 'HTML',
+    'RenderOptions': {
+      'DefaultFontName': 'Courier New'
+    }
+  }"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+rem First get JSON Web Token
+rem Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications.
+rem They are provided via environment variables CLIENT_ID and CLIENT_SECRET.
+curl -v "https://api.groupdocs.cloud/connect/token" ^
+  -X POST ^
+  -d "grant_type=client_credentials&client_id=%CLIENT_ID%&client_secret=%CLIENT_SECRET%" ^
+  -H "Content-Type: application/x-www-form-urlencoded" ^
+  -H "Accept: application/json"
+
+rem cURL example to get document information
+curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" ^
+  -X POST ^
+  -H "Content-Type: application/json" ^
+  -H "Accept: application/json" ^
+  -H "Authorization: Bearer %JWT_TOKEN%" ^
+  -d "{\"FileInfo\":{\"FilePath\":\"SampleFiles/with_missing_font.pptx\"},\"ViewFormat\":\"HTML\",\"RenderOptions\":{\"DefaultFontName\":\"Courier New\"}}"
+```
+{{< /tab >}} {{< tab "Response" >}}
 ```json
 {
   "pages": [

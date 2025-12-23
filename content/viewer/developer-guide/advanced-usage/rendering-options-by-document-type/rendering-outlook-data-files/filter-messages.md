@@ -31,37 +31,87 @@ Steps 1 and 3 are storage operations, please refer to this [File API document
 ## cURL example
 
 {{< tabs "example1">}}
-{{< tab "Request" >}}
+{{< tab "Linux/MacOS/Bash" >}}
 ```bash
-
-# First get JSON Web Token
-# Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications. Kindly place Client Id in "client_id" and Client Secret in "client_secret" argument.
+# First, get JSON Web Token
+# Replace $CLIENT_ID and $CLIENT_SECRET with your credentials.
 curl -v "https://api.groupdocs.cloud/connect/token" \
--X POST \
--d "grant_type=client_credentials&client_id=xxxx&client_secret=xxxx" \
--H "Content-Type: application/x-www-form-urlencoded" \
--H "Accept: application/json"
+  -X POST \
+  -d "grant_type=client_credentials&client_id=$CLIENT_ID&client_secret=$CLIENT_SECRET" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -H "Accept: application/json"
 
-# cURL example to get document information
+# Get document information
 curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{
-  'FileInfo': {
-    'FilePath': 'SampleFiles/sample.ost'
-  },
-  'ViewFormat': 'HTML',
-  'RenderOptions': {
-    'OutlookOptions': {
-      'TextFilter' : 'Microsoft',
-      'AddressFilter' : 'susan'
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer $JWT_TOKEN" \
+  -d '{
+    "FileInfo": {
+      "FilePath": "SampleFiles/sample.ost"
+    },
+    "ViewFormat": "HTML",
+    "RenderOptions": {
+      "OutlookOptions": {
+        "TextFilter": "Microsoft",
+        "AddressFilter": "susan"
+      }
     }
-  }
-}"
+  }'
 ```
-{{< /tab >}} {{< tab "Resonse" >}}
+{{< /tab >}}
+
+{{< tab "Windows PowerShell" >}}
+```powershell
+# First, get JSON Web Token
+# Replace $env:CLIENT_ID and $env:CLIENT_SECRET with your credentials.
+curl.exe -v "https://api.groupdocs.cloud/connect/token" `
+  -X POST `
+  -d "grant_type=client_credentials&client_id=$env:CLIENT_ID&client_secret=$env:CLIENT_SECRET" `
+  -H "Content-Type: application/x-www-form-urlencoded" `
+  -H "Accept: application/json"
+
+# Get document information
+curl.exe -v "https://api.groupdocs.cloud/v2.0/viewer/view" `
+  -X POST `
+  -H "Content-Type: application/json" `
+  -H "Accept: application/json" `
+  -H "Authorization: Bearer $env:JWT_TOKEN" `
+  -d "{
+    'FileInfo': {
+      'FilePath': 'SampleFiles/sample.ost'
+    },
+    'ViewFormat': 'HTML',
+    'RenderOptions': {
+      'OutlookOptions': {
+        'TextFilter': 'Microsoft',
+        'AddressFilter': 'susan'
+      }
+    }
+  }"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+REM First, get JSON Web Token
+REM Replace %CLIENT_ID% and %CLIENT_SECRET% with your credentials.
+curl -v "https://api.groupdocs.cloud/connect/token" ^
+  -X POST ^
+  -d "grant_type=client_credentials&client_id=%CLIENT_ID%&client_secret=%CLIENT_SECRET%" ^
+  -H "Content-Type: application/x-www-form-urlencoded" ^
+  -H "Accept: application/json"
+
+REM Get document information
+curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" ^
+  -X POST ^
+  -H "Content-Type: application/json" ^
+  -H "Accept: application/json" ^
+  -H "Authorization: Bearer %JWT_TOKEN%" ^
+  -d "{\"FileInfo\":{\"FilePath\":\"SampleFiles/sample.ost\"},\"ViewFormat\":\"HTML\",\"RenderOptions\":{\"OutlookOptions\":{\"TextFilter\":\"Microsoft\",\"AddressFilter\":\"susan\"}}}"
+```
+{{< /tab >}} {{< tab "Response" >}}
 ```json
 {
   "pages": [

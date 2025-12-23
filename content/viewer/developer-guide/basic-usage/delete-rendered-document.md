@@ -21,30 +21,73 @@ Following example demonstrates on how to delete rendered document results.
 ## cURL example
 
 {{< tabs "example1">}}
-{{< tab "Request" >}}
+{{< tab "Linux/MacOS/Bash" >}}
 ```bash
-
 # First get JSON Web Token
-# Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications. Kindly place Client Id in "client_id" and Client Secret in "client_secret" argument.
+# Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications.
+# The credentials are read from environment variables CLIENT_ID and CLIENT_SECRET.
 curl -v "https://api.groupdocs.cloud/connect/token" \
--X POST \
--d "grant_type=client_credentials&client_id=xxxx&client_secret=xxxx" \
--H "Content-Type: application/x-www-form-urlencoded" \
--H "Accept: application/json"
+  -X POST \
+  -d "grant_type=client_credentials&client_id=$CLIENT_ID&client_secret=$CLIENT_SECRET" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -H "Accept: application/json"
 
 # cURL example to delete rendered document files
+# The JWT token is read from the environment variable JWT_TOKEN.
 curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{
-   'FileInfo': {
-         'FilePath': 'SampleFiles/sample.docx'
-      }
-}"
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer $JWT_TOKEN" \
+  -d '{
+    "FileInfo": {
+      "FilePath": "SampleFiles/sample.docx"
+    }
+  }'
 ```
-{{< /tab >}} {{< tab "Resonse" >}}
+{{< /tab >}}
+
+{{< tab "Windows PowerShell" >}}
+```powershell
+# First get JSON Web Token
+# Client credentials are read from environment variables CLIENT_ID and CLIENT_SECRET.
+curl.exe -v "https://api.groupdocs.cloud/connect/token" `
+  -X POST `
+  -d "grant_type=client_credentials&client_id=$env:CLIENT_ID&client_secret=$env:CLIENT_SECRET" `
+  -H "Content-Type: application/x-www-form-urlencoded" `
+  -H "Accept: application/json"
+
+# cURL example to delete rendered document files
+# JWT token is read from the environment variable JWT_TOKEN.
+curl.exe -v "https://api.groupdocs.cloud/v2.0/viewer/view" `
+  -X DELETE `
+  -H "Content-Type: application/json" `
+  -H "Accept: application/json" `
+  -H "Authorization: Bearer $env:JWT_TOKEN" `
+  -d "{ 'FileInfo': { 'FilePath': 'SampleFiles/sample.docx' } }"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+:: First get JSON Web Token
+:: Client credentials are read from environment variables CLIENT_ID and CLIENT_SECRET.
+curl -v "https://api.groupdocs.cloud/connect/token" ^
+  -X POST ^
+  -d "grant_type=client_credentials&client_id=%CLIENT_ID%&client_secret=%CLIENT_SECRET%" ^
+  -H "Content-Type: application/x-www-form-urlencoded" ^
+  -H "Accept: application/json"
+
+:: cURL example to delete rendered document files
+:: JWT token is read from the environment variable JWT_TOKEN.
+curl -v "https://api.groupdocs.cloud/v2.0/viewer/view" ^
+  -X DELETE ^
+  -H "Content-Type: application/json" ^
+  -H "Accept: application/json" ^
+  -H "Authorization: Bearer %JWT_TOKEN%" ^
+  -d "{\"FileInfo\":{\"FilePath\":\"SampleFiles/sample.docx\"}}"
+```
+{{< /tab >}} {{< tab "Response" >}}
 ```log
 An empty response with status '204 No Content' is returned to confirm deletion.
 

@@ -24,13 +24,31 @@ You can find more information about Docker version at [How to self-host GroupDoc
 ## cURL example
 
 {{< tabs "example1">}}
-{{< tab "Request" >}}
+{{< tab "Linux/MacOS/Bash" >}}
 ```bash
 # cURL example to get metered license consumption
-curl -v "http://<base url>/v2.0/viewer/consumption" \
--X GET \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.groupdocs.cloud/v2.0/viewer/consumption" \
+  -X GET \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer $JWT_TOKEN"
+```
+{{< /tab >}}
+{{< tab "Windows PowerShell" >}}
+```powershell
+# cURL example to get metered license consumption
+curl.exe -v "https://api.groupdocs.cloud/v2.0/viewer/consumption" `
+  -X GET `
+  -H "Accept: application/json" `
+  -H "Authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+{{< tab "Windows CMD" >}}
+```cmd
+:: cURL example to get metered license consumption
+curl -v "https://api.groupdocs.cloud/v2.0/viewer/consumption" ^
+  -X GET ^
+  -H "Accept: application/json" ^
+  -H "Authorization: Bearer %JWT_TOKEN%"
 ```
 {{< /tab >}}
 {{< tab "Response" >}}
